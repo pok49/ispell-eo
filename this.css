@@ -1,0 +1,23 @@
+body {
+    margin-left: 3%; margin-right: 3%;
+    font-family: Georgia, Times, serif;
+    background: silver;
+}
+p { margin-top: 3px; margin-bottom: 1px; }
+p.verse {
+    margin-left: 3%;
+}
+.example { margin-left: 3%; }
+blockquote {
+    font-family: Garamond, sans-serif;
+ <!--   font-size: smaller; -->
+}
+td { padding-right: 1em; border-style: none; }
+h2, h3 { margin-bottom: 0px;
+         font-size: greater;
+         font-weight: normal;
+         background: aqua;
+         text-align: center; }
+h2 { margin-top: 25px; margin-bottom: 0px; }
+
+table { border-style: none; }
