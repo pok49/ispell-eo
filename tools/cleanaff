@@ -1,0 +1,9 @@
+#!/bin/sed -f
+#@(#) cleanaff:  Clean aff file ("-IGI,I^GI" -> "-GI,^GI")
+ 
+s/-\([^ ,#]\{1,\}\),\1//
+s/-\([A-Z]\)\([^ ,#]\{1,\}\),\1\([^ ,#]\{1,\}\)/-\2,\3/
+
+# Local variables:
+# mode: shell-script
+# end:

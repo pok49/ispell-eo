@@ -1,0 +1,24 @@
+La dosiero ./emacs/plus-word.el entenas la funkcion +word destinitan
+por varti la vortaron, plenigante øin per mankantaj vortoj.
+
+Tiaj vortoj povas aperi dumaniere:
+
+1. Ili meme kolektiøas en .ispell_eo kaj en .ispell_esperanto kiam vi
+   diras "i" en ispell-seanco.
+2. Vi povas pluki æiujn nekonatajn vortojn el iu teksto.txt per la
+   skripto ./tools/pluku:
+   ispell -l -d eo < teksto.txt | sort -uf > vortoj.txt
+
+Ambaýokaze la dosiero estos en ^cirka^u-skribo.  Por pli oportuna
+laboro transkodu øin al la Latina-3a:
+
+$ ./tools/tex23 ~/.ispell_eo
+
+Rezultos dosiero novaj-vortoj.l3 prezentita en la Latina-3a.
+
+Por prilabori la novajn vortojn, vizitu la dosieron en Emakso.
+Por komenci, necesas konigi la ilan funkcion +word; ekz-e, vizitu la
+dosieron ./emacs/plus-word.el kaj diru "M-x eval-current-buffer" (se
+uzos øin regule, instalu øin kiel kutime en Emakso).
+
+...

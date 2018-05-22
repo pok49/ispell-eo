@@ -1,0 +1,3 @@
+#!/bin/sh
+
+echo "$1" | ispell -d eo -T cxirkaux -e | tr ' ' '\n' | sort | less

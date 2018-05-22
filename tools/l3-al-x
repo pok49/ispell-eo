@@ -1,0 +1,15 @@
+#!/bin/sh
+LC_CTYPE=C
+export LC_CTYPE
+sed -e 's/æ/cx/g' \
+ -e 's/Æ/Cx/g' \
+ -e 's/ø/gx/g' \
+ -e 's/Ø/Gx/g' \
+ -e 's/¶/hx/g' \
+ -e 's/¦/Hx/g' \
+ -e 's/¼/jx/g' \
+ -e 's/¬/Jx/g' \
+ -e 's/þ/sx/g' \
+ -e 's/Þ/Sx/g' \
+ -e 's/ý/ux/g' \
+ -e 's/Ý/Ux/g'

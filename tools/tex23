@@ -1,0 +1,17 @@
+#!/bin/sh
+#@(#) tex23:  Translate the ^cirka^u \$1 file to ./novaj-vortoj.l3
+export LC_ALL=C
+sed -e 's/\^c/æ/g; s/\^C/Æ/g' \
+ -e 's/\^g/ø/g; s/\^G/Ø/g' \
+ -e 's/\^h/¶/g' \
+ -e 's/\^H/¦/g' \
+ -e 's/\^j/¼/g' \
+ -e 's/\^J/¬/g' \
+ -e 's/\^s/þ/g' \
+ -e 's/\^S/Þ/g' \
+ -e 's/\^u/ý/g' \
+ -e 's/\^U/Ý/g' < $1 | sort -u > novaj-vortoj.l3
+
+# Local variables:
+# coding: latin-3
+# end:

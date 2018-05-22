@@ -1,0 +1,38 @@
+#!/bin/sh
+
+LC_ALL=C
+LC_CTYPE=C
+export LC_CTYPE LC_ALL
+
+#FILTER=`echo $1 | sed -e 's/\<\([a-zA-Z]*\)\>,*/s,\#\1,,;/g'`
+
+# $FILTER estas sed-tasko por malmarki linion entenatan ajnan el la
+# menditaj sxlosiloj; ekz-e por "komp,etn,Eujo,pers,mll,pok,var,drv"
+# $FILTER estas
+# /#komp/s,#.*,,;/#etn/s,#.*,,;/#Eujo/s,#.*,,;/#pers/s,#.*,,;\
+# /#mll/s,#.*,,;/#pok/s,#.*,,;/#var/s,#.*,,;/#drv/s,#.*,,;
+
+FILTER=`echo $1, | sed -e 's|\([a-zA-Z]*\),|/\#\1/s%#.*%%;|g'`
+
+#echo "$FILTER"
+
+sed -e 's/#{[^}]*}//g' \
+    -e $FILTER -e '/\#/d' \
+    -e '/^[^/]*\\/d' \
+    ../src/vortoj.l3   \
+    | sed -e 's/^\([^=][^ 	]*\)-[ 	]*\(^\)*\([^+-]*\)$/&\
+\1\2\l\3/;
+s/^\([^=][^ 	]*\)-[ 	]*\(^\)*\([^-]*\)-\([^+]*\)$/\1-\2\3\4\
+\1\2\l\3/;
+s/^\([^=][^ 	]*\)-[ 	]*\(^\)*\([^+]*\)+\([^-]*\)$/\1-\2\3\
+\1\2\l\3\4/;
+s/^\([^=][^ 	]*\)-[ 	]*\(^\)*\([^-]*\)-\([^+]*\)+\(.*\)$/\1-\2\3\4\
+\1\2\l\3\5/;
+s/[ =	]//g;
+# tekstoprezent(ad)o:
+s/\([^(]*\)(\([^)]*\))\(.*\)$/\1\2\3\
+\1\3/' \
+    | sort -uf > eoootmp
+
+wc -l eoootmp | awk '{print($1)}' | cat - eoootmp > $2
+
