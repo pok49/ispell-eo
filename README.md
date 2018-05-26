@@ -54,10 +54,10 @@ Several encodings used with Esperanto text are supported:
 ## INSTALLATION
 
 ### Simple Install (Unix or Cygwin)
-<ol markdown="1">
+<ol>
 <li>Unpack `ispell-eo` (you've done that since you are reading me).</li>
 <li>Go to the root directory `ispell-eo` (where this `README` resides).</li>
-<li>Say
+<li markdown="1">Say
 
 ```bash
    $ make first
@@ -89,7 +89,7 @@ $ make all
       eo.aff line 218: Flag must be alphabetic
 
 Just ignore them.</li>
-<li>Type
+<li markdown="1">Type
 
 ```bash
    $ make install
