@@ -17,11 +17,11 @@ This dictionary package is available on the terms of GNU General Public License
 
 
 ### The Ispell utility program
-
 You will first need to get ispell 3.0+; it is available from
 [here](ftp://ftp.cs.ucla.edu/pub/ispell-3.1). Please make sure that in
 its `local.h` `NO8BIT` is commented out and `MASKBITS=64`. To see the
 options `ispell` has been compiled with please run
+
 ```bash
     $ ispell -vv
 ```
@@ -55,8 +55,8 @@ Several encodings used with Esperanto text are supported:
 
 ### Simple Install (Unix or Cygwin)
 <ol>
-<li>Unpack `ispell-eo` (you've done that since you are reading me).</li>
-<li>Go to the root directory `ispell-eo` (where this `README` resides).</li>
+<li markdown="1">Unpack `ispell-eo` (you've done that since you are reading me).</li>
+<li markdown="1">Go to the root directory `ispell-eo` (where this `README` resides).</li>
 <li markdown="1">Say
 
 ```bash
@@ -66,7 +66,7 @@ Several encodings used with Esperanto text are supported:
    Examine the output, e.g. do you have the permissions to write the
    hash file(s) at the install phase?
 </li>
-<li>If everything is OK, say
+<li markdown="1">If everything is OK, say
 
 ```bash
 $ make eo
