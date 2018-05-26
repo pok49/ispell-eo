@@ -103,7 +103,7 @@ Just ignore them.</li>
 ```bash
    $ ispell -d eo FILENAME
 ```
-</ol>
+</li></ol>
 
 ### Open Office
 
