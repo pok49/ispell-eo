@@ -22,8 +22,9 @@ You will first need to get ispell 3.0+; it is available from
 [here](ftp://ftp.cs.ucla.edu/pub/ispell-3.1). Please make sure that in
 its `local.h` `NO8BIT` is commented out and `MASKBITS=64`. To see the
 options `ispell` has been compiled with please run
-
+```bash
     $ ispell -vv
+```
 
 ### Esperanto encodings
 Several encodings used with Esperanto text are supported:
@@ -57,29 +58,39 @@ Several encodings used with Esperanto text are supported:
 <li>Unpack `ispell-eo` (you've done that since you are reading me).</li>
 <li>Go to the root directory `ispell-eo` (where this `README` resides).</li>
 <li>Say
+
+``` bash
    $ make first
-   (or simply "make") in order to check your ispell program.
+```
+   (or simply `make`) in order to check your `ispell` program.
    Examine the output, e.g. do you have the permissions to write the
    hash file(s) at the install phase?
 </li>
 <li>If everything is OK, say
+
 ```bash
 $ make eo
 ```
+
 (to built the strict dictionary), or
+
 ```bash
-       $ make esperanto
+$ make esperanto
 ```
 (to built a permissive dictionary), or
+
 ```bash
 $ make all
 ```
 (to built both).
 
    You'll get a few warnings of from buildhash, like this one:
-      `eo.aff line 218: Flag must be alphabetic`
-   Just ignore them.</li>
+   
+      eo.aff line 218: Flag must be alphabetic
+
+Just ignore them.</li>
 <li>Type
+
 ``` bash
    $ make install
 ```
@@ -88,7 +99,8 @@ $ make all
    you shall need the root rights to make install).
 
    After that you can call
-``` bash
+
+```bash
    $ ispell -d eo FILENAME
 ```
 </ol>
@@ -98,6 +110,7 @@ $ make all
 You'll need emacs to produce the dictionary for myspell which works
 with Open Office.  Customize the word provision as described in
 "Customized Build" (except the buildhash step); and then say
+
 ``` bash
 $ make OO
 ```
@@ -112,7 +125,7 @@ entries in the source dictionary `./src/vortoj.l3` are marked with
 keywords indicating the special field they belong to:
 
 \#arhx
-  : archaic words, like *ĥina* (= *ĉina*) or *malkompreni* (= *miskompreni*)
+  : archaic words, like *hxina* (= *cxina*) or *malkompreni* (= *miskompreni*)
 
 \#bot
   : a rare botanic word
@@ -124,10 +137,10 @@ keywords indicating the special field they belong to:
   : countries and ethnography
 
 \#komp
-  : some computer-science terminology according to the «[Komputada Leksikono](http://www.esperanto.mv.ru/KompLeks/UTF8/DEFAULT.html)»
+  : some computer-science terminology according to the "[Komputada Leksikono](http://www.esperanto.mv.ru/KompLeks/UTF8/DEFAULT.html)"
 
 \#mav
-  : redundant words, which are used by some esperantists, though they are less precise and unnecessarily complicate the language; e.g. olda (maljuna or malnova), "mava" (malbona)
+  : redundant words, which are used by some esperantists, though they are less precise and unnecessarily complicate the language; e.g. *olda* (*maljuna* or *malnova*), "mava" (malbona)
 
 \#pers
   : given names and names of important personalities (Petro, Zamenhof, Noa ...)
@@ -152,9 +165,9 @@ in order to see if you feel like me about them; you can either remove
 all of them from the target dictionary, or remove the \#mav mark from
 those you do use and like; the setting in the `./Makefile`, 
 ```make
-short_list	    =	komp,etn,Eujo,pers,mll
-eo_list         =	$(short_list),drv
-esperanto_list	=	$(short_list),arhx,mav,rar
+short_list      =   komp,etn,Eujo,pers,mll
+eo_list         =   $(short_list),drv
+esperanto_list  =   $(short_list),arhx,mav,rar
 ```
 
 Unless included in the custom list (like eo_list), a marked word is
