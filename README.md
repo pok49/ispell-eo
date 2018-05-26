@@ -59,7 +59,7 @@ Several encodings used with Esperanto text are supported:
 <li>Go to the root directory `ispell-eo` (where this `README` resides).</li>
 <li>Say
 
-``` bash
+```bash
    $ make first
 ```
    (or simply `make`) in order to check your `ispell` program.
@@ -91,7 +91,7 @@ $ make all
 Just ignore them.</li>
 <li>Type
 
-``` bash
+```bash
    $ make install
 ```
    to copy the hash file(s) to where ispell expects them to be
@@ -111,7 +111,7 @@ You'll need emacs to produce the dictionary for myspell which works
 with Open Office.  Customize the word provision as described in
 "Customized Build" (except the buildhash step); and then say
 
-``` bash
+```bash
 $ make OO
 ```
 That should produce the files `eo_l3.aff` and `eo_l3.dic` in the `work/`
