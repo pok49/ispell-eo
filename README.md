@@ -54,7 +54,7 @@ Several encodings used with Esperanto text are supported:
 ## INSTALLATION
 
 ### Simple Install (Unix or Cygwin)
-<ol>
+<ol markdown="1">
 <li>Unpack `ispell-eo` (you've done that since you are reading me).</li>
 <li>Go to the root directory `ispell-eo` (where this `README` resides).</li>
 <li>Say
