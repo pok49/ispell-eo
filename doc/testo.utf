@@ -1,0 +1,12 @@
+<dt>En ordinara tiparo<dd>Eĥoŝanĝo ĉiuĵaŭde.
+<dt>En egallarĝa tiparo<dd><tt>Eĥoŝanĝo ĉiuĵaŭde.</tt>
+<dt>En ordinara majusklo<dd>EĤOŜANĜO ĈIUĴAŬDE.
+<dt>En egallarĝa majusklo<dd><tt>EĤOŜANĜO ĈIUĴAŬDE.</tt>
+
+Støp-Bowitz
+François
+Wüster
+Tárkony
+Vérax
+
+(load "ispell.el") Stöp-Bowitz

@@ -1,0 +1,5 @@
+#!/bin/sh
+#(@) Por uzo el plus-word.el/provu
+iksigu=`echo "$0" | sed 's|tools/pr3|tools/l3-al-x|'`
+echo "$1" | $iksigu | tr -d [:blank:]= | sed -e 's/#.*$//' | \
+ispell -d eo -T cxirkaux -e | tr ' ' '\n' | sort -u

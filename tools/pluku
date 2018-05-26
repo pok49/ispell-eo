@@ -1,0 +1,25 @@
+#!/bin/sh
+#@(#)Pluku la nekonatajn vortojn el \$1 kaj sendu ilin en \$2
+#
+echo "Pluku la nekonatajn vortojn el \$1 kaj sendu ilin en \$2."
+echo "Elektu la cxapelprezenton:"
+echo "1: iksismo (cxirkaux)"
+echo '2: TeX (^cirka^u)'
+echo "3: Latina-3a"
+echo "Alio: Cxesu (eliru)"
+echo -n "Do? "
+read choice
+
+case $choice in
+    1) p="cxirkaux";;
+    2) p="tex";;
+    3) p="latin3";;
+    *) exit;;
+esac
+
+#ispell -l -d eo -T cxirkaux < $1 | sort -uf
+if [ "x$2" = "x" ]; then
+    ispell -l -d esperanto -T $p < $1 | sort -uf
+else
+    ispell -l -d esperanto -T $p < $1 | sort -uf >$2
+fi

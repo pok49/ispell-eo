@@ -1,0 +1,4 @@
+#!/bin/sh
+#@(#)   List derivations of an Eo ispell-dict item, like  $ drv azia/EW
+
+echo "$1" | ispell -d eo -e | tr ' ' '\n' | sort -uf | less

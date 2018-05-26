@@ -1,0 +1,42 @@
+#!/bin/sh
+
+# set -x
+
+LC_CTYPE=C
+export LC_CTYPE
+
+if test -n "$sen" ; then
+    NEG_FILTER="-e `echo $sen, | tr -s ',' | sed -e 's|\([a-zA-Z]*\),|/\#\1/d;|g'`"
+else
+    NEG_FILTER=
+fi
+
+#FILTER=`echo $1 | sed -e 's/\<\([a-zA-Z]*\)\>,*/s,\#\1,,;/g'`
+
+# $FILTER estas sed-tasko por malmarki linion entenatan ajnan el la
+# menditaj sxlosiloj; ekz-e por "komp,etn,Eujo,pers,mll,pok,var,drv"
+# $FILTER estas
+# /#komp/s,#.*,,;/#etn/s,#.*,,;/#Eujo/s,#.*,,;/#pers/s,#.*,,;\
+# /#mll/s,#.*,,;/#pok/s,#.*,,;/#var/s,#.*,,;/#drv/s,#.*,,;
+
+FILTER=`echo $1, | sed -e 's|\([a-zA-Z]*\),|/\#\1/s%#.*%%;|g'`
+
+sed -e 's/#{[^}]*}//g' \
+    $NEG_FILTER -e $FILTER -e '/\#/d' \
+    ../src/vortoj.l3   \
+    | ../tools/askiigu \
+    | sed -r 's/^([^=][^ 	]*)-[ 	]+([^+-]*)$/&\
+\1\l\2/; # NEITHER "+" NOR "-" AMONG THE FLAGS, common flags only;
+s/^([^=][^ 	]*)-[ 	]+([^+-]*)-([^+-]*)$/\1-\2\3\
+\1\l\2/; # PORDISAJ FLAGOJ POST "-";
+s:^([^=][^ 	]*)-[ 	]+([^/]+)/([^+-]*)\+([^+-]*)$:\1-\2/\3\
+\l\1\l\2/\3\4:; # PORKUNAJ FLAGOJ POST "+" (tutminuskle!!);
+s:^([^=][^ 	]*)-[ 	]+([^/]+)/([^+-]*)-([^+-]*)\+(.*)$:\1-\2/\3\4\
+\l\1\l\2/\3\5:; # IS THIS NEEDED AT ALL?
+s/[ =	]//g;
+# TEKSTOPREZENT(AD)O:
+s/([^(]*)\(([^)]*)\)(.*)$/\1\2\3\
+\1\3/' \
+    | sort -uf > $2
+
+test -s $2

@@ -1,0 +1,40 @@
+#!/bin/sh
+
+echo "Checking your ispell:"
+
+status=0
+
+ispell -vv | grep 8BIT| grep "!NO8BIT" > /dev/null 2>&1
+
+if [ $? ] ; then
+   echo "8BIT is okay."
+else
+   echo "You have NO8BIT set."
+   echo "Recompile ispell with NO8BIT in local.h commented out."
+   exit 7
+fi
+
+M=`ispell -vv | sed -n -e 's/MASKBITS = \([0-9]*\)/\1/p'`
+
+if [ "$M" -ge 64 ]
+then
+    echo "MASKBITS = 64 is okay"
+else
+    echo "MASKBITS < 64.  You need to recompile ispell."
+    exit 32
+fi
+
+(ispell -vv | grep MASKBITS | grep "32" > /dev/null 2>&1 && \
+echo "MASKBITS = 32.  You need to recompile ispell." && exit 32)
+
+# Are there other MASKBITS values??
+
+if [ "`echo Aabb | sed -r 's/([aA]+)/\l\1/'`" = "aabb" ]
+then
+    echo "sed version is okay"
+else
+    echo "You need a GNU-compatible sed, v. 4.09 or better"
+    exit 9
+fi
+
+exit $status

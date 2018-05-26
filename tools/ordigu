@@ -1,0 +1,46 @@
+#!/bin/sh
+
+grep "zZ" $1 && exit 1
+
+LC_CTYPE=C
+export LC_CTYPE
+
+cp $1 $1.bak || exit 1
+LINES1=`cat $1 | wc -l`
+
+sed     -e 's/æ/czZ/g' -e 's/Æ/CzZ/g' \
+        -e 's/ø/gzZ/g' -e 's/Ø/GzZ/g' \
+        -e 's/¶/hzZ/g' -e 's/¦/HzZ/g' \
+        -e 's/¼/jzZ/g' -e 's/¬/JzZ/g' \
+        -e 's/þ/szZ/g' -e 's/Þ/SzZ/g' \
+        -e 's/ý/uzZ/g' -e 's/Ý/UzZ/g' \
+        -e 's/\(\\[^a-zA-Z]\)\([a-zA-Z]\)/\2zZ{\1}/g' \
+        -e 's/\(\\[a-zA-Z]\){\([a-zA-Z]\)}/\2zZzZ{\1}/g' \
+        -e 's/{\\\([a-zA-Z]\)\([a-zA-Z]*\)}/\1zZ{}{\2}/g' \
+    < $1 > temp && sort -d -f -k2,2 -k1,1 temp | uniq |\
+    sed -e 's/\([a-zA-Z]\)zZ{}{\([^}]*\)}/{\\\1\2}/g' \
+        -e 's/\([a-zA-Z]\)zZzZ{\([^}]*\)}/\2{\1}/g' \
+        -e 's/\([a-zA-Z]\)zZ{\([^}]*\)}/\2\1/g' \
+        -e 's/czZ/æ/g' -e 's/CzZ/Æ/g' \
+        -e 's/gzZ/ø/g' -e 's/GzZ/Ø/g' \
+        -e 's/hzZ/¶/g' -e 's/HzZ/¦/g' \
+        -e 's/jzZ/¼/g' -e 's/JzZ/¬/g' \
+        -e 's/szZ/þ/g' -e 's/SzZ/Þ/g' \
+        -e 's/uzZ/ý/g' -e 's/UzZ/Ý/g' \
+    > $1 || exit 2
+
+LINES2=`cat $1 | wc -l`
+if [ `expr $LINES1 \- $LINES2` -gt 9 ]
+then
+    echo "File $1 has shrinked a lot! Stop."
+    exit 9
+fi
+
+tail -1 $1 | grep zzz && rm temp $1.bak && exit 0
+
+echo "Endmark 'zzz' is missing.  Backup files temp and $1.bak are preserved"
+exit 3
+
+# Local variables:
+# coding: latin-3
+# end:

@@ -1,0 +1,14 @@
+No SXPARE:
+
+  -rw-r--r--    1 pok      valid     2432524 Jan 28 18:49 eo.hash
+  -rw-r--r--    1 pok      valid     2498584 Jan 28 18:49 esperanto.hash
+
+SXPARE=yes:
+
+  -rw-r--r--    1 pok      valid     2432524 Jan 28 18:45 eo.hash
+  -rw-r--r--    1 pok      valid     2498584 Jan 28 18:45 esperanto.hash
+------------------------
+11:47:06 work#523% ls -o --si *.hash # --si = by decimal 1000:
+-rw-rw-r-- 1 sergio 2.3M 2011-12-31 23:58 eo.hash
+-rw-rw-r-- 1 sergio 2.6M 2011-12-31 23:58 esperanto.hash
+11:47:21 work#524% 

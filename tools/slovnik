@@ -1,0 +1,21 @@
+#!/bin/sh
+
+# Generu la liston da æiuj radikoj, por kontrolo:
+
+LC_ALL=C cat $1 | sed -e '/^#\|á/d' -e \
+'s:^=::
+s:[/#].*$::
+s:[ (	)]::g
+s/æ/\^c/g; s/Æ/\^C/g
+s/ø/\^g/g; s/Ø/\^G/g
+s/¶/\^h/g; s/¦/\^H/g
+s/¼/\^j/g; s/¬/\^J/g
+s/þ/\^s/g; s/Þ/\^S/g
+s/ý/\^u/g; s/Ý/\^U/g
+s:ç:\\c\{c\}:g
+s:ü:\\\"u:g' | sort -u
+
+# Local variables:
+# mode: shell-script
+# coding: latin-3
+# end:
