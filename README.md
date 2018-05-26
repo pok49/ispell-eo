@@ -55,9 +55,11 @@ Several encodings used with Esperanto text are supported:
 
 ### Simple Install (Unix or Cygwin)
 <ol>
-<li markdown="1">Unpack `ispell-eo` (you've done that since you are reading me).</li>
-<li markdown="1">Go to the root directory `ispell-eo` (where this `README` resides).</li>
-<li markdown="1">Say
+<li markdown="1">Unpack `ispell-eo` (you've done that since you are
+reading me).
+</li><li markdown="1">Go to the root directory `ispell-eo` (where this
+`README` resides).
+</li><li markdown="1">Say
 
 ```bash
    $ make first
@@ -65,8 +67,7 @@ Several encodings used with Esperanto text are supported:
    (or simply `make`) in order to check your `ispell` program.
    Examine the output, e.g. do you have the permissions to write the
    hash file(s) at the install phase?
-</li>
-<li markdown="1">If everything is OK, say
+</li><li markdown="1">If everything is OK, say
 
 ```bash
 $ make eo
@@ -88,8 +89,8 @@ $ make all
    
       eo.aff line 218: Flag must be alphabetic
 
-Just ignore them.</li>
-<li markdown="1">Type
+Just ignore them.
+</li><li markdown="1">Type
 
 ```bash
    $ make install
