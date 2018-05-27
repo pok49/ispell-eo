@@ -2,42 +2,30 @@
 <html lang="eo">
 <head>
   <title>Notoj pri la vortaro ispell_eo</title>
-  <meta http-equiv="Content-Type"
-        content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="./this.css" />
 </head>
 <body>
   <h1>Notoj pri la vortaro ispell_eo</h1>
-  <!-- Page published by Emacs Muse begins here -->
-
-
-
-
-
-
-
 
 <p>La vortaron kompilis Sergio Pokrovskij.  Ĝi estas libere uzebla laŭ la
 Ĝenerala Publika Permesilo.</p>
 
 <blockquote>
-<p class="quoted">
-Copyright 1997&ndash;2012 Sergio Pokrovskij &lt;sergio.pokrovskij(ĉe)gmail.com&gt;</p>
-<p class="quoted">This dictionary  is available on the terms of GNU General Public License version 2.0<br>
+<p>Copyright 1997­2012 Sergio Pokrovskij &lt;sergio.pokrovskij(ĉe)gmail.com&gt;</p>
+<p>This dictionary  is available on the terms of GNU General Public License version 2.0<br>
 (Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA).</p>
-
 </blockquote>
 
 <p>Similaj (kvankam ne tute samenhavaj) notoj disponeblas ankaŭ
-<a href="./ispelleo-readme.html">en la angla lingvo</a>.</p>
+<a href="../README.md">en la angla lingvo</a>.</p>
 
 <h2>Postuloj (kion vi bezonas)</h2>
-
-<p class="first">Por munti la vortarojn el la fontoj vi bezonos la kutimajn uniksaĵojn:</p>
+<p>Por munti la vortarojn el la fontoj vi bezonos la kutimajn uniksaĵojn:</p>
 
 <ol>
 <li><code>make</code></li>
-<li><code>sed</code> (kaj eĉ speciale, GNUa <code>sed</code>, v. 4.0 aŭ postan &ndash; la skripto
+<li><code>sed</code> (kaj eĉ speciale, GNUa <code>sed</code>, v. 4.0 aŭ postan ­ la skripto
 <code>tools/filtru</code> bezonas <code>&quot;\l&quot;</code> en regulesprimoj)</li>
 <li><code>m4</code></li>
 <li><code>sort</code></li>
@@ -46,27 +34,18 @@ Copyright 1997&ndash;2012 Sergio Pokrovskij &lt;sergio.pokrovskij(ĉe)gmail.com&
 </ol>
 
 <p>Se vi jam havas la programon ispell en via komputilo, atentu ke ekde
-la versio 3.0 de la vortaro vi bezonos ĝin muntita kun</p>
-
-<center>
-<p><code>MASKBITS</code> ≥ 64;</p>
-</center>
-
-<p>por kontroli, kion vi havas, uzu la opcion -vv:</p>
-
+la versio 3.0 de la vortaro vi bezonos ĝin muntita kun<br>
+<code>MASKBITS</code>≥64;<br>
+por kontroli, kion vi havas, uzu la opcion -vv:</p>
 <pre class="example">
    $ ispell -vv | grep BITS
            MASKBITS = 64
 </pre>
-
 <p>Se vi ricevos &quot;MASKBITS = 32&quot;, necesos remunti la ispell-programon.
 (Tamen ŝajnas ke nun &quot;MASKBITS = 64&quot; estas sufiĉe ofta.)</p>
 
-
-
 <h2>Lingvaj konsideroj</h2>
-
-<p class="first">Bedaŭrinde (aŭ feliĉe) Ispell estas iom stulteta, kaj ne aldonas la
+<p>Bedaŭrinde (aŭ feliĉe) Ispell estas iom stulteta, kaj ne aldonas la
 sufiksojn rekursie (tamen ĝi kapablas konstrui produton el prefiksoj
 kaj sufiksoj). Krome, mi ne sukcesis kompreni la meĥanismon de
 vortkunmeto per tildo+flago, kiu supozeble povus helpi produkti vortojn
@@ -93,11 +72,11 @@ komunlingvajn el PIV (mi elŝutis ĝin el la Nederlanda FTP-ejo). Tio
 evidentiĝis ne tute taŭga, ĉar multaj oftaj vortoj, ekz-e</p>
 
 <p class="verse">
-&nbsp;&nbsp;agnoski<br>
-&nbsp;&nbsp;elektrono<br>
-&nbsp;&nbsp;generi<br>
-&nbsp;&nbsp;intonacio<br>
-&nbsp;&nbsp;nocio<br>
+agnoski<br>
+elektrono<br>
+generi<br>
+intonacio<br>
+nocio<br>
 </p>
 
 <p>estis neoficialaj (kelkaj oficialiĝis poste), dum inter la oficialaj
@@ -105,57 +84,50 @@ abundas balasto kaj tre specialaj terminoj ĥemiaj, medicinaj kaj
 biologiaj, kiujn oni normale metus en specialajn vortarojn; ekz-e</p>
 
 <p class="verse">
-&nbsp;&nbsp;eminenca<br>
-&nbsp;&nbsp;onobriko<br>
-&nbsp;&nbsp;stofo<br>
+eminenca<br>
+onobriko<br>
+stofo<br>
 </p>
 
 <p>Tiel en la vortaroj aperas danĝeraj paronimoj:</p>
 
 <p class="verse">
-&nbsp;&nbsp;cerambiko &ndash; ceramiko<br>
-&nbsp;&nbsp;eseno &ndash; esenco<br>
-&nbsp;&nbsp;preĝrado (malfaciligas kontrolon de pli ofta &quot;preĝado&quot;)<br>
-&nbsp;&nbsp;enstaligi &ndash; instali<br>
-&nbsp;&nbsp;kok/eto &ndash; koket(ulin)o<br>
-&nbsp;&nbsp;morfio (izomorfio, homomorfio) &ndash; morfino<br>
-</p>
-
+cerambiko ­ ceramiko<br>
+eseno ­ esenco<br>
+preĝrado (malfaciligas kontrolon de pli ofta &quot;preĝado&quot;)<br>
+enstaligi ­ instali<br>
+kok/eto ­ koket(ulin)o<br>
+morfio (izomorfio, homomorfio) ­ morfino</p>
 <p>ktp. Mi provis forigi tiajn specialajn vortojn el la komuna kerno, sed
 tio estas ankoraŭ ne finfarita.</p>
 
 <p>Krome, mi ŝanĝis karakterizaĵojn de kelkaj vortoj:</p>
 
 <p class="verse">
-&nbsp;&nbsp;&quot;Volonti&quot; por mi estas verbo netransira;<br>
-&nbsp;&nbsp;&quot;Rajti&quot; por mi ne formas pasivon (?rajtata...).<br>
-</p>
+&quot;Volonti&quot; por mi estas verbo netransira;<br>
+&quot;Rajti&quot; por mi ne formas pasivon (<s>rajtata</s>...).</p>
 
-<h3>LA DIVIDOSTREKO</h3>
+<h3>La dividostreko</h3>
 
-<p class="first">Pro relative multaj vortoj, kiaj</p>
-
-<center>
-<p>ekz-e, n-ro, vid-al-vide</p>
-</center>
-
-<p>ktp mi faris la dividostrekon litero. Sekve tre multajn kombinojn,
+<p>Pro relative multaj vortoj, kiaj</p>
+<p class="verse">
+ekz-e<br>
+n-ro<br>
+vid-al-vide</p>
+<p>ktp mi faris la dividostrekon litero. Sekve tre multaj kombinoj,
 ekz-e &quot;angla-rusa&quot;, estas registrendaj kiel apartaj vortoj. Mi ne
 vidas bonan solvon por tiu problemo.</p>
 
-
 <h3>Senbalastigo kaj kohero</h3>
-
-<p class="first">Mi faris la vortaron por mi mem, kaj ĝi spegulas miajn preferojn. Mi
+<p>Mi faris la vortaron por mi mem, kaj ĝi spegulas miajn preferojn. Mi
 intence lasis nur tiujn formojn, kiujn mi preferas, por ke la
 literumilo avertu min pri devioj de mia persona normo (tio estas utila
 ankaŭ por riveli malkoheraĵon en mia fakta uzado, kaj eventuale, por
 rekonsideri miajn preferojn). Tiel ekz-e mi rekomendas</p>
-
 <p class="verse">
-&nbsp;&nbsp;&quot;Narkotaĵo&quot; anstataŭ &quot;Narkotiko&quot; (ambaŭ oficialaj)<br>
-&nbsp;&nbsp;&quot;francaĵo anstataŭ &quot;francismo&quot;<br>
-&nbsp;&nbsp;&quot;avio&quot; anstataŭ &quot;aviadilo&quot;, ktp.<br>
+&quot;Narkotaĵo&quot; anstataŭ &quot;Narkotiko&quot; (ambaŭ oficialaj)<br>
+&quot;francaĵo anstataŭ &quot;francismo&quot;<br>
+&quot;avio&quot; anstataŭ &quot;aviadilo&quot;, ktp.<br>
 </p>
 
 <p>Tio koncernas la mallongan vortaron (eo), destinitan por pli strikta
@@ -164,7 +136,6 @@ tekstojn de diversaj aŭtoroj, estas pli permesema.</p>
 
 
 <h3>Uskleco</h3>
-
 <p class="first">Etnajn nomojn mi skribas etlitere:
 <center>
 <p>ruso, germano, usonano
@@ -187,18 +158,16 @@ adverboj.</p>
 
 <h3>La litero <em>ĥ</em></h3>
 
-<p class="first">Mi zorgis pri la rajtoj de la litero ĥ. Nome, kvankam mi akceptis la
+<p>Mi zorgis pri la rajtoj de la litero ĥ. Nome, kvankam mi akceptis la
 tradicion anstataŭigi ĉiujn ĥr kaj rĥ per kr kaj rk (do, Kristo,
-kristalo, arkaika, orkestro) &ndash; por fari komplezon al la francoj, por
-kiuj tiuj kombinoj estas malfacilaj &ndash; mi tamen laŭeble konservis la
+kristalo, arkaika, orkestro) ­ por fari komplezon al la francoj, por
+kiuj tiuj kombinoj estas malfacilaj ­ mi tamen laŭeble konservis la
 diskriminaciatan literon en ĉiuj aliaj kombinoj (vd en la
 <a href="http://esperanto-mv.pp.ru/KompLeks/HX.html">Komputada leksikono</a>).</p>
 
 
 <h3>Neceso kaj sufiĉo</h3>
-
-<p class="first">Laŭ mia lingvouzo, mi preferas la mallongajn formojn</p>
-
+<p>Laŭ mia lingvouzo, mi preferas la mallongajn formojn</p>
 <ul>
 <li>eblo, -emo, -indo, -ivo
 anstataŭ</li>
@@ -207,15 +176,12 @@ anstataŭ</li>
 
 <p>La -eco-substantivojn mi intence lasis sen multenombro, ĉar plej ofte
 por tiuj abstraktaĵoj ĝi ne havas sencon (ekz-e, oni senhezite povas
-paroli pri &quot;spritaĵoj&quot; &ndash; kaj nur en tre speciala, kontrolinda senco,
+paroli pri &quot;spritaĵoj&quot; ­ kaj nur en tre speciala, kontrolinda senco,
 pri &quot;spritecoj&quot;). Se tio montriĝos ĝena, mi aldonos la multenombron
 por la ec-vortoj.</p>
 
-
-
 <h3>Lingvaj preferoj</h3>
-
-<p class="first">La vortokolekton mi ĉerpis el PIV, sed mi redaktis ĝin laŭ miaj
+<p>La vortokolekton mi ĉerpis el PIV, sed mi redaktis ĝin laŭ miaj
 preferoj. Sed mi ne havis tempon trakribri la tutan stokon. Tial ne
 ĉio en ĉi tiu vortaro esprimas miajn aŭ PIVajn preferojn, sed estas
 miksaĵo de ili.</p>
@@ -227,17 +193,4 @@ tradiciojn de lokaj esperantistoj, kiam ili pli fidele ol la Akademio
 konservas la esperantistan tradicion (Kameruno → Kamerunio, vjetnamo
 → Vjetnamio ktp); kaj mi retenis malpli oftan sed pli &quot;oportunajn&quot;
 formojn por la nomoj kiel ukrajno → Ukrajnio, maŭro → Maŭrio.</p>
-
-
-
-
-
-
-
-
-
-
-
-<!-- Page published by Emacs Muse ends here -->
-  </body>
-</html>
+</body></html>
