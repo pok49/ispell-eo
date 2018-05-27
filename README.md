@@ -160,7 +160,7 @@ keywords indicating the special field they belong to:
 
 You can
 ```bash
-$ grep '\#mav' ./src/vortoj.l3 | less
+$ grep '#mav' ./src/vortoj.l3 | less
 ```
 in order to see if you feel like me about them; you can either remove
 all of them from the target dictionary, or remove the \#mav mark from
@@ -195,11 +195,13 @@ You can use ispell in a stand-alone mode; type
 or you may prefer to customize your emacs; e.g. copy
 ./emacs/ispell-ini.el from this distribution into your site-lisp (or
 somewhere else on your emacs load-path), and put this into your .emacs
+
 ```elisp
 (load "ispell-ini.el")
 ```
 In order to get a list of all misspelled or unknown words from a text
 in the Latin-3 encoding you could say (in Linux):
+
 ```bash
 export LC_ALL=eo_XX.ISO-8859-3
 ispell -d esperanto -T .l3 -l < FILENAME | sort -u
@@ -229,27 +231,20 @@ modifications:
    for the unibyte encodings as well.
 
 ## New in v.3.1
-<ol>
-<li>More affix flags are defined; this requires an ispell built with
+<ol><li markdown="1">More affix flags are defined; this requires an ispell built with
    `MASKBITS` = 64 (or more).
-</li>
-<li>Presently the main ASCIIzation is in the TeX style.  (The
+</li><li markdown="1">Presently the main ASCIIzation is in the TeX style.  (The
    `cxirkaux`-transcription is available as an alternative
    representation.)
-</li>
-<li>Some non-esperantic letters are made available, like `\c{c}, \"o,
+</li><li markdown="1">Some non-esperantic letters are made available, like `\c{c}, \"o,
    {\o}` etc for the names like `W\"uster` or `St{\o}p-Bowitz`.  This is
    done for a few most frequent letters only; more work is needed.
-</li>
-<li>Two flavors of Esperanto dictionaries/grammars are introduced: the
+</li><li>Two flavors of Esperanto dictionaries/grammars are introduced: the
    permissive "esperanto" and the rigorous "eo".
-</li>
-<li>The installation process is automated on the basis of (gnu)make and
+</li><li>The installation process is automated on the basis of (gnu)make and
    some other Unix utilities.
-</li>
-<li>All the specialized subdictionaries are merged into a single
+</li><li>All the specialized subdictionaries are merged into a single
    database (with subject area marks).
-</li>
-<li>An Emacs function word+ is written for the dictionary database
+</li><li markdown="1">An Emacs function `word+` is written for the dictionary database
    maintenance.
 </ol>
