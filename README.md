@@ -206,7 +206,7 @@ in the Latin-3 encoding you could say (in Linux):
 export LC_ALL=eo_XX.ISO-8859-3
 ispell -d esperanto -T .l3 -l < FILENAME | sort -u
 ```
-Some more comments are available [in esperanto](ispelleo-legu-min.html).
+Some more comments are available [in esperanto](doc/ispelleo-legu-min.html).
 
 ## emacs.el
 
