@@ -4,10 +4,8 @@ An Esperanto dictionary, compiled by Sergio Pokrovskij for the version 3 of ispe
 ## About this File
 Name:         `./readme`
 
-Content:      Information about Esperanto dictionary for the Ispell speller
-
-created:      1997-08-30 by Sergio Pokrovskij <sergio.pokrovskij(at)gmail.com>
-
+Content:      Information about Esperanto dictionary for the Ispell speller<br>
+created:      1997-08-30 by Sergio Pokrovskij <sergio.pokrovskij(at)gmail.com><br>
 Version 3.7
 
 Copyright 1997, 1998, 2003, 2006, 2008 by Sergio Pokrovskij
@@ -23,32 +21,32 @@ its `local.h` `NO8BIT` is commented out and `MASKBITS=64`. To see the
 options `ispell` has been compiled with please run
 
 ```bash
-    $ ispell -vv
+$ ispell -vv
 ```
 
 ### Esperanto encodings
 Several encodings used with Esperanto text are supported:
 
- 1. The very best is Unicode or its subset, which contains the
-    esperantic letters, like the Microsoft's WGL4; you can use it with
-    xterm or Emacs under Unix, or with UniRed under Windows (the latter
-    has not been checked yet for the current version).
- 
-    Unicode is available in UTF-8 encoding which is becoming standard
-    for Unices.
-    
- 2. The second best choice is the Latin-3 encoding (ISO-8859-3).
- 
- 3. For the sake of the ASCII-impaired (and ANSI-impaired), there are
-    two surrogates:
- 
-    * The TeX-like `^cirka^u`-style: `e^ho^san^go ^ciu^ja^ude`.
-      Presently this is made the reference representation, mainly
-      because it is unambiguous (cf names like _Michaux_); and 
-    * The most popular `cxirkaux`-style, which is also convenient for
-      lexicographical ordering and thus is used in the dictionaries;
-      besides, it uses letters only, and that makes it suitable for
-      variable names in computer programs.
+1. The very best is Unicode or its subset, which contains the
+   esperantic letters, like the Microsoft's WGL4; you can use it with
+   xterm or Emacs under Unix, or with UniRed under Windows (the latter
+   has not been checked yet for the current version).
+
+   Unicode is available in UTF-8 encoding which is becoming standard
+   for Unices.
+   
+2. The second best choice is the Latin-3 encoding (ISO-8859-3).
+
+3. For the sake of the ASCII-impaired (and ANSI-impaired), there are
+   two surrogates:
+
+   * The TeX-like `^cirka^u`-style: `e^ho^san^go ^ciu^ja^ude`.
+     Presently this is made the reference representation, mainly
+     because it is unambiguous (cf names like _Michaux_); and 
+   * The most popular `cxirkaux`-style, which is also convenient for
+     lexicographical ordering and thus is used in the dictionaries;
+     besides, it uses letters only, and that makes it suitable for
+     variable names in computer programs.
 
      
 ## INSTALLATION
@@ -62,7 +60,7 @@ reading me).
 </li><li markdown="1">Say
 
 ```bash
-   $ make first
+$ make first
 ```
    (or simply `make`) in order to check your `ispell` program.
    Examine the output, e.g. do you have the permissions to write the
@@ -93,7 +91,7 @@ Just ignore them.
 </li><li markdown="1">Type
 
 ```bash
-   $ make install
+$ make install
 ```
    to copy the hash file(s) to where ispell expects them to be
    (probably you already have your american.hash there; normally
@@ -102,7 +100,7 @@ Just ignore them.
    After that you can call
 
 ```bash
-   $ ispell -d eo FILENAME
+$ ispell -d eo FILENAME
 ```
 </li></ol>
 
@@ -218,7 +216,6 @@ modifications:
 
 1. the variable `ispell-dictionary-alist-3` is modified to use the
    latin-3 encoding (it is latin-1 in the distribution);
-
 2. the coordinates of the correction for the word being checked is
    done in a more thorough fashion.  The original version fails to
    account for the fact that ispell returns multibyte representation,
@@ -231,20 +228,21 @@ modifications:
    for the unibyte encodings as well.
 
 ## New in v.3.1
-<ol><li markdown="1">More affix flags are defined; this requires an ispell built with
-   `MASKBITS` = 64 (or more).
-</li><li markdown="1">Presently the main ASCIIzation is in the TeX style.  (The
-   `cxirkaux`-transcription is available as an alternative
-   representation.)
-</li><li markdown="1">Some non-esperantic letters are made available, like `\c{c}, \"o,
-   {\o}` etc for the names like `W\"uster` or `St{\o}p-Bowitz`.  This is
-   done for a few most frequent letters only; more work is needed.
+<ol><li markdown="1">More affix flags are defined; this requires an
+ispell built with `MASKBITS` = 64 (or more).
+</li><li markdown="1">Presently the main ASCIIzation is in the TeX
+style. (The `cxirkaux`-transcription is available as an alternative
+representation.)
+</li><li markdown="1">Some non-esperantic letters are made available,
+like `\c{c}, \"o, {\o}` etc for the names like `W\"uster`
+or `St{\o}p-Bowitz`. This is done for a few most frequent letters
+only; more work is needed.
 </li><li>Two flavors of Esperanto dictionaries/grammars are introduced: the
-   permissive "esperanto" and the rigorous "eo".
+permissive "esperanto" and the rigorous "eo".
 </li><li>The installation process is automated on the basis of (gnu)make and
-   some other Unix utilities.
+some other Unix utilities.
 </li><li>All the specialized subdictionaries are merged into a single
-   database (with subject area marks).
-</li><li markdown="1">An Emacs function `word+` is written for the dictionary database
-   maintenance.
+database (with subject area marks).
+</li><li markdown="1">An Emacs function `word+` is written for the
+dictionary database maintenance.
 </ol>
