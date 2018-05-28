@@ -1,18 +1,18 @@
 # ispell-eo
-An Esperanto dictionary, compiled by Sergio Pokrovskij for the version 3 of ispell.
+An Esperanto dictionary, compiled by Sergio Pokrovskij for the version 3.\* of ispell.
 
-## About this File
-Name:         `./readme`
-
+---
 Content:      Information about Esperanto dictionary for the Ispell speller<br>
-created:      1997-08-30 by Sergio Pokrovskij <sergio.pokrovskij(at)gmail.com><br>
+Created:      1997-08-30 by Sergio Pokrovskij<br>
 Version 3.7
 
 Copyright 1997, 1998, 2003, 2006, 2008 by Sergio Pokrovskij
 
-This dictionary package is available on the terms of GNU General Public License
-(Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA).
+This dictionary package is available on the terms of GNU General
+Public License (Free Software Foundation, 675 Mass Ave, Cambridge, MA
+02139, USA).
 
+---
 
 ### The Ispell utility program
 You will first need to get ispell 3.0+; it is available from
@@ -50,22 +50,21 @@ Several encodings used with Esperanto text are supported:
 
      
 ## INSTALLATION
-
 ### Simple Install (Unix or Cygwin)
-<ol>
-<li markdown="1">Unpack `ispell-eo` (you've done that since you are
-reading me).
-</li><li markdown="1">Go to the root directory `ispell-eo` (where this
-`README` resides).
-</li><li markdown="1">Say
+**1.** Download and unpack [ispelleo.tar.bz2](distro/ispelleo.tar.bz2).
+
+**2.** Go to the root directory `ispell-eo`.
+
+**3.** Say
 
 ```bash
 $ make first
 ```
-   (or simply `make`) in order to check your `ispell` program.
-   Examine the output, e.g. do you have the permissions to write the
-   hash file(s) at the install phase?
-</li><li markdown="1">If everything is OK, say
+(or simply `make`) in order to check your `ispell` program.
+Examine the output, e.g. do you have the permissions to write the
+hash file(s) at the install phase?
+
+**3.** If everything is OK, say
 
 ```bash
 $ make eo
@@ -83,26 +82,28 @@ $ make all
 ```
 (to built both).
 
-   You'll get a few warnings of from buildhash, like this one:
+You'll get a few warnings from `buildhash`, like this one:
    
       eo.aff line 218: Flag must be alphabetic
 
 Just ignore them.
-</li><li markdown="1">Type
+
+**4.** Type
 
 ```bash
 $ make install
 ```
-   to copy the hash file(s) to where ispell expects them to be
-   (probably you already have your american.hash there; normally
-   you shall need the root rights to make install).
+to copy the hash file(s) to where `ispell` expects them to be
+(probably you already have your `american.hash` there; normally
+you shall need the root rights to make install).
 
-   After that you can call
+---
+
+Now that `ispell` has been installed you can call
 
 ```bash
 $ ispell -d eo FILENAME
 ```
-</li></ol>
 
 ### Open Office
 
