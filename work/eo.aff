@@ -3,7 +3,7 @@
 # Funkcio:	Afiksaro por Esperanto-vortaro
 # Komencita:	1997-08-30 de Sergio Pokrovskij <sergio.pokrovskij(^ce)gmail.com>
 # Versio:	3.6
-# Generita:	Чт. июля  3 08:54:06 NOVT 2014
+# Generita:	Fri May  3 14:50:14 +07 2019
 
 #
 # Copyright 1997 -- 2012 Sergio Pokrovskij
@@ -460,6 +460,22 @@ flag *C:
     O	>	-O,EC'
     O	>	-O,ECO
     O	>	-O,ECON
+    A N	>	-AN,ECA
+    A N	>	-AN,ECAJ
+    A N	>	-AN,ECAJN
+    A N	>	-AN,ECAN
+    A N	>	-AN,ECE
+    A N	>	-AN,EC'
+    A N	>	-AN,ECO
+    A N	>	-AN,ECON
+    O N	>	-ON,ECA
+    O N	>	-ON,ECAJ
+    O N	>	-ON,ECAJN
+    O N	>	-ON,ECAN
+    O N	>	-ON,ECE
+    O N	>	-ON,EC'
+    O N	>	-ON,ECO
+    O N	>	-ON,ECON
 
 flag *D:		# -inDa
     A	>	-A,INDA
@@ -2574,6 +2590,16 @@ flag *Y:
     O	>	-O,A^JOJ
     O	>	-O,A^JOJN
     O	>	-O,A^JON
+    U	>	-U,A^JA
+    U	>	-U,A^JAJ
+    U	>	-U,A^JAJN
+    U	>	-U,A^JAN
+    U	>	-U,A^JE
+    U	>	-U,A^J'
+    U	>	-U,A^JO
+    U	>	-U,A^JOJ
+    U	>	-U,A^JOJN
+    U	>	-U,A^JON
 
 flag Z:
     A	>	-A,ISMA

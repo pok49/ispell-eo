@@ -2,7 +2,7 @@
 divert(-1)
 #§ 			ABOUT THIS FILE
 Name: eo-aff.m4
-# Time-stamp: <2014-07-03 08:53:53 sergio>
+# Time-stamp: <2019-05-03 14:49:43 sergio>
 define(Versio, `# Versio:	3.6')
 
 
@@ -510,6 +510,8 @@ flag *C:
     adj(A,-A,EC)
     adj(I,-I,EC)
     adj(O,-O,EC)
+    adj(A N,-AN,EC)
+    adj(O N,-ON,EC)
 
 flag *D:		# -inDa
     Adj(A,-A,IND)
@@ -801,6 +803,7 @@ flag *Y:
     nome(E,-E,A¬)
     nome(I,-I,A¬)
     nome(O,-O,A¬)
+    nome(U,-U,A¬)
 
 flag Z:
     nome(A,-A,ISM)

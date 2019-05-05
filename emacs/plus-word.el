@@ -103,6 +103,8 @@ or \\[ispell-region] to update the Ispell process.
 	(coding-system-for-write 'iso-8859-3))
     (when (string-match "\\\\" cxeno)
       (setq cxeno (replace-match "\\\\134" nil t cxeno)))
+    (when (string-match "`" cxeno)
+      (setq cxeno (replace-match "\\\\140" nil t cxeno)))
 ;    (message (format "%s/tools/pr3 \"%s\"" ispell-root cxeno))
     (shell-command
      (format "%s/tools/pr3 \"%s\"" ispell-root cxeno))))
