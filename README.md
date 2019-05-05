@@ -228,6 +228,10 @@ modifications:
    occurs in the buffer; but that is a different bug, which is present
    for the unibyte encodings as well.
 
+### Apostrophe problem
+https://groups.google.com/forum/#!topic/gnu.emacs.help/FPjX1kCHIB4
+https://github.com/emacs-mirror/emacs/blob/master/lisp/textmodes/ispell.el
+
 ## New in v.3.1
 <ol><li markdown="1">More affix flags are defined; this requires an
 ispell built with `MASKBITS` = 64 (or more).

@@ -2,8 +2,8 @@
 divert(-1)
 #§ 			ABOUT THIS FILE
 Name: eo-aff.m4
-# Time-stamp: <2014-07-03 08:53:53 sergio>
-define(Versio, `# Versio:	3.6')
+# Time-stamp: <2018-06-11 15:29:59 sergio>
+define(Versio, `# Versio:	3.8')
 
 
 # This file eo-aff.m4 contains macros for Ispell affix file for
@@ -146,10 +146,10 @@ changequote(/*, */})
 defstringtype "tex" "TeX" ".tex" ".bib"
 #
 #boundarychars	[---]
-boundarychars	[-]
+#boundarychars	[-]
 #
 stringchar	'
-#wordchars	\-
+wordchars	\-
 wordchars	a	A
 stringchar  \\\"a   \\\"A
 stringchar   \\'a    \\'A
@@ -404,7 +404,6 @@ define(n2_9,{$1DU
     $1NAÝ})
 flag *N:
     .		>	UNU		# kiel unuflanka, unufoja
-    .		>	NEUNU		# kiel neunufoja
     n2_9({.	>	})
     .		>	DEK
     .		>	CENT
@@ -417,14 +416,8 @@ flag *N:
     n2_9({D E K	>	})
 
 flag *n:
-    .		>	ALI
-    .		>	AMBAÝ
     .		>	ÆI\-
     .		>	ÆIU
-    .		>	IU
-    .		>	MALSAM
-    .		>	SAM
-    .		>	SEN
     .		>	TIU
 
 flag *o:				  
@@ -527,7 +520,7 @@ flag *E:
     kazoj({O	>	-O,A})
     O		>	-O,E
 
-flag *e:
+flag e:
    nome(A,-A,EG)	# bela -> belega
    nome(A,-A,ET)	# bela -> beleta
    nomo(O,-O,EG)
