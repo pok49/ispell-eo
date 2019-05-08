@@ -1,4 +1,4 @@
-#	A Time-stamp: "2019-05-08 07:10:21 sergio" -*- coding:latin-3; indent-tabs-mode:t; tab-stop-list:(8 24 32) -*-
+#	A Time-stamp: "2019-05-08 08:55:35 sergio" -*- coding:latin-3; indent-tabs-mode:t; tab-stop-list:(8 24 32) -*-
 =	Aarono		/AOX	#pers
 =	abako		/AO
 =	abato		/FJ
@@ -5085,8 +5085,8 @@ mal	fermi		/AOQRTz
 =	feromagneta	/AS	#drv
 =	ferrubo		/AO
 =	ferumi		/T
-=	fervojo		/AOS_^
 =	fervojlinio	/AO
+=	fervojo		/AOS_^
 =	fervojstacio	/AO
 =	fervora		/AGQsU
 =	fervoras	/V
@@ -5186,9 +5186,9 @@ sen	fila		/AU
 =	filiko		/AO
 =	filineto	/AO
 =	filio		/AOQ
+=	filipiko	/AO
 =	filipina	/AW	#etn
 =	Filipinoj	/P	#etn
-=	filipiko	/AO
 =	Filipo		/AO	#pers
 =	filistro	/AO
 =	filiþto		/F	#etn
@@ -6169,7 +6169,10 @@ re	generi		/ALOQT
 =	genra-speca	/A
 =	genro		/O
 a¼-	genro		/AO	#pok
+øi-	genro		/AO	#pok
 in-	genro		/AO
+li-	genro		/AO	#pok
+þi-	genro		/AO	#pok
 ul-	genro		/AO	#pok
 vir-	genro		/AO
 =	genrosistemo	/AO	#drv
@@ -6204,8 +6207,8 @@ inter	genua¼o		/AO
 =	gepatralingva	/A	#drv
 =	gepatrolingva	/A
 =	Geraldo		/O	#pers
-=	geranio		/AO
 =	geraniato	/AO
+=	geranio		/AO
 =	Gerberto	/AO	#pers
 =	gerilo		/AO
 =	germana		/CFPQSYZ#etn
@@ -6565,9 +6568,9 @@ kontraý	gripa		/A	#drv
 =	grizi		/AOCGQUVY
 =	Grizonon	/X	#etn
 =	grogo		/AO
-=	Gronlandon	/X	#etn
 =	Gro¼an-Mopeno	/O	#Eujo#pers
 =	gronlanda	/AW	#etn
+=	Gronlandon	/X	#etn
 =	gropo		/AO
 =	groptegmento	/AO
 =	grosa		/AHO
@@ -6728,7 +6731,6 @@ sen	øerma		/AGQ
 =	øibobovo	/AO
 =	øibutia		/AW	#etn
 =	Øibutio		/O	#etn
-øi-	genro		/AO	#pok
 =	øigolo		/AO
 =	øiismon		/AXW	#pok
 =	Øingiso		/AOX	#pers
@@ -7122,8 +7124,8 @@ sen	hezita		/AGQ
 =	histriko	/F
 =	histrioni	/AV
 =	histriono	/F
-=	hitlera		/AWZ	#pers
 =	Hitler'		/X	#pers
+=	hitlera		/AWZ	#pers
 =	hm
 =	ho
 =	hobio		/AOUY
@@ -7585,7 +7587,6 @@ sen	indulga		/AGQ
 =	inerta		/ACO
 =	inertforto	/AO
 =	inertmomanto	/AO
-=	infano		/ACKJOQSYZ
 por	infana		/A
 sen	infana		/AG
 =	infanaøa	/AOU
@@ -7597,6 +7598,7 @@ re	infanigi	/AOTX
 =	infanludo	/AJLO
 =	infanmensa	/A
 =	infanmortado	/AO
+=	infano		/ACKJOQSYZ
 =	infanþteli	/AOV
 =	infanteria	/AOW
 =	infanvarti	/AJV
@@ -9720,13 +9722,13 @@ tut	konsonanta	/A
 =	konspiri	/AOVB
 =	konst			#komp#mll
 =	Konstancon	/AX	#etn
-=	konstanto	/CEO
 =	konstantena	/A	#pers
 =	Konstantenon	/X	#pers
 =	konstantigilo	/AO
 =	konstantinopola	/AW	#etn
 =	Konstantinopolon/X	#etn
 =	konstantkondiæa	/A	#komp
+=	konstanto	/CEO
 =	konstati	/AOTY
 =	konstelacio	/AO	#mav
 =	konsternebla	/EO
@@ -9970,8 +9972,8 @@ en	korpigi		/AORTX
 =	Korsikon	/X	#etn
 =	korstato	/AO
 =	korþiri		/AV
-=	kortego		/AOW
 =	kortegestro	/F
+=	kortego		/AOW
 =	korthundo	/AO
 =	korto		/AOS[
 =	kortobirdo	/AO
@@ -10107,7 +10109,6 @@ sen	kredita		/AGQ
 =	krema		/AOsY
 =	kremacii	/AOT
 =	krementi	/AadLOQTY[]#komp
-=	rekremento	/AO
 =	kremfromaøo	/AO
 =	kremkoloro	/AO
 =	kremla		/AW	#etn
@@ -11091,7 +11092,6 @@ de	liberigi	/AOTX	#arhx
 =	lifto		/AOS
 sen	liga		/AGQ
 =	ligaturo	/AO
-li-	genro		/AO	#pok
 =	ligforto	/AO
 =	ligi		/AOLQWTY
 =	ligillisto	/AO	#komp
@@ -11150,9 +11150,9 @@ sen	lima		/AGQ
 =	limhava		/AC
 =	limi		/AGOQTz
 æirkaý	limi		/T	#drv
-=	limigo		/AOV
 =	limigilo	/AO
 =	limigita	/CE
+=	limigo		/AOV
 trans	limiøi		/AOV
 =	limimposto	/AO
 =	limlando	/AO
@@ -11615,7 +11615,6 @@ en	magazenigi	/AOTX
 =	magistrato	/AJOW
 =	magistro	/FGQ
 =	magmo		/ACO
-=	magneto		/AOZ
 sen	magneta		/AGQ
 =	magnetbendo	/AO
 =	magnetdisko	/AO
@@ -11652,8 +11651,8 @@ sen	magneta		/AGQ
 =	Majnon		/X	#etn
 =	majo		/AO
 =	majoliko	/AO
-=	majoro		/AO
 =	majoritato	/AOUW	#mav
+=	majoro		/AO
 =	majskarabo	/AO
 =	majstri		/CQVY
 pri	majstri		/T	#drv
@@ -11736,7 +11735,6 @@ tro	maltima		/A	#drv
 =	Maltuso		/AO	#pers
 =	malvazio	/AO
 =	malvo		/AO
-=	mamo		/AOU
 =	mamalgio	/AO
 =	mambesto	/AO
 =	mamfrato	/F
@@ -11747,6 +11745,7 @@ de	mamigi		/AOT
 =	mammonteto	/AO
 =	mamnutri	/T
 =	mamnutristino	/AO
+=	mamo		/AOU
 =	mampinto	/AO
 =	mamsuæi		/T
 =	mamsuæigi	/ATO
@@ -12130,8 +12129,8 @@ plur	medio		/AO	#komp
 pri	mediti		/T	#drv
 =	mediuma		/ACO
 =	medivariablo	/AO	#komp
-=	medolo		/AO
 =	medolito	/AO
+=	medolo		/AO
 =	medolopatio	/AO
 =	medolradio	/AO
 =	Medujo		/I	#etn
@@ -12358,9 +12357,9 @@ apud	meto		/AO	#drv
 mikro	metro		/AO
 =	metrologe	/FIS
 =	metronomo	/AO
+=	metroo		/AO
 =	metropoliteno	/AO
 =	metropolito	/AO
-=	metroo		/AO
 =	metropolo	/AO
 =	mevo		/AO
 =	meza		/AOU
@@ -13264,8 +13263,8 @@ for	nei		/T	#drv
 =	neniom
 =	neniu		/P
 =	neolitiko	/AO
-=	neologismo	/ABO
 =	neologismemulo	/F
+=	neologismo	/ABO
 =	neonlampo	/AO
 =	neono		/AO
 =	neontubo	/AO
@@ -13718,8 +13717,8 @@ pli	oftigi		/AMOTX	#drv
 =	oka		/AXO
 =	okaza		/EiNnw
 neniu	okaza		/A	#drv
-inter	okaza¼o		/AO	#drv
 por	okaza		/A	#drv
+inter	okaza¼o		/AO	#drv
 =	okazi		/GJKOVY
 =	okazinta	/CEY
 =	okcidenta	/BCEPq
@@ -14056,7 +14055,6 @@ ne	ortodoksa	/ACU
 øis	osta		/AU
 =	ostaøo		/GF
 =	ostalgio	/AO
-os-	tempo		/AO
 =	osteopato	/AO
 =	ostero		/AO
 =	ostito		/AO
@@ -14596,8 +14594,8 @@ vic	peco		/AO
 sen	pedika		/AG
 =	pediko		/AO
 =	pedikuri	/AOST
-=	pego		/AO
 =	Pegazon		/AX	#pers
+=	pego		/AO
 =	pejzaøo		/ASO
 =	peka		/AGQs
 =	peketi		/AGOUV
@@ -14994,9 +14992,9 @@ al	pingli		/T
 =	placo		/eO
 =	plaæa		/EmwY
 =	plaæegi		/AMOV
-=	plaæo		/BMO
 =	plaæi		/FkV
 mal	plaæi		/FkV
+=	plaæo		/BMO
 =	plaævola	/AO
 =	pladlifto	/AO
 =	plado		/AO
@@ -15558,6 +15556,7 @@ kvazaý	prefikso	/AO	#drv
 =	premata		/C
 =	prembutono	/AO
 =	premcentro	/AO
+=	premegi		/AOT
 =	premelektro	/AO
 =	premforto	/AO
 =	premgrupo	/AO
@@ -15689,8 +15688,8 @@ en	prizona		/AG
 =	Probal			#pers#Eujo
 =	probatalanto	/F	#drv
 =	problema	/Acs_
-=	problemaro	/AO
 =	problemanalizo	/AO	#komp
+=	problemaro	/AO
 =	problemdifino	/AO	#komp
 =	problemo	/AceO_
 =	procedi		/AOV
@@ -16228,10 +16227,10 @@ sen	rajta		/AGQ
 =	ralio		/AOW
 =	Ramadano	/AO
 =	rampa		/AUOY
+=	rampi		/adflVz
 en	rampi		/AOV
 supren	rampi		/AOT	#drv
 =	ramplo		/AO
-=	rampi		/adflVz
 =	ranca		/A
 =	ranæo		/AO
 =	randa		/At
@@ -16385,8 +16384,8 @@ mem	reganta		/A	#drv
 =	regi		/ABFjkLT^
 =	regimentestro	/F
 =	regimento	/AO
-=	regiono		/ASOYZ
 =	regionestro	/F
+=	regiono		/ASOYZ
 post	regiono		/AO	#arhx#drv
 sub	regiono		/AO
 =	registara	/E
@@ -16468,6 +16467,7 @@ ne	rekomendinda	/A
 =	rekompenci	/AOT
 ne	rekonita	/A
 =	rekordo		/AUO
+=	rekremento	/AO
 =	rekrutekzameno	/AOS
 =	rekruti		/AOST
 =	rekrutigi	/T	#pok
@@ -18512,8 +18512,8 @@ alt	statura		/EM
 =	stila		/Ais
 ali	stila		/A
 nov	stila		/EM
-sen	stila		/AGQ
 sam	stila		/AM
+sen	stila		/AGQ
 =	stildosiero	/AO	#komp
 =	stilefekto	/AO
 =	stileto		/AO
@@ -18633,7 +18633,8 @@ tro	streæi		/AOT	#drv
 =	strukturelemento/AO	#komp
 =	strukturero	/AO	#komp
 =	strukturhava	/A
-=	strukturi	/ABLOQTZ
+=	strukturi	/LQRT
+=	strukturo	/BOZ
 =	struto		/FY
 =	studema		/U
 =	studentnivela	/A
@@ -19005,7 +19006,6 @@ sen	þerca		/E
 =	þercobjekto	/AO
 =	þerifo		/F
 =	þi		/P
-þi-	genro		/AO	#pok
 =	þijaisme	/AS
 =	þiki		/AOV
 =	þilda		/AOS
@@ -19678,6 +19678,7 @@ for	tempigi		/AOTX
 =	templo		/AO
 =	templokavaliro	/AO	#drv
 =	tempo		/OrSuZ
+os-	tempo		/AO
 =	tempodimensio	/AO	#drv
 =	tempokalkulo	/AO	#drv
 =	tempomanko	/AO	#drv
@@ -20203,8 +20204,8 @@ unu	tranæa		/A	#drv
 =	tranæi		/AadfklLoQTYyz\
 en	tranæi		/AOT
 pri	tranæi		/T	#drv
-=	tranæilo	/K
 =	tranæilklingo	/AO
+=	tranæilo	/K
 =	tranæloko	/AO
 =	tranæmaniero	/AO
 =	tranæo		/O

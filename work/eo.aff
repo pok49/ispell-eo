@@ -2,8 +2,8 @@
 # Nomo:		eo.aff
 # Funkcio:	Afiksaro por Esperanto-vortaro
 # Komencita:	1997-08-30 de Sergio Pokrovskij <sergio.pokrovskij(^ce)gmail.com>
-# Versio:	3.6
-# Generita:	Fri May  3 14:50:14 +07 2019
+# Versio:	4.0
+# Generita:	Ср. �^jая  8 07:55:05 +07 2019
 
 #
 # Copyright 1997 -- 2012 Sergio Pokrovskij
@@ -27,10 +27,10 @@ allaffixes on
 defstringtype "tex" "TeX" ".tex" ".bib"
 #
 #boundarychars	[---]
-boundarychars	[-]
+#boundarychars	[-]
 #
 stringchar	'
-#wordchars	\-
+wordchars	\-
 wordchars	a	A
 stringchar  \\\"a   \\\"A
 stringchar   \\'a    \\'A

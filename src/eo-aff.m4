@@ -2,7 +2,7 @@
 divert(-1)
 #§ 			ABOUT THIS FILE
 Name: eo-aff.m4
-# Time-stamp: <2019-05-05 23:29:00 sergio>
+# Time-stamp: <2019-05-08 07:54:18 sergio>
 define(Versio, `# Versio:	4.0')
 
 
@@ -146,10 +146,10 @@ changequote(/*, */})
 defstringtype "tex" "TeX" ".tex" ".bib"
 #
 #boundarychars	[---]
-boundarychars	[-]
+#boundarychars	[-]
 #
 stringchar	'
-#wordchars	\-
+wordchars	\-
 wordchars	a	A
 stringchar  \\\"a   \\\"A
 stringchar   \\'a    \\'A
