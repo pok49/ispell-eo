@@ -78,18 +78,18 @@ or \\[ispell-region] to update the Ispell process.
                             (setq guess (cdr guess)))
                      (setq regulesprimo (concat regulesprimo "\\|\\<")))
 ;                       (goto-char (point-min))
-                   (occur regulesprimo)
+                   (occur (downcase regulesprimo))
                    (switch-to-buffer "*Occur*"))
                   ((null guess)
 ;                     (let ((regulesprimo (concat "\\<" word))
-                     (let ((sercxesprimo (concat "\t" word))
+                     (let ((sercxesprimo (concat "\t" (downcase word)))
                            (n (+ 2 (length word))))
                        (kill-new (format "=\t%s/\n" word))
                        (while
                            (progn
                              (goto-char (point-min))
                              (and
-                              (> (setq n (1- n)) 3)
+                              (> (setq n (1- n)) 1)
                               (null (search-forward
                                      (substring sercxesprimo 0 n)
                                      nil t)))))
@@ -110,7 +110,7 @@ or \\[ispell-region] to update the Ispell process.
      (format "%s/tools/pr3 \"%s\"" ispell-root cxeno))))
        
 
-(global-set-key [f1] '+word)
-(global-set-key [M-f1] 'provu)
+(global-set-key [f12] '+word)
+(global-set-key [M-f12] 'provu)
 
 (provide 'plus-word)

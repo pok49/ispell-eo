@@ -2,8 +2,8 @@
 divert(-1)
 #§ 			ABOUT THIS FILE
 Name: eo-aff.m4
-# Time-stamp: <2019-05-03 14:49:43 sergio>
-define(Versio, `# Versio:	3.6')
+# Time-stamp: <2019-05-05 23:29:00 sergio>
+define(Versio, `# Versio:	4.0')
 
 
 # This file eo-aff.m4 contains macros for Ispell affix file for

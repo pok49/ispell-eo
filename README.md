@@ -1,14 +1,23 @@
 # ispell-eo
+<<<<<<< HEAD
 An Esperanto dictionary, compiled by Sergio Pokrovskij for the version 3 of ispell.
 
 ## About this File ##
 Name:         `./readme`
 Content:      Information about Esperanto dictionary for the Ispell speller
 Created:      1997-08-30 by Sergio Pokrovskij <sergio.pokrovskij(at)gmail.com>
+=======
+An Esperanto dictionary, compiled by Sergio Pokrovskij for the version 3.\* of ispell.
+
+---
+Content:      Information about Esperanto dictionary for the Ispell speller<br>
+Created:      1997-08-30 by Sergio Pokrovskij<br>
+>>>>>>> gh-pages
 Version 3.7
 
 Copyright 1997, 1998, 2003, 2006, 2008 by Sergio Pokrovskij
 
+<<<<<<< HEAD
 This dictionary package is available on the terms of GNU General Public License
 (Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA).
 
@@ -86,22 +95,135 @@ Several encodings used with Esperanto text are supported:
 
 
 ### Open Office ###
+=======
+This dictionary package is available on the terms of GNU General
+Public License (Free Software Foundation, 675 Mass Ave, Cambridge, MA
+02139, USA).
+
+---
+
+### The Ispell utility program
+You will first need to get ispell 3.0+; it is available from
+[here](ftp://ftp.cs.ucla.edu/pub/ispell-3.1). Please make sure that in
+its `local.h` `NO8BIT` is commented out and `MASKBITS=64`. To see the
+options `ispell` has been compiled with please run
+
+```bash
+$ ispell -vv
+```
+
+### Esperanto encodings
+Several encodings used with Esperanto text are supported:
+
+1. The very best is Unicode or its subset, which contains the
+   esperantic letters, like the Microsoft's WGL4; you can use it with
+   xterm or Emacs under Unix, or with UniRed under Windows (the latter
+   has not been checked yet for the current version).
+
+   Unicode is available in UTF-8 encoding which is becoming standard
+   for Unices.
+   
+2. The second best choice is the Latin-3 encoding (ISO-8859-3).
+
+3. For the sake of the ASCII-impaired (and ANSI-impaired), there are
+   two surrogates:
+
+   * The TeX-like `^cirka^u`-style: `e^ho^san^go ^ciu^ja^ude`.
+     Presently this is made the reference representation, mainly
+     because it is unambiguous (cf names like _Michaux_); and 
+   * The most popular `cxirkaux`-style, which is also convenient for
+     lexicographical ordering and thus is used in the dictionaries;
+     besides, it uses letters only, and that makes it suitable for
+     variable names in computer programs.
+
+     
+## INSTALLATION
+### Simple Install (Unix or Cygwin)
+**1.** Download and unpack [ispelleo.tar.bz2](distro/ispelleo.tar.bz2).
+
+**2.** Go to the root directory `ispell-eo`.
+
+**3.** Say
+
+```bash
+$ make first
+```
+(or simply `make`) in order to check your `ispell` program.
+Examine the output, e.g. do you have the permissions to write the
+hash file(s) at the install phase?
+
+**3.** If everything is OK, say
+
+```bash
+$ make eo
+```
+
+(to built the strict dictionary), or
+
+```bash
+$ make esperanto
+```
+(to built a permissive dictionary), or
+
+```bash
+$ make all
+```
+(to built both).
+
+You'll get a few warnings from `buildhash`, like this one:
+   
+      eo.aff line 218: Flag must be alphabetic
+
+Just ignore them.
+
+**4.** Type
+
+```bash
+$ make install
+```
+to copy the hash file(s) to where `ispell` expects them to be
+(probably you already have your `american.hash` there; normally
+you shall need the root rights to make install).
+
+---
+
+Now that `ispell` has been installed you can call
+
+```bash
+$ ispell -d eo FILENAME
+```
+
+### Open Office
+>>>>>>> gh-pages
 
 You'll need emacs to produce the dictionary for myspell which works
 with Open Office.  Customize the word provision as described in
 "Customized Build" (except the buildhash step); and then say
+<<<<<<< HEAD
 $ make OO
 That should produce the files eo_l3.aff and eo_l3.dic in the work/
 subdirectory.
 
 
 ### Customized Build ###
+=======
+
+```bash
+$ make OO
+```
+That should produce the files `eo_l3.aff` and `eo_l3.dic` in the `work/`
+subdirectory.
+
+
+### Customized Build
+>>>>>>> gh-pages
 
 In order to enable selective construction of dictionaries, some
 entries in the source dictionary `./src/vortoj.l3` are marked with
 keywords indicating the special field they belong to:
 
 \#arhx
+<<<<<<< HEAD
   : archaic words, like *ĥina* (= *ĉina*) or *malkompreni* (= *miskompreni*)
 \#bot
   : a rare botanic word
@@ -135,6 +257,51 @@ those you do use and like; the setting in the ./Makefile,
 short_list	    =	komp,etn,Eujo,pers,mll
 eo_list         =	$(short_list),drv
 esperanto_list	=	$(short_list),arhx,mav,rar
+=======
+  : archaic words, like *hxina* (= *cxina*) or *malkompreni* (= *miskompreni*)
+
+\#bot
+  : a rare botanic word
+
+\#Eujo
+  : vocabulary of the Esperanto Movement (Esperantujo)
+
+\#etn
+  : countries and ethnography
+
+\#komp
+  : some computer-science terminology according to the "[Komputada Leksikono](http://www.esperanto.mv.ru/KompLeks/UTF8/DEFAULT.html)"
+
+\#mav
+  : redundant words, which are used by some esperantists, though they are less precise and unnecessarily complicate the language; e.g. *olda* (*maljuna* or *malnova*), "mava" (malbona)
+
+\#pers
+  : given names and names of important personalities (Petro, Zamenhof, Noa ...)
+
+\#pok
+  : the words specific to my idiolect
+
+\#rar
+  : rare words which may coincide with a misspelling of a more frequent word; e.g. "ajuna", "komanditi", "liona".
+
+\#var
+  : variant which I do not use but which is frequent enough (e.g. kemio, tekniko opposed to ^hemio and te^hniko).
+
+...
+
+
+You can
+```bash
+$ grep '#mav' ./src/vortoj.l3 | less
+```
+in order to see if you feel like me about them; you can either remove
+all of them from the target dictionary, or remove the \#mav mark from
+those you do use and like; the setting in the `./Makefile`, 
+```make
+short_list      =   komp,etn,Eujo,pers,mll
+eo_list         =   $(short_list),drv
+esperanto_list  =   $(short_list),arhx,mav,rar
+>>>>>>> gh-pages
 ```
 
 Unless included in the custom list (like eo_list), a marked word is
@@ -150,9 +317,15 @@ specify it in src/Makefile, or in the command-line:
 In this way some otherwise eligible words from the `komp` or `etn` or
 `mll` categories shall be discarded, if they are also obsolete or rare.
 
+<<<<<<< HEAD
 ## Usage ##
 
 ### Command line ###
+=======
+## Usage
+
+### Command line
+>>>>>>> gh-pages
 
 You can use ispell in a stand-alone mode; type
 
@@ -161,16 +334,28 @@ You can use ispell in a stand-alone mode; type
 or you may prefer to customize your emacs; e.g. copy
 ./emacs/ispell-ini.el from this distribution into your site-lisp (or
 somewhere else on your emacs load-path), and put this into your .emacs
+<<<<<<< HEAD
+=======
+
+>>>>>>> gh-pages
 ```elisp
 (load "ispell-ini.el")
 ```
 In order to get a list of all misspelled or unknown words from a text
 in the Latin-3 encoding you could say (in Linux):
+<<<<<<< HEAD
+=======
+
+>>>>>>> gh-pages
 ```bash
 export LC_ALL=eo_XX.ISO-8859-3
 ispell -d esperanto -T .l3 -l < FILENAME | sort -u
 ```
+<<<<<<< HEAD
 Some more comments are available [in esperanto](ispelleo-legu-min.html).
+=======
+Some more comments are available [in esperanto](doc/ispelleo-legu-min.html).
+>>>>>>> gh-pages
 
 ## emacs.el
 
@@ -182,7 +367,10 @@ modifications:
 
 1. the variable `ispell-dictionary-alist-3` is modified to use the
    latin-3 encoding (it is latin-1 in the distribution);
+<<<<<<< HEAD
 
+=======
+>>>>>>> gh-pages
 2. the coordinates of the correction for the word being checked is
    done in a more thorough fashion.  The original version fails to
    account for the fact that ispell returns multibyte representation,
@@ -194,6 +382,7 @@ modifications:
    occurs in the buffer; but that is a different bug, which is present
    for the unibyte encodings as well.
 
+<<<<<<< HEAD
 ## New in v.3.1
 
 1. More affix flags are defined; this requires an ispell built with
@@ -226,3 +415,28 @@ modifications:
 
 2. Better and/or more portable tools for dictionary maintenance.
    (Maybe a Perl script?)
+=======
+### Apostrophe problem
+https://groups.google.com/forum/#!topic/gnu.emacs.help/FPjX1kCHIB4
+https://github.com/emacs-mirror/emacs/blob/master/lisp/textmodes/ispell.el
+
+## New in v.3.1
+<ol><li markdown="1">More affix flags are defined; this requires an
+ispell built with `MASKBITS` = 64 (or more).
+</li><li markdown="1">Presently the main ASCIIzation is in the TeX
+style. (The `cxirkaux`-transcription is available as an alternative
+representation.)
+</li><li markdown="1">Some non-esperantic letters are made available,
+like `\c{c}, \"o, {\o}` etc for the names like `W\"uster`
+or `St{\o}p-Bowitz`. This is done for a few most frequent letters
+only; more work is needed.
+</li><li>Two flavors of Esperanto dictionaries/grammars are introduced: the
+permissive "esperanto" and the rigorous "eo".
+</li><li>The installation process is automated on the basis of (gnu)make and
+some other Unix utilities.
+</li><li>All the specialized subdictionaries are merged into a single
+database (with subject area marks).
+</li><li markdown="1">An Emacs function `word+` is written for the
+dictionary database maintenance.
+</ol>
+>>>>>>> gh-pages
