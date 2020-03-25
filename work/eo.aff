@@ -1,9 +1,8 @@
-# -*- coding: latin-3 -*-
+# -*- coding: utf-8 -*-
 # Nomo:		eo.aff
 # Funkcio:	Afiksaro por Esperanto-vortaro
 # Komencita:	1997-08-30 de Sergio Pokrovskij <sergio.pokrovskij(^ce)gmail.com>
 # Versio:	4.0
-# Generita:	Ср. �^jая  8 07:55:05 +07 2019
 
 #
 # Copyright 1997 -- 2012 Sergio Pokrovskij
@@ -15,7 +14,7 @@
 # The default 32 MASKBITS is no longer ispell are sufficient --
 # now you need MASKBITS=64.
 
-#�		        KODOPREZENTOJ (Encodings):
+#§		        KODOPREZENTOJ (Encodings):
 
 allaffixes on
 
@@ -59,35 +58,35 @@ wordchars    [v-z]   [V-Z]
 
 altstringtype "utf8" "tex" ".html" ".u8" ".utf"
 #
-altstringchar	\xE2\x80\x99 '
-altstringchar	\xC4\x88    ^C
-altstringchar	\xC4\x89    ^c
-altstringchar	\xC4\x9C    ^G
-altstringchar	\xC4\x9D    ^g
-altstringchar	\xC4\xA4    ^H
-altstringchar	\xC4\xA5    ^h
-altstringchar	\xC4\xB4    ^J
-altstringchar	\xC4\xB5    ^j
-altstringchar	\xC5\x9C    ^S
-altstringchar	\xC5\x9D    ^s
-altstringchar	\xC5\xAC    ^U
-altstringchar	\xC5\xAD    ^u
-altstringchar	\xC3\x81  \\'A
-altstringchar	\xC3\xA1  \\'a
-altstringchar	\xC3\x84 \\\"A
-altstringchar	\xC3\xA4 \\\"a
-altstringchar	\xC3\x87 \\c{C}
-altstringchar	\xC3\xA7 \\c{c}
-#altstringchar	\xC4\x8C \\v{C}
-#altstringchar	\xC4\x8D \\v{c}
-altstringchar	\xC3\x89  \\'E
-altstringchar	\xC3\xA9  \\'e
-altstringchar	\xC3\xB6 \\\"o
-altstringchar	\xC3\x96 \\\"O
-altstringchar	\xC3\xB8  {\\o}
-altstringchar	\xC3\x98  {\\O}
-altstringchar	\xC3\xBC \\\"u
-altstringchar	\xC3\x9C \\\"U
+altstringchar	’    '
+altstringchar	Ĉ    ^C
+altstringchar	ĉ    ^c
+altstringchar	Ĝ    ^G
+altstringchar	ĝ    ^g
+altstringchar	Ĥ    ^H
+altstringchar	ĥ    ^h
+altstringchar	Ĵ    ^J
+altstringchar	ĵ    ^j
+altstringchar	Ŝ    ^S
+altstringchar	ŝ    ^s
+altstringchar	Ŭ    ^U
+altstringchar	ŭ    ^u
+altstringchar	Á  \\'A
+altstringchar	á  \\'a
+altstringchar	Ä \\\"A
+altstringchar	ä \\\"a
+altstringchar	Ç \\c{C}
+altstringchar	ç \\c{c}
+#altstringchar	Č \\v{C}
+#altstringchar	č \\v{c}
+altstringchar	É  \\'E
+altstringchar	é  \\'e
+altstringchar	ö \\\"o
+altstringchar	Ö \\\"O
+altstringchar	ø  {\\o}
+altstringchar	Ø  {\\O}
+altstringchar	ü \\\"u
+altstringchar	Ü \\\"U
 
 altstringtype "latin3" "nroff" ".l3"
 #
@@ -155,7 +154,7 @@ altstringchar	\xFC \\\"u
 # Here ends the encoding specification
 
 
-#�			Quick Reference
+#§			Quick Reference
 #			===============
 #
 #   A	-a, -e
@@ -223,7 +222,7 @@ altstringchar	\xFC \\\"u
 
 # Mankas flagoj por GE-, -ER, FIN-, NOV-, TUT-, ^GIS-, ^CE-, PER-, -ITA^J ...
 
-#�		        LA PREFIKSOJ:
+#§		        LA PREFIKSOJ:
 prefixes
 
 flag *a:
@@ -373,7 +372,7 @@ flag *\]:
     .		>	POST
 
 
-#�		        LA SUFIKSOJ:
+#§		        LA SUFIKSOJ:
 					  
 suffixes
 flag *A:

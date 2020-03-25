@@ -2,16 +2,19 @@
 An Esperanto dictionary, compiled by Sergio Pokrovskij for the version 3.\* of ispell.
 
 ---
-Content:      Information about Esperanto dictionary for the Ispell speller<br>
-Created:      1997-08-30 by Sergio Pokrovskij<br>
-Version 3.7
+Content:      Information about Esperanto dictionary for the Ispell speller  
+Created:      1997-08-30 by Sergio Pokrovskij  
+Version 4.0
 
-Copyright 1997, 1998, 2003, 2006, 2008 by Sergio Pokrovskij
+Copyright 1997, 1998, 2003, 2006, 2008, 2019 by Sergio Pokrovskij
 
 This dictionary package is available on the terms of GNU General Public License
+[version 2.0](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 (Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA).
 
 ---
+
+Some more information is available [in Esperanto](doc/ispelleo-legu-min.md).
 
 ### The Ispell utility program
 You will first need to get ispell 3.0+; it is available from
@@ -28,8 +31,9 @@ Several encodings used with Esperanto text are supported:
 
 1. The very best is Unicode or its subset, which contains the
    esperantic letters, like the Microsoft's WGL4; you can use it with
-   xterm or Emacs under Unix, or with UniRed under Windows (the latter
-   has not been checked yet for the current version).
+   xterm or Emacs under Unix, or with
+   [UniRed](http://www.esperanto.mv.ru/UniRed/UTF8/index.html) under
+   Windows.
 
    Unicode is available in UTF-8 encoding which is becoming standard
    for Unices.
@@ -122,38 +126,22 @@ In order to enable selective construction of dictionaries, some
 entries in the source dictionary `./src/vortoj.l3` are marked with
 keywords indicating the special field they belong to:
 
-\#arhx
-  : archaic words, like *hxina* (= *cxina*) or *malkompreni* (= *miskompreni*)
-
-\#bot
-  : a rare botanic word
-
-\#Eujo
-  : vocabulary of the Esperanto Movement (Esperantujo)
-
-\#etn
-  : countries and ethnography
-
-\#komp
-  : some computer-science terminology according to the "[Komputada Leksikono](http://www.esperanto.mv.ru/KompLeks/UTF8/DEFAULT.html)"
-
-\#mav
-  : redundant words, which are used by some esperantists, though they are less precise and unnecessarily complicate the language; e.g. *olda* (*maljuna* or *malnova*), "mava" (malbona)
-
-\#pers
-  : given names and names of important personalities (Petro, Zamenhof, Noa ...)
-
-\#pok
-  : the words specific to my idiolect
-
-\#rar
-  : rare words which may coincide with a misspelling of a more frequent word; e.g. "ajuna", "komanditi", "liona".
-
-\#var
-  : variant which I do not use but which is frequent enough (e.g. kemio, tekniko opposed to ^hemio and te^hniko).
-
+`#arhx` : archaic words, like *ĥina* (= *ĉina*) or *malkompreni* (= *miskompreni*)  
+`#bot` : a rare botanic word  
+`#Eujo` : vocabulary of the Esperanto Movement (**E**sperant**ujo**)  
+`#etn` : countries and ethnography  
+`#komp`
+  : some computer-science terminology according to the "[Komputada Leksikono](http://www.esperanto.mv.ru/KompLeks/UTF8/DEFAULT.html)"  
+`#mav`
+  : redundant words, which are used by some esperantists, though they are less precise and unnecessarily complicate the language; e.g. *olda* (*maljuna* or *malnova*), "mava" (malbona)  
+`#pers`
+  : given names and names of important personalities (Petro, Zamenhof, Noa ...)  
+`#pok` : the words specific to my idiolect  
+`#rar`
+  : rare words which may coincide with a misspelling of a more frequent word; e.g. "ajuna", "komanditi", "liona".  
+`#var`
+  : variant which I do not use but which is frequent enough (e.g. *kemio, tekniko* opposed to *ĥemio* and *teĥniko*).  
 ...
-
 
 You can
 ```bash
@@ -203,7 +191,7 @@ in the Latin-3 encoding you could say (in Linux):
 export LC_ALL=eo_XX.ISO-8859-3
 ispell -d esperanto -T .l3 -l < FILENAME | sort -u
 ```
-Some more comments are available [in esperanto](doc/ispelleo-legu-min.html).
+Some more comments are available [in esperanto](doc/ispelleo-legu-min.md).
 
 ## emacs.el
 
@@ -231,21 +219,20 @@ https://groups.google.com/forum/#!topic/gnu.emacs.help/FPjX1kCHIB4
 https://github.com/emacs-mirror/emacs/blob/master/lisp/textmodes/ispell.el
 
 ## New in v.3.1
-<ol><li markdown="1">More affix flags are defined; this requires an
-ispell built with `MASKBITS` = 64 (or more).
-</li><li markdown="1">Presently the main ASCIIzation is in the TeX
-style. (The `cxirkaux`-transcription is available as an alternative
-representation.)
-</li><li markdown="1">Some non-esperantic letters are made available,
-like `\c{c}, \"o, {\o}` etc for the names like `W\"uster`
-or `St{\o}p-Bowitz`. This is done for a few most frequent letters
-only; more work is needed.
-</li><li>Two flavors of Esperanto dictionaries/grammars are introduced: the
-permissive "esperanto" and the rigorous "eo".
-</li><li>The installation process is automated on the basis of (gnu)make and
-some other Unix utilities.
-</li><li>All the specialized subdictionaries are merged into a single
-database (with subject area marks).
-</li><li markdown="1">An Emacs function `word+` is written for the
-dictionary database maintenance.
-</ol>
+1. More affix flags are defined; this requires an
+   ispell built with `MASKBITS` = 64 (or more).
+2. Presently the main ASCIIzation is in the TeX
+   style. (The `cxirkaux`-transcription is available as an alternative
+   representation.)
+3. Some non-esperantic letters are made available,
+   like `\c{c}, \"o, {\o}` etc for the names like `W\"uster`
+   or `St{\o}p-Bowitz`. This is done for a few most frequent letters
+   only; more work is needed.
+4. Two flavors of Esperanto dictionaries/grammars are introduced: the
+   permissive `esperanto` and the rigorous `eo`.
+5. The installation process is automated on the basis of (gnu)make and
+   some other Unix utilities.
+6. All the specialized subdictionaries are merged into a single
+   database (with subject area marks).
+7. An Emacs function `word+` is written for the
+   dictionary database maintenance.
