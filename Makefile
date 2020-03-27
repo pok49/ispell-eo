@@ -1,5 +1,5 @@
 short_list	=	komp,etn,Eujo,mll
-pok_list	=	$(short_list),bot,pok,pers,var,zoo
+pok_list	=	$(short_list),bot,fremd,his,pok,pers,var,zoo
 
 #eo_list	=	$(short_list),drv
 eo_list		=	$(pok_list),drv

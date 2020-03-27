@@ -9,7 +9,8 @@ sed \
 -e 's/¼/^j/g' -e 's/¬/^J/g' \
 -e 's/þ/^s/g' -e 's/Þ/^S/g' \
 -e 's/ý/^u/g' -e 's/Ý/^U/g' \
--e "s/á/\\\'a/g" -e 's/ç/\\c{c}/g' -e 's/ü/\\\"u/g'
+-e "s/á/\\\'a/g" -e 's/ç/\\c{c}/g' \
+-e "s/é/\\\'e/g" -e 's/ü/\\\"u/g'
 
 # Local variables:
 # coding: latin-3

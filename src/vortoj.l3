@@ -1,4 +1,4 @@
-#	A Time-stamp: "2019-05-08 08:55:35 sergio" -*- coding:latin-3; indent-tabs-mode:t; tab-stop-list:(8 24 32) -*-
+#	A Time-stamp: "2020-03-26 21:32:25 sergio" -*- coding:latin-3; indent-tabs-mode:t; tab-stop-list:(8 24 32) -*-
 =	Aarono		/AOX	#pers
 =	abako		/AO
 =	abato		/FJ
@@ -183,7 +183,8 @@ ne	afabla		/AC
 =	afekcii		/ABOT
 sen	afekta		/AGQO	#drv
 =	afekti		/ABOTUY
-=	afero		/ABOS
+=	afelio		/AO
+=	afero		/AeBOS
 =	aferpapero	/AO
 =	aferstato	/AO
 =	aferþarøito	/F
@@ -283,6 +284,7 @@ sam	aøa		/AU
 =	a¶erona		/A
 =	A¶eronon	/X
 =	a¶i		/VX
+=	a¶ila		/A
 =	A¶ilo		/AO	#pers
 =	AI			#komp
 =	aidoso		/AOU
@@ -541,6 +543,7 @@ inter	alie			#drv
 =	aliteracii	/AOVB
 =	aliu		/P	#mav
 =	alkadrigi	/AOT	#komp
+=	alkalo		/ACO
 =	alklaki		/OT	#komp
 =	alko		/F
 =	alkoholo	/AGOYZ
@@ -683,6 +686,7 @@ ge	amikoj		/O
 =	amindumi	/ABOT
 =	amkonfeso	/AO
 =	amkunveno	/AO
+=	amletero	/AO
 =	amnestii	/AOT
 =	amnezio		/AOU
 =	amo		/AbO
@@ -931,7 +935,7 @@ pra	antaýlasta	/A
 =	aparato		/AKO
 =	aparta		/ALCGQYZ
 =	apartamento	/AO
-=	aparteni	/OVY
+=	aparteni	/AOVY
 de	apartigi	/AOTX	#arhx
 =	apatia		/AOU
 =	apekso		/AO
@@ -1007,6 +1011,7 @@ ne	apogita		/A
 =	aprobfolio	/AO
 =	aprobi		/ABDGMOT
 =	aproksimi	/AOTY	#komp
+=	apsido		/AO
 =	apuda		/AGPQVX
 =	apudakva	/A
 =	apudborda	/A
@@ -1192,6 +1197,7 @@ sen	artikolecon	/X
 =	artikolo	/ceO_
 =	artikolserio	/AO
 =	artikolsistemo	/AO	#pok
+=	artikoltitolo	/AO
 =	artikoluzado	/AO
 =	artiktordo	/AO
 =	artikulacii	/AOTY
@@ -1205,7 +1211,7 @@ sen	artikolecon	/X
 =	artobjekto	/AO
 =	artrajdi	/ASV
 =	artrito		/AOU
-=	artropoido	/F
+=	artropodo	/F
 =	artsilko	/AO
 =	Arturo		/AO	#pers
 =	arvorto		/AO
@@ -1224,7 +1230,7 @@ sen	artikolecon	/X
 =	as-fina¼o	/AO
 =	asigni		/AOST
 =	asimili		/ABMOQYT
-=	asimilita	/CE
+=	asimilita	/CEh
 =	asiria		/AW	#etn
 =	Asirion		/X	#etn
 =	asisti		/FV
@@ -1341,6 +1347,7 @@ mis	atribui		/AOT
 ne	atribuita	/A
 =	atributo	/AO
 =	atributvaloro	/AO
+=	atrio		/AO
 =	atriplo		/AO
 =	atrofia		/AOV
 =	atuti		/AOV
@@ -1521,6 +1528,7 @@ ne	bagatela	/A
 =	bakalaýro	/F
 =	bakarato	/AO
 =	bakforno	/AO
+=	Bak¶on		/AX	#pers
 =	baki		/hlRT
 nov	bakita		/A
 =	bakpulvoro	/AO
@@ -1750,8 +1758,8 @@ mal	bari		/RT
 =	bavarujano	/FI	#etn
 =	Bavarujo	/I	#etn
 =	bavi		/AVB
-sen	baza		/AGs
-sur	baza		/A	#drv
+=	baza		/A`
+sam	baza		/AM
 =	bazalto		/AO
 =	bazangula	/AO
 =	bazara		/SU
@@ -1763,7 +1771,7 @@ sur	baza		/A	#drv
 =	bazela		/AW	#etn
 =	Bazelon		/X	#etn
 =	bazhava		/A
-=	bazi		/AOQT
+=	bazi		/OQT
 =	baziliko	/AO
 =	bazilisko	/AO
 =	Bazilo		/AO	#pers
@@ -2247,6 +2255,7 @@ en	brakigi		/AOTX
 =	branæigi	/AdOTXz
 =	branækabano	/AO
 =	branæo		/KO
+sub	branæo		/AO
 =	branæoplanti	/T
 =	branæoriæa	/AO
 =	brandenburgiana	/FI	#etn
@@ -2784,6 +2793,7 @@ ge	civitanoj	/O
 =	codoromo	/AO	#komp
 =	cola		/AhO
 =	colsigno	/AO	#komp
+=	Couturat		#Eujo#pers
 =	C-programo	/AO	#komp
 =	Cseh			#Eujo
 =	Cseh-kurso	/AOW	#Eujo
@@ -3441,7 +3451,7 @@ tra	diboæi		/T
 =	didelfo		/AO
 =	Dideroto	/AO	#pers
 =	Didona		/AO	#pers
-=	Diegon		/X	#pers#eo
+=	Diegon		/X	#pers#Eujo
 =	dierezo		/AO	#komp
 =	dieso		/AO
 =	dieta		/AOSU
@@ -3587,8 +3597,9 @@ sub	disko		/AO	#komp#drv
 =	diskrado	/AO
 =	diskrediti	/AOT	#arhx
 =	diskreta	/ACGMO
-sen	diskriminacia	/A	#drv
-=	diskriminacii	/ABOT
+=	diskriminacia	/Es
+=	diskriminacii	/BOT
+=	diskrimini	/LV
 =	diskturnilo	/AO
 =	diskursi	/AOV
 sen	diskuta		/A	#drv
@@ -3968,6 +3979,7 @@ post	ebrio		/AO
 =	Edgaro		/AO	#pers
 =	edifi		/AOT
 =	edikto		/AO
+=	edilo		/AO	#his
 =	Edinburgon	/X	#etn
 =	edipa		/A	#pers
 =	Edipon		/X	#pers
@@ -3995,9 +4007,9 @@ ekster	edzeca		/A
 =	edzeto		/AO
 =	edziøanonco	/AO
 =	edziøfesto	/AO
-mis	edziøo		/AO
 =	edzina		/CEGQsx
 =	edzineto	/AO
+=	edz(in)igi	/AORTXy
 =	edzinigita	/CE
 =	edzino		/Ox
 krom	edzino		/AO	#drv
@@ -4495,27 +4507,28 @@ for	eskorti		/AOT	#drv
 =	Eskulapo	/AO	#pers
 =	esotera		/CEMY
 sen	espera		/ACGQ
-=	esperanta	/GPQSWYZ
+=	esperanta	/Epqu
+=	esperanta	/WY
 ekster	esperanta	/A	#drv
-ne	esperanta	/A
 =	esperanta-angla	/A
 =	esperanta-franca/A
 =	esperanta-germana/A
 =	esperanta-rusa	/A
 =	esperanteca	/EMO
-=	esperantigi	/AOTX
+=	Esperanten
 =	esperantigita	/E
-=	esperantista	/CEGKQF
-=	esperantistado	/O
+=	esperantistado	/AO
+=	esperantisto	/ACEFGKQ
 =	esperantlingva	/AGQW
+=	esperanto	/FGQSWY
 =	Esperanto	/H
-pra	esperanto	/AO	#Eujo
 =	Esperanto-adapta¼o/O
 =	esperantoaranøo	/AO	#drv
 =	Esperanto-asocio/AO	#Eujo
 =	Esperanto-Asocion/X	#Eujo
 =	Esperanto-Centron/X	#Eujo
 =	Esperanto-gazeto/AKO	#Eujo
+=	Esperanto-instruado/O	#Eujo
 =	esperantokapabla/AO	#drv
 =	Esperanto-klubo	/AJOW	#Eujo
 =	Esperanto-komunumo/AOW	#Eujo
@@ -4528,15 +4541,18 @@ pra	esperanto	/AO	#Eujo
 =	Esperanto-litero/AO
 =	esperantologe	/FIS
 =	Esperanto-movado/AOW	#Eujo
+Pra	esperanton	/X	#Eujo
 =	Esperanto-organiza¼o/AO	#Eujo
 =	Esperanto-parolanto/F	#Eujo
 =	Esperanto-parto	/AO
 =	Esperanto-pioniro/F	#Eujo
+=	Esperanto-prononco/O
 =	Esperanto-rilata/A
 =	Esperanto-societo/AO	#Eujo
 =	Esperanto-teksto/AO
 =	Esperanto-traduko/AO
 =	Esperanto-vortaro/AO	#Eujo
+=	esperata	/E
 =	esperebla	/E
 =	esperi		/AMOTG
 =	esplanado	/AO
@@ -4594,13 +4610,15 @@ mem	estimo		/AO
 =	estri		/CGTB
 =	estro		/F_^
 =	estu		/AafjkOV
+=	estuaro		/AO
 =	eþafodo		/AO
 =	eta		/ACOQUG
 =	etaøa		/ANnG
 =	etaøero		/AO
 =	etaøo		/AcOr
 =	etalono		/AO
-=	etapo		/AO
+=	etapa		/An
+=	etapo		/O
 ekster	etata		/A	#drv
 =	etato		/AO
 =	etbieno		/AUO
@@ -4801,6 +4819,7 @@ en	fakigi		/AOTX
 =	fak¼argona	/AOVY
 =	fakkunsido	/AO
 =	fakkunveno	/AO
+=	faklibro	/AeO
 =	faklingva	/AOY
 =	fakliteratura	/AOY
 =	faknomo		/AO
@@ -4814,9 +4833,10 @@ sub	fako		/AO	#drv
 =	faksignifo	/AO
 =	faksimbolo	/AO
 =	faksimilo	/AO
+=	faksperto	/AO
 =	faksufikso	/AKO
 =	fakta		/AOE
-=	faktermino	/AO
+=	faktermino	/AKO
 =	faktorialo	/AO
 dis	faktorigi	/AOTX	#komp
 =	faktoro		/AO
@@ -4825,6 +4845,7 @@ dis	faktorigi	/AOTX	#komp
 =	fakultatestro	/F
 =	fakultativa	/A
 =	fakultato	/AO
+=	fakverko	/AO
 =	fakvorto	/AKO
 =	falakvo		/AO
 =	falango		/AJOS
@@ -4897,6 +4918,7 @@ sam	familia		/AW
 =	fandu		/AfjlQTtYz
 =	fandvarmo	/AO
 =	fandverþi	/T
+=	fanerogamo	/AO	#bot
 =	fanfaro		/AO
 =	fanfaroni	/ASUVBY
 =	fantasmagorio	/AO
@@ -5342,9 +5364,9 @@ per	flati		/T
 =	flegita		/EM
 =	flegma		/AOU
 =	flegmono	/AO
-=	fleksebla	/EMOUY
+=	fleksebla	/CEMOUY
 =	fleksformata	/A
-=	fleksi		/AQT_
+=	fleksi		/ABQT_
 retro	fleksi		/AOT
 sen	fleksia		/AGQ
 =	fleksiebla	/E
@@ -5557,6 +5579,7 @@ sen	forlasa		/A
 =	forma		/ACGNnQw
 divers	forma		/A
 =	formala		/ABGYZ
+duon	formala		/A
 ne	formala		/A
 =	formati		/ALOT
 =	formatizi	/AOT	#komp
@@ -5697,7 +5720,7 @@ San-	Franciskon	/XA	#etn
 =	franko		/AO
 =	franko		/F
 =	Frankonion	/X	#etn
-=	François		#pers
+=	François		#pers#fremd
 =	frapfermi	/T
 =	frapfrapi	/AOT
 =	frapfrazo	/AO
@@ -5785,6 +5808,8 @@ mal	frizi		/RT
 sen	froka		/AGQ
 =	froko		/AOU
 =	fromaøa		/AJOS
+=	frondo		/AKO	#bot
+=	Frondon		/AX	#his
 =	frontflanko	/AO
 =	fronti		/aT
 =	frontispico	/AO
@@ -5998,7 +6023,7 @@ ek	furiozi		/V
 =	gajlinsekto	/AO
 =	gajlo		/AO	#bot
 =	gajni		/AORT
-mal	gajni		/ORT
+mal	gajni		/AORT
 =	gajo		/eMOU
 =	gaki		/AOV
 sen	gala		/AC	#drv
@@ -6229,7 +6254,7 @@ nov	germana		/AM	#etn
 =	germanmaniera	/A	#etn
 =	germanujano	/FI	#etn
 =	Germanujo	/I	#etn
-=	Gerrit			#pers#eo#pok
+=	Gerrit			#pers#Eujo#pok
 =	Gertruda	/AO	#pers
 =	gerundio	/AO
 =	Gervazo		/AO	#pers
@@ -6363,9 +6388,10 @@ mal	glui		/RT
 =	gluta		/ABeJ
 =	gluteo		/AO
 =	gluti		/fOTvy
+=	GMT			#mll
 =	gnomo		/AO
 =	gnostika	/AOUZ
-=	GNU			#komp
+=	GNU			#mll#komp
 =	GNU-a		/AUY	#komp
 =	GNU-Emakso	/AO	#komp
 =	GNU-Rajtigilo	/AO	#komp
@@ -6523,6 +6549,7 @@ en	greftiøi	/V
 nov	greka		/AM	#etn
 =	greka-latina	/A	#etn
 =	greka-persa	/A	#etn
+=	greka-romia	/A	#his
 =	greka-rusa	/A	#etn
 =	grekdevena	/E	#etn
 =	grekigi		/TX	#etn
@@ -6714,6 +6741,7 @@ sen	øenaæa		/A
 =	øenro		/O
 =	øentila		/CEMUOY
 =	øentilform(ul)o	/AO
+=	øentilpronomo	/AO
 =	øentiltitolo	/AO
 =	øentilvorto	/AO
 =	øentlemano	/AO
@@ -6944,7 +6972,7 @@ sen	hejma		/AU	#drv
 =	helblua		/AM
 =	helbruna	/AM
 =	heldenso	/AO
-=	helena		/FZ	#var
+=	heleno		/FSZ	#etn#his
 =	Helenujon	/AX	#etn
 =	helero		/AO
 =	Helesponton	/X	#etn
@@ -7010,7 +7038,7 @@ mal	helpi		/T
 =	herdo		/AO
 =	hereda		/ACGOY
 sen	hereda		/AG	#drv
-=	heredi		/jT
+=	heredi		/FjT
 =	herezi		/ACOVBY
 =	herezula	/cF
 =	hermafrodita	/AOC
@@ -7088,6 +7116,7 @@ sen	hezita		/AGQ
 =	hiperteksto	/AO
 =	hipertensio	/AO
 =	hipertrofii	/AOT
+=	hipio		/F
 =	hipnoti		/AGOVZ
 =	hipodermo	/AO
 =	hipodromo	/AO
@@ -7300,6 +7329,7 @@ vir	hundo		/AO
 =	hundraso	/AO
 =	hungara		/CFGQY	#etn
 =	hungardevena	/A
+=	Hungarlandon	/AX	#etn
 =	hungarlingva	/AW
 =	hungarujano	/FI	#etn
 =	Hungarujo	/I	#etn
@@ -7366,6 +7396,7 @@ vir	hundo		/AO
 =	¦ruþæovo	/AOX	#pers
 =	ia		/APO
 =	ial
+=	IALA			#mll
 kelk	iam
 =	iama		/AX
 =	iamaniera	/A
@@ -7402,9 +7433,10 @@ sam	ideano		/FK
 =	ideosigno	/AO
 =	idilio		/AO
 =	idiolekto	/AOY	#pok
-=	idioma		/AOY
+=	idioma¼a	/E
+=	idiomo		/AOY
 =	idiosinkrazio	/AO
-=	idiota		/ACGFQYZ
+=	idioto		/CGFQYZ
 =	ido		/FKSu
 =	Ido-krizon	/X
 =	idola		/AGOQWJ
@@ -7762,6 +7794,7 @@ ek	interesi	/TQ
 =	interezo	/AO
 =	interferi	/AGOV
 =	interjekcio	/AO
+=	Interlingua
 =	interlingvaa	/AOWYZ
 =	Interlingvao	/AO
 =	intermezo	/AO	#drv
@@ -8032,6 +8065,7 @@ nov	jariøo		/AO
 =	Jesajan		/X	#pers
 =	jesi		/AGVBXO
 =	jesopinio	/AO	#drv
+=	Jesper			#pers#Eujo#fremd
 =	Jesuo		/AO	#pers
 =	jetaviadilo	/AO
 =	jetavio		/AO
@@ -8820,6 +8854,7 @@ Nord-	Kaýkazo		/I-A	#etn
 =	kaýstika	/ACOY
 =	kaýterizi	/QT
 =	kaýza		/An
+sen	kaýza		/E
 =	kaýzi		/COT
 =	kaýzo		/AcOu
 =	kava		/AMOVY
@@ -8889,6 +8924,8 @@ tridek	kelkjara	/AU	#drv
 =	kenja		/AW	#etn
 =	Kenjon		/X	#etn
 =	keno		/AO
+=	kenopodiaco	/AO	#bot
+=	kenopodio	/AO	#bot
 =	kepo		/AO
 =	kermeso		/AO
 =	kerna		/AOC
@@ -8972,6 +9009,7 @@ sam	kiom
 =	Kiribaton	/X	#etn
 =	kirilica	/AY	#pok
 =	Kirilico	/O	#pok
+=	Kirilon		/AX	#pers
 =	kirko		/AeO
 =	kirli		/ALOQT
 =	kirmeso		/AO
@@ -9049,6 +9087,7 @@ en	klasigi		/AOTX
 pseýdo	klasika		/A
 =	klaskonscia	/AO
 =	klaso		/AOW_
+=	Klaýdion	/AX	#pers
 =	Klaýdo		/F	#pers
 =	klaýni		/VY
 =	klaýno		/F
@@ -9446,6 +9485,7 @@ pli	komplikigi	/AOTXY
 =	komplikteorio	/AO	#komp
 =	komplimenti	/ABOT
 =	komploti	/AOVB
+=	komponanta	/ANn
 =	komponebla	/Em
 =	komponi		/AOMQSTBY
 trans	komponi		/AOT
@@ -9667,6 +9707,7 @@ ne	konkreta	/AY
 =	konkurkapabla	/AO
 =	konkursgajninto	/F
 =	konkursi	/AOVY
+=	konkursregulo	/AO
 mem	kono		/AO	#drv
 sin	kono		/AO	#rar
 =	Konotopon	/X	#etn
@@ -9782,7 +9823,7 @@ for	konsumi		/AOT	#drv
 =	konteltiro	/AO
 =	kontempli	/ABOT
 =	kontenero	/AO
-=	kontenta	/bCeGMOQUV
+=	kontenta	/AbCeGMOQUV
 ne	kontenta	/AO
 =	kontentiga	/EO
 =	kontentiøema	/AO
@@ -9811,10 +9852,11 @@ ne	kontinua	/AC
 =	kontrapunkto	/AO
 =	kontrasti	/AGOQVY
 =	kontrastvorto	/AO
-=	kontraý
+=	kontraý		/P
 mem	kontraýdira	/AO	#drv
+=	kontraýen
 =	kontraýesida	/A	#drv
-=	kontraýi	/ACOQUTY
+=	kontraýi	/COQUTY
 =	kontrevizoro	/AO
 =	kontribucio	/AO
 =	kontribui	/AOVY
@@ -10175,6 +10217,7 @@ pri	krii		/T	#drv
 =	kripligema	/AU
 =	kripo		/AO
 =	kripto		/AOY
+=	kriptogamo	/AO	#bot
 =	kriptonimo	/AO
 =	kriptonon	/AX
 =	krisigno	/AO
@@ -10488,6 +10531,7 @@ ge	kuzoj		/O
 =	kvadrat(kilo)metro/AO
 =	kvadrato	/ACe
 =	kvadraturo	/AO
+=	kvadrigo	/AO	#his
 =	kvadrilo	/AO
 =	kvaki		/AOV
 =	kvalifi		/AOTY
@@ -10509,8 +10553,10 @@ mis	kvalita		/ACOY
 =	kvarco		/AO
 =	kvarøemelo	/AO	#drv
 =	kvariliono	/AO
+=	kvarko		/AO
 =	kvar-kvin
 =	kvarmana	/AU
+=	kvaronhoro	/AO
 =	kvaronjaro	/AO
 =	kvaronlitro	/AO
 =	kvaronluno	/AO
@@ -10558,6 +10604,7 @@ sen	labora		/ACU
 =	laboradministra	/AO
 =	laborakcidento	/AO
 =	laborakiri	/AOV
+kun	laboranto	/FK
 =	laboratorio	/AO
 =	laborborso	/AO
 =	laborbrigado	/AO
@@ -10578,10 +10625,11 @@ sen	labora		/ACU
 =	laborgrupo	/AO
 =	laborhalo	/AO
 =	laborhoro	/AO
-=	labori		/ASOLGUVJY
+=	labori		/AGJLOSUVY
 el	labori		/AQTY
 per	labori		/AOT	#drv
-pri	labori		/RT
+pri	labori		/RTY
+tra	labori		/T
 tro	labori		/V
 =	laboristaro	/AO
 pri	laborita	/CEO
@@ -10605,6 +10653,7 @@ krom	laboro		/AO
 =	laborpaýzo	/AO
 =	laborpeco	/AO
 =	laborperejo	/AO
+=	laborperiodo	/AO
 =	laborplanado	/AO
 =	laborplano	/AO
 =	laborposteno	/AO
@@ -11041,6 +11090,7 @@ tro	libereco	/AO	#drv
 =	liberia		/AW	#etn
 =	liberigi	/AflOTXz[
 de	liberigi	/AOTX	#arhx
+=	liberigito	/MF
 =	Liberion	/X	#etn
 =	liberkomercisme	/S
 =	liberkreda	/A
@@ -11177,9 +11227,10 @@ trans	limiøi		/AOV
 =	lineo		/AO
 =	lingva		/ACciNnPrUuY
 ali	lingva		/CGPQW
+ekster	lingva		/A	#drv
 kiu	lingva		/A	#drv
 laý	lingva		/A	#drv
-ne	lingva		/A
+ne	lingva		/A	#drv
 per	lingva		/A	#drv
 pri	lingva		/A	#drv
 sam	lingva		/CEMW
@@ -11199,6 +11250,8 @@ sam	lingva		/CEMW
 =	lingvohistorion	/AX	#drv
 =	lingvoinstruado	/AO	#drv
 =	lingvokerno	/AO	#drv
+=	lingvokodo	/AO	#drv
+=	lingvokono	/AO	#drv
 =	lingvokurso	/AOW	#drv
 =	lingvokutimo	/AO	#drv
 =	lingvolernado	/AO	#drv
@@ -11260,16 +11313,16 @@ inter	linio		/AO	#drv
 =	Linukso		/O	#komp
 =	liona		/AW	#etn#rar
 =	Lionon		/X	#etn
+=	lipa		/Er
 =	lipangulo	/AO
 =	lip-denta	/A
 =	lipharo		/AO
-=	lipi		/AOT
+=	lipi		/OT
 =	lip-lipa	/A
 =	lipo		/e
-=	lira		/AOZ
 =	lirbirdo	/AO
 =	lirika		/ASOUZ
-=	liro		/AO
+=	liro		/AOZ
 =	lisbona		/AW	#etn
 =	Lisbonon	/X	#etn
 =	Lisp		/P	#komp
@@ -11284,6 +11337,7 @@ en	listigi		/AOTX
 =	litbenko	/AO
 =	litcimo		/AO
 =	litera		/ENnrY
+ali	litera		/AG
 æef	litera		/AOCG
 laý	litera		/A	#drv
 =	literalo	/AO	#komp
@@ -11789,6 +11843,7 @@ post	manøa		/A	#drv
 =	manøi		/ABafGjFOTY
 æirkaý	manøi		/T	#drv
 fin	manøi		/T
+tut	manøi		/T
 =	manøilo		/AKO
 =	manøkarto	/AO
 =	manømeto	/AO
@@ -11884,6 +11939,7 @@ trans	mara		/A
 =	marbordo	/AO
 =	marbrasiko	/AO
 =	marbruo		/AO
+=	Marc			#pers#fremd
 =	marcipano	/AO
 =	maræa		/AOJ
 =	maræanaso	/AO
@@ -12170,13 +12226,16 @@ Nov-	Meksikion	/X	#etn
 =	melo		/AO
 =	melodio		/ACO
 =	melodramo	/AO
+=	melolonto	/AO	#zoo
 =	melongeno	/AO
 =	melono		/AO
-=	membra		/KCFGQV
+=	membra		/AV
 dis	membranigi	/AOTX
 =	membrano	/AKCO
 dis	membrigi	/AOTX
+=	membro		/CFGKQ
 =	membrokarto	/AO	#drv
+=	membrolisto	/AO	#drv
 =	membroþtato	/AO	#drv
 =	meme		/X
 =	memecon		/X
@@ -12585,7 +12644,7 @@ tut	minuskla	/ACGQY
 =	miraklo		/AOS
 =	mirakloludo	/AO
 =	miregi		/ADGOVY
-=	Mirejan		/X	#pers#eo
+=	Mirejan		/X	#pers#Eujo
 =	mirho		/AO
 =	miri		/ekV
 =	miriado		/AO
@@ -12869,7 +12928,8 @@ tut	morta		/AG
 =	morti		/BDO
 =	mortigi		/ALOS
 fin	mortigi		/T
-mem	mortigo		/AO	#drv
+mem	mortigo		/AO	#drv#var
+sin	mortigo		/AO	#drv
 =	mortigu		/fT
 =	mortinsidi	/AOV
 =	mortinta	/CFJUY
@@ -13067,7 +13127,7 @@ tut	nacia		/A
 =	nacilingva	/AOWY
 =	nacio		/GOSWYZ
 inter	nacio		/LO
-=	naciskala	/A
+=	naciskala	/Ar
 =	nacisocialisme	/S
 =	nadiron		/AX
 =	nadlo		/AKO
@@ -13481,7 +13541,7 @@ vir	nomo		/AO
 =	Nordion		/X	#etn#rar
 =	nordlumo	/AO
 =	norena		/A	#etn
-=	norma		/CEq
+=	norma		/CEq_
 laý	norma		/AG	#drv
 mis	norma		/AGO
 =	normala		/CEGMOQUY
@@ -13548,7 +13608,7 @@ Porto-	Novon		/X	#etn
 =	novosibirska	/AW	#etn
 =	NP			#komp#mll
 =	NPIV			#Eujo#mll
-=	NPIV-a		/A	#Eujo
+=	NPIV-on		/A	#Eujo
 =	NPIV-redaktoro	/AO	#Eujo
 =	NP-kompleta	/AC	#komp
 =	n-ro		/AO	#mll
@@ -13882,13 +13942,13 @@ post	operacia	/A
 =	opereto		/AO
 =	operkulo	/AO
 =	opinia		/Ainz
-ali	opinia		/AV
+ali	opinia		/AVW
 =	opiniama	/AO
 =	opinidiferenco	/AO
 =	opiniesploro	/AO
 =	opiniesprimo	/AO
 =	opinii		/kTyz
-sam	opinii		/AMV
+sam	opinii		/AMVW
 =	opinikontrolo	/AO
 =	opinio		/Oz
 =	opinisondo	/AOV
@@ -14142,7 +14202,7 @@ preter	pafi		/T	#drv
 =	pagatesto	/AO
 =	PAG-aýtoro	/O
 =	pagdato		/AO
-=	pagi		/AadROLGT[]
+=	pagi		/AadpROLGT[]
 el	pagi		/AOTY
 fin	pagi		/T
 retro	pagi		/AOT
@@ -14234,7 +14294,7 @@ pri	palpi		/T	#drv
 =	pamfleta	/ASO
 =	pamira		/AW	#etn
 =	Pamiron		/X	#etn
-=	pana		/ASOH
+=	panaceo		/AO
 =	panamiana	/FI	#etn
 =	Panamo		/I	#etn
 =	panarbo		/AO
@@ -14253,6 +14313,7 @@ sen	paneigi		/AOTX
 =	pankrusto	/AO
 =	pankuko		/AO
 =	panmolo		/AO
+=	pano		/AHOS
 =	Panonion	/AX	#etn
 =	panoplio	/AO
 =	panoptiko	/AO
@@ -14379,6 +14440,7 @@ sen	parola		/E
 el	parolata	/E
 =	parolelemento	/AO
 =	paroleti	/OV
+=	paroletiketo	/AO
 =	parolfiguro	/AO
 =	parolfilmo	/AO
 =	parolfluo	/AO
@@ -14580,6 +14642,7 @@ sen	paýza		/E
 =	peceta		/AGOQ
 dis	pecigi		/AOTX
 =	peco		/AeO
+krom	peco		/AO	#drv
 vic	peco		/AO
 =	peæi		/AOT
 =	Peæjo		/AO	#pers
@@ -14700,6 +14763,7 @@ pri	pentri		/T	#drv
 sen	pera		/AQ
 =	percepteblon	/AEX
 =	percepti	/AOQTYy
+sin	percepto	/AO	#drv
 =	peræo		/AO
 =	perdangulo	/AO
 =	perdi		/AGOQTz
@@ -14718,6 +14782,7 @@ ne	perfekta	/AC
 =	periferio	/AOY
 =	perifrazi	/AOT
 =	perigeo		/AO
+=	perihelio	/AO
 =	Periklon	/AX	#pers
 =	perikopo	/AO
 =	perimetro	/AO
@@ -14832,6 +14897,7 @@ pli	pezo		/AGQO
 =	piæo		/AO	#var
 =	pieda		/ANn
 øis	pieda		/A	#drv
+per	pieda		/A	#drv
 sen	pieda		/AG
 sur	pieda		/AGQ
 =	piedartiko	/AO
@@ -14959,6 +15025,7 @@ al	pingli		/T
 =	pistmiksi	/T
 =	pistolfarbi	/T
 =	pistolo		/AO
+=	pistolpafo	/AO
 =	pistoltenilo	/AO
 =	pistomaþino	/AO	#drv
 =	piþto		/AO
@@ -15150,6 +15217,7 @@ sen	plenda		/A
 =	pliaøulo	/F
 =	pliko		/AO
 =	pli-malpli
+=	Plinio		/AO	#pers
 =	plio-citilo	/AO	#komp
 =	plisi		/OTY
 =	plonøi		/AOV
@@ -15545,7 +15613,8 @@ ne	preciza		/AO
 =	prefiksi	/OTY
 kvazaý	prefikso	/AO	#drv
 =	preøejmuziko	/AO
-=	preøi		/AKOVJ
+=	preøejo		/AeO
+=	preøi		/AKOV
 =	preømaniero	/AO
 =	preøoæambro	/AO	#drv
 =	preøolibro	/AO	#drv
@@ -15816,9 +15885,10 @@ krom	programo	/AO	#drv
 kontraý	projekto	/AO	#drv
 =	proklami	/AOT
 =	prokrasta	/As
+=	prokrastebla	/E
 =	prokrasti	/ABOQT
 =	proks			 #mll
-=	proksima	/CEmP
+=	proksima	/CEemP
 =	proksimas	/MV
 =	proksimigi	/AaMOrTX
 =	proksimo	/MOUY
@@ -16329,6 +16399,7 @@ sen	reala		/AC	#drv
 =	reallingva	/A
 =	realtempa	/A
 =	realviva	/A
+ne	rebatebla	/A	#drv
 =	Rebeka		/AO	#pers
 =	rebuso		/AO
 =	recenzi		/AOST
@@ -16681,7 +16752,7 @@ fin	rezulto		/AO
 mal	riæa		/E
 ne	riæa		/A
 =	riæega		/EMU
-pli	riæigi		/AQT	#drv
+pli	riæigi		/AMTX	#drv
 nov	riæulo		/F
 =	rida		/e
 =	rideksplodo	/AO
@@ -17598,7 +17669,7 @@ sen	serifa		/ACOY
 =	serurbuþo	/AO
 =	serurlango	/AO
 mem	serva		/AJO
-=	servi		/ABOSVy
+=	servi		/ABFOSVy
 pri	servi		/T
 =	servico		/AO
 =	servicoþranko	/AO	#drv
@@ -17625,6 +17696,7 @@ kontraý	servo		/AO	#drv
 =	seskamera	/A
 =	sesono		/AO
 =	sesþarga	/A
+=	sesterco	/AO	#his
 =	setero		/AO
 =	setli		/JV
 =	SEU			#Eujo
@@ -17861,6 +17933,7 @@ kvazaý	sinonimo	/AO	#drv
 =	sismogramo	/AO
 =	sismologe	/IS
 =	sistema		/CEGMNnqy
+=	sistematiko	/AO
 =	sistememon	/AEMX
 =	sistemestro	/F	#komp
 =	sistemfunkciado	/AO	#komp
@@ -17869,6 +17942,8 @@ kvazaý	sinonimo	/AO	#drv
 =	sistemprogramado/AO	#komp
 =	sistemprogramo	/AKOS	#komp
 =	sistemrimedo	/AO	#komp
+=	sisterona	/A	#Eujo
+=	Sisteronon	/X	#Eujo#etn
 =	sitelo		/AO
 =	situacia	/Anw
 ekster	situacia	/A	#drv
@@ -17964,6 +18039,7 @@ sam	skola		/A
 =	skraptapiþo	/AO
 =	skrapu		/dfpT
 =	skrapvundi	/AOT
+=	skriba		/Aw
 mem	skriba¼o	/AO	#drv
 =	skribarto	/AO
 tut	skribas		/V
@@ -18375,7 +18451,8 @@ for	spongi		/T	#drv
 =	sporada		/ACOY
 =	sporo		/AHO
 =	sporta		/E
-=	sporti		/JOSV
+=	sportevento	/AO
+=	sporti		/JLOSV
 =	sportkuloto	/AO
 =	sportludo	/AO
 sen	sprita		/AGQ
@@ -18884,6 +18961,7 @@ vir	þafo		/AO
 =	þagrini		/AOT
 =	þaho		/AO
 =	þajna		/Aw
+=	þajnamiko	/AO
 =	þajnfrukto	/AO
 =	þajni		/kGOV
 =	þajnproblemo	/AO
@@ -19002,6 +19080,7 @@ el	þeligi		/AOTX
 =	þeola		/A	#etn
 =	þerca		/E
 sen	þerca		/E
+=	þerceto		/AO
 =	þerci		/BOVU
 =	þercobjekto	/AO
 =	þerifo		/F
@@ -19295,7 +19374,7 @@ sur	þultrigi	/OTX
 =	þuskrapilo	/AO
 =	þustreæilo	/AO
 =	þuþi		/AkOV
-=	þuti		/AdrjkOQTYz^
+=	þuti		/AdrjkOQTYz^`
 al	þuti		/AQRTY
 el	þuti		/AQRTY
 en	þuti		/AQRTY
@@ -19681,6 +19760,7 @@ for	tempigi		/AOTX
 os-	tempo		/AO
 =	tempodimensio	/AO	#drv
 =	tempokalkulo	/AO	#drv
+=	tempolimo	/AO	#drv
 =	tempomanko	/AO	#drv
 =	tempono		/AO	#komp
 =	tempopasigo	/AO	#drv
@@ -19725,6 +19805,8 @@ alt	tensia		/AMO
 =	tensiometro	/AO
 =	tenso		/AO
 as-	tenso		/AO
+is-	tenso		/AO
+os-	tenso		/AO
 =	tensoro		/AO
 =	tentaklo	/AO
 =	tenti		/AOQT
@@ -19804,12 +19886,14 @@ ekster	teritoria	/E
 =	termindifino	/AO
 =	terminelemento	/AO
 =	terminfara	/ABUVS
+=	terminfarado	/AO
 =	terminformilo	/AO
 =	terminformo	/AO
 =	terminlisto	/AO
 =	termino		/ACcKOy
 =	terminografe	/FIS
 =	terminologe	/FIS
+=	terminostoko	/AO	#drv
 =	terminpropono	/AO
 =	terminsistemo	/AO
 =	termintraduko	/AOY
@@ -19822,7 +19906,7 @@ ekster	teritoria	/E
 =	termofonto	/AO
 =	termometro	/AO
 =	termonuklea	/A
-=	Termopilon	/AX	#etn
+=	Termopilon	/AX	#etn#his
 =	termoso		/AO
 =	termostato	/AO
 =	terni		/GOV
@@ -19886,12 +19970,13 @@ sam	tial
 =	tiaokaza	/A	#drv
 =	tiaro		/AO
 =	tiaspeca	/A
-=	Tiberio		/AO	#pers
+trans	tibera		/AX	#etn
+=	Tiberio		/AO	#pers#his
+=	Tiberon		/AX	#etn
 =	tibeta		/AW	#etn
 =	Tibeton		/X	#etn
 =	tibikarno	/AO
 =	tibio		/AO
-=	Tibron		/X	#etn
 =	tieajn		/X
 =	tiea¼o		/AO
 =	tiean		/X
@@ -20658,7 +20743,7 @@ kun	urba¼o		/AO
 =	URL-a		/AO	#komp
 =	urlo		/AO	#komp
 =	urno		/AO
-=	uro		/AO	#rar
+=	uro		/AO	#rar#zoo
 =	urogalo		/AO
 =	ursido		/F
 =	urskavo		/AO
@@ -20668,8 +20753,9 @@ kun	urba¼o		/AO
 =	ursorelo	/AO
 =	Ursula		/AO	#pers
 =	urtiki		/ACOV
-=	urugvajiano	/F	#pok
-=	Urugvajo	/I	#pok
+=	urugvaja	/AW
+=	Urugvajon	/X	#etn
+=	Urugvaj(-)riveron /X	#etn
 sen	uskla		/A
 =	usklo		/ACO
 =	usona		/AGQW	#etn
@@ -20705,7 +20791,7 @@ ne	utila		/AC
 =	uzbekujano	/FI	#etn
 =	Uzbekujo	/I	#etn
 =	uzebla		/EGROY
-=	uzi		/AfklQRT
+=	uzi		/AfklOQRT
 fin	uzi		/AOT
 mis	uzi		/AOT
 mult	uzi		/AT
@@ -20817,6 +20903,7 @@ sub	valoro		/AO	#komp
 =	vandalo		/AOZ
 =	vando		/AO
 =	vanelo		/AO
+=	vaneso		/AO	#zoo
 =	vangharo	/AO
 =	vango		/AO
 =	vango		/e
@@ -20897,6 +20984,7 @@ mal	varmumi		/AOV
 =	vasko		/AO
 =	vasta		/ACMVGQY
 =	vastasenca	/AM	#drv
+=	vastaskala	/AM	#drv
 =	vastaspirita	/AM	#drv
 =	vastega		/AGMOV
 =	vasthorizonta	/EM
@@ -20910,6 +20998,7 @@ dis	vastigita	/C
 =	vati		/AOT
 =	vatikana	/A	#etn
 =	Vatikanon	/X	#etn
+=	Vatré			#pers#Eujo
 =	vavo		/AOX	#etn
 =	vazelino	/AO
 =	vazlava		/AJS
@@ -21029,6 +21118,7 @@ kontraý	vera¼o		/AO	#drv
 =	veras		/MV
 =	verba		/ACdGLsQ
 ne	verba		/AC
+per	verba		/A	#drv
 =	verbelekto	/AO
 =	verbkaraktera	/A
 =	verbo		/AcO
@@ -21036,6 +21126,8 @@ krom	verbo		/AO	#drv
 =	verboformo	/AO	#drv
 =	verbokaraktera	/A	#drv
 =	verboregado	/AO	#drv
+=	verbosignifo	/AO	#drv
+=	verbosistemo	/AO	#drv
 =	verbotempo	/AO	#drv
 =	verda		/e
 æiam	verda		/A	#drv
@@ -21085,6 +21177,7 @@ tut	verki		/T
 =	versiteno	/AO	#komp
 =	verslinio	/AO
 =	verso		/NOY
+=	versofarado	/AO	#drv
 =	verspiedo	/AO
 =	versto		/AO
 =	verþajna	/Em
@@ -21133,7 +21226,7 @@ ali	vesti		/T
 =	vestiøo		/AO	#drv
 nov	vestita		/AO
 =	vestmaski	/AT
-=	vesto		/AO_	#drv
+=	vesto		/AO_^	#drv
 =	vestotenejo	/AO
 =	vestu		/MRQTt
 =	veþto		/AO
@@ -21158,7 +21251,7 @@ pri	veti		/T
 æirkaý	veturi		/T
 en	veturi		/AOVJ
 preter	veturi		/AOT	#drv
-tra	veturi		/AOT
+tra	veturi		/AJOT
 trans	veturi		/AOT
 =	veturigi	/S
 =	veturilkolumno	/AO
@@ -21189,6 +21282,7 @@ sen	vianda		/AG
 dua	vica		/A	#drv
 ekster	vica		/A
 sen	vica		/E	#drv
+tria	vica		/A	#drv
 al	vicigi		/OTX
 en	vicigi		/OTX
 sur	vicigi		/AOTX
@@ -21235,7 +21329,7 @@ pli	vigligi		/AMOTX
 =	VIII
 =	vikario		/AO
 =	vikingo		/AO
-=	vikipedia	/A	#komp
+=	vikipedia	/AS	#komp
 =	Vikipedio	/O	#komp
 =	viktimo		/F
 =	viktoria	/AW	#etn
@@ -21293,8 +21387,9 @@ tra	vintri		/V
 =	violbruna	/AO
 =	violego		/AO
 =	violkoloro	/AO
+=	violonas	/V
 =	violonæelo	/AO
-=	violoni		/HOSV
+=	violono		/AHOS
 =	vipeti		/AOT
 =	vipi		/AOT
 =	vipuro		/AO
@@ -21314,6 +21409,7 @@ krom	virino		/AO	#drv
 kontraý	virusa		/A	#drv
 sen	virusa		/AGLQ
 =	viruso		/AO
+=	virusologe	/I
 =	virusporti	/AFV
 =	viscero		/AO
 =	viska		/ACO
@@ -21406,14 +21502,15 @@ trans	vivi		/T
 =	Vladimiro	/AO	#pers
 =	Vladivostok'	/X	#etn
 =	voæa		/AhNn
-sen	voæa		/GQ
+sen	voæa		/CGQ
 =	voædoni		/AGLOV
 =	voædonrajto	/AO
-=	voæi		/GQV
+=	voæi		/CGQV
 =	voækordo	/AO
 =	voælegi		/ALOT
 =	voæo		/heO
 =	voæorgano	/AO
+=	voæsintezilo	/AO
 =	voætono		/AO
 =	voætubo		/AO
 =	vodevilo	/AO
@@ -21548,6 +21645,7 @@ en	vortarigi	/T
 =	vorto		/AchO
 fin	vorto		/AO
 nov	vorto		/AO
+=	vortobazo	/AO	#drv
 =	vortoderivado	/AO	#drv
 =	vortodifino	/AO	#drv
 =	vortodistinga	/A	#drv
@@ -21564,7 +21662,7 @@ nov	vorto		/AO
 =	vortogrupo	/AO	#drv
 =	vortokombino	/AO	#drv
 =	vortokomenco	/AO	#drv
-=	vortokreo	/AO	#drv
+=	vortokre(ad)o	/AO	#drv
 =	vortokunmeto	/AO	#drv
 =	vort(o)limo	/AO
 =	vortolisto	/AO	#drv
