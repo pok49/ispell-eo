@@ -2,8 +2,8 @@
 divert(-1)
 #§ 			ABOUT THIS FILE
 Name: eo-aff.m4
-# Time-stamp: <2019-05-08 07:54:18 sergio>
-define(Versio, `# Versio:	4.0')
+# Time-stamp: <2024-01-07 10:23:54 sergio>
+define(Versio, `# Versio:	4.2')
 
 
 # This file eo-aff.m4 contains macros for Ispell affix file for
@@ -42,7 +42,7 @@ define(anst1,{ifelse({},{$1},{},{$1,})})
 #
 define(anst2,{ifelse({},{$1},{$2},{$1,$2})})
 
-define(subst,{$1	>	anst1({$2})$3'
+define(subst,{$1	>	anst1({$2})$3^'
     kazoj({$1	>	anst2({$2},$3O)})})
 
 # "nomo" estas "substantivo" aux "adjektivo":
@@ -65,7 +65,7 @@ ifdef({LOZE},
 {define(adj,{nome($@)})},
 {define(adj,{kazoj({$1	>	anst2({$2},{$3A})})
     $1	>	anst1({$2})$3E
-    $1	>	anst1({$2})$3'
+    $1	>	anst1({$2})$3^'
     $1	>	anst1({$2})$3O
     $1	>	anst2({$2},$3ON)})})
 
@@ -103,8 +103,10 @@ define(ntr,{nome(I,-I,AD)
     U	>	-U,I
     ntinoj(U,U)
     I	>	-I,O	    #substantivo ununombra: dormi -> dormo
+    I	>	-I,^'
     I	>	-I,ON
     U	>	-U,O
+    U	>	-U,^'
     U	>	-U,ON})
 
 # la pasivaj participoj {a,i,o}taj:
@@ -145,11 +147,12 @@ changequote(/*, */})
 # TeX/LaTeX laux esperanto.sty
 defstringtype "tex" "TeX" ".tex" ".bib"
 #
-#boundarychars	[---]
-#boundarychars	[-]
+#boundarychars	[.]
+boundarychars	[-]
+boundarychars	@
 #
-stringchar	'
-wordchars	\-
+stringchar	^'
+#wordchars	\-
 wordchars	a	A
 stringchar  \\\"a   \\\"A
 stringchar   \\'a    \\'A
@@ -178,7 +181,7 @@ wordchars    [v-z]   [V-Z]
 
 altstringtype "utf8" "tex" ".html" ".u8" ".utf"
 #
-altstringchar	\xE2\x80\x99 '
+altstringchar	\xE2\x80\x99 ^'
 altstringchar	\xC4\x88    ^C
 altstringchar	\xC4\x89    ^c
 altstringchar	\xC4\x9C    ^G
@@ -208,9 +211,39 @@ altstringchar	\xC3\x98  {\\O}
 altstringchar	\xC3\xBC \\\"u
 altstringchar	\xC3\x9C \\\"U
 
-altstringtype "latin3" "nroff" ".l3"
+altstringtype "latin3" "sgml" ".l3"
 #
-altstringchar	'       '
+altstringchar	'       ^'
+altstringchar	\xE6	^c
+altstringchar	\xF8	^g
+altstringchar	\xB6	^h
+altstringchar	\xBC	^j
+altstringchar	\xFE	^s
+altstringchar	\xFD	^u
+altstringchar	\xC6	^C
+altstringchar	\xD8	^G
+altstringchar	\xA6	^H
+altstringchar	\xAC	^J
+altstringchar	\xDE	^S
+altstringchar	\xDD	^U
+altstringchar	\xC1  \\'A
+altstringchar	\xC4 \\\"A
+altstringchar	\xC7 \\c{C}
+altstringchar	\xC9  \\'E
+altstringchar	\xD6 \\\"O
+#altstringchar	\xDB  \\^U
+altstringchar	\xDC \\\"U
+altstringchar	\xE1  \\'a
+altstringchar	\xE4 \\\"a
+altstringchar	\xE7 \\c{c}
+altstringchar	\xE9  \\'e
+altstringchar	\xF6 \\\"o
+#altstringchar	\xFB  \\^u
+altstringchar	\xFC \\\"u
+
+altstringtype "latin3a" "sgml" ".wiki" ".la3"
+#
+altstringchar	\xB4    ^'
 altstringchar	\xE6	^c
 altstringchar	\xF8	^g
 altstringchar	\xB6	^h
@@ -240,7 +273,7 @@ altstringchar	\xFC \\\"u
 
 altstringtype "cxirkaux" "nroff" ".t"
 #
-altstringchar	'       '
+altstringchar	'       ^'
 altstringchar	cx	^c
 altstringchar	gx	^g
 altstringchar	hx	^h
@@ -499,7 +532,7 @@ flag *A:
     U		>	-U,E
     kazoj({O N	>	-ON,A})	# Nord-Amerikon => Nord-Amerikajn
     O N		>	-ON,E
-    kazoj({'    >	-',A})	# Betle¶em'/AX
+    kazoj({^'    >	-^',A})	# Betle¶em^'/AX
 
 flag *B:
     Adj(A,-A,EM)
@@ -565,7 +598,7 @@ ifdef({SXPARE},
     O		>	-O,INE
     kazoj({O	>	-O,INA})
     subst(O,-O,IN)
-    O           >       -O,'
+    O           >       -O,^'
     ka3oj({O	>	})
 
 flag *G:	# IG-verboj
@@ -662,7 +695,7 @@ flag *O:
     subst(A,-A)
     ka3oj({A >	})
     subst(I,-I)
-    O	> -O,'
+    O	> -O,^'
     ka3oj({O >	})
     O J		>	-OJ,E	# gepatroj -> gepatre
     O J		>	N
@@ -753,7 +786,7 @@ flag *U:
     nome(I,-I,UL)
     nome(I,-I,ULIN)
 
-flag *V:	# verboj (sen la pasivo); ekz-e esti/V
+flag *V:	# verboj (sen pasivo); ekz-e esti/V
     x_s({A	>	-A,})	   # noktis, grandas
 #    nome(A,,NT)
     A S	>	-AS,IS	   # tempas > tempis
@@ -784,12 +817,12 @@ flag *X:
     J	     >	-J,-
     N	     >	-N,-
     O	     >	-O,-
-    O N	     >	-ON,'           # Konstantinolon/X, sed NE nuda Konstantinopol
+    O N	     >	-ON,^'           # Konstantinolon/X, sed NE nuda Konstantinopol
     [^G] I   >	-I,-
 
-    '	     >	-',-		# Kapernaum'/X, eventuale la nuda Kapernaum
-    '	     >	-',O
-    '	     >	-',ON
+    ^'	     >	-^',-		# Kapernaum^'/X, eventuale la nuda Kapernaum
+    ^'	     >	-^',O
+    ^'	     >	-^',ON
 
     x_s({I G I >	-GI,Ø})
     x_s({I G I >	-GI,ØAD})

@@ -1,8 +1,9 @@
-# -*- coding: utf-8 -*-
+# -*- coding: latin-3 -*-
 # Nomo:		eo.aff
 # Funkcio:	Afiksaro por Esperanto-vortaro
 # Komencita:	1997-08-30 de Sergio Pokrovskij <sergio.pokrovskij(^ce)gmail.com>
-# Versio:	4.0
+# Versio:	4.2
+# Generita:	ĵaŭ 11 Jan 2024 00:16:45 +0700
 
 #
 # Copyright 1997 -- 2012 Sergio Pokrovskij
@@ -14,7 +15,7 @@
 # The default 32 MASKBITS is no longer ispell are sufficient --
 # now you need MASKBITS=64.
 
-#§		        KODOPREZENTOJ (Encodings):
+#�		        KODOPREZENTOJ (Encodings):
 
 allaffixes on
 
@@ -25,11 +26,12 @@ allaffixes on
 # TeX/LaTeX laux esperanto.sty
 defstringtype "tex" "TeX" ".tex" ".bib"
 #
-#boundarychars	[---]
-#boundarychars	[-]
+#boundarychars	[.]
+boundarychars	[-]
+boundarychars	@
 #
-stringchar	'
-wordchars	\-
+stringchar	^'
+#wordchars	\-
 wordchars	a	A
 stringchar  \\\"a   \\\"A
 stringchar   \\'a    \\'A
@@ -58,39 +60,69 @@ wordchars    [v-z]   [V-Z]
 
 altstringtype "utf8" "tex" ".html" ".u8" ".utf"
 #
-altstringchar	’    '
-altstringchar	Ĉ    ^C
-altstringchar	ĉ    ^c
-altstringchar	Ĝ    ^G
-altstringchar	ĝ    ^g
-altstringchar	Ĥ    ^H
-altstringchar	ĥ    ^h
-altstringchar	Ĵ    ^J
-altstringchar	ĵ    ^j
-altstringchar	Ŝ    ^S
-altstringchar	ŝ    ^s
-altstringchar	Ŭ    ^U
-altstringchar	ŭ    ^u
-altstringchar	Á  \\'A
-altstringchar	á  \\'a
-altstringchar	Ä \\\"A
-altstringchar	ä \\\"a
-altstringchar	Ç \\c{C}
-altstringchar	ç \\c{c}
-#altstringchar	Č \\v{C}
-#altstringchar	č \\v{c}
-altstringchar	É  \\'E
-altstringchar	é  \\'e
-altstringchar	ö \\\"o
-altstringchar	Ö \\\"O
-altstringchar	ø  {\\o}
-altstringchar	Ø  {\\O}
-altstringchar	ü \\\"u
-altstringchar	Ü \\\"U
+altstringchar	\xE2\x80\x99 ^'
+altstringchar	\xC4\x88    ^C
+altstringchar	\xC4\x89    ^c
+altstringchar	\xC4\x9C    ^G
+altstringchar	\xC4\x9D    ^g
+altstringchar	\xC4\xA4    ^H
+altstringchar	\xC4\xA5    ^h
+altstringchar	\xC4\xB4    ^J
+altstringchar	\xC4\xB5    ^j
+altstringchar	\xC5\x9C    ^S
+altstringchar	\xC5\x9D    ^s
+altstringchar	\xC5\xAC    ^U
+altstringchar	\xC5\xAD    ^u
+altstringchar	\xC3\x81  \\'A
+altstringchar	\xC3\xA1  \\'a
+altstringchar	\xC3\x84 \\\"A
+altstringchar	\xC3\xA4 \\\"a
+altstringchar	\xC3\x87 \\c{C}
+altstringchar	\xC3\xA7 \\c{c}
+#altstringchar	\xC4\x8C \\v{C}
+#altstringchar	\xC4\x8D \\v{c}
+altstringchar	\xC3\x89  \\'E
+altstringchar	\xC3\xA9  \\'e
+altstringchar	\xC3\xB6 \\\"o
+altstringchar	\xC3\x96 \\\"O
+altstringchar	\xC3\xB8  {\\o}
+altstringchar	\xC3\x98  {\\O}
+altstringchar	\xC3\xBC \\\"u
+altstringchar	\xC3\x9C \\\"U
 
-altstringtype "latin3" "nroff" ".l3"
+altstringtype "latin3" "sgml" ".l3"
 #
-altstringchar	'       '
+altstringchar	'       ^'
+altstringchar	\xE6	^c
+altstringchar	\xF8	^g
+altstringchar	\xB6	^h
+altstringchar	\xBC	^j
+altstringchar	\xFE	^s
+altstringchar	\xFD	^u
+altstringchar	\xC6	^C
+altstringchar	\xD8	^G
+altstringchar	\xA6	^H
+altstringchar	\xAC	^J
+altstringchar	\xDE	^S
+altstringchar	\xDD	^U
+altstringchar	\xC1  \\'A
+altstringchar	\xC4 \\\"A
+altstringchar	\xC7 \\c{C}
+altstringchar	\xC9  \\'E
+altstringchar	\xD6 \\\"O
+#altstringchar	\xDB  \\^U
+altstringchar	\xDC \\\"U
+altstringchar	\xE1  \\'a
+altstringchar	\xE4 \\\"a
+altstringchar	\xE7 \\c{c}
+altstringchar	\xE9  \\'e
+altstringchar	\xF6 \\\"o
+#altstringchar	\xFB  \\^u
+altstringchar	\xFC \\\"u
+
+altstringtype "latin3a" "sgml" ".wiki" ".la3"
+#
+altstringchar	\xB4    ^'
 altstringchar	\xE6	^c
 altstringchar	\xF8	^g
 altstringchar	\xB6	^h
@@ -120,7 +152,7 @@ altstringchar	\xFC \\\"u
 
 altstringtype "cxirkaux" "nroff" ".t"
 #
-altstringchar	'       '
+altstringchar	'       ^'
 altstringchar	cx	^c
 altstringchar	gx	^g
 altstringchar	hx	^h
@@ -154,7 +186,7 @@ altstringchar	\xFC \\\"u
 # Here ends the encoding specification
 
 
-#§			Quick Reference
+#�			Quick Reference
 #			===============
 #
 #   A	-a, -e
@@ -222,7 +254,7 @@ altstringchar	\xFC \\\"u
 
 # Mankas flagoj por GE-, -ER, FIN-, NOV-, TUT-, ^GIS-, ^CE-, PER-, -ITA^J ...
 
-#§		        LA PREFIKSOJ:
+#�		        LA PREFIKSOJ:
 prefixes
 
 flag *a:
@@ -372,7 +404,7 @@ flag *\]:
     .		>	POST
 
 
-#§		        LA SUFIKSOJ:
+#�		        LA SUFIKSOJ:
 					  
 suffixes
 flag *A:
@@ -400,10 +432,10 @@ flag *A:
     O N	>	-ON,AJN
     O N	>	-ON,AN	# Nord-Amerikon => Nord-Amerikajn
     O N		>	-ON,E
-    '    >	-',A
-    '    >	-',AJ
-    '    >	-',AJN
-    '    >	-',AN	# Betle^hem'/AX
+    ^'    >	-^',A
+    ^'    >	-^',AJ
+    ^'    >	-^',AJN
+    ^'    >	-^',AN	# Betle^hem^'/AX
 
 flag *B:
     A	>	-A,EMA
@@ -411,7 +443,7 @@ flag *B:
     A	>	-A,EMAJN
     A	>	-A,EMAN
     A	>	-A,EME
-    A	>	-A,EM'
+    A	>	-A,EM^'
     A	>	-A,EMO
     A	>	-A,EMON
 
@@ -420,7 +452,7 @@ flag *B:
     I	>	-I,EMAJN
     I	>	-I,EMAN
     I	>	-I,EME
-    I	>	-I,EM'
+    I	>	-I,EM^'
     I	>	-I,EMO
     I	>	-I,EMON
 
@@ -429,7 +461,7 @@ flag *B:
     O	>	-O,EMAJN
     O	>	-O,EMAN
     O	>	-O,EME
-    O	>	-O,EM'
+    O	>	-O,EM^'
     O	>	-O,EMO
     O	>	-O,EMON
 
@@ -440,7 +472,7 @@ flag *C:
     A	>	-A,ECAJN
     A	>	-A,ECAN
     A	>	-A,ECE
-    A	>	-A,EC'
+    A	>	-A,EC^'
     A	>	-A,ECO
     A	>	-A,ECON
     I	>	-I,ECA
@@ -448,7 +480,7 @@ flag *C:
     I	>	-I,ECAJN
     I	>	-I,ECAN
     I	>	-I,ECE
-    I	>	-I,EC'
+    I	>	-I,EC^'
     I	>	-I,ECO
     I	>	-I,ECON
     O	>	-O,ECA
@@ -456,7 +488,7 @@ flag *C:
     O	>	-O,ECAJN
     O	>	-O,ECAN
     O	>	-O,ECE
-    O	>	-O,EC'
+    O	>	-O,EC^'
     O	>	-O,ECO
     O	>	-O,ECON
     A N	>	-AN,ECA
@@ -464,7 +496,7 @@ flag *C:
     A N	>	-AN,ECAJN
     A N	>	-AN,ECAN
     A N	>	-AN,ECE
-    A N	>	-AN,EC'
+    A N	>	-AN,EC^'
     A N	>	-AN,ECO
     A N	>	-AN,ECON
     O N	>	-ON,ECA
@@ -472,7 +504,7 @@ flag *C:
     O N	>	-ON,ECAJN
     O N	>	-ON,ECAN
     O N	>	-ON,ECE
-    O N	>	-ON,EC'
+    O N	>	-ON,EC^'
     O N	>	-ON,ECO
     O N	>	-ON,ECON
 
@@ -482,11 +514,11 @@ flag *D:		# -inDa
     A	>	-A,INDAJN
     A	>	-A,INDAN
     A	>	-A,INDE
-    A	>	-A,IND'
+    A	>	-A,IND^'
     A	>	-A,INDO
     A	>	-A,INDON
 
-    A	>	-A,INDA^J'
+    A	>	-A,INDA^J^'
     A	>	-A,INDA^JO
     A	>	-A,INDA^JOJ
     A	>	-A,INDA^JOJN
@@ -501,11 +533,11 @@ flag *D:		# -inDa
     I	>	NDAJN
     I	>	NDAN
     I	>	NDE
-    I	>	ND'
+    I	>	ND^'
     I	>	NDO
     I	>	NDON
 
-    I	>	NDA^J'
+    I	>	NDA^J^'
     I	>	NDA^JO
     I	>	NDA^JOJ
     I	>	NDA^JOJN
@@ -533,7 +565,7 @@ flag *e:
     A	>	-A,EGAJN
     A	>	-A,EGAN
     A	>	-A,EGE
-    A	>	-A,EG'
+    A	>	-A,EG^'
     A	>	-A,EGO
     A	>	-A,EGOJ
     A	>	-A,EGOJN
@@ -543,7 +575,7 @@ flag *e:
     A	>	-A,ETAJN
     A	>	-A,ETAN
     A	>	-A,ETE
-    A	>	-A,ET'
+    A	>	-A,ET^'
     A	>	-A,ETO
     A	>	-A,ETOJ
     A	>	-A,ETOJN
@@ -552,7 +584,7 @@ flag *e:
     O	>	-O,EGAJ
     O	>	-O,EGAJN
     O	>	-O,EGAN
-    O	>	-O,EG'
+    O	>	-O,EG^'
     O	>	-O,EGO
     O	>	-O,EGOJ
     O	>	-O,EGOJN
@@ -561,7 +593,7 @@ flag *e:
     O	>	-O,ETAJ
     O	>	-O,ETAJN
     O	>	-O,ETAN
-    O	>	-O,ET'
+    O	>	-O,ET^'
     O	>	-O,ETO
     O	>	-O,ETOJ
     O	>	-O,ETOJN
@@ -622,7 +654,7 @@ flag *F:
     E	>	-E,INAJN
     E	>	-E,INAN
     E	>	-E,INE
-    E	>	-E,IN'
+    E	>	-E,IN^'
     E	>	-E,INO
     E	>	-E,INOJ
     E	>	-E,INOJN
@@ -632,7 +664,7 @@ flag *F:
     I	>	-I,ANTINAJN
     I	>	-I,ANTINAN
     I	>	-I,ANTINE
-    I	>	-I,ANTIN'
+    I	>	-I,ANTIN^'
     I	>	-I,ANTINO
     I	>	-I,ANTINOJ
     I	>	-I,ANTINOJN
@@ -641,7 +673,7 @@ flag *F:
     I	>	NTINAJ
     I	>	NTINAJN
     I	>	NTINAN
-    I	>	NTIN'
+    I	>	NTIN^'
     I	>	NTINO
     I	>	NTINOJ
     I	>	NTINOJN
@@ -651,7 +683,7 @@ flag *F:
     U	>	-I,ANTINAJN
     U	>	-I,ANTINAN
     U	>	-I,ANTINE
-    U	>	-I,ANTIN'
+    U	>	-I,ANTIN^'
     U	>	-I,ANTINO
     U	>	-I,ANTINOJ
     U	>	-I,ANTINOJN
@@ -660,7 +692,7 @@ flag *F:
     U	>	NTINAJ
     U	>	NTINAJN
     U	>	NTINAN
-    U	>	NTIN'
+    U	>	NTIN^'
     U	>	NTINO
     U	>	NTINOJ
     U	>	NTINOJN
@@ -675,12 +707,12 @@ flag *F:
     O	>	-O,INAJ
     O	>	-O,INAJN
     O	>	-O,INAN
-    O	>	-O,IN'
+    O	>	-O,IN^'
     O	>	-O,INO
     O	>	-O,INOJ
     O	>	-O,INOJN
     O	>	-O,INON
-    O           >       -O,'
+    O           >       -O,^'
     O	>	J
     O	>	JN
     O	>	N
@@ -697,7 +729,7 @@ flag *G:	# IG-verboj
     A	>	-A,IGINTAJN
     A	>	-A,IGINTAN
     A	>	-A,IGINTE
-    A	>	-A,IGINT'
+    A	>	-A,IGINT^'
     A	>	-A,IGINTO
     A	>	-A,IGINTOJ
     A	>	-A,IGINTOJN
@@ -707,7 +739,7 @@ flag *G:	# IG-verboj
     A	>	-A,IGANTAJN
     A	>	-A,IGANTAN
     A	>	-A,IGANTE
-    A	>	-A,IGANT'
+    A	>	-A,IGANT^'
     A	>	-A,IGANTO
     A	>	-A,IGANTOJ
     A	>	-A,IGANTOJN
@@ -717,7 +749,7 @@ flag *G:	# IG-verboj
     A	>	-A,IGONTAJN
     A	>	-A,IGONTAN
     A	>	-A,IGONTE
-    A	>	-A,IGONT'
+    A	>	-A,IGONT^'
     A	>	-A,IGONTO
     A	>	-A,IGONTOJ
     A	>	-A,IGONTOJN
@@ -728,7 +760,7 @@ flag *G:	# IG-verboj
     A	>	-A,IGAJN
     A	>	-A,IGAN
     A	>	-A,IGE
-    A	>	-A,IG'
+    A	>	-A,IG^'
     A	>	-A,IGO
     A	>	-A,IGOJ
     A	>	-A,IGOJN
@@ -739,7 +771,7 @@ flag *G:	# IG-verboj
     A	>	-A,IGITAJN
     A	>	-A,IGITAN
     A	>	-A,IGITE
-    A	>	-A,IGIT'
+    A	>	-A,IGIT^'
     A	>	-A,IGITO
     A	>	-A,IGITOJ
     A	>	-A,IGITOJN
@@ -749,7 +781,7 @@ flag *G:	# IG-verboj
     A	>	-A,IGATAJN
     A	>	-A,IGATAN
     A	>	-A,IGATE
-    A	>	-A,IGAT'
+    A	>	-A,IGAT^'
     A	>	-A,IGATO
     A	>	-A,IGATOJ
     A	>	-A,IGATOJN
@@ -759,7 +791,7 @@ flag *G:	# IG-verboj
     A	>	-A,IGOTAJN
     A	>	-A,IGOTAN
     A	>	-A,IGOTE
-    A	>	-A,IGOT'
+    A	>	-A,IGOT^'
     A	>	-A,IGOTO
     A	>	-A,IGOTOJ
     A	>	-A,IGOTOJN
@@ -773,7 +805,7 @@ flag *G:	# IG-verboj
     A	>	-A,IGEBLAJN
     A	>	-A,IGEBLAN
     A	>	-A,IGEBLE
-    A	>	-A,IGEBL'
+    A	>	-A,IGEBL^'
     A	>	-A,IGEBLO
     A	>	-A,IGEBLON
 
@@ -786,7 +818,7 @@ flag *G:	# IG-verboj
     A	>	-A,IGENDAJN
     A	>	-A,IGENDAN
     A	>	-A,IGENDE
-    A	>	-A,IGEND'
+    A	>	-A,IGEND^'
     A	>	-A,IGENDO
     A	>	-A,IGENDOJ
     A	>	-A,IGENDOJN
@@ -803,7 +835,7 @@ flag *G:	# IG-verboj
     A	>	-A,IGADAJN
     A	>	-A,IGADAN
     A	>	-A,IGADE
-    A	>	-A,IGAD'
+    A	>	-A,IGAD^'
     A	>	-A,IGADO
     A	>	-A,IGADOJ
     A	>	-A,IGADOJN
@@ -814,7 +846,7 @@ flag *G:	# IG-verboj
     I	>	GADAJN
     I	>	GADAN
     I	>	GADE
-    I	>	GAD'
+    I	>	GAD^'
     I	>	GADO
     I	>	GADOJ
     I	>	GADOJN
@@ -836,7 +868,7 @@ flag *G:	# IG-verboj
     I	>	GINTAJN
     I	>	GINTAN
     I	>	GINTE
-    I	>	GINT'
+    I	>	GINT^'
     I	>	GINTO
     I	>	GINTOJ
     I	>	GINTOJN
@@ -846,7 +878,7 @@ flag *G:	# IG-verboj
     I	>	GANTAJN
     I	>	GANTAN
     I	>	GANTE
-    I	>	GANT'
+    I	>	GANT^'
     I	>	GANTO
     I	>	GANTOJ
     I	>	GANTOJN
@@ -856,7 +888,7 @@ flag *G:	# IG-verboj
     I	>	GONTAJN
     I	>	GONTAN
     I	>	GONTE
-    I	>	GONT'
+    I	>	GONT^'
     I	>	GONTO
     I	>	GONTOJ
     I	>	GONTOJN
@@ -867,7 +899,7 @@ flag *G:	# IG-verboj
     I	>	GAJN
     I	>	GAN
     I	>	GE
-    I	>	G'
+    I	>	G^'
     I	>	GO
     I	>	GOJ
     I	>	GOJN
@@ -877,7 +909,7 @@ flag *G:	# IG-verboj
     I	>	GITAJN
     I	>	GITAN
     I	>	GITE
-    I	>	GIT'
+    I	>	GIT^'
     I	>	GITO
     I	>	GITOJ
     I	>	GITOJN
@@ -887,7 +919,7 @@ flag *G:	# IG-verboj
     I	>	GATAJN
     I	>	GATAN
     I	>	GATE
-    I	>	GAT'
+    I	>	GAT^'
     I	>	GATO
     I	>	GATOJ
     I	>	GATOJN
@@ -897,7 +929,7 @@ flag *G:	# IG-verboj
     I	>	GOTAJN
     I	>	GOTAN
     I	>	GOTE
-    I	>	GOT'
+    I	>	GOT^'
     I	>	GOTO
     I	>	GOTOJ
     I	>	GOTOJN
@@ -911,7 +943,7 @@ flag *G:	# IG-verboj
     I	>	GEBLAJN
     I	>	GEBLAN
     I	>	GEBLE
-    I	>	GEBL'
+    I	>	GEBL^'
     I	>	GEBLO
     I	>	GEBLON
 
@@ -924,7 +956,7 @@ flag *G:	# IG-verboj
     I	>	GENDAJN
     I	>	GENDAN
     I	>	GENDE
-    I	>	GEND'
+    I	>	GEND^'
     I	>	GENDO
     I	>	GENDOJ
     I	>	GENDOJN
@@ -934,7 +966,7 @@ flag *G:	# IG-verboj
     U	>	-U,IGADAJN
     U	>	-U,IGADAN
     U	>	-U,IGADE
-    U	>	-U,IGAD'
+    U	>	-U,IGAD^'
     U	>	-U,IGADO
     U	>	-U,IGADOJ
     U	>	-U,IGADOJN
@@ -956,7 +988,7 @@ flag *G:	# IG-verboj
     U	>	-U,IGINTAJN
     U	>	-U,IGINTAN
     U	>	-U,IGINTE
-    U	>	-U,IGINT'
+    U	>	-U,IGINT^'
     U	>	-U,IGINTO
     U	>	-U,IGINTOJ
     U	>	-U,IGINTOJN
@@ -966,7 +998,7 @@ flag *G:	# IG-verboj
     U	>	-U,IGANTAJN
     U	>	-U,IGANTAN
     U	>	-U,IGANTE
-    U	>	-U,IGANT'
+    U	>	-U,IGANT^'
     U	>	-U,IGANTO
     U	>	-U,IGANTOJ
     U	>	-U,IGANTOJN
@@ -976,7 +1008,7 @@ flag *G:	# IG-verboj
     U	>	-U,IGONTAJN
     U	>	-U,IGONTAN
     U	>	-U,IGONTE
-    U	>	-U,IGONT'
+    U	>	-U,IGONT^'
     U	>	-U,IGONTO
     U	>	-U,IGONTOJ
     U	>	-U,IGONTOJN
@@ -987,7 +1019,7 @@ flag *G:	# IG-verboj
     U	>	-U,IGAJN
     U	>	-U,IGAN
     U	>	-U,IGE
-    U	>	-U,IG'
+    U	>	-U,IG^'
     U	>	-U,IGO
     U	>	-U,IGOJ
     U	>	-U,IGOJN
@@ -997,7 +1029,7 @@ flag *G:	# IG-verboj
     U	>	-U,IGITAJN
     U	>	-U,IGITAN
     U	>	-U,IGITE
-    U	>	-U,IGIT'
+    U	>	-U,IGIT^'
     U	>	-U,IGITO
     U	>	-U,IGITOJ
     U	>	-U,IGITOJN
@@ -1007,7 +1039,7 @@ flag *G:	# IG-verboj
     U	>	-U,IGATAJN
     U	>	-U,IGATAN
     U	>	-U,IGATE
-    U	>	-U,IGAT'
+    U	>	-U,IGAT^'
     U	>	-U,IGATO
     U	>	-U,IGATOJ
     U	>	-U,IGATOJN
@@ -1017,7 +1049,7 @@ flag *G:	# IG-verboj
     U	>	-U,IGOTAJN
     U	>	-U,IGOTAN
     U	>	-U,IGOTE
-    U	>	-U,IGOT'
+    U	>	-U,IGOT^'
     U	>	-U,IGOTO
     U	>	-U,IGOTOJ
     U	>	-U,IGOTOJN
@@ -1031,7 +1063,7 @@ flag *G:	# IG-verboj
     U	>	-U,IGEBLAJN
     U	>	-U,IGEBLAN
     U	>	-U,IGEBLE
-    U	>	-U,IGEBL'
+    U	>	-U,IGEBL^'
     U	>	-U,IGEBLO
     U	>	-U,IGEBLON
 
@@ -1044,7 +1076,7 @@ flag *G:	# IG-verboj
     U	>	-U,IGENDAJN
     U	>	-U,IGENDAN
     U	>	-U,IGENDE
-    U	>	-U,IGEND'
+    U	>	-U,IGEND^'
     U	>	-U,IGENDO
     U	>	-U,IGENDOJ
     U	>	-U,IGENDOJN
@@ -1061,7 +1093,7 @@ flag *G:	# IG-verboj
     O	>	-O,IGINTAJN
     O	>	-O,IGINTAN
     O	>	-O,IGINTE
-    O	>	-O,IGINT'
+    O	>	-O,IGINT^'
     O	>	-O,IGINTO
     O	>	-O,IGINTOJ
     O	>	-O,IGINTOJN
@@ -1071,7 +1103,7 @@ flag *G:	# IG-verboj
     O	>	-O,IGANTAJN
     O	>	-O,IGANTAN
     O	>	-O,IGANTE
-    O	>	-O,IGANT'
+    O	>	-O,IGANT^'
     O	>	-O,IGANTO
     O	>	-O,IGANTOJ
     O	>	-O,IGANTOJN
@@ -1081,7 +1113,7 @@ flag *G:	# IG-verboj
     O	>	-O,IGONTAJN
     O	>	-O,IGONTAN
     O	>	-O,IGONTE
-    O	>	-O,IGONT'
+    O	>	-O,IGONT^'
     O	>	-O,IGONTO
     O	>	-O,IGONTOJ
     O	>	-O,IGONTOJN
@@ -1092,7 +1124,7 @@ flag *G:	# IG-verboj
     O	>	-O,IGAJN
     O	>	-O,IGAN
     O	>	-O,IGE
-    O	>	-O,IG'
+    O	>	-O,IG^'
     O	>	-O,IGO
     O	>	-O,IGOJ
     O	>	-O,IGOJN
@@ -1102,7 +1134,7 @@ flag *G:	# IG-verboj
     O	>	-O,IGITAJN
     O	>	-O,IGITAN
     O	>	-O,IGITE
-    O	>	-O,IGIT'
+    O	>	-O,IGIT^'
     O	>	-O,IGITO
     O	>	-O,IGITOJ
     O	>	-O,IGITOJN
@@ -1112,7 +1144,7 @@ flag *G:	# IG-verboj
     O	>	-O,IGATAJN
     O	>	-O,IGATAN
     O	>	-O,IGATE
-    O	>	-O,IGAT'
+    O	>	-O,IGAT^'
     O	>	-O,IGATO
     O	>	-O,IGATOJ
     O	>	-O,IGATOJN
@@ -1122,7 +1154,7 @@ flag *G:	# IG-verboj
     O	>	-O,IGOTAJN
     O	>	-O,IGOTAN
     O	>	-O,IGOTE
-    O	>	-O,IGOT'
+    O	>	-O,IGOT^'
     O	>	-O,IGOTO
     O	>	-O,IGOTOJ
     O	>	-O,IGOTOJN
@@ -1136,7 +1168,7 @@ flag *G:	# IG-verboj
     O	>	-O,IGEBLAJN
     O	>	-O,IGEBLAN
     O	>	-O,IGEBLE
-    O	>	-O,IGEBL'
+    O	>	-O,IGEBL^'
     O	>	-O,IGEBLO
     O	>	-O,IGEBLON
 
@@ -1149,7 +1181,7 @@ flag *G:	# IG-verboj
     O	>	-O,IGENDAJN
     O	>	-O,IGENDAN
     O	>	-O,IGENDE
-    O	>	-O,IGEND'
+    O	>	-O,IGEND^'
     O	>	-O,IGENDO
     O	>	-O,IGENDOJ
     O	>	-O,IGENDOJN
@@ -1165,7 +1197,7 @@ flag *G:	# IG-verboj
     O	>	-O,IGADAJN
     O	>	-O,IGADAN
     O	>	-O,IGADE
-    O	>	-O,IGAD'
+    O	>	-O,IGAD^'
     O	>	-O,IGADO
     O	>	-O,IGADOJ
     O	>	-O,IGADOJN
@@ -1178,7 +1210,7 @@ flag H:
     A	>	-A,UJAJN
     A	>	-A,UJAN
     A	>	-A,UJE
-    A	>	-A,UJ'
+    A	>	-A,UJ^'
     A	>	-A,UJO
     A	>	-A,UJOJ
     A	>	-A,UJOJN
@@ -1188,7 +1220,7 @@ flag H:
     I	>	-I,UJAJN
     I	>	-I,UJAN
     I	>	-I,UJE
-    I	>	-I,UJ'
+    I	>	-I,UJ^'
     I	>	-I,UJO
     I	>	-I,UJOJ
     I	>	-I,UJOJN
@@ -1198,7 +1230,7 @@ flag H:
     O	>	-O,UJAJN
     O	>	-O,UJAN
     O	>	-O,UJE
-    O	>	-O,UJ'
+    O	>	-O,UJ^'
     O	>	-O,UJO
     O	>	-O,UJOJ
     O	>	-O,UJOJN
@@ -1218,7 +1250,7 @@ flag *I:
     E	>	-E,AJ
     E	>	-E,AJN
     E	>	-E,AN
-    E	>	-E,'
+    E	>	-E,^'
     E	>	-E,O
     E	>	-E,OJ
     E	>	-E,OJN
@@ -1228,7 +1260,7 @@ flag *I:
     E	>	-E,IAJN
     E	>	-E,IAN
     E	>	-E,IE
-    E	>	-E,I'
+    E	>	-E,I^'
     E	>	-E,IO
     E	>	-E,IOJ
     E	>	-E,IOJN
@@ -1238,7 +1270,7 @@ flag *I:
     E	>	-E,IA^JAJN
     E	>	-E,IA^JAN
     E	>	-E,IA^JE
-    E	>	-E,IA^J'
+    E	>	-E,IA^J^'
     E	>	-E,IA^JO
     E	>	-E,IA^JOJ
     E	>	-E,IA^JOJN
@@ -1248,7 +1280,7 @@ flag *I:
     I	>	-I,AJN
     I	>	-I,AN
     I	>	-I,E
-    I	>	-I,'
+    I	>	-I,^'
     I	>	-I,O
     I	>	-I,OJ
     I	>	-I,OJN
@@ -1257,7 +1289,7 @@ flag *I:
     I	>	AJ
     I	>	AJN
     I	>	AN
-    I	>	'
+    I	>	^'
     I	>	O
     I	>	OJ
     I	>	OJN
@@ -1286,7 +1318,7 @@ flag *I:
     I A N A	>	-IANA,ANAJN
     I A N A	>	-IANA,ANAN
     I A N A	>	-IANA,ANE
-    I A N A	>	-IANA,AN'
+    I A N A	>	-IANA,AN^'
     I A N A	>	-IANA,ANO
     I A N A	>	-IANA,ANOJ
     I A N A	>	-IANA,ANOJN
@@ -1296,7 +1328,7 @@ flag *I:
     I A N A	>	-IANA,ANINAJN
     I A N A	>	-IANA,ANINAN
     I A N A	>	-IANA,ANINE
-    I A N A	>	-IANA,ANIN'
+    I A N A	>	-IANA,ANIN^'
     I A N A	>	-IANA,ANINO
     I A N A	>	-IANA,ANINOJ
     I A N A	>	-IANA,ANINOJN
@@ -1307,7 +1339,7 @@ flag *I:
     U J A N O	>	-UJANO,IANAJN
     U J A N O	>	-UJANO,IANAN
     U J A N O	>	-UJANO,IANE
-    U J A N O	>	-UJANO,IAN'
+    U J A N O	>	-UJANO,IAN^'
     U J A N O	>	-UJANO,IANO
     U J A N O	>	-UJANO,IANOJ
     U J A N O	>	-UJANO,IANOJN
@@ -1317,7 +1349,7 @@ flag *I:
     U J A N O	>	-UJANO,IANINAJN
     U J A N O	>	-UJANO,IANINAN
     U J A N O	>	-UJANO,IANINE
-    U J A N O	>	-UJANO,IANIN'
+    U J A N O	>	-UJANO,IANIN^'
     U J A N O	>	-UJANO,IANINO
     U J A N O	>	-UJANO,IANINOJ
     U J A N O	>	-UJANO,IANINOJN
@@ -1340,7 +1372,7 @@ flag *J:
     A	>	-A,EJAJN
     A	>	-A,EJAN
     A	>	-A,EJE
-    A	>	-A,EJ'
+    A	>	-A,EJ^'
     A	>	-A,EJO
     A	>	-A,EJOJ
     A	>	-A,EJOJN
@@ -1350,7 +1382,7 @@ flag *J:
     I	>	-I,EJAJN
     I	>	-I,EJAN
     I	>	-I,EJE
-    I	>	-I,EJ'
+    I	>	-I,EJ^'
     I	>	-I,EJO
     I	>	-I,EJOJ
     I	>	-I,EJOJN
@@ -1360,7 +1392,7 @@ flag *J:
     O	>	-O,EJAJN
     O	>	-O,EJAN
     O	>	-O,EJE
-    O	>	-O,EJ'
+    O	>	-O,EJ^'
     O	>	-O,EJO
     O	>	-O,EJOJ
     O	>	-O,EJOJN
@@ -1373,7 +1405,7 @@ flag K:
     A	>	RAJN
     A	>	RAN
     A	>	RE
-    A	>	R'
+    A	>	R^'
     A	>	RO
     A	>	ROJ
     A	>	ROJN
@@ -1383,7 +1415,7 @@ flag K:
     I	>	-I,ARAJN
     I	>	-I,ARAN
     I	>	-I,ARE
-    I	>	-I,AR'
+    I	>	-I,AR^'
     I	>	-I,ARO
     I	>	-I,AROJ
     I	>	-I,AROJN
@@ -1393,7 +1425,7 @@ flag K:
     O	>	-O,ARAJN
     O	>	-O,ARAN
     O	>	-O,ARE
-    O	>	-O,AR'
+    O	>	-O,AR^'
     O	>	-O,ARO
     O	>	-O,AROJ
     O	>	-O,AROJN
@@ -1406,7 +1438,7 @@ flag L:			# no *: ^cerpi/AdLlQT_ > ^cerpilo, sed ne el~ilo!
     A	>	-A,IGILAJN
     A	>	-A,IGILAN
     A	>	-A,IGILE
-    A	>	-A,IGIL'
+    A	>	-A,IGIL^'
     A	>	-A,IGILO
     A	>	-A,IGILOJ
     A	>	-A,IGILOJN
@@ -1416,7 +1448,7 @@ flag L:			# no *: ^cerpi/AdLlQT_ > ^cerpilo, sed ne el~ilo!
     I	>	LAJN
     I	>	LAN
     I	>	LE
-    I	>	L'
+    I	>	L^'
     I	>	LO
     I	>	LOJ
     I	>	LOJN
@@ -1426,7 +1458,7 @@ flag L:			# no *: ^cerpi/AdLlQT_ > ^cerpilo, sed ne el~ilo!
     O	>	-O,ILAJN
     O	>	-O,ILAN
     O	>	-O,ILE
-    O	>	-O,IL'
+    O	>	-O,IL^'
     O	>	-O,ILO
     O	>	-O,ILOJ
     O	>	-O,ILOJN
@@ -1434,7 +1466,7 @@ flag L:			# no *: ^cerpi/AdLlQT_ > ^cerpilo, sed ne el~ilo!
 
 flag *O:
 
-    A	>	-A,'
+    A	>	-A,^'
     A	>	-A,O
     A	>	-A,OJ
     A	>	-A,OJN
@@ -1442,12 +1474,12 @@ flag *O:
     A >	J
     A >	JN
     A >	N
-    I	>	-I,'
+    I	>	-I,^'
     I	>	-I,O
     I	>	-I,OJ
     I	>	-I,OJN
     I	>	-I,ON
-    O	> -O,'
+    O	> -O,^'
     O >	J
     O >	JN
     O >	N
@@ -1457,7 +1489,7 @@ flag *O:
     O J	> 	-OJ,AJ
     O J	> 	-OJ,AJN
     O J	> 	-OJ,AN
-    U	>	-U,'
+    U	>	-U,^'
     U	>	-U,O
     U	>	-U,OJ
     U	>	-U,OJN
@@ -1491,7 +1523,7 @@ flag *Q:	# I^G-verboj
     I	>	^GINTAJN
     I	>	^GINTAN
     I	>	^GINTE
-    I	>	^GINT'
+    I	>	^GINT^'
     I	>	^GINTO
     I	>	^GINTOJ
     I	>	^GINTOJN
@@ -1501,7 +1533,7 @@ flag *Q:	# I^G-verboj
     I	>	^GANTAJN
     I	>	^GANTAN
     I	>	^GANTE
-    I	>	^GANT'
+    I	>	^GANT^'
     I	>	^GANTO
     I	>	^GANTOJ
     I	>	^GANTOJN
@@ -1511,7 +1543,7 @@ flag *Q:	# I^G-verboj
     I	>	^GONTAJN
     I	>	^GONTAN
     I	>	^GONTE
-    I	>	^GONT'
+    I	>	^GONT^'
     I	>	^GONTO
     I	>	^GONTOJ
     I	>	^GONTOJN
@@ -1522,7 +1554,7 @@ flag *Q:	# I^G-verboj
     I	>	^GAJN
     I	>	^GAN
     I	>	^GE
-    I	>	^G'
+    I	>	^G^'
     I	>	^GO
     I	>	^GOJ
     I	>	^GOJN
@@ -1532,7 +1564,7 @@ flag *Q:	# I^G-verboj
     I	>	^GEMAJN
     I	>	^GEMAN
     I	>	^GEME
-    I	>	^GEM'
+    I	>	^GEM^'
     I	>	^GEMO
     I	>	^GEMOJ
     I	>	^GEMOJN
@@ -1542,7 +1574,7 @@ flag *Q:	# I^G-verboj
     I	>	^GADAJN
     I	>	^GADAN
     I	>	^GADE
-    I	>	^GAD'
+    I	>	^GAD^'
     I	>	^GADO
     I	>	^GADOJ
     I	>	^GADOJN
@@ -1565,7 +1597,7 @@ flag *Q:	# I^G-verboj
     U	>	-U,I^GINTAJN
     U	>	-U,I^GINTAN
     U	>	-U,I^GINTE
-    U	>	-U,I^GINT'
+    U	>	-U,I^GINT^'
     U	>	-U,I^GINTO
     U	>	-U,I^GINTOJ
     U	>	-U,I^GINTOJN
@@ -1575,7 +1607,7 @@ flag *Q:	# I^G-verboj
     U	>	-U,I^GANTAJN
     U	>	-U,I^GANTAN
     U	>	-U,I^GANTE
-    U	>	-U,I^GANT'
+    U	>	-U,I^GANT^'
     U	>	-U,I^GANTO
     U	>	-U,I^GANTOJ
     U	>	-U,I^GANTOJN
@@ -1585,7 +1617,7 @@ flag *Q:	# I^G-verboj
     U	>	-U,I^GONTAJN
     U	>	-U,I^GONTAN
     U	>	-U,I^GONTE
-    U	>	-U,I^GONT'
+    U	>	-U,I^GONT^'
     U	>	-U,I^GONTO
     U	>	-U,I^GONTOJ
     U	>	-U,I^GONTOJN
@@ -1596,7 +1628,7 @@ flag *Q:	# I^G-verboj
     U	>	-U,I^GAJN
     U	>	-U,I^GAN
     U	>	-U,I^GE
-    U	>	-U,I^G'
+    U	>	-U,I^G^'
     U	>	-U,I^GO
     U	>	-U,I^GOJ
     U	>	-U,I^GOJN
@@ -1606,7 +1638,7 @@ flag *Q:	# I^G-verboj
     U	>	-U,I^GEMAJN
     U	>	-U,I^GEMAN
     U	>	-U,I^GEME
-    U	>	-U,I^GEM'
+    U	>	-U,I^GEM^'
     U	>	-U,I^GEMO
     U	>	-U,I^GEMOJ
     U	>	-U,I^GEMOJN
@@ -1615,7 +1647,7 @@ flag *Q:	# I^G-verboj
     U	>	-U,I^GADAJ
     U	>	-U,I^GADAJN
     U	>	-U,I^GADAN
-    U	>	-U,I^GAD'
+    U	>	-U,I^GAD^'
     U	>	-U,I^GADO
     U	>	-U,I^GADOJ
     U	>	-U,I^GADOJN
@@ -1638,7 +1670,7 @@ flag *Q:	# I^G-verboj
     A	>	-A,I^GINTAJN
     A	>	-A,I^GINTAN
     A	>	-A,I^GINTE
-    A	>	-A,I^GINT'
+    A	>	-A,I^GINT^'
     A	>	-A,I^GINTO
     A	>	-A,I^GINTOJ
     A	>	-A,I^GINTOJN
@@ -1648,7 +1680,7 @@ flag *Q:	# I^G-verboj
     A	>	-A,I^GANTAJN
     A	>	-A,I^GANTAN
     A	>	-A,I^GANTE
-    A	>	-A,I^GANT'
+    A	>	-A,I^GANT^'
     A	>	-A,I^GANTO
     A	>	-A,I^GANTOJ
     A	>	-A,I^GANTOJN
@@ -1658,7 +1690,7 @@ flag *Q:	# I^G-verboj
     A	>	-A,I^GONTAJN
     A	>	-A,I^GONTAN
     A	>	-A,I^GONTE
-    A	>	-A,I^GONT'
+    A	>	-A,I^GONT^'
     A	>	-A,I^GONTO
     A	>	-A,I^GONTOJ
     A	>	-A,I^GONTOJN
@@ -1669,7 +1701,7 @@ flag *Q:	# I^G-verboj
     A	>	-A,I^GAJN
     A	>	-A,I^GAN
     A	>	-A,I^GE
-    A	>	-A,I^G'
+    A	>	-A,I^G^'
     A	>	-A,I^GO
     A	>	-A,I^GOJ
     A	>	-A,I^GOJN
@@ -1679,7 +1711,7 @@ flag *Q:	# I^G-verboj
     A	>	-A,I^GEMAJN
     A	>	-A,I^GEMAN
     A	>	-A,I^GEME
-    A	>	-A,I^GEM'
+    A	>	-A,I^GEM^'
     A	>	-A,I^GEMO
     A	>	-A,I^GEMOJ
     A	>	-A,I^GEMOJN
@@ -1689,7 +1721,7 @@ flag *Q:	# I^G-verboj
     A	>	-A,I^GADAJN
     A	>	-A,I^GADAN
     A	>	-A,I^GADE
-    A	>	-A,I^GAD'
+    A	>	-A,I^GAD^'
     A	>	-A,I^GADO
     A	>	-A,I^GADOJ
     A	>	-A,I^GADOJN
@@ -1711,7 +1743,7 @@ flag *Q:	# I^G-verboj
     O	>	-O,I^GINTAJN
     O	>	-O,I^GINTAN
     O	>	-O,I^GINTE
-    O	>	-O,I^GINT'
+    O	>	-O,I^GINT^'
     O	>	-O,I^GINTO
     O	>	-O,I^GINTOJ
     O	>	-O,I^GINTOJN
@@ -1721,7 +1753,7 @@ flag *Q:	# I^G-verboj
     O	>	-O,I^GANTAJN
     O	>	-O,I^GANTAN
     O	>	-O,I^GANTE
-    O	>	-O,I^GANT'
+    O	>	-O,I^GANT^'
     O	>	-O,I^GANTO
     O	>	-O,I^GANTOJ
     O	>	-O,I^GANTOJN
@@ -1731,7 +1763,7 @@ flag *Q:	# I^G-verboj
     O	>	-O,I^GONTAJN
     O	>	-O,I^GONTAN
     O	>	-O,I^GONTE
-    O	>	-O,I^GONT'
+    O	>	-O,I^GONT^'
     O	>	-O,I^GONTO
     O	>	-O,I^GONTOJ
     O	>	-O,I^GONTOJN
@@ -1742,7 +1774,7 @@ flag *Q:	# I^G-verboj
     O	>	-O,I^GAJN
     O	>	-O,I^GAN
     O	>	-O,I^GE
-    O	>	-O,I^G'
+    O	>	-O,I^G^'
     O	>	-O,I^GO
     O	>	-O,I^GOJ
     O	>	-O,I^GOJN
@@ -1752,7 +1784,7 @@ flag *Q:	# I^G-verboj
     O	>	-O,I^GEMAJN
     O	>	-O,I^GEMAN
     O	>	-O,I^GEME
-    O	>	-O,I^GEM'
+    O	>	-O,I^GEM^'
     O	>	-O,I^GEMO
     O	>	-O,I^GEMOJ
     O	>	-O,I^GEMOJN
@@ -1762,7 +1794,7 @@ flag *Q:	# I^G-verboj
     O	>	-O,I^GADAJN
     O	>	-O,I^GADAN
     O	>	-O,I^GADE
-    O	>	-O,I^GAD'
+    O	>	-O,I^GAD^'
     O	>	-O,I^GADO
     O	>	-O,I^GADOJ
     O	>	-O,I^GADOJN
@@ -1781,7 +1813,7 @@ flag S:		# no *: agordi/TSy > agordisto, sed ne misagordisto
     O	>	-O,ISTAJN
     O	>	-O,ISTAN
     O	>	-O,ISTE
-    O	>	-O,IST'
+    O	>	-O,IST^'
     O	>	-O,ISTO
     O	>	-O,ISTOJ
     O	>	-O,ISTOJN
@@ -1791,7 +1823,7 @@ flag S:		# no *: agordi/TSy > agordisto, sed ne misagordisto
     O	>	-O,ISTINAJN
     O	>	-O,ISTINAN
     O	>	-O,ISTINE
-    O	>	-O,ISTIN'
+    O	>	-O,ISTIN^'
     O	>	-O,ISTINO
     O	>	-O,ISTINOJ
     O	>	-O,ISTINOJN
@@ -1801,7 +1833,7 @@ flag S:		# no *: agordi/TSy > agordisto, sed ne misagordisto
     A	>	-A,ISTAJN
     A	>	-A,ISTAN
     A	>	-A,ISTE
-    A	>	-A,IST'
+    A	>	-A,IST^'
     A	>	-A,ISTO
     A	>	-A,ISTOJ
     A	>	-A,ISTOJN
@@ -1811,7 +1843,7 @@ flag S:		# no *: agordi/TSy > agordisto, sed ne misagordisto
     A	>	-A,ISTINAJN
     A	>	-A,ISTINAN
     A	>	-A,ISTINE
-    A	>	-A,ISTIN'
+    A	>	-A,ISTIN^'
     A	>	-A,ISTINO
     A	>	-A,ISTINOJ
     A	>	-A,ISTINOJN
@@ -1822,7 +1854,7 @@ flag S:		# no *: agordi/TSy > agordisto, sed ne misagordisto
     O N	>	-ON,ISTAJN
     O N	>	-ON,ISTAN
     O N	>	-ON,ISTE
-    O N	>	-ON,IST'
+    O N	>	-ON,IST^'
     O N	>	-ON,ISTO
     O N	>	-ON,ISTOJ
     O N	>	-ON,ISTOJN
@@ -1832,7 +1864,7 @@ flag S:		# no *: agordi/TSy > agordisto, sed ne misagordisto
     O N	>	-ON,ISTINAJN
     O N	>	-ON,ISTINAN
     O N	>	-ON,ISTINE
-    O N	>	-ON,ISTIN'
+    O N	>	-ON,ISTIN^'
     O N	>	-ON,ISTINO
     O N	>	-ON,ISTINOJ
     O N	>	-ON,ISTINOJN
@@ -1843,7 +1875,7 @@ flag S:		# no *: agordi/TSy > agordisto, sed ne misagordisto
     I	>	STAJN
     I	>	STAN
     I	>	STE
-    I	>	ST'
+    I	>	ST^'
     I	>	STO
     I	>	STOJ
     I	>	STOJN
@@ -1853,7 +1885,7 @@ flag S:		# no *: agordi/TSy > agordisto, sed ne misagordisto
     I	>	STINAJN
     I	>	STINAN
     I	>	STINE
-    I	>	STIN'
+    I	>	STIN^'
     I	>	STINO
     I	>	STINOJ
     I	>	STINOJN
@@ -1864,7 +1896,7 @@ flag S:		# no *: agordi/TSy > agordisto, sed ne misagordisto
     I S M E	>	-ME,TAJN
     I S M E	>	-ME,TAN
     I S M E	>	-ME,TE
-    I S M E	>	-ME,T'
+    I S M E	>	-ME,T^'
     I S M E	>	-ME,TO
     I S M E	>	-ME,TOJ
     I S M E	>	-ME,TOJN
@@ -1874,7 +1906,7 @@ flag S:		# no *: agordi/TSy > agordisto, sed ne misagordisto
     I S M E	>	-ME,TINAJN
     I S M E	>	-ME,TINAN
     I S M E	>	-ME,TINE
-    I S M E	>	-ME,TIN'
+    I S M E	>	-ME,TIN^'
     I S M E	>	-ME,TINO
     I S M E	>	-ME,TINOJ
     I S M E	>	-ME,TINOJN
@@ -1883,7 +1915,7 @@ flag S:		# no *: agordi/TSy > agordisto, sed ne misagordisto
     I S M E	>	-E,AJ
     I S M E	>	-E,AJN
     I S M E	>	-E,AN
-    I S M E	>	-E,'
+    I S M E	>	-E,^'
     I S M E	>	-E,O
     I S M E	>	-E,OJ
     I S M E	>	-E,OJN
@@ -1894,7 +1926,7 @@ flag S:		# no *: agordi/TSy > agordisto, sed ne misagordisto
     [^M] E	>	-E,IISTAJN
     [^M] E	>	-E,IISTAN
     [^M] E	>	-E,IISTE
-    [^M] E	>	-E,IIST'
+    [^M] E	>	-E,IIST^'
     [^M] E	>	-E,IISTO
     [^M] E	>	-E,IISTOJ
     [^M] E	>	-E,IISTOJN
@@ -1904,7 +1936,7 @@ flag S:		# no *: agordi/TSy > agordisto, sed ne misagordisto
     [^M] E	>	-E,IISTINAJN
     [^M] E	>	-E,IISTINAN
     [^M] E	>	-E,IISTINE
-    [^M] E	>	-E,IISTIN'
+    [^M] E	>	-E,IISTIN^'
     [^M] E	>	-E,IISTINO
     [^M] E	>	-E,IISTINOJ
     [^M] E	>	-E,IISTINOJN
@@ -1915,7 +1947,7 @@ flag S:		# no *: agordi/TSy > agordisto, sed ne misagordisto
     N O M E	>	-E,IISTAJN
     N O M E	>	-E,IISTAN
     N O M E	>	-E,IISTE
-    N O M E	>	-E,IIST'
+    N O M E	>	-E,IIST^'
     N O M E	>	-E,IISTO
     N O M E	>	-E,IISTOJ
     N O M E	>	-E,IISTOJN
@@ -1925,7 +1957,7 @@ flag S:		# no *: agordi/TSy > agordisto, sed ne misagordisto
     N O M E	>	-E,IISTINAJN
     N O M E	>	-E,IISTINAN
     N O M E	>	-E,IISTINE
-    N O M E	>	-E,IISTIN'
+    N O M E	>	-E,IISTIN^'
     N O M E	>	-E,IISTINO
     N O M E	>	-E,IISTINOJ
     N O M E	>	-E,IISTINOJN
@@ -1944,7 +1976,7 @@ flag *T:	# verboj (kun la pasivo); ekz-e fari/IT
     A	>	NTAJN
     A	>	NTAN
     A	>	NTE
-    A	>	NT'
+    A	>	NT^'
     A	>	NTO
     A	>	NTOJ
     A	>	NTOJN
@@ -1954,7 +1986,7 @@ flag *T:	# verboj (kun la pasivo); ekz-e fari/IT
     A	>	TAJN
     A	>	TAN
     A	>	TE
-    A	>	T'
+    A	>	T^'
     A	>	TO
     A	>	TOJ
     A	>	TOJN
@@ -1967,7 +1999,7 @@ flag *T:	# verboj (kun la pasivo); ekz-e fari/IT
     I	>	-I,ADAJN
     I	>	-I,ADAN
     I	>	-I,ADE
-    I	>	-I,AD'
+    I	>	-I,AD^'
     I	>	-I,ADO
     I	>	-I,ADOJ
     I	>	-I,ADOJN
@@ -1988,7 +2020,7 @@ flag *T:	# verboj (kun la pasivo); ekz-e fari/IT
     I	>	NTAJN
     I	>	NTAN
     I	>	NTE
-    I	>	NT'
+    I	>	NT^'
     I	>	NTO
     I	>	NTOJ
     I	>	NTOJN
@@ -1998,7 +2030,7 @@ flag *T:	# verboj (kun la pasivo); ekz-e fari/IT
     I	>	-I,ANTAJN
     I	>	-I,ANTAN
     I	>	-I,ANTE
-    I	>	-I,ANT'
+    I	>	-I,ANT^'
     I	>	-I,ANTO
     I	>	-I,ANTOJ
     I	>	-I,ANTOJN
@@ -2008,7 +2040,7 @@ flag *T:	# verboj (kun la pasivo); ekz-e fari/IT
     I	>	-I,ONTAJN
     I	>	-I,ONTAN
     I	>	-I,ONTE
-    I	>	-I,ONT'
+    I	>	-I,ONT^'
     I	>	-I,ONTO
     I	>	-I,ONTOJ
     I	>	-I,ONTOJN
@@ -2020,7 +2052,7 @@ flag *T:	# verboj (kun la pasivo); ekz-e fari/IT
     U	>	-U,ADAJN
     U	>	-U,ADAN
     U	>	-U,ADE
-    U	>	-U,AD'
+    U	>	-U,AD^'
     U	>	-U,ADO
     U	>	-U,ADOJ
     U	>	-U,ADOJN
@@ -2041,7 +2073,7 @@ flag *T:	# verboj (kun la pasivo); ekz-e fari/IT
     U	>	-U,INTAJN
     U	>	-U,INTAN
     U	>	-U,INTE
-    U	>	-U,INT'
+    U	>	-U,INT^'
     U	>	-U,INTO
     U	>	-U,INTOJ
     U	>	-U,INTOJN
@@ -2051,7 +2083,7 @@ flag *T:	# verboj (kun la pasivo); ekz-e fari/IT
     U	>	-U,ANTAJN
     U	>	-U,ANTAN
     U	>	-U,ANTE
-    U	>	-U,ANT'
+    U	>	-U,ANT^'
     U	>	-U,ANTO
     U	>	-U,ANTOJ
     U	>	-U,ANTOJN
@@ -2061,22 +2093,24 @@ flag *T:	# verboj (kun la pasivo); ekz-e fari/IT
     U	>	-U,ONTAJN
     U	>	-U,ONTAN
     U	>	-U,ONTE
-    U	>	-U,ONT'
+    U	>	-U,ONT^'
     U	>	-U,ONTO
     U	>	-U,ONTOJ
     U	>	-U,ONTOJN
     U	>	-U,ONTON
 #Sxparu ntinojn
     I	>	-I,O	    #substantivo ununombra: dormi -> dormo
+    I	>	-I,^'
     I	>	-I,ON
     U	>	-U,O
+    U	>	-U,^'
     U	>	-U,ON
     I	>	TA
     I	>	TAJ
     I	>	TAJN
     I	>	TAN
     I	>	TE
-    I	>	T'
+    I	>	T^'
     I	>	TO
     I	>	TOJ
     I	>	TOJN
@@ -2086,7 +2120,7 @@ flag *T:	# verboj (kun la pasivo); ekz-e fari/IT
     I	>	-I,ATAJN
     I	>	-I,ATAN
     I	>	-I,ATE
-    I	>	-I,AT'
+    I	>	-I,AT^'
     I	>	-I,ATO
     I	>	-I,ATOJ
     I	>	-I,ATOJN
@@ -2096,7 +2130,7 @@ flag *T:	# verboj (kun la pasivo); ekz-e fari/IT
     I	>	-I,OTAJN
     I	>	-I,OTAN
     I	>	-I,OTE
-    I	>	-I,OT'
+    I	>	-I,OT^'
     I	>	-I,OTO
     I	>	-I,OTOJ
     I	>	-I,OTOJN
@@ -2110,7 +2144,7 @@ flag *T:	# verboj (kun la pasivo); ekz-e fari/IT
     I	>	-I,EBLAJN
     I	>	-I,EBLAN
     I	>	-I,EBLE
-    I	>	-I,EBL'
+    I	>	-I,EBL^'
     I	>	-I,EBLO
     I	>	-I,EBLON
 
@@ -2123,7 +2157,7 @@ flag *T:	# verboj (kun la pasivo); ekz-e fari/IT
     I	>	-I,ENDAJN
     I	>	-I,ENDAN
     I	>	-I,ENDE
-    I	>	-I,END'
+    I	>	-I,END^'
     I	>	-I,ENDO
     I	>	-I,ENDOJ
     I	>	-I,ENDOJN
@@ -2133,7 +2167,7 @@ flag *T:	# verboj (kun la pasivo); ekz-e fari/IT
     U	>	-U,ITAJN
     U	>	-U,ITAN
     U	>	-U,ITE
-    U	>	-U,IT'
+    U	>	-U,IT^'
     U	>	-U,ITO
     U	>	-U,ITOJ
     U	>	-U,ITOJN
@@ -2143,7 +2177,7 @@ flag *T:	# verboj (kun la pasivo); ekz-e fari/IT
     U	>	-U,ATAJN
     U	>	-U,ATAN
     U	>	-U,ATE
-    U	>	-U,AT'
+    U	>	-U,AT^'
     U	>	-U,ATO
     U	>	-U,ATOJ
     U	>	-U,ATOJN
@@ -2153,7 +2187,7 @@ flag *T:	# verboj (kun la pasivo); ekz-e fari/IT
     U	>	-U,OTAJN
     U	>	-U,OTAN
     U	>	-U,OTE
-    U	>	-U,OT'
+    U	>	-U,OT^'
     U	>	-U,OTO
     U	>	-U,OTOJ
     U	>	-U,OTOJN
@@ -2167,7 +2201,7 @@ flag *T:	# verboj (kun la pasivo); ekz-e fari/IT
     U	>	-U,EBLAJN
     U	>	-U,EBLAN
     U	>	-U,EBLE
-    U	>	-U,EBL'
+    U	>	-U,EBL^'
     U	>	-U,EBLO
     U	>	-U,EBLON
 
@@ -2180,7 +2214,7 @@ flag *T:	# verboj (kun la pasivo); ekz-e fari/IT
     U	>	-U,ENDAJN
     U	>	-U,ENDAN
     U	>	-U,ENDE
-    U	>	-U,END'
+    U	>	-U,END^'
     U	>	-U,ENDO
     U	>	-U,ENDOJ
     U	>	-U,ENDOJN
@@ -2192,7 +2226,7 @@ flag *U:
     A	>	-A,ULAJN
     A	>	-A,ULAN
     A	>	-A,ULE
-    A	>	-A,UL'
+    A	>	-A,UL^'
     A	>	-A,ULO
     A	>	-A,ULOJ
     A	>	-A,ULOJN
@@ -2202,7 +2236,7 @@ flag *U:
     A	>	-A,ULINAJN
     A	>	-A,ULINAN
     A	>	-A,ULINE
-    A	>	-A,ULIN'
+    A	>	-A,ULIN^'
     A	>	-A,ULINO
     A	>	-A,ULINOJ
     A	>	-A,ULINOJN
@@ -2212,7 +2246,7 @@ flag *U:
     O	>	-O,ULAJN
     O	>	-O,ULAN
     O	>	-O,ULE
-    O	>	-O,UL'
+    O	>	-O,UL^'
     O	>	-O,ULO
     O	>	-O,ULOJ
     O	>	-O,ULOJN
@@ -2222,7 +2256,7 @@ flag *U:
     O	>	-O,ULINAJN
     O	>	-O,ULINAN
     O	>	-O,ULINE
-    O	>	-O,ULIN'
+    O	>	-O,ULIN^'
     O	>	-O,ULINO
     O	>	-O,ULINOJ
     O	>	-O,ULINOJN
@@ -2232,7 +2266,7 @@ flag *U:
     I	>	-I,ULAJN
     I	>	-I,ULAN
     I	>	-I,ULE
-    I	>	-I,UL'
+    I	>	-I,UL^'
     I	>	-I,ULO
     I	>	-I,ULOJ
     I	>	-I,ULOJN
@@ -2242,13 +2276,13 @@ flag *U:
     I	>	-I,ULINAJN
     I	>	-I,ULINAN
     I	>	-I,ULINE
-    I	>	-I,ULIN'
+    I	>	-I,ULIN^'
     I	>	-I,ULINO
     I	>	-I,ULINOJ
     I	>	-I,ULINOJN
     I	>	-I,ULINON
 
-flag *V:	# verboj (sen la pasivo); ekz-e esti/V
+flag *V:	# verboj (sen pasivo); ekz-e esti/V
     A	>	-A,I
     A	>	S
     A	>	-A,IS
@@ -2266,7 +2300,7 @@ flag *V:	# verboj (sen la pasivo); ekz-e esti/V
     O	>	-O,ADAJN
     O	>	-O,ADAN
     O	>	-O,ADE
-    O	>	-O,AD'
+    O	>	-O,AD^'
     O	>	-O,ADO
     O	>	-O,ADOJ
     O	>	-O,ADOJN
@@ -2277,7 +2311,7 @@ flag *V:	# verboj (sen la pasivo); ekz-e esti/V
     I	>	-I,ADAJN
     I	>	-I,ADAN
     I	>	-I,ADE
-    I	>	-I,AD'
+    I	>	-I,AD^'
     I	>	-I,ADO
     I	>	-I,ADOJ
     I	>	-I,ADOJN
@@ -2298,7 +2332,7 @@ flag *V:	# verboj (sen la pasivo); ekz-e esti/V
     I	>	NTAJN
     I	>	NTAN
     I	>	NTE
-    I	>	NT'
+    I	>	NT^'
     I	>	NTO
     I	>	NTOJ
     I	>	NTOJN
@@ -2308,7 +2342,7 @@ flag *V:	# verboj (sen la pasivo); ekz-e esti/V
     I	>	-I,ANTAJN
     I	>	-I,ANTAN
     I	>	-I,ANTE
-    I	>	-I,ANT'
+    I	>	-I,ANT^'
     I	>	-I,ANTO
     I	>	-I,ANTOJ
     I	>	-I,ANTOJN
@@ -2318,7 +2352,7 @@ flag *V:	# verboj (sen la pasivo); ekz-e esti/V
     I	>	-I,ONTAJN
     I	>	-I,ONTAN
     I	>	-I,ONTE
-    I	>	-I,ONT'
+    I	>	-I,ONT^'
     I	>	-I,ONTO
     I	>	-I,ONTOJ
     I	>	-I,ONTOJN
@@ -2330,7 +2364,7 @@ flag *V:	# verboj (sen la pasivo); ekz-e esti/V
     U	>	-U,ADAJN
     U	>	-U,ADAN
     U	>	-U,ADE
-    U	>	-U,AD'
+    U	>	-U,AD^'
     U	>	-U,ADO
     U	>	-U,ADOJ
     U	>	-U,ADOJN
@@ -2351,7 +2385,7 @@ flag *V:	# verboj (sen la pasivo); ekz-e esti/V
     U	>	-U,INTAJN
     U	>	-U,INTAN
     U	>	-U,INTE
-    U	>	-U,INT'
+    U	>	-U,INT^'
     U	>	-U,INTO
     U	>	-U,INTOJ
     U	>	-U,INTOJN
@@ -2361,7 +2395,7 @@ flag *V:	# verboj (sen la pasivo); ekz-e esti/V
     U	>	-U,ANTAJN
     U	>	-U,ANTAN
     U	>	-U,ANTE
-    U	>	-U,ANT'
+    U	>	-U,ANT^'
     U	>	-U,ANTO
     U	>	-U,ANTOJ
     U	>	-U,ANTOJN
@@ -2371,15 +2405,17 @@ flag *V:	# verboj (sen la pasivo); ekz-e esti/V
     U	>	-U,ONTAJN
     U	>	-U,ONTAN
     U	>	-U,ONTE
-    U	>	-U,ONT'
+    U	>	-U,ONT^'
     U	>	-U,ONTO
     U	>	-U,ONTOJ
     U	>	-U,ONTOJN
     U	>	-U,ONTON
 #Sxparu ntinojn
     I	>	-I,O	    #substantivo ununombra: dormi -> dormo
+    I	>	-I,^'
     I	>	-I,ON
     U	>	-U,O
+    U	>	-U,^'
     U	>	-U,ON
     
 #    Adj(I,,ND)		    # ridinda
@@ -2392,7 +2428,7 @@ flag *W:
     O	>	-O,ANAJN
     O	>	-O,ANAN
     O	>	-O,ANE
-    O	>	-O,AN'
+    O	>	-O,AN^'
     O	>	-O,ANO
     O	>	-O,ANOJ
     O	>	-O,ANOJN
@@ -2402,7 +2438,7 @@ flag *W:
     O	>	-O,ANINAJN
     O	>	-O,ANINAN
     O	>	-O,ANINE
-    O	>	-O,ANIN'
+    O	>	-O,ANIN^'
     O	>	-O,ANINO
     O	>	-O,ANINOJ
     O	>	-O,ANINOJN
@@ -2412,7 +2448,7 @@ flag *W:
     A	>	NAJN
     A	>	NAN
     A	>	NE
-    A	>	N'
+    A	>	N^'
     A	>	NO
     A	>	NOJ
     A	>	NOJN
@@ -2422,7 +2458,7 @@ flag *W:
     A	>	NINAJN
     A	>	NINAN
     A	>	NINE
-    A	>	NIN'
+    A	>	NIN^'
     A	>	NINO
     A	>	NINOJ
     A	>	NINOJN
@@ -2432,7 +2468,7 @@ flag *W:
     I	>	-I,ANAJN
     I	>	-I,ANAN
     I	>	-I,ANE
-    I	>	-I,AN'
+    I	>	-I,AN^'
     I	>	-I,ANO
     I	>	-I,ANOJ
     I	>	-I,ANOJN
@@ -2442,7 +2478,7 @@ flag *W:
     I	>	-I,ANINAJN
     I	>	-I,ANINAN
     I	>	-I,ANINE
-    I	>	-I,ANIN'
+    I	>	-I,ANIN^'
     I	>	-I,ANINO
     I	>	-I,ANINOJ
     I	>	-I,ANINOJN
@@ -2452,7 +2488,7 @@ flag *W:
     O N	>	-ON,ANAJN
     O N	>	-ON,ANAN
     O N	>	-ON,ANE
-    O N	>	-ON,AN'
+    O N	>	-ON,AN^'
     O N	>	-ON,ANO
     O N	>	-ON,ANOJ
     O N	>	-ON,ANOJN
@@ -2462,7 +2498,7 @@ flag *W:
     O N	>	-ON,ANINAJN
     O N	>	-ON,ANINAN
     O N	>	-ON,ANINE
-    O N	>	-ON,ANIN'
+    O N	>	-ON,ANIN^'
     O N	>	-ON,ANINO
     O N	>	-ON,ANINOJ
     O N	>	-ON,ANINOJN
@@ -2473,12 +2509,12 @@ flag *X:
     J	     >	-J,-
     N	     >	-N,-
     O	     >	-O,-
-    O N	     >	-ON,'           # Konstantinolon/X, sed NE nuda Konstantinopol
+    O N	     >	-ON,^'           # Konstantinolon/X, sed NE nuda Konstantinopol
     [^G] I   >	-I,-
 
-    '	     >	-',-		# Kapernaum'/X, eventuale la nuda Kapernaum
-    '	     >	-',O
-    '	     >	-',ON
+    ^'	     >	-^',-		# Kapernaum^'/X, eventuale la nuda Kapernaum
+    ^'	     >	-^',O
+    ^'	     >	-^',ON
 
     I G I >	-GI,^GI
     I G I >	-GI,^GAS
@@ -2492,7 +2528,7 @@ flag *X:
     I G I >	-GI,^GADOS
     I G I >	-GI,^GADUS
     I G I >	-GI,^GADU
-    I G I	>	-GI,^GAD'
+    I G I	>	-GI,^GAD^'
     I G I	>	-GI,^GADO
     I G I	>	-GI,^GADOJ
     I G I	>	-GI,^GADOJN
@@ -2502,7 +2538,7 @@ flag *X:
     I G I	>	-IGI,I^GINTAJN
     I G I	>	-IGI,I^GINTAN
     I G I	>	-IGI,I^GINTE
-    I G I	>	-IGI,I^GINT'
+    I G I	>	-IGI,I^GINT^'
     I G I	>	-IGI,I^GINTO
     I G I	>	-IGI,I^GINTOJ
     I G I	>	-IGI,I^GINTOJN
@@ -2512,7 +2548,7 @@ flag *X:
     I G I	>	-IGI,I^GANTAJN
     I G I	>	-IGI,I^GANTAN
     I G I	>	-IGI,I^GANTE
-    I G I	>	-IGI,I^GANT'
+    I G I	>	-IGI,I^GANT^'
     I G I	>	-IGI,I^GANTO
     I G I	>	-IGI,I^GANTOJ
     I G I	>	-IGI,I^GANTOJN
@@ -2522,7 +2558,7 @@ flag *X:
     I G I	>	-IGI,I^GONTAJN
     I G I	>	-IGI,I^GONTAN
     I G I	>	-IGI,I^GONTE
-    I G I	>	-IGI,I^GONT'
+    I G I	>	-IGI,I^GONT^'
     I G I	>	-IGI,I^GONTO
     I G I	>	-IGI,I^GONTOJ
     I G I	>	-IGI,I^GONTOJN
@@ -2533,7 +2569,7 @@ flag *X:
     I G I	>	-GI,^GAJN
     I G I	>	-GI,^GAN
     I G I	>	-GI,^GE
-    I G I	>	-GI,^G'
+    I G I	>	-GI,^G^'
     I G I	>	-GI,^GO
     I G I	>	-GI,^GOJ
     I G I	>	-GI,^GOJN
@@ -2543,7 +2579,7 @@ flag *X:
     I G I	>	-GI,^GEMAJN
     I G I	>	-GI,^GEMAN
     I G I	>	-GI,^GEME
-    I G I	>	-GI,^GEM'
+    I G I	>	-GI,^GEM^'
     I G I	>	-GI,^GEMO
     I G I	>	-GI,^GEMON
 
@@ -2554,7 +2590,7 @@ flag *Y:
     A	>	^JAJN
     A	>	^JAN
     A	>	^JE
-    A	>	^J'
+    A	>	^J^'
     A	>	^JO
     A	>	^JOJ
     A	>	^JOJN
@@ -2564,7 +2600,7 @@ flag *Y:
     E	>	-E,A^JAJN
     E	>	-E,A^JAN
     E	>	-E,A^JE
-    E	>	-E,A^J'
+    E	>	-E,A^J^'
     E	>	-E,A^JO
     E	>	-E,A^JOJ
     E	>	-E,A^JOJN
@@ -2574,7 +2610,7 @@ flag *Y:
     I	>	-I,A^JAJN
     I	>	-I,A^JAN
     I	>	-I,A^JE
-    I	>	-I,A^J'
+    I	>	-I,A^J^'
     I	>	-I,A^JO
     I	>	-I,A^JOJ
     I	>	-I,A^JOJN
@@ -2584,7 +2620,7 @@ flag *Y:
     O	>	-O,A^JAJN
     O	>	-O,A^JAN
     O	>	-O,A^JE
-    O	>	-O,A^J'
+    O	>	-O,A^J^'
     O	>	-O,A^JO
     O	>	-O,A^JOJ
     O	>	-O,A^JOJN
@@ -2594,7 +2630,7 @@ flag *Y:
     U	>	-U,A^JAJN
     U	>	-U,A^JAN
     U	>	-U,A^JE
-    U	>	-U,A^J'
+    U	>	-U,A^J^'
     U	>	-U,A^JO
     U	>	-U,A^JOJ
     U	>	-U,A^JOJN
@@ -2606,7 +2642,7 @@ flag Z:
     A	>	-A,ISMAJN
     A	>	-A,ISMAN
     A	>	-A,ISME
-    A	>	-A,ISM'
+    A	>	-A,ISM^'
     A	>	-A,ISMO
     A	>	-A,ISMOJ
     A	>	-A,ISMOJN
@@ -2616,7 +2652,7 @@ flag Z:
     I	>	SMAJN
     I	>	SMAN
     I	>	SME
-    I	>	SM'
+    I	>	SM^'
     I	>	SMO
     I	>	SMOJ
     I	>	SMOJN
@@ -2626,7 +2662,7 @@ flag Z:
     O	>	-O,ISMAJN
     O	>	-O,ISMAN
     O	>	-O,ISME
-    O	>	-O,ISM'
+    O	>	-O,ISM^'
     O	>	-O,ISMO
     O	>	-O,ISMOJ
     O	>	-O,ISMOJN

@@ -19,9 +19,9 @@ fi
 # /#komp/s,#.*,,;/#etn/s,#.*,,;/#Eujo/s,#.*,,;/#pers/s,#.*,,;\
 # /#mll/s,#.*,,;/#pok/s,#.*,,;/#var/s,#.*,,;/#drv/s,#.*,,;
 
-FILTER=`echo $1, | sed -e 's|\([a-zA-Z]*\),|/\#\1/s%#.*%%;|g'`
+FILTER=`echo $1, | sed -e 's|\([a-zA-Z]*\),|/\#\1/s%#.*$%%;|g'`
 
-sed -e 's/#{[^}]*}//g' \
+sed -e 's/##.*//' \
     $NEG_FILTER -e $FILTER -e '/\#/d' \
     ../src/vortoj.l3   \
     | ../tools/askiigu \

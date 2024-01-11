@@ -58,7 +58,7 @@ check_diff :
 	tools/slovnik src/vortoj.l3 > work/slovnik.tex
 
 install:
-	cp work/*.hash $(install_dir)
+	cp work/*.hash work/*.aff $(install_dir)
 
 tar :	clean
 	LC_CTYPE=C cd .. && tar cvf - ispell-eo | gzip -9v > espaff.tgz

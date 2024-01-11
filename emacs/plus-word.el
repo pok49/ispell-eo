@@ -3,8 +3,8 @@
 (require 'ispell)
 
 (defvar ispell-root
-  (expand-file-name
-   (concat (file-name-directory (buffer-file-name nil)) "/.."))
+  "$HOME/Git/ispell-eo"
+; (expand-file-name (concat (file-name-directory (buffer-file-name nil)) "/.."))
   "*Where the source of your ispell dictionary lives")
 
 (defun +word (&optional quietly continue)

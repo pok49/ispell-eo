@@ -9,24 +9,24 @@ esperanto.hash : esperanto.aff esperanto.asc
 	@echo "La permesema esperanto.hash pretas."
 eooo :	eo_l3.aff eo_l3.dic
 
-eo.aff : ../src/eo-aff.m4
+eo.aff : ../src/eo-aff.m4 ../tools/askiigu ../tools/cleanaff
 	m4 $(sxparu) ../src/eo-aff.m4 | ../tools/cleanaff | ../tools/askiigu > eo.aff
 	@echo "eo.aff generita kun sxparu='$(sxparu)'"
 
-esperanto.aff : ../src/eo-aff.m4
+esperanto.aff : ../src/eo-aff.m4 ../tools/askiigu ../tools/cleanaff
 	m4 -DLOZE ../src/eo-aff.m4 | ../tools/cleanaff | ../tools/askiigu > esperanto.aff
 
-eo.asc : ../src/vortoj.l3
+eo.asc : ../src/vortoj.l3 ../tools/filtru
 	../tools/filtru "$(eo_list)" eo.asc
 
-esperanto.asc : ../src/vortoj.l3
+esperanto.asc : ../src/vortoj.l3 ../tools/filtru
 	../tools/filtru "$(esperanto_list)" esperanto.asc
 
 eo_l3.dic : ../src/vortoj.l3
 	../tools/filtroo "$(eo_list)" eo_l3.dic
 	@echo "OpenOffice eo_l3.dic file is ready."
 
-eo_l3.aff : ../src/eo-aff.m4
+eo_l3.aff : ../src/eo-aff.m4 ../tools/cleanaff
 	m4 $(sxparu) ../src/eo-aff.m4 | ../tools/cleanaff > eo_l3.aff
 	emacs -batch eo_l3.aff -l ../emacs/oo.el -f save-buffer
 	@echo "OpenOffice eo_l3.aff file is ready."
