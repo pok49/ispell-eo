@@ -1,6 +1,6 @@
-; -*- coding: latin-3 -*-
+; -*- coding: utf-8 -*-
 ; Name: oo.el
-; Time-stamp: <2003-11-01 17:10:48 sergei>
+; Time-stamp: <2024-01-13 23:58:50 sergio>
 
 ; A script to transform eo.aff file (in latin-3) for use with myspell
 ; for OpenOffice.  Called from `make OO`.
@@ -20,50 +20,50 @@
       (end-of-line) (delete-backward-char 1))
     (goto-char eol) (insert (format "%d" i)))))
 
-; ======== M A I N :
-; (defun oo ()
-; (interactive)
+;; ======== M A I N :
+;(defun oo ()
+;(interactive)
 (goto-char (point-min))
-
-
 (delete-region (point-min)
 	       (progn
 		 (re-search-forward "^prefixes$")
 		 (match-end 0)))
 
-(while (re-search-forward "#.*$" (point-max) t) (replace-match ""))
+(while (re-search-forward "#.*$" nil t) (replace-match ""))
 
 (goto-char (point-min))
-(while (re-search-forward "^flag +" (point-max) t) (replace-match "#"))
+(while (search-forward "^'" nil t) (replace-match "â€™"))
+
+(goto-char (point-min))
+(while (re-search-forward "^flag +" nil t) (replace-match "#"))
 ;(goto-char (point-max)) (insert "##\n")
 (goto-char (point-min))
-(while (re-search-forward "\\s-" (point-max) t)
-  (delete-horizontal-space))
+(while (re-search-forward "\\s-" nil t) (delete-horizontal-space))
 (goto-char (point-min))
 (while (re-search-forward "^ *
 +" (point-max) t) (replace-match ""))
 
 (goto-char (point-min))
-(while (re-search-forward "^.+>.+$" (point-max) t)
+(while (re-search-forward "^.+>.+$" nil t)
   (downcase-region (match-beginning 0) (match-end 0))
   (insert ";"))
 
 (goto-char (point-min))
-(while (re-search-forward "^\\([^>#;]+\\)>-\\(\\w+\\),-;" (point-max) t)
+(while (re-search-forward "^\\([^>#;]+\\)>-\\([â€™[:alpha:]]+\\),-;" nil t)
   (replace-match "\\2 0 \\1;"))
 (goto-char (point-min))
 (while (re-search-forward
-	"^\\([^>;#]+\\)>-\\(\\w+\\),\\([^->,;#]+\\);" (point-max) t)
+	"^\\([^>;#]+\\)>-\\([â€™[:alpha:]]+\\),\\([^->,;#]+\\);" nil t)
   (replace-match "\\2 \\3 \\1;"))
 (goto-char (point-min))
-(while (re-search-forward "^\\([^>;#]+\\)>\\([^>;,#]+\\);" (point-max) t)
+(while (re-search-forward "^\\([^>;#]+\\)>\\([^>;,#]+\\);" nil t)
   (replace-match "0 \\2 \\1;"))
 
 (goto-char (point-min))
-(while (re-search-forward "\\\\\\(.\\)" (point-max) t)
+(while (re-search-forward "\\\\\\(.\\)" nil t)
   (replace-match "\\1" ))		; \[, \\, \-
 (goto-char (point-min))
-(while (search-forward "\\" (point-max) t) (replace-match "!" ))
+(while (search-forward "\\" nil t) (replace-match "!" ))
 
 (goto-char (point-min))
 (re-search-forward "^suffixes$")
@@ -76,21 +76,39 @@
 (while (search-forward "!" (point-max) t) (replace-match "\\\\" nil))
 (re-search-forward "^suffixes$")
 (delete-region (match-beginning 0) (match-end 0))
-
+(setq buffer-file-coding-system 'utf-8-unix)
 (goto-char (point-min))
-(insert "SET ISO8859-3
-TRY oaeinsrltkumvjdpbægfcøAıKMzNhşSPLDUIVJOTEFHB¼ÆRŞCØZ¶G¬¦İyqxwWQYXüÜéöÖçäáß
+(insert "SET utf-8
+NAME		esperanto
+VERSION		4.2
+HOME		https://github.com/pok49/ispell-eo
+AUTHOR		Sergio Pokrovskij
+EMAIL		sergio.pokrovskij(Ä‰e)gmail(punkto)com
+COPYRIGHT	GPL 2.0
+#
+MIDWORD -
+RARE ?
+BAD !
+#
 REP 8
-REP c æ
-REP g ø
-REP h ¶
-REP j ¼
-REP s ş
-REP u ı
-REP w ı
-REP ù ı
-\n")
-
+REP cx c
+REP gx Ä
+REP hx Ä¥
+REP jx Äµ
+REP sx Å
+REP ux Å­
+REP rn m
+REP m rn
+#
+MAP 7
+MAP cÄ‰Ãª
+MAP gÄ
+MAP hÄ¥
+MAP jÄµ
+MAP sÅ
+MAP uÅ­wÃ¹
+MAP Iilt
+#\n")
 ;)	;=== defun oo)
 
 ; --- oo.el ends here

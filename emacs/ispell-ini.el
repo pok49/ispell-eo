@@ -26,14 +26,14 @@
 
 (defun eo3spell (&optional apo)
   "Set Esperanto dictionary. C-u makes ´ (xB4, acute accent) the apostrophe letter."
-   (interactive) 
+   (interactive "P") 
    (ispell-change-dictionary (if apo "eo" "epo")))
 
 (global-set-key "\C-ci3" 'eo3spell)
 
 (global-set-key "\C-cix"
   (lambda (&optional permissive) "Set Eo-cxirkaux dictionary"
-    (interactive)
+    (interactive "P")
     (ispell-change-dictionary (if permissive "esperanto-x" "eo-x"))))
 
 (global-set-key "\C-cia"

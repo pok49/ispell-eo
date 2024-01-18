@@ -21,6 +21,11 @@ install_dir=`ispell -vv | grep LIBDIR | sed 's/[^"]*\\"\([^"]*\)\\"/\1/'`
 
 # elisp_dir	= /usr/local/share/emacs/site-lisp
 # VORTOJ	= `pwd`/src/vortoj.l3
+
+# VIM Spell:
+vim_spl_install_dir = $(HOME)/.vim/spell
+#vim_spl_install_dir = /usr/share/vim/vim82/spell
+
 ##########################
 # No more user settings // Fino de la uzulaj agordajxoj.
 ##########################
@@ -33,7 +38,7 @@ first:
 legu-min : LEGU-MIN.l3
 	LC_CTYPE=C tools/l3-al-x < LEGU-MIN.l3 > legu-min
 
-# all :	ordigo eo esperanto OO
+# all :	ordigo eo esperanto vim
 all :	ordigo eo esperanto
 	@echo
 	@echo "Now you can 'make install' (if you have the appropriate permissions)"
@@ -42,8 +47,8 @@ ordigo:
 #	$(MAKE) -C src
 	cd src && $(MAKE)
 
-OO :	ordigo
-	cd work && $(MAKE) eooo eo_list=$(eo_list) sxparu=$(sxparu)
+vim :	ordigo
+	cd oo && $(MAKE) vim eo_list=$(eo_list) sxparu=$(sxparu)
 
 eo :	ordigo
 #	$(MAKE) -C work eo.hash
@@ -60,6 +65,10 @@ check_diff :
 install:
 	cp work/*.hash work/*.aff $(install_dir)
 
+install_vim:
+	install -d $(vim_spl_install_dir)
+	install -m -rw-r--r-- oo/eo.utf-8.spl $(vim_spl_install_dir)
+
 tar :	clean
 	LC_CTYPE=C cd .. && tar cvf - ispell-eo | gzip -9v > espaff.tgz
 
@@ -71,9 +80,11 @@ distclean :
 #	$(MAKE) -C work distclean
 	rm -f *~
 	cd work && $(MAKE) distclean
+	cd oo && $(MAKE) distclean
 	rm -f doc/legu-min
 
 clean :
 #	$(MAKE) -C work clean
 	cd work && $(MAKE) clean
+	cd oo && $(MAKE) clean
 
