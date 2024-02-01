@@ -3,7 +3,7 @@
 La vortaron kompilis Sergio Pokrovskij. Ĝi estas libere uzebla laŭ la _Ĝenerala
 Publika Permesilo._
 
-> Copyright © 1997–2012 Sergio Pokrovskij
+> Copyright © 1997–2024 Sergio Pokrovskij
 >
 > This dictionary is available on the terms of GNU General Public License,
 > [version 2.0](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)

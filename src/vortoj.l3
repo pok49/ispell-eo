@@ -1,4 +1,4 @@
-#	* Time-stamp: "2024-01-17 17:51:47 sergio"
+#	* Time-stamp: "2024-01-29 11:36:59 sergio"
 #       -*- coding:latin-3; indent-tabs-mode:t; tab-stop-list:(8 24 32) -*-
 =	a	        /A	## 12-an, 3e
 =	Aarono		/AOX	#pers
@@ -130,6 +130,7 @@ ne	adekvata	/A
 =	adresbuso	/AO	#komp
 =	adresfunkcio	/AO	#komp
 =	adresi		/KOUT
+=	adreskampo      /AO     #komp
 =	adreslibro	/AO
 =	adresloko	/AO
 =	adreslongo	/O	#komp
@@ -4266,10 +4267,10 @@ mem	ekzameno	/AO	#drv
 re	ekzekuti	/T
 =	ekzekutmaniero	/AO
 =	ekzemo		/AO
-sen	ekzempla	/AGQ
+sen	ekzempla	/E
 =	ekzemplero	/AcO
-=	ekzempli	/AOqT
-æef	ekzemplo	/AO
+=	ekzempli	/T
+=	ekzemplo	/AcOqy
 =	ekzemplodona	/A	#drv
 =	ekzerci		/AJKOQTB
 =	ekzercita	/CE
@@ -4535,6 +4536,7 @@ sen	erara		/ACGOQ
 =	erarraporta	/AOY
 =	erarseræi	/ALOV	#komp
 =	erartabelo	/AO
+=	erartipo        /AO
 æef	erarujo		/AO	#komp
 =	erarvagi	/AOV
 =	Erasmon		/X	#pers
@@ -4912,6 +4914,7 @@ tra	fajli		/T
 =	fajrostango	/AO	#drv
 =	fajroþirmilo	/AO	#drv
 =	fajroþtono	/AO	#drv
+=	fajrovulpo      /AO	#drv
 =	faka		/ANn
 divers	faka		/A
 ekster	faka		/A	#drv
@@ -5384,6 +5387,7 @@ al	finigi		/OTX
 =	finn-ugra	/A	#var
 =	finofara	/A	#drv
 =	Firdaýson	/AX	#pers
+=	Firefox                 #fremd
 =	firma		/ACGMQY
 =	firmamento	/AO
 =	firmao		/AO
@@ -10811,6 +10815,7 @@ per	labori		/AOT	#drv
 pri	labori		/RTY
 tra	labori		/T
 tro	labori		/V
+=	laborintenso    /ACO
 =	laboristaro	/AO
 pri	laborita	/CEO
 =	laborkampo	/AO
@@ -11973,6 +11978,7 @@ sen	makzela		/AU
 =	malea		/AW	#etn
 =	maleolo		/AO
 =	Maleon		/X	#etn
+=	malfermfonta    /AY     #komp
 pli	malgrandigi	/AOTX	#drv
 =	malgraýa	/AX
 =	malia		/AW	#etn
@@ -15890,7 +15896,7 @@ ne	preciza		/AO
 =	predikseøo	/AO
 =	prefaco		/AO
 =	prefekto	/FJH_
-=	preferi		/AMOTy
+=	preferi		/AMOTYy
 =	preferinda	/EM
 =	preferindas	/V
 =	preferlisto	/AO
@@ -16352,6 +16358,7 @@ sen	pruva		/E
 =	pubharo		/AO
 =	publici		/VS
 =	publika		/CEM
+=	publikfonta     /AY     #komp
 =	publikigebla	/E
 =	publikigi	/RTXY
 =	publikloka	/A
@@ -22164,6 +22171,7 @@ Nov	zemlon		/X	#etn#pok
 =	zinkoblendo	/AO	#drv
 =	zinkogravuro	/AO	#drv
 =	zinkspato	/AO
+=	zip-dosiero     /AO     #komp
 =	zipi		/AMOQT
 =	zirkon(i)on	/AX
 =	zizelo		/AO	#zoo

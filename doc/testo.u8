@@ -1,16 +1,30 @@
-En ordinara tiparo:	Eĥoŝanĝo ĉiuĵaŭde.
-En egallarĝa tiparo:	Eĥoŝanĝo ĉiuĵaŭde.
-En ordinara majusklo:	EĤOŜANĜO ĈIUĴAŬDE.
-En egalarĝa majusklo:	EĤOŜANĜO ĈIUĴAŬDE.
-Лазарь Маркович Заменгоф
-dank’ al
+Nomuskle:	Eĥoŝanĝo ĉiuĵaŭde.
+Tutminuskle:	eĥoŝanĝo ĉiuĵaŭde.
+Tutmajuskle:	EĤOŜANĜO ĈIUĴAŬDE.
+dank’ al; vid-al-vide.
+De l’ ter’ al la ĉiel’ ĝi laŭte krias
+De l' ter' al la ĉiel' ĝi laŭte krias
+
+La reĝ’ de l’ reĝoj, di’ de l’ dioj?
+
+Laget' malnova ... neni' en auxd' ... Jen rano - plauxd'! ... Silent'
+echo "Laget' malnova ... neni' en auxd' ... Jen rano -- plauxd'! ... Silent'"|ispell -d eo -T cxirkaux
+echo "Laget' malnova ... neni' en aŭd' ... Jen rano -- plaŭd'! ... Silent'"|ispell -d eo -T latin3
+
+
+
+teran'
+teran´
+bonulin´
 François
 Støp
 Čapek
 
-Støp-Bowitz Stоp-Bowitz
+Støp-Bowitz
+Stоp-Bowitz
 Wüster
 Tárkony 
 Vérax
 
 (load "ispell.el") Stöp-Bowitz
+Лазарь Маркович Заменгоф

@@ -67,7 +67,7 @@ install:
 
 install_vim:
 	install -d $(vim_spl_install_dir)
-	install -m -rw-r--r-- oo/eo.utf-8.spl $(vim_spl_install_dir)
+	install -m 664 oo/eo.utf-8.spl $(vim_spl_install_dir)
 
 tar :	clean
 	LC_CTYPE=C cd .. && tar cvf - ispell-eo | gzip -9v > espaff.tgz
