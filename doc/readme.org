@@ -1,6 +1,8 @@
-#+title: README about ispell_eo dictionary
-#+STYLE: <style> pre { background-color: #191919 } pre { color:#00FF00 } </style>
+# -*- org-use-sub-superscripts: nil; org-export-with-sub-superscripts: nil; -*-
 
+#+title: README about the ispell_eo dictionary
+#+STYLE: <style> pre { background-color: #191919 } pre { color:#00FF00 } </style>
+#+OPTIONS: toc:nil
 - *Name*:   ~./README~
 - *Content*: Information about Esperanto dictionary for the Ispell speller
 - *Created*: 2024-01-19 by Sergio Pokrovskij ~<sergio.pokrovskij(cxe)gmail.com>~
@@ -12,16 +14,18 @@ This dictionary package is available on the terms of GNU General Public
 License version 2.0 (Free Software Foundation, 675 Mass Ave, Cambridge,
 MA 02139, USA).
 
+#+TOC: headlines 3
+
 * About the Package
 Here is an Esperanto dictionary, compiled by Sergio Pokrovskij for the
-versions 3+ of ispell.
+versions 3+ of [[https://en.wikipedia.org/wiki/Ispell][Ispell]].
 
 The dictionary can also be converted into an ~eo.utf-8.spl~ file for
-use with the =vim= speller.
+use with the [[https://vimdoc.sourceforge.net/htmldoc/spell.html][Vim Speller]].
 
 * Quick Install
 ** Ispell
-You will first need to get ispell 3.0+; it is available in most of
+You will first need to get Ispell 3.0+; it is available in most of
 Linux repositories or at its [[https://www.cs.hmc.edu/~geoff/ispell][author's site]]; make sure that in its
 =local.h= the =NO8BIT= thing is commented out and =MASKBITS = 64=. To
 see the option ispell has been compiled with, please run
@@ -86,7 +90,7 @@ ok (derives from root HERBO)
 
 word: 
 #+end_example
-Also see the [[* Usage]] section below.
+Also see the section [[* Usage]] below.
 
 
 *** Building eo.hash
@@ -100,9 +104,9 @@ buildhash eo.asc eo.aff eo.hash
 You now can try the new =eo.hash= and proceed back to [[*The Binary File]].
 
 ** Vim Spell
-Presently the Vim editor comes with its own speller and English
-dictionaries. I have written a converter from my ispell source
-dictionary to the Vim Spell format (which is basically the =myspell=
+Presently the [[https://en.wikipedia.org/wiki/Vim_(text_editor)][Vim editor]] comes with its own speller and English
+dictionaries. I have written a converter from my Ispell source
+dictionary to the Vim Spell format (which is basically the [[https://en.wikipedia.org/wiki/MySpell][MySpell]]
 format).
 
 The ready-made packed dictionary is available for download as
@@ -115,13 +119,8 @@ To invoke Esperanto spell say ~:setlocal spell spelllang=eo~; for the
 help about speller commands see ~:h spell~.
 
 
-:CUSTOM_ID: the-ispell-utility-program
-   :END:
-
+* The Ispell Utility Program
 ** Esperanto encodings
-   :PROPERTIES:
-   :CUSTOM_ID: esperanto-encodings
-   :END:
 Several encodings used with Esperanto text are supported:
 
 1. The very best is Unicode or its subset, which contains the esperantic
@@ -143,24 +142,18 @@ Several encodings used with Esperanto text are supported:
 
    - The popular =cxirkaux-style=, which is also convenient for
      lexicographical ordering and thus is used in the dictionaries;
-     besides, it uses letters only, and that makes it suitable for
+     besides, it uses ASCII letters only, and that makes it suitable for
      variable names in computer programs.
 
 * Installation
-  :PROPERTIES:
-  :CUSTOM_ID: installation
-  :END:
 ** Simple Install (Unix or Cygwin)
-   :PROPERTIES:
-   :CUSTOM_ID: simple-install-unix-or-cygwin
-   :END:
 1. Clone the =ispel-eo= project into your local repository:
-#+begin_src sh
+#+begin_src sh :exports code
 git clone https://github.com/pok49/ispell-eo
 #+end_src
 2. Go to the root directory =ispell-eo= (where this =readme= resides).
 3. Say
-#+begin_src sh
+#+begin_src sh :exports code
  make first
 #+end_src
 
@@ -171,7 +164,7 @@ file(s) at the install phase?
 
 4. If everything is OK, say
 
-#+begin_src sh
+#+begin_src sh :exports code
   make eo
 #+end_src
 
@@ -198,7 +191,7 @@ Just ignore them.
 5. Type
 
 #+begin_src sh
-  make install
+make install
 #+end_src
 
 to copy the hash file(s) to where ispell expects them to be (probably
@@ -208,53 +201,48 @@ root rights to make install).
 After that you can call
 
 #+begin_src sh
-   =$ ispell -d eo = /filename/
+ispell -d eo = /filename/
 #+end_src
 
-** Open Office, Vim
-   :PROPERTIES:
-   :CUSTOM_ID: open-office
-   :END:
-You'll need emacs to produce the dictionary for myspell which works with
-Open Office. Customize the word provision as described in “Customized
-Build” (except the buildhash step); and then say
+** Vim
+You'll need emacs to produce the dictionary for MySpell which used to
+work with Open Office and which remains the base of Vim
+Spell. Customize the word provision as described in “Customized Build”
+(except the buildhash step); and then say
 
 #+begin_src sh
-   =$ make OO=
+make OO
 #+end_src
 
 That should produce the files =eo_l3.aff= and =eo_l3.dic= in the =work/=
 subdirectory.
 
+These are packed 
 
 env LANG=eo.utf-8 vim -u NONE -e -c "mkspell! $HOME/.vim/spell/eo eo" -c q 2>&1 > err
 
 ** Customized Build
-   :PROPERTIES:
-   :CUSTOM_ID: customized-build
-   :END:
 In order to enable selective construction of dictionaries, some entries
 in the source dictionary =./src/vortoj.l3= are marked with keywords
 indicating the special field they belong to:
 
-| =#arhx= | archaic words, like /hxina/ (= /cxina/) or /malkompreni/ (= /miskompreni/)                                                                                                                   |
-| =#bot=  | a rare botanic word                                                                                                                                                                        |
-| =#Eujo= | vocabulary of the Esperanto Movement (of /Esperantujo/)                                                                                                                                    |
-| =#etn=  | ethnography; countries and geography                                                                                                                                                       |
-| =#his=  | history
-| =#komp= | some computer-science terminology according to the [[http://www.esperanto.mv.ru/KompLeks/UTF8/DEFAULT.html][Komputada Leksikono]]                                                          |
-| =#mav=  | redundant words, which are used by some esperantists, though they are less precise and unnecessarily complicate the language; e.g. /olda/ (/maljuna/ *or* /malnova/), /mava/ (= /malbona/) |
-| =#pers= | given names and names of important personalities (e.g. /Petro, Zamenhof/ ...)                                                                                                              |
-| =#pok=  | the words specific to my idiolect                                                                                                                                                          |
-| =#rar=  | rare words which may coincide with a misspelling of a more frequent word; e.g. /ajuna/, /komanditi/, /liona/                                                                               |
-| =#var=  | variant which I do not use but which is frequent enough (e.g. /kemio, tekniko/ opposed to /hxemio/ and /tehxniko/)                                                                           |
-| ...     |                                                                                                                                                                                            |
+=#arhx= : archaic words, like ‹ĥina› (= ‹ĉina›) or ‹malkompreni› (= ‹miskompreni›)\\
+=#bot=  : a rare botanic word\\
+=#Eujo= : vocabulary of the Esperanto Movement (of ‹Esperantujo›)\\
+=#etn=  : ethnography; countries and geography\\
+=#his=  : history\\
+=#komp= : some computer-science terminology according to the [[http://www.esperanto.mv.ru/KompLeks/UTF8/DEFAULT.html][Komputada Leksikono]]\\
+=#mav=  : redundant words, which are used by some esperantists, though they are less precise and unnecessarily complicate the language; e.g. ‹olda› (‹maljuna› *or* ‹malnova›), ‹mava› (= ‹malbona›)\\
+=#pers= : given names and names of important personalities (e.g. ‹Petro›, ‹Zamenhof› ...)\\
+=#pok=  : the words specific to my idiolect\\
+=#rar=  : rare words which may coincide with a misspelling of a more frequent word; e.g. ‹ajuna›, ‹komanditi›, ‹liona›\\
+=#var=  : variant which I do not use but which is frequent enough (e.g. ‹kemio›, ‹tekniko› opposed to ‹ĥemio› and ‹teĥniko›)
 
 You can ~grep~,
 
-#+begin_example
-$ grep '#mav' ./src/vortoj.l3 | less
-#+end_example
+#+begin_src sh
+grep '#mav' ./src/vortoj.l3 | less
+#+end_src
 
 in order to see if you feel like me about them; you can either remove
 all of them from the target dictionary, or remove the =#mav= mark from
@@ -274,9 +262,9 @@ close to a misspelling of a frequent word). Thus a “negative” filtration
 is available via the =$(sen)= macro; you can specify it in
 =src/Makefile=, or in the command-line:
 
-#+begin_example
-$ make eo sen="arhx,rar"
-#+end_example
+#+begin_src sh
+make eo sen="arhx,rar"
+#+end_src
 
 In this way some otherwise eligible words from the =komp= or =etn= or
 =mll= categories shall be discarded, if they are also obsolete or rare.
@@ -291,7 +279,7 @@ This package can now be used to build a vim spell dictionary:
 
 These steps are done by the ~ispell-eo/Makefile~ in ~ispell-eo/oo~
 directory (the name =oo= is a remnant from /Open Office/, which
-equally used the =myspell= format).
+equally used the MySpell format).
 
 At the step (1) it is advisable to include the entries marked with
 ~#mav~ and ~#rar~: in vim-spell they will receive the qualifications
@@ -304,14 +292,14 @@ variable; by default it is set for a local install in your
 a system-wide install.
 
 After that say
-#+begin_example
-$ make vim
-$ make install_vim
-#+end_example
+#+begin_src sh
+make vim
+make install_vim
+#+end_src
 (or ~sudo make install_vim~ for a system-wide install).
 
 * Usage
-One same ispell dictionary, e.g. =eo.hash=, can be used with several
+One same Ispell dictionary, e.g. =eo.hash=, can be used with several
 input representations, specified in its affix file (e.g. =eo.aff=).
 Each such representation is given an identifier in the affix file;
 =eo.aff= defines the following representations:
@@ -328,8 +316,8 @@ Each such representation is given an identifier in the affix file;
    canonical form; the apostrophe is represented as the ASCII ='=
    (0x27).
 4. =latin3a= is like =latin3=, except that the apostrophe is
-   represented by =´= (0xB4, spacing acute; see below the section on
-   “Apostrophe”??).
+   represented by ‹´› (0xB4, spacing acute; see below the section
+   [[* Apostrophe]]).
 5. In =utf8= the accented letters are coded by 2 bytes each according
    to the UTF-8 encoding; apostrophe is encoded as =’= (U+2019,
    =#xE2 #x80 #x99=, right single quotation mark).
@@ -352,7 +340,7 @@ what kind of files could be used in a given situation.
    :PROPERTIES:
    :CUSTOM_ID: command-line
    :END:
-You can use ispell in a stand-alone mode, as a console program. The
+You can use Ispell in a stand-alone mode, as a console program. The
 usage depends on the encodings available at your terminal emulator for
 representing the Esperanto letters.
 
@@ -361,32 +349,29 @@ This is available anywhere, you can use the =tex= (TeX) or the
 =cxirkaux= representation. In the =tex= representation the word
 /cxirkaux/ takes the form ~^cirka^u~; in the latter case the esperantic
 accents are expressed with the letter =x=. In order to check a
-file with the ispell dialog editor simply type (without the ~$~ prompt):
+file with the Ispell dialog editor simply type (without the ~$~ prompt):
 
-#+begin_example
-$ ispell -d eo -T cxirkaux $HOME/Git/ispell-eo/doc/ekz.cx
-#+end_example
+#+begin_src sh
+ispell -d eo -T cxirkaux $HOME/Git/ispell-eo/doc/ekz.cx
+#+end_src
 
 or
 
-#+begin_example
-$ ispell -d eo -T tex $HOME//Git/ispell-eo/doc/ekz.^c
-#+end_example
+#+begin_src
+ispell -d eo -T tex $HOME//Git/ispell-eo/doc/ekz.^c
+#+end_src
 
-Unfortunately, the editor is unaware of multibyte characters.
+Unfortunately, the Ispell editor is unaware of multibyte characters.
 
 *** Unicode
-    :PROPERTIES:
-    :CUSTOM_ID: unicode
-    :END:
 The modern Linux terminals use the UTF-8 encoding by default, so you
 can say there:
 
-#+begin_example
-$ ispell -d eo -T utf8 $HOME/Git/ispell-eo/doc/testo.u8
-#+end_example
+#+begin_src sh
+ispell -d eo -T utf8 $HOME/Git/ispell-eo/doc/testo.u8
+#+end_src
 
-or submit test words in the command line:
+or submit test words in the command  line:
 
 #+begin_src sh :exports both :results output :session
 echo "Cxiujxauxda renkontigxo" | ispell -T utf8 -d eo
@@ -438,52 +423,67 @@ characters aren't made known to the editor, thus they are shown as
 mojibake.
 
 *** Latin-3
+You may safely skip this section, unless you are interestwed in
+history of computing or has to use software which accepts only single-byte
+encodings.
+
 The ISO 8859-3 encoding, aka Latin-3, is now rarely used; yet it is for
-such an environment that ispell has been developed. Presently a
+such a single-byte encoding that Ispell has been developed. Presently a
 Latin-3 terminal is not readily available; one could install ~xterm~ and
-its ~luit~ package; and then
-# begin_example
-$ luit -encoding 'ISO 8859-3'
-$ ispell -d eo -T latin3 $HOME/Git/ispell-eo/doc/testo.l3
-#+end_src
-
-
-
-
-
+its ~luit~ package; and then either launch =xterm= in Latin-3:
 #+begin_src sh
-   =$ ispell -d eo = /filename/
+xterm -en 'ISO 8859-3' &
 #+end_src
+
+or open a subsession with the =luit= filter:
+
+#+begin_src sh :exports both :results output :session
+luit -encoding 'ISO 8859-3'
+echo eĥoŝanĝo | od -c
+#+end_src
+
+#+RESULTS:
+: 0000000   e 304 245   o 305 235   a   n 304 235   o  \n
+: 0000014
+
+(the =echo|od= commands are added as a proof that the non-ASCII letters
+are encoded in Latin-3).
+
+In this environment the dialog Ispell Editor shall work as expected:
+#+begin_src sh
+ispell -d eo -T latin3 $HOME/Git/ispell-eo/doc/testo.l3
+#+end_src
+(the file =testo.l3= is written in the Latin-3 encoding).
 
 In order to get a list of all misspelled or unknown words from a text in
 the Latin-3 encoding you could say (in Linux):
 
-#+begin_example
+#+begin_src sh
 export LC_ALL=eo_XX.ISO-8859-3
 ispell -d esperanto -T .l3 -l < FILENAME | sort -u
-#+end_example
+#+end_src
 
-Some more comments are in =legu-min.l3= (in esperanto).
+# Some more comments are in =legu-min.l3= (in esperanto).
 
 ** Emacs
-Normally I use ispell in an Emacs session. Emacs is distributed with
+Normally I use Ispell in an Emacs session. Emacs is distributed with
 the =ispell.el= package, which provides an interface with the ispell
 processes. This package includes, among others, specifications for
 interactions with the permissive =esperanto= dictionary in two
-representations: =latin3= and =tex=; within the  are named resp.
+representations: =latin3= and =tex=; in ispell.el they are named resp.
 =esperanto= and =esperanto-tex=.
 
 Don't be affraid of the name =latin3=: your text may be (and normally
 is) in Unicode; the program seamlessly converts your UTF-8 words to
-Latin-3 and back, using it behind the scenes, so that you never notice
+Latin-3 and back, using Latin-3 behind the scenes, so that you never notice
 it. (The only exception is the limitation of the repertoire of the
-characters available for word representation: you cannot use the curly
+characters available for word representation: e.g. you cannot use the curly
 apostrophe, which is absent from Latin-3, and thus cannot be passed to
 ispell).
 
-As mentioned earlier, the Esperantic ispell dictionaries can accept the
+As mentioned earlier, the Esperantic Ispell dictionaries can accept the
 UTF-8 input; alas, for some bugs in =ispell.el= conversions from the
-interger unicode numbers to multibyte UTF-8 and back “may result in the
+integer Unicode numbers to multibyte UTF-8 and back “may result in the
 evil /misalignment error/”; the interaction with 1-byte codes (e.g.
 Latin-3) is more stable. 
 
@@ -503,21 +503,46 @@ In English, the apostrophes appear either inside a word, like in
 /isn't/ (and this case is addressed by the =boundarychars=
 specification), or after a well-formed word, like in /for goodness'
 sake/ (where the exclusion of the apostrophe does not raise a false
-error report)
+error report). Confusions with quotes are infrequent, though possible:
 
 #+begin_src sh :exports both :results output :session
 echo "'Tis the season to be jolly!" | ispell | head -2
 #+end_src
 
-(... To be continued ...)
-
 #+RESULTS:
 : @(#) International Ispell Version 3.4.02 08 Jan 2021
 : word: how about: Dis, His, Is, Its, Otis, Pis, Sis, T's, TAs, This, Ti, Ti's, Tia, Tic, Tics, Tie, Ties, Tim, Tims, Tin, Tins, Tip, Tips, Tit, Tits, Ti s, Ti-s, Ts, TVs, T is, T-is, Vis
 
+In Esperanto apostrophes appear mainly as the last of the word's
+characters, i.e. in a most error-prone position:
+: en nova form' eksonis nova kant'
 
+Actually fine typography requires a curly apostrophe, and U+02BC would
+be the most correct choice. Unfortunately the impact of the English
+tradition, as presented in the above quotation, imposes the use of
+U+2019 (e.g. great many fonts which follow the Microsoft's WGL4 standard
+have U+2019 and lack U+02BC).
 
-#  LocalWords:  multibyte Fruictier Esperanta eo xB Komputika
+Thus the Vim Spell version of this dictionary uses U+2019 to represent
+apostrophe.
 
-*
+Alas, this is impossible with Latin-3 or any other single-byte
+encoding. As a workaround, alongside the traditional =latin3=
+representation, which uses the ASCII apostrophe, there is the
+=latin3a= representation, in which the ASCII apostrophe is ignored
+(and available for any non-lexical usage); the Esperantic /letter
+apostrophe/ is represented by ‹´› (/spacing acute,/, #xB4). 
+
+In a normal piece of Esperantic prose apostrophes are very rare; so
+spellcheck of such a piece using =latin3a= is easy, even in presence
+of extra-lingual apostrophes (like in Wikipedia sources). 
+
+OTOH, in poetry or in email correspondence one can use the ASCII
+apostrophe and spellcheck with =latin3=, as usual.
+
+In both cases, in order to prepare a typographical-quality text the
+surrogate apostrophes (either ‹'› or ‹´›) should be replaced with
+U+2019 or U+02BC.
+
+#  LocalWords:  multibyte Fruictier Esperanta eo xB Komputika BC WGL
 #  LocalWords:  Leksikono

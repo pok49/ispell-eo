@@ -25,9 +25,9 @@
 (load "ispell")  ; reload ISPELL 
 
 (defun eo3spell (&optional apo)
-  "Set Esperanto dictionary. C-u makes � (xB4, acute accent) the apostrophe letter."
+  "Set Esperanto dictionary. C-u makes ´ (xB4, acute accent) the apostrophe letter."
    (interactive "P") 
-   (ispell-change-dictionary (if apo "eo" "epo")))
+   (ispell-change-dictionary (if apo "epo" "eo")))
 
 (global-set-key "\C-ci3" 'eo3spell)
 
@@ -60,3 +60,38 @@
 (global-set-key "\C-ciy" 'flyspell-mode)
 
 (autoload 'flyspell-mode "flyspell" "On-the-fly ispell." t)
+
+; -------------- The Quotes:
+(defun insert-guillemets (&optional start end)
+  "Make a pair of « quotes » and be positioned to type inside of them."
+  (interactive "r")
+  (if (use-region-p)
+      (progn (goto-char end) (insert ?») (goto-char start) (insert ?«))
+    (progn (insert "«»") (backward-char))))
+
+(defun insert-99-66 (&optional start end)
+  "Make a pair of 99-66 quotes and be positioned to type inside of them."
+  (interactive "r")
+  (if (use-region-p)
+      (progn (goto-char end) (insert ?“) (goto-char start) (insert ?„))
+    (progn (insert "„“") (backward-char))))
+
+(defun insert-66-99 (&optional start end)
+  "Make a pair of 66-99 quotes and be positioned to type inside of them."
+  (interactive "r")
+  (if (use-region-p)
+      (progn (goto-char end) (insert ?”) (goto-char start) (insert ?“))
+    (progn (insert "“”") (backward-char))))
+
+(defun insert-<> (&optional start end)
+  "Make a pair of ‹ quotes › and be positioned to type inside of them."
+  (interactive "r")
+  (if (use-region-p)
+      (progn (goto-char end) (insert ?›) (goto-char start) (insert ?‹))
+    (progn (insert "‹›") (backward-char))))
+
+(global-set-key "\C-c\"" 'insert-guillemets)
+(global-set-key "\C-c9" 'insert-99-66)
+(global-set-key "\C-c6" 'insert-66-99)
+(global-set-key "\C-c<" 'insert-<>)
+

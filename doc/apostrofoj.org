@@ -1,0 +1,327 @@
+# -*- org-use-sub-superscripts: nil; org-export-with-sub-superscripts: nil; -*-
+
+#+title: Pri la apostrofoj kaj citiloj en Esperanto
+#+LANGUAGE: eo
+
+Ĉi tiu noto estas argumentaro por la maniero trakti la apostrofojn en
+la projekto [[https://github.com/pok49/ispell-eo][ispell-eo]] (Esperanta vortaro por la literumilo [[https://en.wikipedia.org/wiki/Ispell][Ispell]]).
+
+* Komparo
+En Esperanto la apostrofoj prezentas malpli da problemoj ol en naciaj
+lingvoj kiaj la franca aŭ la angla. Fakte per si mem, en la propra
+tradicia Esperanto, ili prezentas nenian problemon. Sed en la reala
+vivo necesas atenti la aranĝon de programaro verkita por aliaj
+lingvoj, precipe por la angla, kiun la esperantistoj praktike uzadas.
+
+** En Esperanto
+La problemo koncernas la vortolimojn: ĉu la apostrofojn la literumilo
+enprenu kiel parton de vorto — aŭ traktu ĝin kiel liman signon
+interpunkcian? En Esperanto la apostrofo estas traktenda kiel vorta
+ero, simile al la literoj. Alie la apostrofitaj vortoj, tiom oftaj en
+poezio, kaŭzos falsajn erarraportojn. Ekz‑e kontrolante la verson:
+: en nova form’ eksonis nova kant’
+la literumilo devas apartigi la vortojn ‹form'› kaj ‹kant'› kun ilia
+apostrofo; la nudaj ‹form› kaj ‹kant› ne estas akcepteblaj.
+
+
+** France
+Ankaŭ por la franca lingvo utilas trakti apostrofon kiel vorteron, pro
+la abundo da kuntiritaj formoj kiaj /l’enfant, l’ancien, s’asseoir, presqu’île/ ktp: tio
+ebligas kontroli multajn erarajn formojn, kiaj +/l’enfants/+,
++/l’anciens/+ ktp.[fn:ifr]
+
+En la literatura lingvo la apostrofo aperas ĉiam meze de vorto, inter
+literoj, kvankam en imitado de malzorga prononco aŭ ĵargono eblas
+ankaŭ la vortofina pozicio (kiel en Esperanto): /pauv’ con/ (anstataŭ
+/pauvre con/).
+
+** Angle
+En la angla lingvo okazas kolizio inter ortografio kaj interpunkcio:
+la apostrofo estas uzata de ambaŭ malsammaniere.
+
+Ortografie la apostrofo estas *parto de vorto*, kiel en la franca:
+/boy's, doesn't, we'll, you're, o'er …/ Apostrofo regule aperas
+finvorte en la poseda formo post /s/, ekz‑e /ladies’ hats/. Malpli
+ofte aperas apostrofo vortkomenca: /'Tis the season to be jolly!/
+
+Interpunkcie la apostrofo estas uzata kiel disigilo, *signo nevorta*,
+kiel ferma citilo (kaj en la prezento tajpa aŭ Askia, ankaŭ kiel
+citilo malferma).
+
+Por solvi tiun kolizion en la anglalingva literumado oni traktas la
+signon ‹'› kiel apostrofon (do, vorteron) el la pozicioj interliteraj
+(/isn't/ ktp), kaj kiel disigiloj en la okazoj ceteraj. Tio ne kaŭzas
+problemojn en la posedaj formoj (kia /ladies'/), ĉar la antaŭapostrofa
+bazo ja estas (devas esti) regula vorto angla; la problemo restas ĉe
+la komencvorta apostrofo (kia /'tis/) — sed tiaj vortoj estas
+maloftaj, kaj ofte koincidas kun aliaj anglaj vortoj: /'bout/ (el
+/about/) koincidas kun /bout; 'less/ (el /unless/) koincidas kun
+/less/ ktp. Kompreneble ĉi tiu elturniĝo ne povas funkcii en Esperanto.
+
+
+* Pri la citiloj
+La Esperantaj tekstoj ekzistas en 3 formoj: manskriba, tipografia, tajpita.
+En la frua periodo ĉefis la du unuaj; de post la Unua  Mondmilito kaj
+ĝis 1980-aj jaroj ĉefis la tajpiloj; poste kaj ĝis nun plej gravas la
+prezentoj komputilaj, kiuj per la sortimento da disponeblaj signoj
+egalas aŭ eĉ superas la iaman tipografion. Ĝuste la komputilaj
+prezentoj precipe interesas nin ĉi tie; tamen ili ja evoluis el la
+tipografiaj, kaj ilin forte influis la tradicio tajpada. Fakte la
+tajpado plu influas, ĉar Askio kaj la klavaroj ja esence restas tajpilaj.
+
+Zamenhofo ne opiniis la formon de la citiloj grava trajto de la
+lingvo. En la Fundamenta Ekzercaro aperas 3 citilajn parojn, sen
+evidenta sencodistingo:
+#+begin_verse
+„ “:: (ĵargone nomata «99—66»): 26-foje
+« »:: (duobla angula citilo): 8-foje (plus 12 aperoj en la «Antaŭparolo»)
+“ ”:: (ĵargone nomata «66—99»): 20-foje
+#+end_verse
+La arbitrecon kaj samsignifecon de la uzoj klare ilustras la fabelo «La
+feino»: komence (§15) la dialogajn dirojn markas “ ”, sed ekde §21, « ».
+Verdire, mi dubas, ke tiu malordo estas sekvo de konscia miksado.
+
+Plue, en la teksto de FE disponebla en la Akademia retejo oni trovas
+ĉiujn 3 citilajn specojn, sed ne ĉiam en tiuj lokoj, kie ili aperas en
+la papera eldono de 1905ª jaro.
+
+La racia elekto de preferindaj citiloj devas atenti la eblon de
+vortofinaj apostrofoj. Komparu la prezentojn de frazo el FE §27 
+
+1) Anstataŭ «la» oni povas ankaŭ diri «l’»
+2) Anstataŭ „la“ oni povas ankaŭ diri „l’“
+3) Anstataŭ “la” oni povas ankaŭ diri “l’”.
+
+Por mi, (1) estas la plej bona kaj klara; Zamenhofo tamen ial uzis
+(2), kiu estas malpli klara, sed ankoraŭ legebla; la formon (3) mi
+opinias maltaŭga. Tamen ĝuste ĝin elektis PIV, «Esperanto», «La Ondo
+de Esperanto».
+
+Estas ankoraŭ unu speco, uzata i.a. de «Monato»: „ ” (99-99)[fn:PP]. Ĝi ne
+estas tradicia, ĝi ne aperas en la Fundamento; kaj ĝi estas same aĉa,
+kiel la formo 66-99, ĉar ambaŭ formoj havas la saman ferman citilon,
+malagrable gluiĝantan al eventuala apostrofo: ’”.
+
+** Citaĵo en citaĵo
+Plureco de la citilaj specoj estas utila okaze de citaĵoj enmetitaj en
+citaĵon. Estas kiel pri la krampoj en la matematikaj formuloj:
+: 7 – {[(10 – 6) × 5] + 13}
+estas pli facile legebla ol
+: 7 – (((10 – 6) × 5) + 13)
+
+Ho ve, allasinte plurajn citilajn formojn, Zamenhofo ne profitis la
+eblojn kiujn tio donas. Ekz‑e en sia traduko de «La batalo de l' vivo»
+(1891):
+#+begin_quote
+„aldonu ankoraŭ la vortojn „kaj fingringo“, kaj mi volas la ambaŭ
+sentencojn pendigi en la loĝejo anstataŭ la portreto de mia mastrino.“
+#+end_quote
+Ĉu Zamenhofo malvolis kompliki la lingvon?
+
+Ĉiel ajn, en la reeldono de «La batalo», serioze reviziita de la
+britaj editoroj, la citiloj estas diferencigitaj (kio estas bona), sed
+por la internaj citiloj estas uzataj la anglaj kurbaj citiloj unuopaj 6-9
+(kio estas bedaŭrinda):
+#+begin_quote
+“Dio nin gardu de tio ĉi! Ŝi vivu kaj … poste ŝi diru kun tiu franco:
+‘La komedio estas finita, faligu la kurtenon.’”
+#+end_quote
+Nuntempe la komputiloj elskatole disponigas riĉegan sortimenton da
+signoj, kaj inter ili ĉiujn fundamentajn citilojn, estas neracie uzi
+la konfuzajn apostrofajn citilojn. En la [[http://kovro.heliohost.org/books/la_batalo/batalof.html][moderna revizio]] de la
+«Batalo» tiu ekzemplo havas do la formon:
+#+begin_quote
+«Dio nin gardu de tio ĉi! Ŝi vivu kaj ridadu pri tio ĉi kiel longe ŝi
+povas ridi, kaj poste ŝi diru kun tiu franco: „La komedio estas
+finita, faligu la kurtenon.“»
+#+end_quote
+Simila kungluiĝo povas okazi ankaŭ komence de la ekstera citaĵo, kaj
+ankaŭ ĉi-okaze la sammaniera malambiguigo egale klaras:
+#+begin_quote
+«„Faru ion al la homoj, por ke ili nenion al vi faru“, vi kredeble
+pensas?» diris sinjoro Snitchey.
+#+end_quote
+(kp “‘Faru … al vi faru’ …”).
+
+** Memreprezentaĵoj kaj sencodifinoj
+Aparta uzo de la citiloj estas marki memprezentaĵojn (aŭtonimojn), t.e.
+tiajn uzojn de vortoj aŭ aliaj signoj, en kiuj ili reprezentas ne la
+signaton, sed la signanton, t.e. sin mem. Tiaj uzoj oftas en
+lingvoscienco, kaj plurajn ekzemplojn disponigas la /Fundamenta
+Ekzercaro/ (FE):
+#+begin_quote
+... tiel same ni ankaŭ diras: „la birdo flugis en la ĝardenon, sur la
+tablon“, kaj la vortoj „ĝardenon“, „tablon“ staras tie ĉi en akuzativo
+ne ĉar la prepozicioj „en“ kaj „sur“ tion ĉi postulas, sed nur ĉar
+ni volis esprimi direkton ... — FE §28
+#+end_quote
+#+begin_quote
+La sufikso «um» ne havas difinitan signifon. -- FE §42.
+#+end_quote
+Zamenhofo neniam apartigis ĉi tian uzon de la citiloj; sed en fakaj
+tekstoj lingvosciencaj oni ofte uzas tiucele la anglajn citilojn
+apostrofajn ‘ ’: ‘ĝardenon’, ‘tablon’, ‘sur’...
+
+Evidente, ĝi estas konfuza kaj maloportuna. Mi koncedas, ke la duoblaj
+citiloj ĉirkaŭ mallonga vorto aŭ unuopa signo povas impresi kiel io
+peza, tro grandioza; sed ĝenerale disponeblaj estas la unuopaj angulaj
+citiloj ‹ ›, kiuj aspektas sufiĉe modeste kaj estas malambiguaj. Kp:
+#+begin_quote
+Anstataŭ ‘la’ oni povas ankaŭ diri ‘l’’\\
+Anstataŭ ‹la› oni povas ankaŭ diri ‹l’›.
+#+end_quote
+
+#+begin_quote
+La tajpila-Askia apostrofo ‹'› povas reprezenti la apostrofajn citilojn
+(la malferman ‹‘› aŭ la ferman ‹’›), proprasencan apostrofon ‹’›,
+minutsignon ‹′›, dekstran kornon ‹′›...
+#+end_quote
+En la anglaj apostrofaj citiloj tia frazo estas malfacile legebla
+(resp. ‘'’, ‘‘’, ‘’’, ‘’’, ‘′’, ‘′’), kaj tute prave la franca
+Vikipedio uzas la unuopajn angulajn citilojn en la koncernaj partoj de
+la artikolo «[[https://fr.wikipedia.org/wiki/Apostrophe_(typographie)#Ambigu%C3%AFt%C3%A9s][Apostrophe (typographie)]]». Kaj ankaŭ ĉe la malsupraj signoj la
+apostrofaj citiloj aspektas aĉe: punkto ‘.’, zoeto ‘¸’ — pli klaras ‹.›, ‹¸›.
+
+Tiusence anstataŭ la citiloj oni ankaŭ uzas kursivon.
+
+Alia lingvista uzo de la apostrofaj citiloj estas apartigi
+sencodifinojn. Jen ekzemplo kie memreprezentaĵo aperas kursive, kaj
+sencodifinoj, en citiloj. Ankaŭ ĉi-okaze uzeblas unuopaj angulaj citiloj[fn:BW]:
+#+begin_quote
+/ruĝi/ = ‘esti ruĝa, impresi ruĝe’, sed nepre ne ‘igi ruĝa’ nek ‘iĝi ruĝa’\\
+/ruĝi/ = ‹esti ruĝa, impresi ruĝe›, sed nepre ne ‹igi ruĝa› nek ‹iĝi ruĝa›
+#+end_quote
+Probable tiuj estas la solaj iom internaciaj uzoj de la apostrofaj citiloj.
+** La rekta parolo
+Unu el la ĉefaj funkcioj de la citiloj estas prezenti la rektan
+parolon. Estas 2 specoj de rekta parolo: monologo kaj
+dialogo. Monologon oni plejparte encitiligas; sed pri dialogoj la
+naciaj (kaj sekve ankaŭ la Esperantaj) tradicioj varias.
+
+En Esperanto kunekzistas du manieroj prezenti dialogojn: la ĝermana
+kaj la franca-pola-rusa. Zamenhofo uzadis jen unu, jen la alian.
+
+*** La maniero franca-pola-rusa
+
+En ĉi tiu maniero dialogo estas konceptata ne kiel pluro da monologoj,
+sed kiel aparta speco de parol-agado. Ĉiu eldiro komencas novan
+alineon kaj estas antaŭata de haltostreko:
+#+begin_quote
+– Estimata sinjorino kredeble havas bezonon al la informa oficejo? –
+diris la mastrino de la loĝejo.
+
+– Jes, sinjorino, – respondis la venintino. – Mi estas Marta Świcka.
+
+– Volu sidiĝi kaj atendi momenton, ĝis mi finos la interparoladon kun
+tiuj sinjorinoj, kiuj venis antaŭe. -- («Marta»)
+#+end_quote
+Tiu aparta interpunkcio ebligas, interalie, klare diferencigi la
+dialogon (la eldirojn eksterigatatajn) disde la paralela monologo interna
+(rekta parolo enmensa), ekz‑e
+#+begin_quote
+— Vi estas tre modesta … Sed mi dezirus ekscii ion pri vi, pri via
+familio, pri via patro, pro kiu vi forlasas nin.
+
+«Kial ŝi diras tion al mi?» — pensis Bazarov.
+
+— Ĉio ĉi tute ne estas interesa, — diris li voĉe, — precipe por vi, ni
+estas malaltaj homoj … («Patroj kaj filoj», ĉap. 17ª)[3]
+#+end_quote
+Ankaŭ la eningita rekta parolo apektas pli bone:
+#+begin_quote
+– Efektive, okulfrapis, kiam mi vidis lin post tiu travivaĵo, lia
+mirinda sereneco. Li diris: «Mia animo similas vastan trankvilan
+lagon». Ĉu vi iam aŭdis pri iu, kiu, en unu tago, transiris el
+plej profunda deprimiĝo en perfektan serenecon kun plena malapero
+de ĉiuj psikaj simptomoj?[fn:Tien] 
+#+end_quote
+Similaj ekzemploj troveblas ekz‑e ankaŭ en la Zamenhofa traduko de «Marta».
+
+*** La maniero ĝermana (angla-germana)
+En tiu maniero dialogo aperas kiel simpla sinsekvo da rektaj paroloj
+monologaj, ĉiu el kiuj komencas apartan alineon:
+#+begin_quote
+„Ĉu vi ion vidis, Britain? ion aŭdis?“
+
+„Estas tro mallume, por povi malproksime vidi, kaj tro multe da bruo
+en la domo, por povi ion aŭdi“, respondis la servanto.
+
+„Tio ĉi estas vera! Tiom pli gaja estos la akcepto. Kioma horo nun estas?“
+
+„Ĝuste la dekdua, sinjoro. Li devas jam baldaŭ veni, sinjoro.“[fn:B1891]
+#+end_quote
+Malpli nuancita, tiu maniero estas malpli esprimiva. Ekz‑e la supre
+citita peco el «Patroj kaj filoj» jene aspektas en la misredaktitaj
+eldonoj oftaj en la Reto[fn:Inko]:
+#+begin_quote
+“Vi estas tre modesta … Sed mi dezirus ekscii ion pri vi, pri via familio (…)”
+
+Kial ŝi diras tion al mi? pensis Bazarov.
+
+“Ĉio ĉi tute ne estas interesa”, diris li voĉe (…)”
+#+end_quote
+En ĉi tiaj okazoj la rekta parolo restas tute nemarkita, por ne miksiĝi
+kun la voĉa dialogo ­ kvankam en la aliaj lokoj ĝin markas citiloj.
+
+* Kodoj
+** Tajpiloj, Askio, 8-bitaj kodoj
+
+
+ 
+# #+begin_quote
+# #+end_quote
+
+# #+begin_quote
+# #+end_quote
+
+#+begin_quote
+Single guillemets may be used for quotes inside quotes. -- U6, p. 272
+#+end_quote
+
+
+
+Manskribe mi uzas rektajn citilojn tajpeskajn kaj la kurban apostrofon
+komoforman: /"manskrib’"/.
+- Tajpile mi uzas la rektajn citilojn kaj la rektan apostrofon: ="tajpaĵ'"=.
+- Retpoŝte mi uzas la angulajn citilojn (la plej klarajn) kaj la rektan
+  apostrofon (komprenatan de la literumilo): «retpoŝt'».
+- Tipografie mi uzas la angulajn citilojn kaj la kurban apostrofon: «tipografi’».
+ Evidenta
+
+«La Dua Libro», «La Ombro»:
+«Ĝi estas tiel, kiel se unu ripetas pecon, kiu estas por li tro
+malfacila, kaj kiun li ne povas ellerni, ĉian tiu sama peco. `Mi
+malgraŭ ĉio ĝin venkos’ li diras, sed li tamen ĝin ne venkas, kiel ajn
+longe li ludas».
+
+„Mi vidis ĉion, kaj mi ĝin rakontos al vi; sed … ĝi ne estas fiereco
+de mia flanko, tamen … kiel homo libera, kaj ĉe mia instruiteco, ne
+parolante jam pri mia bona situacio kaj riĉeco … mi kore dezirus, ke
+vi parolu al mi ne „mia kara“, sed „sinj
+
+
+* Referencoj
+
+[fn:ifr]Pythoud, Christophe. Français-GUTenberg : un nouveau dictionnaire français pour ISPELL.
+   Problèmes résolus et intégration de contributions extérieures.
+   [[http://www.numdam.org/item/CG_1998___28-29_252_0.pdf][Cahiers GUTenberg, № 28-29 (1998), pp. 252–275]].
+
+[fn:PP] Peeraerts, Paul. [[http://www.ipernity.com/blog/paul_peeraerts/4617856][Pri „esperantlingvaj” kaj aliaj citiloj]]. Ipernity, 2016-06-05.
+
+[fn:BW] Wennergren, Bertilo. [[http://interlingvistiko.net/wp-content/uploads/2021/05/2-Wennergren.-Bazformoj-de-radikoj-en-vortaroj.pdf][Bazformoj de radikoj en vortaroj]].
+   Esperantologio / Esperanto Studies, *4* (2009), p. 17.
+
+[fn:PkF] Turgenev I.S., tradukis Kabe. [[https://books.google.ru/books?id=sJstAQAAMAAJ][Patroj kaj filoj]].a Librejo
+«Esperanto», Moskvo, 1909. Ĉap. 17ª, p. 77.
+
+[fn:Tien]  Johán Valano: [[https://legacy.esperanto.org.uk/eldonoj/piron/tekstoj/Tien.html][Tien]]. Vieno: IEM, 1997.
+
+[fn:B1891] Dickens, Charles trad. Zamenhof, L. La batalo de l’ vivo.
+«La Esperantisto», , vol. 2 (1891, feb.–jul., sep.–nov.).
+
+[fn:Inko] I. Turgenjev, tradukis Kabe. Patroj kaj filoj. Inko Tyresö, 2001.
+
+
+# vortolimoj / vortolumoj (i kaj u najbaras sur la klavaro).
+
+#  LocalWords:  tajpila-Askia memreprezentaĵo
