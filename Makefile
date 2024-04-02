@@ -5,7 +5,6 @@ pok_list	=	$(short_list),bot,fremd,his,pok,pers,var,zoo
 eo_list		=	$(pok_list),drv
 esperanto_list	=	$(pok_list),arhx,mav,rar,var
 #esperanto_list	=	$(pok_list),arhx,mav,rar,var,drv
-#sen		=	rar
 
 # Exotic forms // Ekzotajxoj
 # Uncomment the following if you do not need rare forms like "forirontinoj";
@@ -25,6 +24,8 @@ install_dir=`ispell -vv | grep LIBDIR | sed 's/[^"]*\\"\([^"]*\)\\"/\1/'`
 # VIM Spell:
 vim_spl_install_dir = $(HOME)/.vim/spell
 #vim_spl_install_dir = /usr/share/vim/vim82/spell
+vim_list	= $(esperanto_list),drv
+apostrofo	= u
 
 ##########################
 # No more user settings // Fino de la uzulaj agordajxoj.
@@ -46,14 +47,14 @@ all :	ordigo eo esperanto
 ordigo:
 #	$(MAKE) -C src
 	cd src && $(MAKE)
-
 vim :	ordigo
-	cd oo && $(MAKE) vim eo_list=$(eo_list) sxparu=$(sxparu)
+	tools/cxu_apostrofo vim $(apostrofo) || apostrofo=u
+	cd oo && $(MAKE) vim eo_list=$(eo_list) sxparu=$(sxparu) apostro=$(apostrofo)
 
 eo :	ordigo
 #	$(MAKE) -C work eo.hash
 	cd work && $(MAKE) eo.hash eo_list=$(eo_list) \
-	sxparu="-DSXPARE" sen="mav,rar,$(sen)"
+	sxparu="-DSXPARE"
 
 esperanto :	ordigo
 #	$(MAKE) -C work esperanto.hash
@@ -67,7 +68,7 @@ install:
 
 install_vim:
 	install -d $(vim_spl_install_dir)
-	install -m 664 oo/eo.utf-8.spl $(vim_spl_install_dir)
+	install -m 664 oo/vimspell/eo.utf-8.spl $(vim_spl_install_dir)
 
 tar :	clean
 	LC_CTYPE=C cd .. && tar cvf - ispell-eo | gzip -9v > espaff.tgz

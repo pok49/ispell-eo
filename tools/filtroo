@@ -1,17 +1,13 @@
 #!/bin/sh
+# -*- coding: utf-8 -*-
 
-# LC_ALL=C
-# LC_CTYPE=C
-# export LC_CTYPE LC_ALL
-
-iconv -f ISO-8859-3 -t UTF-8 <../src/vortoj.l3 |\
-sed -Ee 's:\{\\o\}:ø:g; s|´|’|g; s/coding:latin-3/coding:utf-8/' \
+iconv -f ISO-8859-3 -t UTF-8 ../src/vortoj.l3 |\
+sed -Ee 's:\{\\o\}:ø:g; s|´|ʼ|g; s~(/.*)\\~\1÷~; s/coding:latin-3/coding:utf-8/' \
     -e 's%(/[[:graph:]]+)(.*)([[:space:]]*#mav|[[:space:]]*#arhx)\>%\1!\2%' \
-    -e 's%^(=?[[:alpha:]]*[[:space:]]+[-’[:alpha:]]+)\>([[:space:]].*)(#mav)\>%\1/!\2%' \
+    -e 's%^(=?[[:alpha:]]*[[:space:]]+[-ʼ[:alpha:]]+)\>([[:space:]].*)(#mav)\>%\1/!\2%' \
     -e 's%(/[[:graph:]]+)(.*)([[:space:]]*#rar)\>%\1?\2%' \
-    -e 's%^(=?[[:alpha:]]*[[:space:]]+[-’[:alpha:]]+)\>([[:space:]].*)(#rar)\>%\1/?\2%' \
-    > eoootmp1
-
+    -e 's%^([=[:alpha:]].+/[^[:space:]]+)(.*)(#rar)\b%\1?\2%' > eoootmp1
+#    -e 's%^(=?[[:alpha:]]*[[:space:]]+[-ʼ[:alpha:]]+)\>([[:space:]].*)(#rar)\>%\1/?\2%' > eoootmp1
 
 #FILTER=`echo $1 | sed -e 's/\<\([a-zA-Z]*\)\>,*/s,\#\1,,;/g'`
 
@@ -22,20 +18,31 @@ sed -Ee 's:\{\\o\}:ø:g; s|´|’|g; s/coding:latin-3/coding:utf-8/' \
 # /#mll/s,#.*,,;/#pok/s,#.*,,;/#var/s,#.*,,;/#drv/s,#.*,,;
 
 FILTER=`echo $1, | sed -e 's|\([.a-zA-Z]*\),|/\#\1/s%#.*$%%;|g'`
-
 echo "FILTER == $FILTER"
 
-sed -e "s/#{[^}]*}//g; $FILTER; /\#/d" eoootmp1 > eoootmp2
-cat eoootmp2 | sed -e 's/^\([^=][^ 	]*\)-[ 	]*\(^\)*\([^+-]*\)$/&\
-\1\2\l\3/;
-s/^\([^=][^ 	]*\)-[ 	]*\(^\)*\([^-]*\)-\([^+]*\)$/\1-\2\3\4\
-\1\2\l\3/;
-s/^\([^=][^ 	]*\)-[ 	]*\(^\)*\([^+]*\)+\([^-]*\)$/\1-\2\3\
-\1\2\l\3\4/;
-s/^\([^=][^ 	]*\)-[ 	]*\(^\)*\([^-]*\)-\([^+]*\)+\(.*\)$/\1-\2\3\4\
-\1\2\l\3\5/;
-s/[ =	]//g; /^[[:space:]]*$/d; 
-# tekstoprezent(ad)o:
-s/\([^(]*\)(\([^)]*\))\(.*\)$/\1\2\3\n\1\3/' | sort -uf > eoootmp3
+case $3 in
+    'a') APO="s/´/'/g"
+         ;;
+    'q') APO="s/´/’/g"
+         ;;
+    'u') APO="s/´/ʼ/g"
+         ;;
+    *) echo "Wrong APO"; exit 1
+       ;;
+esac
+echo "APO == $APO"
 
-wc -l eoootmp3 | sed -Ee 's/^ *([0-9]+)\>.*$/\1/' | cat - eoootmp3 > $2
+sed -e "s/##.*$//; $FILTER; /\#/d; $APO" eoootmp1 > eoootmp2
+../tools/plusminus.sed < eoootmp2 | tr '%' '\n' | sort -uf > $2
+
+# cat eoootmp2 | sed -e 's/^\([^=][^ 	]*\)-[ 	]*\(^\)*\([^+-]*\)$/&\
+# \1\2\l\3/;
+# s/^\([^=][^ 	]*\)-[ 	]*\(^\)*\([^-]*\)-\([^+]*\)$/\1-\2\3\4\
+# \1\2\l\3/;
+# s/^\([^=][^ 	]*\)-[ 	]*\(^\)*\([^+]*\)+\([^-]*\)$/\1-\2\3\
+# \1\2\l\3\4/;
+# s/^\([^=][^ 	]*\)-[ 	]*\(^\)*\([^-]*\)-\([^+]*\)+\(.*\)$/\1-\2\3\4\
+# \1\2\l\3\5/;
+# s/[ =	]//g; /^[[:space:]]*$/d; 
+# # tekstoprezent(ad)o:
+# s/\([^(]*\)(\([^)]*\))\(.*\)$/\1\2\3\n\1\3/' | sort -uf > eoootmp3

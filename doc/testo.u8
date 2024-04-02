@@ -1,30 +1,14 @@
-Nomuskle:	Eĥoŝanĝo ĉiuĵaŭde.
+Nomuskle:	Eĥoŝanĝo Ĉiuĵaŭde.
 Tutminuskle:	eĥoŝanĝo ĉiuĵaŭde.
 Tutmajuskle:	EĤOŜANĜO ĈIUĴAŬDE.
-dank’ al; vid-al-vide.
-De l’ ter’ al la ĉiel’ ĝi laŭte krias
+dankʼ al; vid-al-vide.
+De lʼ terʼ al la ĉielʼ ĝi laŭte krias
 De l' ter' al la ĉiel' ĝi laŭte krias
 
+La reĝ' de l' reĝoj, di' de l' dioj?
 La reĝ’ de l’ reĝoj, di’ de l’ dioj?
+La reĝʼ de lʼ reĝoj, diʼ de lʼ dioj?
+Lagetʼ malnova … neniʼ en aŭdʼ … Jen rano — plaŭdʼ! … Silentʼ…
 
-Laget' malnova ... neni' en auxd' ... Jen rano - plauxd'! ... Silent'
-echo "Laget' malnova ... neni' en auxd' ... Jen rano -- plauxd'! ... Silent'"|ispell -d eo -T cxirkaux
-echo "Laget' malnova ... neni' en aŭd' ... Jen rano -- plaŭd'! ... Silent'"|ispell -d eo -T latin3
-
-
-
-teran'
-teran´
-bonulin´
-François
-Støp
-Čapek
-
-Støp-Bowitz
-Stоp-Bowitz
-Wüster
-Tárkony 
-Vérax
-
-(load "ispell.el") Stöp-Bowitz
-Лазарь Маркович Заменгоф
+Wüster, Tárkony, Vérax
+Wuster, Tarkony, Verax

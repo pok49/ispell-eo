@@ -1,31 +1,64 @@
-;-------- ISPELL:
+; -*- coding: utf-8 -*-
+;-------- Checked with ispell.el v. 22.1 & Emacs v. 27.1 in Linux Mint 21.3:
+(require 'ispell)
+(defconst ispell-letter-apostrophe "ʼ")
+(defconst ispell-right-quote "’")
+
+; (defcustom ispell-apostrophe ispell-right-quote
+;   "Choose the character to represent apostrophe in corrections at \"epo\" spell-check. There are 2 options:
+; - “Right quote” is \"single right quotation mark\" ’ (U+2019).
+; - “Letter apostrophe” is ʼ (U+02BC)."
+;   :type '(choice (const :tag "right quote" ispell-right-quote)
+;                  (other :tag "letter apostrophe" ispell-letter-apostrophe))
+;   :group 'ispell)
+
+(defvar ispell-apostrophe ispell-right-quote
+"The character to represent apostrophe in corrections at \"epo\" spell-check. There are 2 options:
+ - “Right quote” is \"single right quotation mark\" ’ (U+2019).
+ - “Letter apostrophe” is ʼ (U+02BC).
+To change its value please use the function ‘ispell-set-apostrophe’.")
+
+(defun ispell-set-apostrophe (&optional which)
+  "Sets ‘ispell-apostrophe’.
+If prefixed with 1, set it to letter-apostrophe ʼ (single unpaired sign).
+If prefixed with 1, set it to right quote ’ (the 2nd of the paired quotes).
+Without prefix, toggle between them."
+  (interactive "N")
+  (setq ispell-apostrophe
+        (cond
+         ((= which 1) ispell-letter-apostrophe)
+         ((= which 2) ispell-right-quote)
+         (t (if (equal ispell-apostrophe ispell-right-quote)
+                ispell-letter-apostrophe
+              ispell-right-quote))))
+  (message "ispell-apostrophe is set to %s" ispell-apostrophe))
+
 (setq ispell-local-dictionary-alist
-      '(
-        ("eo"
+      '(("eo"
          "[A-Za-z\246\254\266\274\306\330\335\336\346\370\375\376'\301\304\307\311\326\334\341\344\347\351\366\374]"
          "[^A-Za-z\246\254\266\274\306\330\335\336\346\370\375\376'\301\304\307\311\326\334\341\344\347\351\366\374]"
-         "[-]" t ("-d" "eo") "~latin3" iso-8859-3)
+         "[-]" nil ("-d" "eo") "~latin3" iso-8859-3)
 
         ("epo"
-         "[A-Za-z\246\254\266\274\306\330\335\336\346\370\375\376\264\301\304\307\311\326\334\341\344\347\351\366\374]"
-         "[^A-Za-z\246\254\266\274\306\330\335\336\346\370\375\376\264\301\304\307\311\326\334\341\344\347\351\366\374]"
-         "[-]" t ("-d" "eo") "~latin3a" iso-8859-3)
+         "[A-Za-zĜĈŬŜĴĤĝĉŭhŝĵĥʼ’ÀÁÂàáâÄäÇçĊċÈÉÊËèéêëĞğĠġĦħÌÍÎÏİìíîïıÑñÒÓÔÖòóôöŞşÙÚÛÜùúûüßŻż]"
+         "[^A-Za-zĜĈŬŜĴĤĝĉŭhŝĵĥʼ’ÀÁÂàáâÄäÇçĊċÈÉÊËèéêëĞğĠġĦħÌÍÎÏİìíîïıÑñÒÓÔÖòóôöŞşÙÚÛÜùúûüßŻż]"
+         "[-'’]" nil ("-d" "eo") "~epo" iso-8859-3)
 
 	 ("eo-x"
-	   "[A-Za-z'\\]"
-	   "[^A-Za-z'\\]"
+	   "[A-Za-z'\\]" "[^A-Za-z'\\]"
 	   "[-]" nil ("-d" "eo") "~cxirkaux")
 
 	 ("esperanto-x"
 	   "[A-Za-z']" "[^A-Za-z']"
-	   "[-]" t ("-C" "-d" "esperanto") "~cxirkaux")))
+	   "[-]" nil ("-C" "-d" "esperanto") "~cxirkaux")))
 
 (setq  ispell-menu-map-needed t
        ispell-menu-map nil)
-(load "ispell")  ; reload ISPELL 
+; (load "ispell")  ; reload ISPELL 
 
 (defun eo3spell (&optional apo)
-  "Set Esperanto dictionary. C-u makes ´ (xB4, acute accent) the apostrophe letter."
+  "Set Esperanto dictionary. With ‘C-u’, use a curly apostrophe.
+(See the ‘ispell-apostrophe’ variable)."
    (interactive "P") 
    (ispell-change-dictionary (if apo "epo" "eo")))
 
@@ -90,8 +123,40 @@
       (progn (goto-char end) (insert ?›) (goto-char start) (insert ?‹))
     (progn (insert "‹›") (backward-char))))
 
+(defun ispell-insert-apostrophe ()
+  "Insert a curly apostrophe according to ‘ispell-apostrophe’"
+  (interactive)
+  (insert ispell-apostrophe))
+
 (global-set-key "\C-c\"" 'insert-guillemets)
 (global-set-key "\C-c9" 'insert-99-66)
 (global-set-key "\C-c6" 'insert-66-99)
 (global-set-key "\C-c<" 'insert-<>)
+(global-set-key "\C-ci'" 'ispell-insert-apostrophe)
+
+
+; --------------- Based on “Ispell and Apostrophes”
+; [http://endlessparentheses.com/ispell-and-apostrophes.html]
+; by Artur Malabarba (for Emacs 24.4 or newer):
+
+;;; Don't send ‹ʼ› to the subprocess.
+(defun iconv-apostrophe (args)
+  (cond
+   ((equal ispell-current-dictionary "epo")
+    (cons (replace-regexp-in-string "[ʼ’]" "´" (car args))
+          (cdr args)))
+   (t args)))
+(advice-add #'ispell-send-string :filter-args #'iconv-apostrophe)
+
+;;; Convert ‹´› back to ‹ʼ› from the subprocess.
+(defun oconv-apostrophe (args)
+  (cons (replace-regexp-in-string
+         "´\\|^'"
+         ispell-apostrophe
+         (car args))
+        (cdr args)))
+(advice-add #'ispell-parse-output :filter-args #'oconv-apostrophe)
+
+
+
 

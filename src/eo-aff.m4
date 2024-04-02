@@ -2,7 +2,7 @@
 divert(-1)
 #§ 			ABOUT THIS FILE
 Name: eo-aff.m4
-# Time-stamp: <2024-01-07 10:23:54 sergio>
+# Time-stamp: <2024-03-27 13:09:43 sergio>
 define(Versio, `# Versio:	4.2')
 
 
@@ -145,7 +145,7 @@ allaffixes on
 changequote(/*, */})
 
 # TeX/LaTeX laux esperanto.sty
-defstringtype "tex" "TeX" ".tex" ".bib"
+defstringtype "tex" ".tex" ".bib"
 #
 #boundarychars	[.]
 boundarychars	[-]
@@ -159,7 +159,7 @@ stringchar   \\'a    \\'A
 wordchars     [bc]    [BC]
 stringchar     ^c      ^C
 stringchar  \\c{c}  \\c{C}
-#stringchar  \\v{c}  \\v{C}
+stringchar  \\v{c}  \\v{C}
 wordchars	d	D
 stringchar   \\'e    \\'E
 wordchars    [d-g]   [D-G]
@@ -175,13 +175,14 @@ wordchars    [p-s]   [P-S]
 stringchar     ^s      ^S
 wordchars     [tu]    [TU]
 stringchar     ^u      ^U
-#stringchar   \\^u    \\^U
+stringchar   \\^u    \\^U
 stringchar  \\\"u   \\\"U
 wordchars    [v-z]   [V-Z]
 
-altstringtype "utf8" "tex" ".html" ".u8" ".utf"
+altstringtype "utf8" ".html" ".u8" ".utf"
 #
-altstringchar	\xE2\x80\x99 ^'
+altstringchar  \xE2\x80\x99 ^'
+# altstringchar   \xCA\xBC    ^' modifier letter apostrophe U+02BC
 altstringchar	\xC4\x88    ^C
 altstringchar	\xC4\x89    ^c
 altstringchar	\xC4\x9C    ^G
@@ -200,8 +201,8 @@ altstringchar	\xC3\x84 \\\"A
 altstringchar	\xC3\xA4 \\\"a
 altstringchar	\xC3\x87 \\c{C}
 altstringchar	\xC3\xA7 \\c{c}
-#altstringchar	\xC4\x8C \\v{C}
-#altstringchar	\xC4\x8D \\v{c}
+altstringchar	\xC4\x8C \\v{C}
+altstringchar	\xC4\x8D \\v{c}
 altstringchar	\xC3\x89  \\'E
 altstringchar	\xC3\xA9  \\'e
 altstringchar	\xC3\xB6 \\\"o
@@ -231,17 +232,17 @@ altstringchar	\xC4 \\\"A
 altstringchar	\xC7 \\c{C}
 altstringchar	\xC9  \\'E
 altstringchar	\xD6 \\\"O
-#altstringchar	\xDB  \\^U
+altstringchar	\xDB  \\^U
 altstringchar	\xDC \\\"U
 altstringchar	\xE1  \\'a
 altstringchar	\xE4 \\\"a
 altstringchar	\xE7 \\c{c}
 altstringchar	\xE9  \\'e
 altstringchar	\xF6 \\\"o
-#altstringchar	\xFB  \\^u
+altstringchar	\xFB  \\^u
 altstringchar	\xFC \\\"u
 
-altstringtype "latin3a" "sgml" ".wiki" ".la3"
+altstringtype "epo" ".wiki" ".la3"
 #
 altstringchar	\xB4    ^'
 altstringchar	\xE6	^c
@@ -271,7 +272,7 @@ altstringchar	\xF6 \\\"o
 #altstringchar	\xFB  \\^u
 altstringchar	\xFC \\\"u
 
-altstringtype "cxirkaux" "nroff" ".t"
+altstringtype "cxirkaux" ".t" ".cx"
 #
 altstringchar	'       ^'
 altstringchar	cx	^c
@@ -683,6 +684,7 @@ flag K:
     nome(A,,R)
     nome(I,-I,AR)
     nome(O,-O,AR)
+    nome(O J,-OJ,AR)   # geknaboj > geknabaro
 
 flag L:			# no *: æerpi/AdLlQT_ > æerpilo, sed ne el~ilo!
 

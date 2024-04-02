@@ -1,0 +1,11 @@
+SET utf-8
+NAME		esperanto
+VERSION		4.2
+HOME		https://github.com/pok49/ispell-eo
+AUTHOR		Sergio Pokrovskij
+EMAIL		sergio.pokrovskij(ĉe)gmail(punkto)com
+COPYRIGHT	GPL 2.0
+#
+MIDWORD -
+RARE ?
+BAD !

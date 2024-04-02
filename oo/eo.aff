@@ -1,34 +1,3 @@
-SET utf-8
-NAME		esperanto
-VERSION		4.2
-HOME		https://github.com/pok49/ispell-eo
-AUTHOR		Sergio Pokrovskij
-EMAIL		sergio.pokrovskij(ĉe)gmail(punkto)com
-COPYRIGHT	GPL 2.0
-#
-MIDWORD -
-RARE ?
-BAD !
-#
-REP 8
-REP cx c
-REP gx ĝ
-REP hx ĥ
-REP jx ĵ
-REP sx ŝ
-REP ux ŭ
-REP rn m
-REP m rn
-#
-MAP 7
-MAP cĉê
-MAP gĝ
-MAP hĥ
-MAP jĵ
-MAP sŝ
-MAP uŭwù
-MAP Iilt
-#
 PFX a Y 1
 PFX a 0 al .
 PFX b Y 1
@@ -128,8 +97,8 @@ PFX y Y 1
 PFX y 0 mis .
 PFX z Y 1
 PFX z 0 dis .
-PFX \ Y 1
-PFX \ 0 tra .
+PFX ÷ Y 1
+PFX ÷ 0 tra .
 PFX _ Y 1
 PFX _ 0 sub .
 PFX ^ Y 1
@@ -166,17 +135,17 @@ SFX A on aj on
 SFX A on ajn on
 SFX A on an on
 SFX A on e on
-SFX A ’ a ’
-SFX A ’ aj ’
-SFX A ’ ajn ’
-SFX A ’ an ’
+SFX A ʼ a ʼ
+SFX A ʼ aj ʼ
+SFX A ʼ ajn ʼ
+SFX A ʼ an ʼ
 SFX B Y 24
 SFX B a ema a
 SFX B a emaj a
 SFX B a emajn a
 SFX B a eman a
 SFX B a eme a
-SFX B a em’ a
+SFX B a emʼ a
 SFX B a emo a
 SFX B a emon a
 SFX B i ema i
@@ -184,7 +153,7 @@ SFX B i emaj i
 SFX B i emajn i
 SFX B i eman i
 SFX B i eme i
-SFX B i em’ i
+SFX B i emʼ i
 SFX B i emo i
 SFX B i emon i
 SFX B o ema o
@@ -192,7 +161,7 @@ SFX B o emaj o
 SFX B o emajn o
 SFX B o eman o
 SFX B o eme o
-SFX B o em’ o
+SFX B o emʼ o
 SFX B o emo o
 SFX B o emon o
 SFX C Y 40
@@ -201,7 +170,7 @@ SFX C a ecaj a
 SFX C a ecajn a
 SFX C a ecan a
 SFX C a ece a
-SFX C a ec’ a
+SFX C a ecʼ a
 SFX C a eco a
 SFX C a econ a
 SFX C i eca i
@@ -209,7 +178,7 @@ SFX C i ecaj i
 SFX C i ecajn i
 SFX C i ecan i
 SFX C i ece i
-SFX C i ec’ i
+SFX C i ecʼ i
 SFX C i eco i
 SFX C i econ i
 SFX C o eca o
@@ -217,7 +186,7 @@ SFX C o ecaj o
 SFX C o ecajn o
 SFX C o ecan o
 SFX C o ece o
-SFX C o ec’ o
+SFX C o ecʼ o
 SFX C o eco o
 SFX C o econ o
 SFX C an eca an
@@ -225,7 +194,7 @@ SFX C an ecaj an
 SFX C an ecajn an
 SFX C an ecan an
 SFX C an ece an
-SFX C an ec’ an
+SFX C an ecʼ an
 SFX C an eco an
 SFX C an econ an
 SFX C on eca on
@@ -233,7 +202,7 @@ SFX C on ecaj on
 SFX C on ecajn on
 SFX C on ecan on
 SFX C on ece on
-SFX C on ec’ on
+SFX C on ecʼ on
 SFX C on eco on
 SFX C on econ on
 SFX D Y 34
@@ -242,10 +211,10 @@ SFX D a indaj a
 SFX D a indajn a
 SFX D a indan a
 SFX D a inde a
-SFX D a ind’ a
+SFX D a indʼ a
 SFX D a indo a
 SFX D a indon a
-SFX D a indaĵ’ a
+SFX D a indaĵʼ a
 SFX D a indaĵo a
 SFX D a indaĵoj a
 SFX D a indaĵojn a
@@ -259,10 +228,10 @@ SFX D 0 ndaj i
 SFX D 0 ndajn i
 SFX D 0 ndan i
 SFX D 0 nde i
-SFX D 0 nd’ i
+SFX D 0 ndʼ i
 SFX D 0 ndo i
 SFX D 0 ndon i
-SFX D 0 ndaĵ’ i
+SFX D 0 ndaĵʼ i
 SFX D 0 ndaĵo i
 SFX D 0 ndaĵoj i
 SFX D 0 ndaĵojn i
@@ -287,7 +256,7 @@ SFX e a egaj a
 SFX e a egajn a
 SFX e a egan a
 SFX e a ege a
-SFX e a eg’ a
+SFX e a egʼ a
 SFX e a ego a
 SFX e a egoj a
 SFX e a egojn a
@@ -297,7 +266,7 @@ SFX e a etaj a
 SFX e a etajn a
 SFX e a etan a
 SFX e a ete a
-SFX e a et’ a
+SFX e a etʼ a
 SFX e a eto a
 SFX e a etoj a
 SFX e a etojn a
@@ -306,7 +275,7 @@ SFX e o ega o
 SFX e o egaj o
 SFX e o egajn o
 SFX e o egan o
-SFX e o eg’ o
+SFX e o egʼ o
 SFX e o ego o
 SFX e o egoj o
 SFX e o egojn o
@@ -315,7 +284,7 @@ SFX e o eta o
 SFX e o etaj o
 SFX e o etajn o
 SFX e o etan o
-SFX e o et’ o
+SFX e o etʼ o
 SFX e o eto o
 SFX e o etoj o
 SFX e o etojn o
@@ -375,7 +344,7 @@ SFX F e inaj e
 SFX F e inajn e
 SFX F e inan e
 SFX F e ine e
-SFX F e in’ e
+SFX F e inʼ e
 SFX F e ino e
 SFX F e inoj e
 SFX F e inojn e
@@ -390,12 +359,12 @@ SFX F o ina o
 SFX F o inaj o
 SFX F o inajn o
 SFX F o inan o
-SFX F o in’ o
+SFX F o inʼ o
 SFX F o ino o
 SFX F o inoj o
 SFX F o inojn o
 SFX F o inon o
-SFX F o ’ o
+SFX F o ʼ o
 SFX F 0 j o
 SFX F 0 jn o
 SFX F 0 n o
@@ -411,7 +380,7 @@ SFX G a igintaj a
 SFX G a igintajn a
 SFX G a igintan a
 SFX G a iginte a
-SFX G a igint’ a
+SFX G a igintʼ a
 SFX G a iginto a
 SFX G a igintoj a
 SFX G a igintojn a
@@ -421,7 +390,7 @@ SFX G a igantaj a
 SFX G a igantajn a
 SFX G a igantan a
 SFX G a igante a
-SFX G a igant’ a
+SFX G a igantʼ a
 SFX G a iganto a
 SFX G a igantoj a
 SFX G a igantojn a
@@ -431,7 +400,7 @@ SFX G a igontaj a
 SFX G a igontajn a
 SFX G a igontan a
 SFX G a igonte a
-SFX G a igont’ a
+SFX G a igontʼ a
 SFX G a igonto a
 SFX G a igontoj a
 SFX G a igontojn a
@@ -440,7 +409,7 @@ SFX G a igintina a
 SFX G a igintinaj a
 SFX G a igintinajn a
 SFX G a igintinan a
-SFX G a igintin’ a
+SFX G a igintinʼ a
 SFX G a igintino a
 SFX G a igintinoj a
 SFX G a igintinojn a
@@ -449,7 +418,7 @@ SFX G a igantina a
 SFX G a igantinaj a
 SFX G a igantinajn a
 SFX G a igantinan a
-SFX G a igantin’ a
+SFX G a igantinʼ a
 SFX G a igantino a
 SFX G a igantinoj a
 SFX G a igantinojn a
@@ -458,7 +427,7 @@ SFX G a igontina a
 SFX G a igontinaj a
 SFX G a igontinajn a
 SFX G a igontinan a
-SFX G a igontin’ a
+SFX G a igontinʼ a
 SFX G a igontino a
 SFX G a igontinoj a
 SFX G a igontinojn a
@@ -468,7 +437,7 @@ SFX G a igaj a
 SFX G a igajn a
 SFX G a igan a
 SFX G a ige a
-SFX G a ig’ a
+SFX G a igʼ a
 SFX G a igo a
 SFX G a igoj a
 SFX G a igojn a
@@ -478,7 +447,7 @@ SFX G a igitaj a
 SFX G a igitajn a
 SFX G a igitan a
 SFX G a igite a
-SFX G a igit’ a
+SFX G a igitʼ a
 SFX G a igito a
 SFX G a igitoj a
 SFX G a igitojn a
@@ -488,7 +457,7 @@ SFX G a igataj a
 SFX G a igatajn a
 SFX G a igatan a
 SFX G a igate a
-SFX G a igat’ a
+SFX G a igatʼ a
 SFX G a igato a
 SFX G a igatoj a
 SFX G a igatojn a
@@ -498,7 +467,7 @@ SFX G a igotaj a
 SFX G a igotajn a
 SFX G a igotan a
 SFX G a igote a
-SFX G a igot’ a
+SFX G a igotʼ a
 SFX G a igoto a
 SFX G a igotoj a
 SFX G a igotojn a
@@ -512,7 +481,7 @@ SFX G a igeblaj a
 SFX G a igeblajn a
 SFX G a igeblan a
 SFX G a igeble a
-SFX G a igebl’ a
+SFX G a igeblʼ a
 SFX G a igeblo a
 SFX G a igeblon a
 SFX G a igendas a
@@ -524,7 +493,7 @@ SFX G a igendaj a
 SFX G a igendajn a
 SFX G a igendan a
 SFX G a igende a
-SFX G a igend’ a
+SFX G a igendʼ a
 SFX G a igendo a
 SFX G a igendoj a
 SFX G a igendojn a
@@ -540,7 +509,7 @@ SFX G a igadaj a
 SFX G a igadajn a
 SFX G a igadan a
 SFX G a igade a
-SFX G a igad’ a
+SFX G a igadʼ a
 SFX G a igado a
 SFX G a igadoj a
 SFX G a igadojn a
@@ -550,7 +519,7 @@ SFX G 0 gadaj i
 SFX G 0 gadajn i
 SFX G 0 gadan i
 SFX G 0 gade i
-SFX G 0 gad’ i
+SFX G 0 gadʼ i
 SFX G 0 gado i
 SFX G 0 gadoj i
 SFX G 0 gadojn i
@@ -572,7 +541,7 @@ SFX G 0 gintaj i
 SFX G 0 gintajn i
 SFX G 0 gintan i
 SFX G 0 ginte i
-SFX G 0 gint’ i
+SFX G 0 gintʼ i
 SFX G 0 ginto i
 SFX G 0 gintoj i
 SFX G 0 gintojn i
@@ -582,7 +551,7 @@ SFX G 0 gantaj i
 SFX G 0 gantajn i
 SFX G 0 gantan i
 SFX G 0 gante i
-SFX G 0 gant’ i
+SFX G 0 gantʼ i
 SFX G 0 ganto i
 SFX G 0 gantoj i
 SFX G 0 gantojn i
@@ -592,7 +561,7 @@ SFX G 0 gontaj i
 SFX G 0 gontajn i
 SFX G 0 gontan i
 SFX G 0 gonte i
-SFX G 0 gont’ i
+SFX G 0 gontʼ i
 SFX G 0 gonto i
 SFX G 0 gontoj i
 SFX G 0 gontojn i
@@ -601,7 +570,7 @@ SFX G 0 gintina i
 SFX G 0 gintinaj i
 SFX G 0 gintinajn i
 SFX G 0 gintinan i
-SFX G 0 gintin’ i
+SFX G 0 gintinʼ i
 SFX G 0 gintino i
 SFX G 0 gintinoj i
 SFX G 0 gintinojn i
@@ -610,7 +579,7 @@ SFX G 0 gantina i
 SFX G 0 gantinaj i
 SFX G 0 gantinajn i
 SFX G 0 gantinan i
-SFX G 0 gantin’ i
+SFX G 0 gantinʼ i
 SFX G 0 gantino i
 SFX G 0 gantinoj i
 SFX G 0 gantinojn i
@@ -619,7 +588,7 @@ SFX G 0 gontina i
 SFX G 0 gontinaj i
 SFX G 0 gontinajn i
 SFX G 0 gontinan i
-SFX G 0 gontin’ i
+SFX G 0 gontinʼ i
 SFX G 0 gontino i
 SFX G 0 gontinoj i
 SFX G 0 gontinojn i
@@ -629,7 +598,7 @@ SFX G 0 gaj i
 SFX G 0 gajn i
 SFX G 0 gan i
 SFX G 0 ge i
-SFX G 0 g’ i
+SFX G 0 gʼ i
 SFX G 0 go i
 SFX G 0 goj i
 SFX G 0 gojn i
@@ -639,7 +608,7 @@ SFX G 0 gitaj i
 SFX G 0 gitajn i
 SFX G 0 gitan i
 SFX G 0 gite i
-SFX G 0 git’ i
+SFX G 0 gitʼ i
 SFX G 0 gito i
 SFX G 0 gitoj i
 SFX G 0 gitojn i
@@ -649,7 +618,7 @@ SFX G 0 gataj i
 SFX G 0 gatajn i
 SFX G 0 gatan i
 SFX G 0 gate i
-SFX G 0 gat’ i
+SFX G 0 gatʼ i
 SFX G 0 gato i
 SFX G 0 gatoj i
 SFX G 0 gatojn i
@@ -659,7 +628,7 @@ SFX G 0 gotaj i
 SFX G 0 gotajn i
 SFX G 0 gotan i
 SFX G 0 gote i
-SFX G 0 got’ i
+SFX G 0 gotʼ i
 SFX G 0 goto i
 SFX G 0 gotoj i
 SFX G 0 gotojn i
@@ -673,7 +642,7 @@ SFX G 0 geblaj i
 SFX G 0 geblajn i
 SFX G 0 geblan i
 SFX G 0 geble i
-SFX G 0 gebl’ i
+SFX G 0 geblʼ i
 SFX G 0 geblo i
 SFX G 0 geblon i
 SFX G 0 gendas i
@@ -685,7 +654,7 @@ SFX G 0 gendaj i
 SFX G 0 gendajn i
 SFX G 0 gendan i
 SFX G 0 gende i
-SFX G 0 gend’ i
+SFX G 0 gendʼ i
 SFX G 0 gendo i
 SFX G 0 gendoj i
 SFX G 0 gendojn i
@@ -695,7 +664,7 @@ SFX G u igadaj u
 SFX G u igadajn u
 SFX G u igadan u
 SFX G u igade u
-SFX G u igad’ u
+SFX G u igadʼ u
 SFX G u igado u
 SFX G u igadoj u
 SFX G u igadojn u
@@ -717,7 +686,7 @@ SFX G u igintaj u
 SFX G u igintajn u
 SFX G u igintan u
 SFX G u iginte u
-SFX G u igint’ u
+SFX G u igintʼ u
 SFX G u iginto u
 SFX G u igintoj u
 SFX G u igintojn u
@@ -727,7 +696,7 @@ SFX G u igantaj u
 SFX G u igantajn u
 SFX G u igantan u
 SFX G u igante u
-SFX G u igant’ u
+SFX G u igantʼ u
 SFX G u iganto u
 SFX G u igantoj u
 SFX G u igantojn u
@@ -737,7 +706,7 @@ SFX G u igontaj u
 SFX G u igontajn u
 SFX G u igontan u
 SFX G u igonte u
-SFX G u igont’ u
+SFX G u igontʼ u
 SFX G u igonto u
 SFX G u igontoj u
 SFX G u igontojn u
@@ -746,7 +715,7 @@ SFX G u igintina u
 SFX G u igintinaj u
 SFX G u igintinajn u
 SFX G u igintinan u
-SFX G u igintin’ u
+SFX G u igintinʼ u
 SFX G u igintino u
 SFX G u igintinoj u
 SFX G u igintinojn u
@@ -755,7 +724,7 @@ SFX G u igantina u
 SFX G u igantinaj u
 SFX G u igantinajn u
 SFX G u igantinan u
-SFX G u igantin’ u
+SFX G u igantinʼ u
 SFX G u igantino u
 SFX G u igantinoj u
 SFX G u igantinojn u
@@ -764,7 +733,7 @@ SFX G u igontina u
 SFX G u igontinaj u
 SFX G u igontinajn u
 SFX G u igontinan u
-SFX G u igontin’ u
+SFX G u igontinʼ u
 SFX G u igontino u
 SFX G u igontinoj u
 SFX G u igontinojn u
@@ -774,7 +743,7 @@ SFX G u igaj u
 SFX G u igajn u
 SFX G u igan u
 SFX G u ige u
-SFX G u ig’ u
+SFX G u igʼ u
 SFX G u igo u
 SFX G u igoj u
 SFX G u igojn u
@@ -784,7 +753,7 @@ SFX G u igitaj u
 SFX G u igitajn u
 SFX G u igitan u
 SFX G u igite u
-SFX G u igit’ u
+SFX G u igitʼ u
 SFX G u igito u
 SFX G u igitoj u
 SFX G u igitojn u
@@ -794,7 +763,7 @@ SFX G u igataj u
 SFX G u igatajn u
 SFX G u igatan u
 SFX G u igate u
-SFX G u igat’ u
+SFX G u igatʼ u
 SFX G u igato u
 SFX G u igatoj u
 SFX G u igatojn u
@@ -804,7 +773,7 @@ SFX G u igotaj u
 SFX G u igotajn u
 SFX G u igotan u
 SFX G u igote u
-SFX G u igot’ u
+SFX G u igotʼ u
 SFX G u igoto u
 SFX G u igotoj u
 SFX G u igotojn u
@@ -818,7 +787,7 @@ SFX G u igeblaj u
 SFX G u igeblajn u
 SFX G u igeblan u
 SFX G u igeble u
-SFX G u igebl’ u
+SFX G u igeblʼ u
 SFX G u igeblo u
 SFX G u igeblon u
 SFX G u igendas u
@@ -830,7 +799,7 @@ SFX G u igendaj u
 SFX G u igendajn u
 SFX G u igendan u
 SFX G u igende u
-SFX G u igend’ u
+SFX G u igendʼ u
 SFX G u igendo u
 SFX G u igendoj u
 SFX G u igendojn u
@@ -846,7 +815,7 @@ SFX G o igintaj o
 SFX G o igintajn o
 SFX G o igintan o
 SFX G o iginte o
-SFX G o igint’ o
+SFX G o igintʼ o
 SFX G o iginto o
 SFX G o igintoj o
 SFX G o igintojn o
@@ -856,7 +825,7 @@ SFX G o igantaj o
 SFX G o igantajn o
 SFX G o igantan o
 SFX G o igante o
-SFX G o igant’ o
+SFX G o igantʼ o
 SFX G o iganto o
 SFX G o igantoj o
 SFX G o igantojn o
@@ -866,7 +835,7 @@ SFX G o igontaj o
 SFX G o igontajn o
 SFX G o igontan o
 SFX G o igonte o
-SFX G o igont’ o
+SFX G o igontʼ o
 SFX G o igonto o
 SFX G o igontoj o
 SFX G o igontojn o
@@ -875,7 +844,7 @@ SFX G o igintina o
 SFX G o igintinaj o
 SFX G o igintinajn o
 SFX G o igintinan o
-SFX G o igintin’ o
+SFX G o igintinʼ o
 SFX G o igintino o
 SFX G o igintinoj o
 SFX G o igintinojn o
@@ -884,7 +853,7 @@ SFX G o igantina o
 SFX G o igantinaj o
 SFX G o igantinajn o
 SFX G o igantinan o
-SFX G o igantin’ o
+SFX G o igantinʼ o
 SFX G o igantino o
 SFX G o igantinoj o
 SFX G o igantinojn o
@@ -893,7 +862,7 @@ SFX G o igontina o
 SFX G o igontinaj o
 SFX G o igontinajn o
 SFX G o igontinan o
-SFX G o igontin’ o
+SFX G o igontinʼ o
 SFX G o igontino o
 SFX G o igontinoj o
 SFX G o igontinojn o
@@ -903,7 +872,7 @@ SFX G o igaj o
 SFX G o igajn o
 SFX G o igan o
 SFX G o ige o
-SFX G o ig’ o
+SFX G o igʼ o
 SFX G o igo o
 SFX G o igoj o
 SFX G o igojn o
@@ -913,7 +882,7 @@ SFX G o igitaj o
 SFX G o igitajn o
 SFX G o igitan o
 SFX G o igite o
-SFX G o igit’ o
+SFX G o igitʼ o
 SFX G o igito o
 SFX G o igitoj o
 SFX G o igitojn o
@@ -923,7 +892,7 @@ SFX G o igataj o
 SFX G o igatajn o
 SFX G o igatan o
 SFX G o igate o
-SFX G o igat’ o
+SFX G o igatʼ o
 SFX G o igato o
 SFX G o igatoj o
 SFX G o igatojn o
@@ -933,7 +902,7 @@ SFX G o igotaj o
 SFX G o igotajn o
 SFX G o igotan o
 SFX G o igote o
-SFX G o igot’ o
+SFX G o igotʼ o
 SFX G o igoto o
 SFX G o igotoj o
 SFX G o igotojn o
@@ -947,7 +916,7 @@ SFX G o igeblaj o
 SFX G o igeblajn o
 SFX G o igeblan o
 SFX G o igeble o
-SFX G o igebl’ o
+SFX G o igeblʼ o
 SFX G o igeblo o
 SFX G o igeblon o
 SFX G o igendas o
@@ -959,7 +928,7 @@ SFX G o igendaj o
 SFX G o igendajn o
 SFX G o igendan o
 SFX G o igende o
-SFX G o igend’ o
+SFX G o igendʼ o
 SFX G o igendo o
 SFX G o igendoj o
 SFX G o igendojn o
@@ -975,7 +944,7 @@ SFX G o igadaj o
 SFX G o igadajn o
 SFX G o igadan o
 SFX G o igade o
-SFX G o igad’ o
+SFX G o igadʼ o
 SFX G o igado o
 SFX G o igadoj o
 SFX G o igadojn o
@@ -986,7 +955,7 @@ SFX H a ujaj a
 SFX H a ujajn a
 SFX H a ujan a
 SFX H a uje a
-SFX H a uj’ a
+SFX H a ujʼ a
 SFX H a ujo a
 SFX H a ujoj a
 SFX H a ujojn a
@@ -996,7 +965,7 @@ SFX H i ujaj i
 SFX H i ujajn i
 SFX H i ujan i
 SFX H i uje i
-SFX H i uj’ i
+SFX H i ujʼ i
 SFX H i ujo i
 SFX H i ujoj i
 SFX H i ujojn i
@@ -1006,7 +975,7 @@ SFX H o ujaj o
 SFX H o ujajn o
 SFX H o ujan o
 SFX H o uje o
-SFX H o uj’ o
+SFX H o ujʼ o
 SFX H o ujo o
 SFX H o ujoj o
 SFX H o ujojn o
@@ -1024,7 +993,7 @@ SFX I e a e
 SFX I e aj e
 SFX I e ajn e
 SFX I e an e
-SFX I e ’ e
+SFX I e ʼ e
 SFX I e o e
 SFX I e oj e
 SFX I e ojn e
@@ -1034,7 +1003,7 @@ SFX I e iaj e
 SFX I e iajn e
 SFX I e ian e
 SFX I e ie e
-SFX I e i’ e
+SFX I e iʼ e
 SFX I e io e
 SFX I e ioj e
 SFX I e iojn e
@@ -1044,7 +1013,7 @@ SFX I e iaĵaj e
 SFX I e iaĵajn e
 SFX I e iaĵan e
 SFX I e iaĵe e
-SFX I e iaĵ’ e
+SFX I e iaĵʼ e
 SFX I e iaĵo e
 SFX I e iaĵoj e
 SFX I e iaĵojn e
@@ -1054,7 +1023,7 @@ SFX I i aj i
 SFX I i ajn i
 SFX I i an i
 SFX I i e i
-SFX I i ’ i
+SFX I i ʼ i
 SFX I i o i
 SFX I i oj i
 SFX I i ojn i
@@ -1063,7 +1032,7 @@ SFX I 0 a i
 SFX I 0 aj i
 SFX I 0 ajn i
 SFX I 0 an i
-SFX I 0 ’ i
+SFX I 0 ʼ i
 SFX I 0 o i
 SFX I 0 oj i
 SFX I 0 ojn i
@@ -1088,7 +1057,7 @@ SFX I iana anaj iana
 SFX I iana anajn iana
 SFX I iana anan iana
 SFX I iana ane iana
-SFX I iana an’ iana
+SFX I iana anʼ iana
 SFX I iana ano iana
 SFX I iana anoj iana
 SFX I iana anojn iana
@@ -1098,7 +1067,7 @@ SFX I iana aninaj iana
 SFX I iana aninajn iana
 SFX I iana aninan iana
 SFX I iana anine iana
-SFX I iana anin’ iana
+SFX I iana aninʼ iana
 SFX I iana anino iana
 SFX I iana aninoj iana
 SFX I iana aninojn iana
@@ -1108,7 +1077,7 @@ SFX I ujano ianaj ujano
 SFX I ujano ianajn ujano
 SFX I ujano ianan ujano
 SFX I ujano iane ujano
-SFX I ujano ian’ ujano
+SFX I ujano ianʼ ujano
 SFX I ujano iano ujano
 SFX I ujano ianoj ujano
 SFX I ujano ianojn ujano
@@ -1118,7 +1087,7 @@ SFX I ujano ianinaj ujano
 SFX I ujano ianinajn ujano
 SFX I ujano ianinan ujano
 SFX I ujano ianine ujano
-SFX I ujano ianin’ ujano
+SFX I ujano ianinʼ ujano
 SFX I ujano ianino ujano
 SFX I ujano ianinoj ujano
 SFX I ujano ianinojn ujano
@@ -1139,7 +1108,7 @@ SFX J a ejaj a
 SFX J a ejajn a
 SFX J a ejan a
 SFX J a eje a
-SFX J a ej’ a
+SFX J a ejʼ a
 SFX J a ejo a
 SFX J a ejoj a
 SFX J a ejojn a
@@ -1149,7 +1118,7 @@ SFX J i ejaj i
 SFX J i ejajn i
 SFX J i ejan i
 SFX J i eje i
-SFX J i ej’ i
+SFX J i ejʼ i
 SFX J i ejo i
 SFX J i ejoj i
 SFX J i ejojn i
@@ -1159,18 +1128,18 @@ SFX J o ejaj o
 SFX J o ejajn o
 SFX J o ejan o
 SFX J o eje o
-SFX J o ej’ o
+SFX J o ejʼ o
 SFX J o ejo o
 SFX J o ejoj o
 SFX J o ejojn o
 SFX J o ejon o
-SFX K N 30
+SFX K N 40
 SFX K 0 ra a
 SFX K 0 raj a
 SFX K 0 rajn a
 SFX K 0 ran a
 SFX K 0 re a
-SFX K 0 r’ a
+SFX K 0 rʼ a
 SFX K 0 ro a
 SFX K 0 roj a
 SFX K 0 rojn a
@@ -1180,7 +1149,7 @@ SFX K i araj i
 SFX K i arajn i
 SFX K i aran i
 SFX K i are i
-SFX K i ar’ i
+SFX K i arʼ i
 SFX K i aro i
 SFX K i aroj i
 SFX K i arojn i
@@ -1190,18 +1159,28 @@ SFX K o araj o
 SFX K o arajn o
 SFX K o aran o
 SFX K o are o
-SFX K o ar’ o
+SFX K o arʼ o
 SFX K o aro o
 SFX K o aroj o
 SFX K o arojn o
 SFX K o aron o
+SFX K oj ara oj
+SFX K oj araj oj
+SFX K oj arajn oj
+SFX K oj aran oj
+SFX K oj are oj
+SFX K oj arʼ oj
+SFX K oj aro oj
+SFX K oj aroj oj
+SFX K oj arojn oj
+SFX K oj aron oj
 SFX L N 30
 SFX L a igila a
 SFX L a igilaj a
 SFX L a igilajn a
 SFX L a igilan a
 SFX L a igile a
-SFX L a igil’ a
+SFX L a igilʼ a
 SFX L a igilo a
 SFX L a igiloj a
 SFX L a igilojn a
@@ -1211,7 +1190,7 @@ SFX L 0 laj i
 SFX L 0 lajn i
 SFX L 0 lan i
 SFX L 0 le i
-SFX L 0 l’ i
+SFX L 0 lʼ i
 SFX L 0 lo i
 SFX L 0 loj i
 SFX L 0 lojn i
@@ -1221,13 +1200,13 @@ SFX L o ilaj o
 SFX L o ilajn o
 SFX L o ilan o
 SFX L o ile o
-SFX L o il’ o
+SFX L o ilʼ o
 SFX L o ilo o
 SFX L o iloj o
 SFX L o ilojn o
 SFX L o ilon o
 SFX O Y 28
-SFX O a ’ a
+SFX O a ʼ a
 SFX O a o a
 SFX O a oj a
 SFX O a ojn a
@@ -1235,12 +1214,12 @@ SFX O a on a
 SFX O 0 j a
 SFX O 0 jn a
 SFX O 0 n a
-SFX O i ’ i
+SFX O i ʼ i
 SFX O i o i
 SFX O i oj i
 SFX O i ojn i
 SFX O i on i
-SFX O o ’ o
+SFX O o ʼ o
 SFX O 0 j o
 SFX O 0 jn o
 SFX O 0 n o
@@ -1250,7 +1229,7 @@ SFX O oj a oj
 SFX O oj aj oj
 SFX O oj ajn oj
 SFX O oj an oj
-SFX O u ’ u
+SFX O u ʼ u
 SFX O u o u
 SFX O u oj u
 SFX O u ojn u
@@ -1278,7 +1257,7 @@ SFX Q 0 ĝintaj i
 SFX Q 0 ĝintajn i
 SFX Q 0 ĝintan i
 SFX Q 0 ĝinte i
-SFX Q 0 ĝint’ i
+SFX Q 0 ĝintʼ i
 SFX Q 0 ĝinto i
 SFX Q 0 ĝintoj i
 SFX Q 0 ĝintojn i
@@ -1288,7 +1267,7 @@ SFX Q 0 ĝantaj i
 SFX Q 0 ĝantajn i
 SFX Q 0 ĝantan i
 SFX Q 0 ĝante i
-SFX Q 0 ĝant’ i
+SFX Q 0 ĝantʼ i
 SFX Q 0 ĝanto i
 SFX Q 0 ĝantoj i
 SFX Q 0 ĝantojn i
@@ -1298,7 +1277,7 @@ SFX Q 0 ĝontaj i
 SFX Q 0 ĝontajn i
 SFX Q 0 ĝontan i
 SFX Q 0 ĝonte i
-SFX Q 0 ĝont’ i
+SFX Q 0 ĝontʼ i
 SFX Q 0 ĝonto i
 SFX Q 0 ĝontoj i
 SFX Q 0 ĝontojn i
@@ -1307,7 +1286,7 @@ SFX Q 0 ĝintina i
 SFX Q 0 ĝintinaj i
 SFX Q 0 ĝintinajn i
 SFX Q 0 ĝintinan i
-SFX Q 0 ĝintin’ i
+SFX Q 0 ĝintinʼ i
 SFX Q 0 ĝintino i
 SFX Q 0 ĝintinoj i
 SFX Q 0 ĝintinojn i
@@ -1316,7 +1295,7 @@ SFX Q 0 ĝantina i
 SFX Q 0 ĝantinaj i
 SFX Q 0 ĝantinajn i
 SFX Q 0 ĝantinan i
-SFX Q 0 ĝantin’ i
+SFX Q 0 ĝantinʼ i
 SFX Q 0 ĝantino i
 SFX Q 0 ĝantinoj i
 SFX Q 0 ĝantinojn i
@@ -1325,7 +1304,7 @@ SFX Q 0 ĝontina i
 SFX Q 0 ĝontinaj i
 SFX Q 0 ĝontinajn i
 SFX Q 0 ĝontinan i
-SFX Q 0 ĝontin’ i
+SFX Q 0 ĝontinʼ i
 SFX Q 0 ĝontino i
 SFX Q 0 ĝontinoj i
 SFX Q 0 ĝontinojn i
@@ -1335,7 +1314,7 @@ SFX Q 0 ĝaj i
 SFX Q 0 ĝajn i
 SFX Q 0 ĝan i
 SFX Q 0 ĝe i
-SFX Q 0 ĝ’ i
+SFX Q 0 ĝʼ i
 SFX Q 0 ĝo i
 SFX Q 0 ĝoj i
 SFX Q 0 ĝojn i
@@ -1345,7 +1324,7 @@ SFX Q 0 ĝemaj i
 SFX Q 0 ĝemajn i
 SFX Q 0 ĝeman i
 SFX Q 0 ĝeme i
-SFX Q 0 ĝem’ i
+SFX Q 0 ĝemʼ i
 SFX Q 0 ĝemo i
 SFX Q 0 ĝemoj i
 SFX Q 0 ĝemojn i
@@ -1355,7 +1334,7 @@ SFX Q 0 ĝadaj i
 SFX Q 0 ĝadajn i
 SFX Q 0 ĝadan i
 SFX Q 0 ĝade i
-SFX Q 0 ĝad’ i
+SFX Q 0 ĝadʼ i
 SFX Q 0 ĝado i
 SFX Q 0 ĝadoj i
 SFX Q 0 ĝadojn i
@@ -1377,7 +1356,7 @@ SFX Q u iĝintaj u
 SFX Q u iĝintajn u
 SFX Q u iĝintan u
 SFX Q u iĝinte u
-SFX Q u iĝint’ u
+SFX Q u iĝintʼ u
 SFX Q u iĝinto u
 SFX Q u iĝintoj u
 SFX Q u iĝintojn u
@@ -1387,7 +1366,7 @@ SFX Q u iĝantaj u
 SFX Q u iĝantajn u
 SFX Q u iĝantan u
 SFX Q u iĝante u
-SFX Q u iĝant’ u
+SFX Q u iĝantʼ u
 SFX Q u iĝanto u
 SFX Q u iĝantoj u
 SFX Q u iĝantojn u
@@ -1397,7 +1376,7 @@ SFX Q u iĝontaj u
 SFX Q u iĝontajn u
 SFX Q u iĝontan u
 SFX Q u iĝonte u
-SFX Q u iĝont’ u
+SFX Q u iĝontʼ u
 SFX Q u iĝonto u
 SFX Q u iĝontoj u
 SFX Q u iĝontojn u
@@ -1406,7 +1385,7 @@ SFX Q u iĝintina u
 SFX Q u iĝintinaj u
 SFX Q u iĝintinajn u
 SFX Q u iĝintinan u
-SFX Q u iĝintin’ u
+SFX Q u iĝintinʼ u
 SFX Q u iĝintino u
 SFX Q u iĝintinoj u
 SFX Q u iĝintinojn u
@@ -1415,7 +1394,7 @@ SFX Q u iĝantina u
 SFX Q u iĝantinaj u
 SFX Q u iĝantinajn u
 SFX Q u iĝantinan u
-SFX Q u iĝantin’ u
+SFX Q u iĝantinʼ u
 SFX Q u iĝantino u
 SFX Q u iĝantinoj u
 SFX Q u iĝantinojn u
@@ -1424,7 +1403,7 @@ SFX Q u iĝontina u
 SFX Q u iĝontinaj u
 SFX Q u iĝontinajn u
 SFX Q u iĝontinan u
-SFX Q u iĝontin’ u
+SFX Q u iĝontinʼ u
 SFX Q u iĝontino u
 SFX Q u iĝontinoj u
 SFX Q u iĝontinojn u
@@ -1434,7 +1413,7 @@ SFX Q u iĝaj u
 SFX Q u iĝajn u
 SFX Q u iĝan u
 SFX Q u iĝe u
-SFX Q u iĝ’ u
+SFX Q u iĝʼ u
 SFX Q u iĝo u
 SFX Q u iĝoj u
 SFX Q u iĝojn u
@@ -1444,7 +1423,7 @@ SFX Q u iĝemaj u
 SFX Q u iĝemajn u
 SFX Q u iĝeman u
 SFX Q u iĝeme u
-SFX Q u iĝem’ u
+SFX Q u iĝemʼ u
 SFX Q u iĝemo u
 SFX Q u iĝemoj u
 SFX Q u iĝemojn u
@@ -1453,7 +1432,7 @@ SFX Q u iĝada u
 SFX Q u iĝadaj u
 SFX Q u iĝadajn u
 SFX Q u iĝadan u
-SFX Q u iĝad’ u
+SFX Q u iĝadʼ u
 SFX Q u iĝado u
 SFX Q u iĝadoj u
 SFX Q u iĝadojn u
@@ -1475,7 +1454,7 @@ SFX Q a iĝintaj a
 SFX Q a iĝintajn a
 SFX Q a iĝintan a
 SFX Q a iĝinte a
-SFX Q a iĝint’ a
+SFX Q a iĝintʼ a
 SFX Q a iĝinto a
 SFX Q a iĝintoj a
 SFX Q a iĝintojn a
@@ -1485,7 +1464,7 @@ SFX Q a iĝantaj a
 SFX Q a iĝantajn a
 SFX Q a iĝantan a
 SFX Q a iĝante a
-SFX Q a iĝant’ a
+SFX Q a iĝantʼ a
 SFX Q a iĝanto a
 SFX Q a iĝantoj a
 SFX Q a iĝantojn a
@@ -1495,7 +1474,7 @@ SFX Q a iĝontaj a
 SFX Q a iĝontajn a
 SFX Q a iĝontan a
 SFX Q a iĝonte a
-SFX Q a iĝont’ a
+SFX Q a iĝontʼ a
 SFX Q a iĝonto a
 SFX Q a iĝontoj a
 SFX Q a iĝontojn a
@@ -1504,7 +1483,7 @@ SFX Q a iĝintina a
 SFX Q a iĝintinaj a
 SFX Q a iĝintinajn a
 SFX Q a iĝintinan a
-SFX Q a iĝintin’ a
+SFX Q a iĝintinʼ a
 SFX Q a iĝintino a
 SFX Q a iĝintinoj a
 SFX Q a iĝintinojn a
@@ -1513,7 +1492,7 @@ SFX Q a iĝantina a
 SFX Q a iĝantinaj a
 SFX Q a iĝantinajn a
 SFX Q a iĝantinan a
-SFX Q a iĝantin’ a
+SFX Q a iĝantinʼ a
 SFX Q a iĝantino a
 SFX Q a iĝantinoj a
 SFX Q a iĝantinojn a
@@ -1522,7 +1501,7 @@ SFX Q a iĝontina a
 SFX Q a iĝontinaj a
 SFX Q a iĝontinajn a
 SFX Q a iĝontinan a
-SFX Q a iĝontin’ a
+SFX Q a iĝontinʼ a
 SFX Q a iĝontino a
 SFX Q a iĝontinoj a
 SFX Q a iĝontinojn a
@@ -1532,7 +1511,7 @@ SFX Q a iĝaj a
 SFX Q a iĝajn a
 SFX Q a iĝan a
 SFX Q a iĝe a
-SFX Q a iĝ’ a
+SFX Q a iĝʼ a
 SFX Q a iĝo a
 SFX Q a iĝoj a
 SFX Q a iĝojn a
@@ -1542,7 +1521,7 @@ SFX Q a iĝemaj a
 SFX Q a iĝemajn a
 SFX Q a iĝeman a
 SFX Q a iĝeme a
-SFX Q a iĝem’ a
+SFX Q a iĝemʼ a
 SFX Q a iĝemo a
 SFX Q a iĝemoj a
 SFX Q a iĝemojn a
@@ -1552,7 +1531,7 @@ SFX Q a iĝadaj a
 SFX Q a iĝadajn a
 SFX Q a iĝadan a
 SFX Q a iĝade a
-SFX Q a iĝad’ a
+SFX Q a iĝadʼ a
 SFX Q a iĝado a
 SFX Q a iĝadoj a
 SFX Q a iĝadojn a
@@ -1574,7 +1553,7 @@ SFX Q o iĝintaj o
 SFX Q o iĝintajn o
 SFX Q o iĝintan o
 SFX Q o iĝinte o
-SFX Q o iĝint’ o
+SFX Q o iĝintʼ o
 SFX Q o iĝinto o
 SFX Q o iĝintoj o
 SFX Q o iĝintojn o
@@ -1584,7 +1563,7 @@ SFX Q o iĝantaj o
 SFX Q o iĝantajn o
 SFX Q o iĝantan o
 SFX Q o iĝante o
-SFX Q o iĝant’ o
+SFX Q o iĝantʼ o
 SFX Q o iĝanto o
 SFX Q o iĝantoj o
 SFX Q o iĝantojn o
@@ -1594,7 +1573,7 @@ SFX Q o iĝontaj o
 SFX Q o iĝontajn o
 SFX Q o iĝontan o
 SFX Q o iĝonte o
-SFX Q o iĝont’ o
+SFX Q o iĝontʼ o
 SFX Q o iĝonto o
 SFX Q o iĝontoj o
 SFX Q o iĝontojn o
@@ -1603,7 +1582,7 @@ SFX Q o iĝintina o
 SFX Q o iĝintinaj o
 SFX Q o iĝintinajn o
 SFX Q o iĝintinan o
-SFX Q o iĝintin’ o
+SFX Q o iĝintinʼ o
 SFX Q o iĝintino o
 SFX Q o iĝintinoj o
 SFX Q o iĝintinojn o
@@ -1612,7 +1591,7 @@ SFX Q o iĝantina o
 SFX Q o iĝantinaj o
 SFX Q o iĝantinajn o
 SFX Q o iĝantinan o
-SFX Q o iĝantin’ o
+SFX Q o iĝantinʼ o
 SFX Q o iĝantino o
 SFX Q o iĝantinoj o
 SFX Q o iĝantinojn o
@@ -1621,7 +1600,7 @@ SFX Q o iĝontina o
 SFX Q o iĝontinaj o
 SFX Q o iĝontinajn o
 SFX Q o iĝontinan o
-SFX Q o iĝontin’ o
+SFX Q o iĝontinʼ o
 SFX Q o iĝontino o
 SFX Q o iĝontinoj o
 SFX Q o iĝontinojn o
@@ -1631,7 +1610,7 @@ SFX Q o iĝaj o
 SFX Q o iĝajn o
 SFX Q o iĝan o
 SFX Q o iĝe o
-SFX Q o iĝ’ o
+SFX Q o iĝʼ o
 SFX Q o iĝo o
 SFX Q o iĝoj o
 SFX Q o iĝojn o
@@ -1641,7 +1620,7 @@ SFX Q o iĝemaj o
 SFX Q o iĝemajn o
 SFX Q o iĝeman o
 SFX Q o iĝeme o
-SFX Q o iĝem’ o
+SFX Q o iĝemʼ o
 SFX Q o iĝemo o
 SFX Q o iĝemoj o
 SFX Q o iĝemojn o
@@ -1651,7 +1630,7 @@ SFX Q o iĝadaj o
 SFX Q o iĝadajn o
 SFX Q o iĝadan o
 SFX Q o iĝade o
-SFX Q o iĝad’ o
+SFX Q o iĝadʼ o
 SFX Q o iĝado o
 SFX Q o iĝadoj o
 SFX Q o iĝadojn o
@@ -1668,7 +1647,7 @@ SFX S o istaj o
 SFX S o istajn o
 SFX S o istan o
 SFX S o iste o
-SFX S o ist’ o
+SFX S o istʼ o
 SFX S o isto o
 SFX S o istoj o
 SFX S o istojn o
@@ -1678,7 +1657,7 @@ SFX S o istinaj o
 SFX S o istinajn o
 SFX S o istinan o
 SFX S o istine o
-SFX S o istin’ o
+SFX S o istinʼ o
 SFX S o istino o
 SFX S o istinoj o
 SFX S o istinojn o
@@ -1688,7 +1667,7 @@ SFX S a istaj a
 SFX S a istajn a
 SFX S a istan a
 SFX S a iste a
-SFX S a ist’ a
+SFX S a istʼ a
 SFX S a isto a
 SFX S a istoj a
 SFX S a istojn a
@@ -1698,7 +1677,7 @@ SFX S a istinaj a
 SFX S a istinajn a
 SFX S a istinan a
 SFX S a istine a
-SFX S a istin’ a
+SFX S a istinʼ a
 SFX S a istino a
 SFX S a istinoj a
 SFX S a istinojn a
@@ -1708,7 +1687,7 @@ SFX S on istaj on
 SFX S on istajn on
 SFX S on istan on
 SFX S on iste on
-SFX S on ist’ on
+SFX S on istʼ on
 SFX S on isto on
 SFX S on istoj on
 SFX S on istojn on
@@ -1718,7 +1697,7 @@ SFX S on istinaj on
 SFX S on istinajn on
 SFX S on istinan on
 SFX S on istine on
-SFX S on istin’ on
+SFX S on istinʼ on
 SFX S on istino on
 SFX S on istinoj on
 SFX S on istinojn on
@@ -1728,7 +1707,7 @@ SFX S 0 staj i
 SFX S 0 stajn i
 SFX S 0 stan i
 SFX S 0 ste i
-SFX S 0 st’ i
+SFX S 0 stʼ i
 SFX S 0 sto i
 SFX S 0 stoj i
 SFX S 0 stojn i
@@ -1738,7 +1717,7 @@ SFX S 0 stinaj i
 SFX S 0 stinajn i
 SFX S 0 stinan i
 SFX S 0 stine i
-SFX S 0 stin’ i
+SFX S 0 stinʼ i
 SFX S 0 stino i
 SFX S 0 stinoj i
 SFX S 0 stinojn i
@@ -1748,7 +1727,7 @@ SFX S me taj isme
 SFX S me tajn isme
 SFX S me tan isme
 SFX S me te isme
-SFX S me t’ isme
+SFX S me tʼ isme
 SFX S me to isme
 SFX S me toj isme
 SFX S me tojn isme
@@ -1758,7 +1737,7 @@ SFX S me tinaj isme
 SFX S me tinajn isme
 SFX S me tinan isme
 SFX S me tine isme
-SFX S me tin’ isme
+SFX S me tinʼ isme
 SFX S me tino isme
 SFX S me tinoj isme
 SFX S me tinojn isme
@@ -1767,7 +1746,7 @@ SFX S e a isme
 SFX S e aj isme
 SFX S e ajn isme
 SFX S e an isme
-SFX S e ’ isme
+SFX S e ʼ isme
 SFX S e o isme
 SFX S e oj isme
 SFX S e ojn isme
@@ -1777,7 +1756,7 @@ SFX S e iistaj [^m]e
 SFX S e iistajn [^m]e
 SFX S e iistan [^m]e
 SFX S e iiste [^m]e
-SFX S e iist’ [^m]e
+SFX S e iistʼ [^m]e
 SFX S e iisto [^m]e
 SFX S e iistoj [^m]e
 SFX S e iistojn [^m]e
@@ -1787,7 +1766,7 @@ SFX S e iistinaj [^m]e
 SFX S e iistinajn [^m]e
 SFX S e iistinan [^m]e
 SFX S e iistine [^m]e
-SFX S e iistin’ [^m]e
+SFX S e iistinʼ [^m]e
 SFX S e iistino [^m]e
 SFX S e iistinoj [^m]e
 SFX S e iistinojn [^m]e
@@ -1797,7 +1776,7 @@ SFX S e iistaj nome
 SFX S e iistajn nome
 SFX S e iistan nome
 SFX S e iiste nome
-SFX S e iist’ nome
+SFX S e iistʼ nome
 SFX S e iisto nome
 SFX S e iistoj nome
 SFX S e iistojn nome
@@ -1807,7 +1786,7 @@ SFX S e iistinaj nome
 SFX S e iistinajn nome
 SFX S e iistinan nome
 SFX S e iistine nome
-SFX S e iistin’ nome
+SFX S e iistinʼ nome
 SFX S e iistino nome
 SFX S e iistinoj nome
 SFX S e iistinojn nome
@@ -1824,7 +1803,7 @@ SFX T 0 ntaj a
 SFX T 0 ntajn a
 SFX T 0 ntan a
 SFX T 0 nte a
-SFX T 0 nt’ a
+SFX T 0 ntʼ a
 SFX T 0 nto a
 SFX T 0 ntoj a
 SFX T 0 ntojn a
@@ -1834,7 +1813,7 @@ SFX T 0 taj a
 SFX T 0 tajn a
 SFX T 0 tan a
 SFX T 0 te a
-SFX T 0 t’ a
+SFX T 0 tʼ a
 SFX T 0 to a
 SFX T 0 toj a
 SFX T 0 tojn a
@@ -1846,7 +1825,7 @@ SFX T i adaj i
 SFX T i adajn i
 SFX T i adan i
 SFX T i ade i
-SFX T i ad’ i
+SFX T i adʼ i
 SFX T i ado i
 SFX T i adoj i
 SFX T i adojn i
@@ -1867,7 +1846,7 @@ SFX T 0 ntaj i
 SFX T 0 ntajn i
 SFX T 0 ntan i
 SFX T 0 nte i
-SFX T 0 nt’ i
+SFX T 0 ntʼ i
 SFX T 0 nto i
 SFX T 0 ntoj i
 SFX T 0 ntojn i
@@ -1877,7 +1856,7 @@ SFX T i antaj i
 SFX T i antajn i
 SFX T i antan i
 SFX T i ante i
-SFX T i ant’ i
+SFX T i antʼ i
 SFX T i anto i
 SFX T i antoj i
 SFX T i antojn i
@@ -1887,7 +1866,7 @@ SFX T i ontaj i
 SFX T i ontajn i
 SFX T i ontan i
 SFX T i onte i
-SFX T i ont’ i
+SFX T i ontʼ i
 SFX T i onto i
 SFX T i ontoj i
 SFX T i ontojn i
@@ -1896,7 +1875,7 @@ SFX T 0 ntina i
 SFX T 0 ntinaj i
 SFX T 0 ntinajn i
 SFX T 0 ntinan i
-SFX T 0 ntin’ i
+SFX T 0 ntinʼ i
 SFX T 0 ntino i
 SFX T 0 ntinoj i
 SFX T 0 ntinojn i
@@ -1905,7 +1884,7 @@ SFX T i antina i
 SFX T i antinaj i
 SFX T i antinajn i
 SFX T i antinan i
-SFX T i antin’ i
+SFX T i antinʼ i
 SFX T i antino i
 SFX T i antinoj i
 SFX T i antinojn i
@@ -1914,7 +1893,7 @@ SFX T i ontina i
 SFX T i ontinaj i
 SFX T i ontinajn i
 SFX T i ontinan i
-SFX T i ontin’ i
+SFX T i ontinʼ i
 SFX T i ontino i
 SFX T i ontinoj i
 SFX T i ontinojn i
@@ -1924,7 +1903,7 @@ SFX T u adaj u
 SFX T u adajn u
 SFX T u adan u
 SFX T u ade u
-SFX T u ad’ u
+SFX T u adʼ u
 SFX T u ado u
 SFX T u adoj u
 SFX T u adojn u
@@ -1945,7 +1924,7 @@ SFX T u intaj u
 SFX T u intajn u
 SFX T u intan u
 SFX T u inte u
-SFX T u int’ u
+SFX T u intʼ u
 SFX T u into u
 SFX T u intoj u
 SFX T u intojn u
@@ -1955,7 +1934,7 @@ SFX T u antaj u
 SFX T u antajn u
 SFX T u antan u
 SFX T u ante u
-SFX T u ant’ u
+SFX T u antʼ u
 SFX T u anto u
 SFX T u antoj u
 SFX T u antojn u
@@ -1965,7 +1944,7 @@ SFX T u ontaj u
 SFX T u ontajn u
 SFX T u ontan u
 SFX T u onte u
-SFX T u ont’ u
+SFX T u ontʼ u
 SFX T u onto u
 SFX T u ontoj u
 SFX T u ontojn u
@@ -1974,7 +1953,7 @@ SFX T u intina u
 SFX T u intinaj u
 SFX T u intinajn u
 SFX T u intinan u
-SFX T u intin’ u
+SFX T u intinʼ u
 SFX T u intino u
 SFX T u intinoj u
 SFX T u intinojn u
@@ -1983,7 +1962,7 @@ SFX T u antina u
 SFX T u antinaj u
 SFX T u antinajn u
 SFX T u antinan u
-SFX T u antin’ u
+SFX T u antinʼ u
 SFX T u antino u
 SFX T u antinoj u
 SFX T u antinojn u
@@ -1992,23 +1971,23 @@ SFX T u ontina u
 SFX T u ontinaj u
 SFX T u ontinajn u
 SFX T u ontinan u
-SFX T u ontin’ u
+SFX T u ontinʼ u
 SFX T u ontino u
 SFX T u ontinoj u
 SFX T u ontinojn u
 SFX T u ontinon u
 SFX T i o i
-SFX T i ’ i
+SFX T i ʼ i
 SFX T i on i
 SFX T u o u
-SFX T u ’ u
+SFX T u ʼ u
 SFX T u on u
 SFX T 0 ta i
 SFX T 0 taj i
 SFX T 0 tajn i
 SFX T 0 tan i
 SFX T 0 te i
-SFX T 0 t’ i
+SFX T 0 tʼ i
 SFX T 0 to i
 SFX T 0 toj i
 SFX T 0 tojn i
@@ -2018,7 +1997,7 @@ SFX T i ataj i
 SFX T i atajn i
 SFX T i atan i
 SFX T i ate i
-SFX T i at’ i
+SFX T i atʼ i
 SFX T i ato i
 SFX T i atoj i
 SFX T i atojn i
@@ -2028,7 +2007,7 @@ SFX T i otaj i
 SFX T i otajn i
 SFX T i otan i
 SFX T i ote i
-SFX T i ot’ i
+SFX T i otʼ i
 SFX T i oto i
 SFX T i otoj i
 SFX T i otojn i
@@ -2042,7 +2021,7 @@ SFX T i eblaj i
 SFX T i eblajn i
 SFX T i eblan i
 SFX T i eble i
-SFX T i ebl’ i
+SFX T i eblʼ i
 SFX T i eblo i
 SFX T i eblon i
 SFX T i endas i
@@ -2054,7 +2033,7 @@ SFX T i endaj i
 SFX T i endajn i
 SFX T i endan i
 SFX T i ende i
-SFX T i end’ i
+SFX T i endʼ i
 SFX T i endo i
 SFX T i endoj i
 SFX T i endojn i
@@ -2064,7 +2043,7 @@ SFX T u itaj u
 SFX T u itajn u
 SFX T u itan u
 SFX T u ite u
-SFX T u it’ u
+SFX T u itʼ u
 SFX T u ito u
 SFX T u itoj u
 SFX T u itojn u
@@ -2074,7 +2053,7 @@ SFX T u ataj u
 SFX T u atajn u
 SFX T u atan u
 SFX T u ate u
-SFX T u at’ u
+SFX T u atʼ u
 SFX T u ato u
 SFX T u atoj u
 SFX T u atojn u
@@ -2084,7 +2063,7 @@ SFX T u otaj u
 SFX T u otajn u
 SFX T u otan u
 SFX T u ote u
-SFX T u ot’ u
+SFX T u otʼ u
 SFX T u oto u
 SFX T u otoj u
 SFX T u otojn u
@@ -2098,7 +2077,7 @@ SFX T u eblaj u
 SFX T u eblajn u
 SFX T u eblan u
 SFX T u eble u
-SFX T u ebl’ u
+SFX T u eblʼ u
 SFX T u eblo u
 SFX T u eblon u
 SFX T u endas u
@@ -2110,7 +2089,7 @@ SFX T u endaj u
 SFX T u endajn u
 SFX T u endan u
 SFX T u ende u
-SFX T u end’ u
+SFX T u endʼ u
 SFX T u endo u
 SFX T u endoj u
 SFX T u endojn u
@@ -2121,7 +2100,7 @@ SFX U a ulaj a
 SFX U a ulajn a
 SFX U a ulan a
 SFX U a ule a
-SFX U a ul’ a
+SFX U a ulʼ a
 SFX U a ulo a
 SFX U a uloj a
 SFX U a ulojn a
@@ -2131,7 +2110,7 @@ SFX U a ulinaj a
 SFX U a ulinajn a
 SFX U a ulinan a
 SFX U a uline a
-SFX U a ulin’ a
+SFX U a ulinʼ a
 SFX U a ulino a
 SFX U a ulinoj a
 SFX U a ulinojn a
@@ -2141,7 +2120,7 @@ SFX U o ulaj o
 SFX U o ulajn o
 SFX U o ulan o
 SFX U o ule o
-SFX U o ul’ o
+SFX U o ulʼ o
 SFX U o ulo o
 SFX U o uloj o
 SFX U o ulojn o
@@ -2151,7 +2130,7 @@ SFX U o ulinaj o
 SFX U o ulinajn o
 SFX U o ulinan o
 SFX U o uline o
-SFX U o ulin’ o
+SFX U o ulinʼ o
 SFX U o ulino o
 SFX U o ulinoj o
 SFX U o ulinojn o
@@ -2161,7 +2140,7 @@ SFX U i ulaj i
 SFX U i ulajn i
 SFX U i ulan i
 SFX U i ule i
-SFX U i ul’ i
+SFX U i ulʼ i
 SFX U i ulo i
 SFX U i uloj i
 SFX U i ulojn i
@@ -2171,7 +2150,7 @@ SFX U i ulinaj i
 SFX U i ulinajn i
 SFX U i ulinan i
 SFX U i uline i
-SFX U i ulin’ i
+SFX U i ulinʼ i
 SFX U i ulino i
 SFX U i ulinoj i
 SFX U i ulinojn i
@@ -2193,7 +2172,7 @@ SFX V o adaj o
 SFX V o adajn o
 SFX V o adan o
 SFX V o ade o
-SFX V o ad’ o
+SFX V o adʼ o
 SFX V o ado o
 SFX V o adoj o
 SFX V o adojn o
@@ -2203,7 +2182,7 @@ SFX V i adaj i
 SFX V i adajn i
 SFX V i adan i
 SFX V i ade i
-SFX V i ad’ i
+SFX V i adʼ i
 SFX V i ado i
 SFX V i adoj i
 SFX V i adojn i
@@ -2224,7 +2203,7 @@ SFX V 0 ntaj i
 SFX V 0 ntajn i
 SFX V 0 ntan i
 SFX V 0 nte i
-SFX V 0 nt’ i
+SFX V 0 ntʼ i
 SFX V 0 nto i
 SFX V 0 ntoj i
 SFX V 0 ntojn i
@@ -2234,7 +2213,7 @@ SFX V i antaj i
 SFX V i antajn i
 SFX V i antan i
 SFX V i ante i
-SFX V i ant’ i
+SFX V i antʼ i
 SFX V i anto i
 SFX V i antoj i
 SFX V i antojn i
@@ -2244,7 +2223,7 @@ SFX V i ontaj i
 SFX V i ontajn i
 SFX V i ontan i
 SFX V i onte i
-SFX V i ont’ i
+SFX V i ontʼ i
 SFX V i onto i
 SFX V i ontoj i
 SFX V i ontojn i
@@ -2253,7 +2232,7 @@ SFX V 0 ntina i
 SFX V 0 ntinaj i
 SFX V 0 ntinajn i
 SFX V 0 ntinan i
-SFX V 0 ntin’ i
+SFX V 0 ntinʼ i
 SFX V 0 ntino i
 SFX V 0 ntinoj i
 SFX V 0 ntinojn i
@@ -2262,7 +2241,7 @@ SFX V i antina i
 SFX V i antinaj i
 SFX V i antinajn i
 SFX V i antinan i
-SFX V i antin’ i
+SFX V i antinʼ i
 SFX V i antino i
 SFX V i antinoj i
 SFX V i antinojn i
@@ -2271,7 +2250,7 @@ SFX V i ontina i
 SFX V i ontinaj i
 SFX V i ontinajn i
 SFX V i ontinan i
-SFX V i ontin’ i
+SFX V i ontinʼ i
 SFX V i ontino i
 SFX V i ontinoj i
 SFX V i ontinojn i
@@ -2281,7 +2260,7 @@ SFX V u adaj u
 SFX V u adajn u
 SFX V u adan u
 SFX V u ade u
-SFX V u ad’ u
+SFX V u adʼ u
 SFX V u ado u
 SFX V u adoj u
 SFX V u adojn u
@@ -2302,7 +2281,7 @@ SFX V u intaj u
 SFX V u intajn u
 SFX V u intan u
 SFX V u inte u
-SFX V u int’ u
+SFX V u intʼ u
 SFX V u into u
 SFX V u intoj u
 SFX V u intojn u
@@ -2312,7 +2291,7 @@ SFX V u antaj u
 SFX V u antajn u
 SFX V u antan u
 SFX V u ante u
-SFX V u ant’ u
+SFX V u antʼ u
 SFX V u anto u
 SFX V u antoj u
 SFX V u antojn u
@@ -2322,7 +2301,7 @@ SFX V u ontaj u
 SFX V u ontajn u
 SFX V u ontan u
 SFX V u onte u
-SFX V u ont’ u
+SFX V u ontʼ u
 SFX V u onto u
 SFX V u ontoj u
 SFX V u ontojn u
@@ -2331,7 +2310,7 @@ SFX V u intina u
 SFX V u intinaj u
 SFX V u intinajn u
 SFX V u intinan u
-SFX V u intin’ u
+SFX V u intinʼ u
 SFX V u intino u
 SFX V u intinoj u
 SFX V u intinojn u
@@ -2340,7 +2319,7 @@ SFX V u antina u
 SFX V u antinaj u
 SFX V u antinajn u
 SFX V u antinan u
-SFX V u antin’ u
+SFX V u antinʼ u
 SFX V u antino u
 SFX V u antinoj u
 SFX V u antinojn u
@@ -2349,16 +2328,16 @@ SFX V u ontina u
 SFX V u ontinaj u
 SFX V u ontinajn u
 SFX V u ontinan u
-SFX V u ontin’ u
+SFX V u ontinʼ u
 SFX V u ontino u
 SFX V u ontinoj u
 SFX V u ontinojn u
 SFX V u ontinon u
 SFX V i o i
-SFX V i ’ i
+SFX V i ʼ i
 SFX V i on i
 SFX V u o u
-SFX V u ’ u
+SFX V u ʼ u
 SFX V u on u
 SFX W Y 80
 SFX W o ana o
@@ -2366,7 +2345,7 @@ SFX W o anaj o
 SFX W o anajn o
 SFX W o anan o
 SFX W o ane o
-SFX W o an’ o
+SFX W o anʼ o
 SFX W o ano o
 SFX W o anoj o
 SFX W o anojn o
@@ -2376,7 +2355,7 @@ SFX W o aninaj o
 SFX W o aninajn o
 SFX W o aninan o
 SFX W o anine o
-SFX W o anin’ o
+SFX W o aninʼ o
 SFX W o anino o
 SFX W o aninoj o
 SFX W o aninojn o
@@ -2386,7 +2365,7 @@ SFX W 0 naj a
 SFX W 0 najn a
 SFX W 0 nan a
 SFX W 0 ne a
-SFX W 0 n’ a
+SFX W 0 nʼ a
 SFX W 0 no a
 SFX W 0 noj a
 SFX W 0 nojn a
@@ -2396,7 +2375,7 @@ SFX W 0 ninaj a
 SFX W 0 ninajn a
 SFX W 0 ninan a
 SFX W 0 nine a
-SFX W 0 nin’ a
+SFX W 0 ninʼ a
 SFX W 0 nino a
 SFX W 0 ninoj a
 SFX W 0 ninojn a
@@ -2406,7 +2385,7 @@ SFX W i anaj i
 SFX W i anajn i
 SFX W i anan i
 SFX W i ane i
-SFX W i an’ i
+SFX W i anʼ i
 SFX W i ano i
 SFX W i anoj i
 SFX W i anojn i
@@ -2416,7 +2395,7 @@ SFX W i aninaj i
 SFX W i aninajn i
 SFX W i aninan i
 SFX W i anine i
-SFX W i anin’ i
+SFX W i aninʼ i
 SFX W i anino i
 SFX W i aninoj i
 SFX W i aninojn i
@@ -2426,7 +2405,7 @@ SFX W on anaj on
 SFX W on anajn on
 SFX W on anan on
 SFX W on ane on
-SFX W on an’ on
+SFX W on anʼ on
 SFX W on ano on
 SFX W on anoj on
 SFX W on anojn on
@@ -2436,7 +2415,7 @@ SFX W on aninaj on
 SFX W on aninajn on
 SFX W on aninan on
 SFX W on anine on
-SFX W on anin’ on
+SFX W on aninʼ on
 SFX W on anino on
 SFX W on aninoj on
 SFX W on aninojn on
@@ -2447,11 +2426,11 @@ SFX X e 0 e
 SFX X j 0 j
 SFX X n 0 n
 SFX X o 0 o
-SFX X on ’ on
+SFX X on ʼ on
 SFX X i 0 [^g]i
-SFX X ’ 0 ’
-SFX X ’ o ’
-SFX X ’ on ’
+SFX X ʼ 0 ʼ
+SFX X ʼ o ʼ
+SFX X ʼ on ʼ
 SFX X gi ĝi igi
 SFX X gi ĝas igi
 SFX X gi ĝis igi
@@ -2464,7 +2443,7 @@ SFX X gi ĝadis igi
 SFX X gi ĝados igi
 SFX X gi ĝadus igi
 SFX X gi ĝadu igi
-SFX X gi ĝad’ igi
+SFX X gi ĝadʼ igi
 SFX X gi ĝado igi
 SFX X gi ĝadoj igi
 SFX X gi ĝadojn igi
@@ -2474,7 +2453,7 @@ SFX X igi iĝintaj igi
 SFX X igi iĝintajn igi
 SFX X igi iĝintan igi
 SFX X igi iĝinte igi
-SFX X igi iĝint’ igi
+SFX X igi iĝintʼ igi
 SFX X igi iĝinto igi
 SFX X igi iĝintoj igi
 SFX X igi iĝintojn igi
@@ -2484,7 +2463,7 @@ SFX X igi iĝantaj igi
 SFX X igi iĝantajn igi
 SFX X igi iĝantan igi
 SFX X igi iĝante igi
-SFX X igi iĝant’ igi
+SFX X igi iĝantʼ igi
 SFX X igi iĝanto igi
 SFX X igi iĝantoj igi
 SFX X igi iĝantojn igi
@@ -2494,7 +2473,7 @@ SFX X igi iĝontaj igi
 SFX X igi iĝontajn igi
 SFX X igi iĝontan igi
 SFX X igi iĝonte igi
-SFX X igi iĝont’ igi
+SFX X igi iĝontʼ igi
 SFX X igi iĝonto igi
 SFX X igi iĝontoj igi
 SFX X igi iĝontojn igi
@@ -2503,7 +2482,7 @@ SFX X igi iĝintina igi
 SFX X igi iĝintinaj igi
 SFX X igi iĝintinajn igi
 SFX X igi iĝintinan igi
-SFX X igi iĝintin’ igi
+SFX X igi iĝintinʼ igi
 SFX X igi iĝintino igi
 SFX X igi iĝintinoj igi
 SFX X igi iĝintinojn igi
@@ -2512,7 +2491,7 @@ SFX X igi iĝantina igi
 SFX X igi iĝantinaj igi
 SFX X igi iĝantinajn igi
 SFX X igi iĝantinan igi
-SFX X igi iĝantin’ igi
+SFX X igi iĝantinʼ igi
 SFX X igi iĝantino igi
 SFX X igi iĝantinoj igi
 SFX X igi iĝantinojn igi
@@ -2521,7 +2500,7 @@ SFX X igi iĝontina igi
 SFX X igi iĝontinaj igi
 SFX X igi iĝontinajn igi
 SFX X igi iĝontinan igi
-SFX X igi iĝontin’ igi
+SFX X igi iĝontinʼ igi
 SFX X igi iĝontino igi
 SFX X igi iĝontinoj igi
 SFX X igi iĝontinojn igi
@@ -2531,7 +2510,7 @@ SFX X gi ĝaj igi
 SFX X gi ĝajn igi
 SFX X gi ĝan igi
 SFX X gi ĝe igi
-SFX X gi ĝ’ igi
+SFX X gi ĝʼ igi
 SFX X gi ĝo igi
 SFX X gi ĝoj igi
 SFX X gi ĝojn igi
@@ -2541,7 +2520,7 @@ SFX X gi ĝemaj igi
 SFX X gi ĝemajn igi
 SFX X gi ĝeman igi
 SFX X gi ĝeme igi
-SFX X gi ĝem’ igi
+SFX X gi ĝemʼ igi
 SFX X gi ĝemo igi
 SFX X gi ĝemon igi
 SFX Y Y 50
@@ -2550,7 +2529,7 @@ SFX Y 0 ĵaj a
 SFX Y 0 ĵajn a
 SFX Y 0 ĵan a
 SFX Y 0 ĵe a
-SFX Y 0 ĵ’ a
+SFX Y 0 ĵʼ a
 SFX Y 0 ĵo a
 SFX Y 0 ĵoj a
 SFX Y 0 ĵojn a
@@ -2560,7 +2539,7 @@ SFX Y e aĵaj e
 SFX Y e aĵajn e
 SFX Y e aĵan e
 SFX Y e aĵe e
-SFX Y e aĵ’ e
+SFX Y e aĵʼ e
 SFX Y e aĵo e
 SFX Y e aĵoj e
 SFX Y e aĵojn e
@@ -2570,7 +2549,7 @@ SFX Y i aĵaj i
 SFX Y i aĵajn i
 SFX Y i aĵan i
 SFX Y i aĵe i
-SFX Y i aĵ’ i
+SFX Y i aĵʼ i
 SFX Y i aĵo i
 SFX Y i aĵoj i
 SFX Y i aĵojn i
@@ -2580,7 +2559,7 @@ SFX Y o aĵaj o
 SFX Y o aĵajn o
 SFX Y o aĵan o
 SFX Y o aĵe o
-SFX Y o aĵ’ o
+SFX Y o aĵʼ o
 SFX Y o aĵo o
 SFX Y o aĵoj o
 SFX Y o aĵojn o
@@ -2590,7 +2569,7 @@ SFX Y u aĵaj u
 SFX Y u aĵajn u
 SFX Y u aĵan u
 SFX Y u aĵe u
-SFX Y u aĵ’ u
+SFX Y u aĵʼ u
 SFX Y u aĵo u
 SFX Y u aĵoj u
 SFX Y u aĵojn u
@@ -2601,7 +2580,7 @@ SFX Z a ismaj a
 SFX Z a ismajn a
 SFX Z a isman a
 SFX Z a isme a
-SFX Z a ism’ a
+SFX Z a ismʼ a
 SFX Z a ismo a
 SFX Z a ismoj a
 SFX Z a ismojn a
@@ -2611,7 +2590,7 @@ SFX Z 0 smaj i
 SFX Z 0 smajn i
 SFX Z 0 sman i
 SFX Z 0 sme i
-SFX Z 0 sm’ i
+SFX Z 0 smʼ i
 SFX Z 0 smo i
 SFX Z 0 smoj i
 SFX Z 0 smojn i
@@ -2621,7 +2600,7 @@ SFX Z o ismaj o
 SFX Z o ismajn o
 SFX Z o isman o
 SFX Z o isme o
-SFX Z o ism’ o
+SFX Z o ismʼ o
 SFX Z o ismo o
 SFX Z o ismoj o
 SFX Z o ismojn o

@@ -1,9 +1,11 @@
 ; -*- coding: utf-8 -*-
 ; Name: oo.el
-; Time-stamp: <2024-01-13 23:58:50 sergio>
+; Time-stamp: <2024-03-25 13:25:26 sergio>
 
 ; A script to transform eo.aff file (in latin-3) for use with myspell
 ; for OpenOffice.  Called from `make OO`.
+
+(setq buffer-file-coding-system 'utf-8-unix)
 
 (defun a-fix (pre-suf)
 (while (re-search-forward "#\\(\\*\\)?\\(.\\):$" (point-max) t)
@@ -21,8 +23,18 @@
     (goto-char eol) (insert (format "%d" i)))))
 
 ;; ======== M A I N :
-;(defun oo ()
-;(interactive)
+(let ((apo (getenv "apostro")) ap)
+;  (message "apo==/%s/\n" apo)
+  (cond
+   ((equal apo "a") (setq ap "'"))
+   ((equal apo "q") (setq ap "’"))
+   ((equal apo "u") (setq ap "ʼ"))
+   (t (error "Wrong APO: |%s|\n" apo)))
+;   (message "apo==|%s|, ap==|%s|\n" apo ap)
+   (goto-char (point-min))
+   (while (re-search-forward "´\\|\\^'" nil t) (replace-match ap)))
+; (message "arg = " )
+
 (goto-char (point-min))
 (delete-region (point-min)
 	       (progn
@@ -32,7 +44,7 @@
 (while (re-search-forward "#.*$" nil t) (replace-match ""))
 
 (goto-char (point-min))
-(while (search-forward "^'" nil t) (replace-match "’"))
+(while (search-forward "flag *\\\\:" nil t) (replace-match "flag *÷:"))
 
 (goto-char (point-min))
 (while (re-search-forward "^flag +" nil t) (replace-match "#"))
@@ -76,39 +88,6 @@
 (while (search-forward "!" (point-max) t) (replace-match "\\\\" nil))
 (re-search-forward "^suffixes$")
 (delete-region (match-beginning 0) (match-end 0))
-(setq buffer-file-coding-system 'utf-8-unix)
 (goto-char (point-min))
-(insert "SET utf-8
-NAME		esperanto
-VERSION		4.2
-HOME		https://github.com/pok49/ispell-eo
-AUTHOR		Sergio Pokrovskij
-EMAIL		sergio.pokrovskij(ĉe)gmail(punkto)com
-COPYRIGHT	GPL 2.0
-#
-MIDWORD -
-RARE ?
-BAD !
-#
-REP 8
-REP cx c
-REP gx ĝ
-REP hx ĥ
-REP jx ĵ
-REP sx ŝ
-REP ux ŭ
-REP rn m
-REP m rn
-#
-MAP 7
-MAP cĉê
-MAP gĝ
-MAP hĥ
-MAP jĵ
-MAP sŝ
-MAP uŭwù
-MAP Iilt
-#\n")
-;)	;=== defun oo)
 
 ; --- oo.el ends here

@@ -1,0 +1,17 @@
+#!/bin/sh
+celo=$1
+apo=$2
+# Kontrolu, cxu la valoro de $(apostrofo) taŭgas por la $celo
+
+case $celo in
+    "vim") if [ x$apo != "xu" ]; then
+               echo "Por vim tauxgas nur apostrofo = u != $apo" >&2
+               exit 1
+           fi
+           ;;
+    *) echo "aqu" | grep $apostrofo > /dev/null
+       if [ $? != 0 ]; then
+           echo "apostrofo estu unu el a|q|u" >&2
+           exit 1
+       fi
+esac
