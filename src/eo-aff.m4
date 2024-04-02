@@ -592,8 +592,8 @@ flag *F:
 ifdef({SXPARE},
 {   nome(I,-I,ANTIN)	# danci -> dancantino
     nomo(I,,NTIN)	# naski -> naskintino
-    nome(U,-I,ANTIN)	# dancu -> dancantino
-    nomo(U,,NTIN)})	# nasku -> naskintino
+    nome(U,-U,ANTIN)	# dancu -> dancantino
+    nomo(U,-U,INTIN)})	# nasku -> naskintino
     kazoj({O	>	-O,A})
     O		>	-O,E
     O		>	-O,INE
