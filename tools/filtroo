@@ -1,8 +1,8 @@
-#!/bin/sh
+#!/bin/bash
 # -*- coding: utf-8 -*-
 
 iconv -f ISO-8859-3 -t UTF-8 ../src/vortoj.l3 |\
-sed -Ee 's:\{\\o\}:ø:g; s|´|ʼ|g; s~(/.*)\\~\1÷~; s/coding:latin-3/coding:utf-8/' \
+sed -Ee 's:\{\\o\}:ø:g; s~(/.*)\\~\1÷~; s/coding:latin-3/coding:utf-8/' \
     -e 's%(/[[:graph:]]+)(.*)([[:space:]]*#mav|[[:space:]]*#arhx)\>%\1!\2%' \
     -e 's%^(=?[[:alpha:]]*[[:space:]]+[-ʼ[:alpha:]]+)\>([[:space:]].*)(#mav)\>%\1/!\2%' \
     -e 's%(/[[:graph:]]+)(.*)([[:space:]]*#rar)\>%\1?\2%' \
@@ -20,16 +20,24 @@ sed -Ee 's:\{\\o\}:ø:g; s|´|ʼ|g; s~(/.*)\\~\1÷~; s/coding:latin-3/coding:utf
 FILTER=`echo $1, | sed -e 's|\([.a-zA-Z]*\),|/\#\1/s%#.*$%%;|g'`
 echo "FILTER == $FILTER"
 
-case $3 in
-    'a') APO="s/´/'/g"
-         ;;
-    'q') APO="s/´/’/g"
-         ;;
-    'u') APO="s/´/ʼ/g"
-         ;;
-    *) echo "Wrong APO"; exit 1
-       ;;
-esac
+# case `expr $3 : '\([a-z]\).*'` in
+#     'a') APO="s/´/'/g"
+#          ;;
+#     'q') APO="s/´/’/g"
+#          ;;
+#     'u') APO="s/´/ʼ/g"
+#          ;;
+#     *) echo "Wrong APO"; exit 1
+#        ;;
+# esac
+if [ `expr index $3 "u"` -gt 0 ]
+then APO="s/´/ʼ/g"
+elif [ `expr index $3 "q"` -gt 0 ]
+then APO="s/´/’/g"
+elif [ `expr index $3 "a"` -gt 0 ]
+then APO="s/´/'/g"
+else echo "Wrong APO"; exit 1
+fi
 echo "APO == $APO"
 
 sed -e "s/##.*$//; $FILTER; /\#/d; $APO" eoootmp1 > eoootmp2

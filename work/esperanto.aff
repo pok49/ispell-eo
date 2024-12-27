@@ -2,7 +2,7 @@
 # Funkcio:	Afiksaro por Esperanto-vortaro
 # Komencita:	1997-08-30 de Sergio Pokrovskij <sergio.pokrovskij(^ce)gmail.com>
 # Versio:	4.2
-# Generita:	Sat Mar 30 05:14:55 PM +07 2024
+# Generita:	Fri Dec 27 12:12:16 AM +07 2024
 
 #
 # Copyright 1997 -- 2012 Sergio Pokrovskij
@@ -23,7 +23,7 @@ allaffixes on
 
 
 # TeX/LaTeX laux esperanto.sty
-defstringtype "tex" ".tex" ".bib"
+defstringtype "tex" "tex" ".tex" ".latex" ".bib"
 #
 #boundarychars	[.]
 boundarychars	[-]
@@ -57,7 +57,7 @@ stringchar   \\^u    \\^U
 stringchar  \\\"u   \\\"U
 wordchars    [v-z]   [V-Z]
 
-altstringtype "utf8" ".html" ".u8" ".utf"
+altstringtype "utf8" "sgml" ".html" ".u8" ".utf"
 #
 altstringchar  \xE2\x80\x99 ^'
 # altstringchar   \xCA\xBC    ^' modifier letter apostrophe U+02BC
@@ -90,7 +90,7 @@ altstringchar	\xC3\x98  {\\O}
 altstringchar	\xC3\xBC \\\"u
 altstringchar	\xC3\x9C \\\"U
 
-altstringtype "latin3" "sgml" ".l3"
+altstringtype "latin3" "plain" ".l3"
 #
 altstringchar	'       ^'
 altstringchar	\xE6	^c
@@ -120,7 +120,7 @@ altstringchar	\xF6 \\\"o
 altstringchar	\xFB  \\^u
 altstringchar	\xFC \\\"u
 
-altstringtype "epo" ".wiki" ".la3"
+altstringtype "epo" "sgml" ".wiki" ".la3"
 #
 altstringchar	\xB4    ^'
 altstringchar	\xE6	^c
@@ -150,7 +150,7 @@ altstringchar	\xF6 \\\"o
 #altstringchar	\xFB  \\^u
 altstringchar	\xFC \\\"u
 
-altstringtype "cxirkaux" ".t" ".cx"
+altstringtype "cxirkaux" "plain" ".t" ".cx"
 #
 altstringchar	'       ^'
 altstringchar	cx	^c
@@ -252,7 +252,7 @@ altstringchar	\xFC \\\"u
 #   `	sur-
 #   \   tra-
 
-# Mankas flagoj por GE-, -ER, FIN-, NOV-, TUT-, ^GIS-, ^CE-, PER-, -ITA^J ...
+# Mankas flagoj por GE-, -ER, FIN-, NOV-, TUT-, ^GIS-, ^CE-, PER-, -ITA^J -ISMAN...
 
 #§		        LA PREFIKSOJ:
 prefixes
@@ -694,14 +694,18 @@ flag *F:
     A	>	J
     A	>	JN
     A	>	N
-    A	>	-A,INO
-    A	>	-A,INOJ
-    A	>	-A,INOJN
-    A	>	-A,INON
+#    kazoj({A	>	-A,O})
+#    kazoj({A	>	-A,INO})
+    A	>	-A,^'
     A	>	-A,O
     A	>	-A,OJ
     A	>	-A,OJN
     A	>	-A,ON
+    A	>	-A,IN^'
+    A	>	-A,INO
+    A	>	-A,INOJ
+    A	>	-A,INOJN
+    A	>	-A,INON
     E	>	-E,INA
     E	>	-E,INAJ
     E	>	-E,INAJN
@@ -1385,7 +1389,7 @@ flag H:
     O	>	-O,UJON
 
 flag *I:
-    A	>	-A,E
+    A	> -A,E
 #    nome(A,-A,I)
     A >	-A,O
     A >	-A,OJ
@@ -1444,13 +1448,15 @@ flag *I:
     I	>	ON
 #    kazoj({O >	-O,A})  # ne estu tiaj -- krom "Landujo"j
 #    O	     >	-O,E    # por cxi tiuj estu minusklaj adjektivoj
-#   [^I] O   >	-O,IA ### eraro! kp meksikiano/FI
-    O        >  N       # Rusujo -> Rusujon, Babilono -> Babilonon
-    [^J] O   >	-O,IO   # Meksiko -> Meksikio
-    [^J] O   >	-O,ION
+#   [^I] O   >	-O,IA  ### eraro! kp meksikiano/FI
     O >	J
     O >	JN
-    O >	N
+    O >	N      # Rusujo -> Rusujon, Babilono -> Babilonon
+    O        >	-O,^'   # Meksiko -> Meksik^'
+    [^J] O   >	-O,IO   # Meksiko -> Meksikio
+    [^J] O   >	-O,I^'
+    [^J] O   >	-O,ION
+    
     U J O	>	-UJO,IA
     U J O	>	-UJO,IAJ
     U J O	>	-UJO,IAJN
@@ -1460,7 +1466,7 @@ flag *I:
     U J O	>	-UJO,IOJ
     U J O	>	-UJO,IOJN
     U J O	>	-UJO,ION
-    
+
     I A N A      > -IANA,A
     I A N A      > -IANA,AJ
     I A N A      > -IANA,AJN

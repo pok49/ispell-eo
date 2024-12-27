@@ -341,7 +341,7 @@ alineon kaj estas antaŭata de haltostreko:
 
 <a id="orgf64b402"></a>
 Tiu aparta interpunkcio ebligas, interalie, klare diferencigi la
-dialogon (la eldirojn eksterigatatajn) disde la paralela monologo interna
+dialogon (la eldirojn eksterigatajn) disde la paralela monologo interna
 (rekta parolo enmensa), ekz‑e
 
 > – Vi estas tre modesta … Sed mi dezirus ekscii ion pri vi, pri via

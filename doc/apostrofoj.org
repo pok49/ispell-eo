@@ -280,7 +280,7 @@ tiuj sinjorinoj, kiuj venis antaŭe. -- («Marta»)
 #+end_quote
 <<Bazarov>>
 Tiu aparta interpunkcio ebligas, interalie, klare diferencigi la
-dialogon (la eldirojn eksterigatatajn) disde la paralela monologo interna
+dialogon (la eldirojn eksterigatajn) disde la paralela monologo interna
 (rekta parolo enmensa), ekz‑e
 #+begin_quote
 – Vi estas tre modesta … Sed mi dezirus ekscii ion pri vi, pri via
@@ -379,7 +379,8 @@ La normo ISO-8859‑1 (alinome Latina-1ª), destinita por la lingvoj
 okcidentaj, ja disponigas la paron da duoblaj angulaj citiloj «x» –
 kaj neniajn citilojn komoformajn; en tio mi vidas implican rekomendon
 pri uzindo de ĝuste tiaj citiloj, kiajn mi mem ĉi-supre prezentis kiel
-la plej konvenaj por Esperanto.
+la plej konvenaj por Esperanto. Cetere, laŭ la mapoj de Edmundo
+Grimley Evans la duoblaj angulaj citiloj «x» estas tre internaciaj[fn:EGE]
 
 Ekzistas tajpiloj (ekz‑e la [[https://en.wikipedia.org/wiki/QWERTY#French_(Canada)][franckanada qwerty-tajpilo]]) kiuj elskatole
 disponigas tiujn citilojn en sia klavaro.
@@ -600,7 +601,7 @@ jene:
 : '''Majusklo''' (aŭ '''grandlitero''' aŭ
 : '''ĉeflitero''') estas unu el du formoj,
 : kiujn povas havi ĉiu litero ...
-kaj tio kaŭzas ĝenajn plendojn pri la neekzistantaj vortoj
+kaj tio kaŭzas ĝenajn misavertojn pri la neekzistantaj vortoj
 @@html:<code>'''Majusklo'''</code>, <code>'''grandlitero'''</code>,
 <code>'''ĉeflitero'''</code>@@
 (la literumilaj vortaroj angla kaj franca agnoskas vortajn apostrofojn
@@ -687,24 +688,34 @@ rolo de vorto Esperanta. (Oni tamen povas sekure kombini lingvojn
 malsamalfabetajn, ekz‑e la bulgaran kaj Esperanton, ĉar en tia okazo
 la alfabetoj mem provizas klaran dismarkadon.)
 
-** Hunspell
-Hunspelo nun estas la plej grava kaj populara literumilo. Ĝi prezentas
-plurajn avantaĝajn trajtojn, kiuj paradokse iam sin montras malavantaĝaj.
+** Hunspell kaj aplikaĵoj
+Hunspelo nun estas la plej grava kaj populara literumilo. Ĝi estas la
+preferata literumilo de gravaj tekstotraktaj programoj, ekz‑e la
+Aperta kaj Libera Oficejoj ([[https://eo.wikipedia.org/wiki/Apache_OpenOffice][OpenOffice]], [[https://eo.wikipedia.org/wiki/LibreOffice][LibreOffice]]) aŭ [[https://eo.wikipedia.org/wiki/Mozilla_Thunderbird][Tondrobirdo]].
+Hunspelo prezentas plurajn avantaĝajn trajtojn, kiuj paradokse iam sin
+montras malavantaĝaj.
 
 *Unue*, Hunspelo kapablas uzi Unikodon interne (kvankam malpli fidinde
 ol Aspelo; ekz‑e mi stumblis kontraŭ la malnova kaj ankoraŭ ne
-korektita [[https://sourceforge.net/p/hunspell/bugs/11/][eraro]]). Sekve de tiu kapablo la morfologian rolon de la
-apostrofoj Hunspell interpretas laŭ ilia klasifiko Unikoda. Tial mi ne
-sukcesis atribui al la citila apostrofo U+2019 la statuson de
-vortofina vortero; tio eblas nur por la apostrofo litera U+02BC, kaj
-ĝuste tiel estas farite en la Esperanta Hunspela vortaro distribuata
-kun /LibreOffice;/ fakte, tio estas grava argumento por akcepti la
-literan apostrofon ankaŭ por la aliaj literumiloj, eĉ se ili kapablas
-laŭi la misrekomendon de la Unikoda normo. (Oni povus rigardi tion
-avantaĝo: Hunspelo toleras nur la principe pravajn solvojn; tamen
-fakte ĝi kompromisas pri la principoj, ebligante la interliterajn
-apostrofojn citilajn laŭ la kutimo Majkrosofta; cetere, la kompromiso
-rekomendata de la Unikoda normo, sed maltaŭga por Esperanto.)
+korektita [[https://sourceforge.net/p/hunspell/bugs/11/][eraro]]). Mi sukcesis modifi la afiksan dosieron =eo.aff=
+tiel, ke Hunspelo /per si mem/ akceptu ĉiujn 3 eblajn apostrofojn (la
+Askian, la literan, la citilan).
+
+Nu, praktike oni malofte uzas literumilojn meme, ekster pli granda
+aplikaĵo. La aplikaĵoj interkomunikas kun la literumilo per sia
+tiucela interfaco, kiu interfaco apartigas vortojn en la traktata
+teksto, transmetas ilin al la literumilo, kaj interpretas ties
+respondojn. Do, la aplikaĵa interfaco havas sian propran koncepton pri
+tio, kio estas /vorto/, kaj tiu koncepto ne nepre identas al la
+literumila (pli ĝuste, al la difino de la literumila vortaro).
+
+La /Libera Oficejo/ kaj la /Tondrobirdo/ traktas la apostrofojn laŭ la
+rekomendo de la Unikoda normo, do malkonvene por Esperanto. El la
+vortoj ‹kat'› kaj ‹rat’› (kun resp. la apostrofoj Askia kaj citila) ili apartigas nur
+po 3 literojn, kio kaŭzas misavertojn. Aliflanke, ‹kato'› kaj ‹rato’›
+estas silente akceptataj. Tamen kun la /litera apostrofo/ ĉiuj 4 vortoj
+estas traktataj ĝuste (ĉar la aplikaĵa interfaco traktas la literan
+apostrofon estkiel literon, do vorteron, laŭ ĝia klaso Unikoda).
 
 *Due*, dankʼ al sia hungara deveno Hunspelo ebligas tre koncize kaj
 trafe priskribi la gramatikon de la Esperanta vortfarado. Ispelo ne
@@ -729,9 +740,52 @@ forigi aŭ inkludi tiajn vortojn en la vortaron dum ĝia instalo.
 La grava Uniksa tekstoredaktilo [[https://eo.wikipedia.org/wiki/Vim_(programo)][Vimo]] jam havas interfacan kromaĵon
 =vimspell= por interagi kun Ispelo kaj Aspelo; tamen la novaj
 versioj de Vimo rekomendas uzi enkonstruitan literumilon, kiu
-multrilate similas Hunspelon. Interalie, samkiel Hunspelo ĝi rifuzas
-trakti finvortajn apostrofojn (ĉu Askiajn, ĉu citilajn); tial en mia
-konvertaĵo mi adoptis la literan apostrofon U+02BC.
+multrilate similas Hunspelon.
+
+Vima literumilo ne transkodas datumojn; se vi bezonas plurajn kodojn,
+necesas instali vortarojn por ciu el ili. Ekz‑e por la angla lingvo,
+disponebla elskatole, venas dosieroj por 3 kodoprezentoj (Askio,
+Latina-1ª kaj UTF-8):
+#+begin_src sh
+$ cd /usr/share/vim/vim82/spell
+$ ls -lh | awk '/en\./ {print $9 "\t" $5;}'
+#+end_src
+#+begin_example
+en.ascii.spl    605K
+en.ascii.sug    584K
+en.latin1.spl   607K
+en.latin1.sug   584K
+en.utf-8.spl    608K
+en.utf-8.sug    584K
+#+end_example
+Simile, se oni volas labori kun du aŭ tri prezentoj de apostrofoj,
+necesas instali tiom da vortaroj --- aŭ modifi la vortosintakson tiel,
+ke la generita vortaro entenu ĉiujn akcepteblajn vortformojn; t.e.
+ke kun =kato= ĝi entenu ne nur ankaŭ =kat'=, sed ankaŭ =katʼ= kaj
+=kat’=. Mi realigis tion; tio ŝveligis la vortaron je 14%; sed pli
+malbone, tio ankaŭ poluis la sugestajn korektolistojn, ĉar la esence
+unu apostrofita formo ĉiam aperas triope ☹ Kompromise, mi lasis en la
+defaŭlta varianto nur 2 formojn (la Askian kaj la citilan), kun la
+eblo generi ĉiujn tri, aŭ nur unu, aŭ alikonsistan duopan formon.
+
+Vima literumilo nek postulas nek ebligas priskribi apostrofon kiel
+vortliman vorteron; sed se la vortosintakso difinas la derivon
+=kato= → =kat'= (aŭ → =katʼ= ktp), tiam la literumilo provos
+kompletigi la trunkitan vortobazon per disponebla apostrofo; tamen se
+la legita signoĉeno jam estas kompleta vorto, la literumilo akceptos
+ĝin sen plua ekzameno. Tiel la unuoblaj anglaj citiloj (por Esperanto neaktualaj) ne kaŭzos
+misavertojn; sed anstataŭe (kaj por Esperanto pli grave) la literumado
+ignoras troajn apostrofojn neliterajn (la Askian kaj la citilan).
+Ekz‑e ĉe la apostrofo Askia en la [[https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Grabowski_-_El_Parnaso_de_Popoloj%2C_1913.pdf/page31-2568px-Grabowski_-_El_Parnaso_de_Popoloj%2C_1913.pdf.jpg][verso]]:
+#+begin_verse
+„Ne provu la pason!“ avertis hom' griza'
+#+end_verse
+‹hom'› estas akceptata kun la sekva apostrofo, ĉar ĝi estas bezonata;
+kaj ‹griza›' estas akceptata senapostrofe, ĉar la antaŭapostrofa parto jam
+sufiĉas (kiel en la angla =ladys'= ĉi-supre). Male, se en la teksto la
+apostrofoj estas literaj (U+02BC), tiam por la literumilo la vorto
+=grizaʼ= estas samstruktura (kaj egale erara) kiel
+=grizao=[fn:Exc].
 
 * Konkludo
 Sen trudi miajn preferojn al iu ajn, mi jene konkludas pri la racia
@@ -791,6 +845,9 @@ Unicode® Standard 15.1.0 (2023 Sept. 12). [[https://www.unicode.org/versions/Un
 
 [fn:Inko] I. Turgenjev, tradukis Kabe. Patroj kaj filoj. Inko Tyresö, 2001.
 
+[fn:EGE] Edmund Grimley Evans. Niaj citiloj. /La Brita Esperantisto,/
+№ 990, Printempo 2021.
+
 [fn:Uni06] Unicode® Standard 15.1.0 (2023 Sept. 12). [[https://www.unicode.org/versions/Unicode15.0.0/ch06.pdf][Chapter 6]].
 
 [fn:UD] Unicode Data [[https://www.unicode.org/Public/UCD/latest/ucd/UnicodeData.txt][UDC.txt]].
@@ -810,6 +867,12 @@ signifojn de MES-1 ĝi disponigas.)
 [fn:ehxo] Ekzamenante la tiparojn mi rimarkis, ke la kutima testfrazo
 pri la signoj speciale Esperantaj estas nekompleta, kaj mi jene ĝin
 ŝanĝis: =Eĥoŝanĝʼ ĉiuĵaŭde= (por testi ankaŭ la literan apostrofon).
- 
+
+[fn:Exc] La ekzemplo estas reala preseraro el «[[https://eo.wikisource.org/wiki/El_Parnaso_de_Popoloj/Excelsior][Excelsior]]» de
+Longfellow/Grabowski.
+
 #  LocalWords:  tajpila-Askia BC CP Bazarov memreprezentaĵo MES Vimo
+#  LocalWords:  antaŭapostrofa
+
+* Footnotes
 

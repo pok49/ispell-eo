@@ -145,7 +145,8 @@ Advento/O
 adverba/E
 adverbigi/X
 adverbo/O
-advokata/ACFKV
+advokata/AV
+advokato/CFK
 aera/AsP
 aeralarmo/AO
 aerarmeo/AOW
@@ -432,6 +433,7 @@ akvopesto/AO
 akvopilko/AO
 akvopipo/AO
 akvoplantago/AO
+akvoplena/A
 akvopoto/AO
 akvoprenejo/AO
 akvorado/AO
@@ -462,8 +464,8 @@ Alaskon/X
 alaŭdfalko/AO
 alaŭdo/AO
 alaŭdosprono/AO
-albana/FGQ
 albanlingva/CEUWY
+albano/FGQ
 albanujano/FI
 Albanujo/I
 albatroso/AO
@@ -485,7 +487,7 @@ Aleĉjo/AO
 alegorio/AO
 alegreto/AO
 alegro/AO
-aleksandriana/FGIQ
+aleksandriana/FI
 Aleksandro/FI
 Aleksio/AO
 alemano/F
@@ -507,7 +509,7 @@ alfrostigi/OTX
 alfundigi/OTX
 algebra/CE
 algebro/OY
-alĝeriana/FGIQ
+alĝeriana/FI
 Alĝero/I
 algo/AO
 Algolo/AOX
@@ -678,7 +680,7 @@ altstata/EM
 altstatura/EM
 alttemperatura/EM
 alttensia/AMO
-altvalora/EM
+altvalora/Em
 aludi/ABOT
 alumeto/AHO
 aluminiato/AO
@@ -720,7 +722,7 @@ amaventuroj/AO
 Amazonion/X
 amazono/AO
 ambasado/AJO
-ambasadora/CFJ
+ambasadoro/CFJ
 ambaŭ
 ambaŭfoja/A
 ambaŭloka/A
@@ -760,8 +762,8 @@ amhistorio/AO
 ami/ABDFGMT
 amika/E
 amikeco/AMO
-amiki/GMQVBY
-amiko/MFx
+amiki/BGMQVY
+amiko/FKMx
 amimpliko/AO
 aminda/AMO
 amindumi/ABOTY
@@ -805,14 +807,13 @@ amvendi/ASV
 amversaĵo/AO
 amvorta/AO
 anabaptisme/S
-ana/CFGKQV
 anaforo/AO
 anagramo/AO
 anaĥoreto/AO
 Anakreonon/AX
 anakronismo/AO
 Anaksagoron/AX
-analfabeta/CF
+analfabeto/CF
 analgeziko/AO
 analgezion/AX
 analitiko/AO
@@ -841,6 +842,7 @@ Anatolo/I
 anatome/I
 anatomia/CE
 anatomiisto/F
+ana/V
 anĉharmoniko/AO
 anĉovo/AO
 andaluza/FGQ
@@ -929,13 +931,14 @@ ankri/MTQ
 ankrokablo/AO
 ankrumi/AOV
 Anno/AO
+ano/CFGKQV
 anomalio/AO
 anonci/AGOSTz
 anoncletero/AO
 anonco/e
 anonctabulo/AO
 anoncvorto/AO
-anonima/FC
+anonima/ACUY
 anorako/AO
 anpriskribo/AO
 anrilato/AO
@@ -1140,7 +1143,7 @@ arbetaĵaro/AO
 arbeto/AKOY
 arbisto/cF
 arbitracii/AOT
-arbitra/FCY
+arbitro/ACOY
 arbo/AO_^
 arbofeo/F
 arbofolio/AO
@@ -1193,7 +1196,7 @@ Arioston/AX
 Aristarkon/AX
 Aristidon/AX
 Aristofanon/AX
-aristokrata/ACKF
+aristokrato/ACFK
 aristotela/A
 Aristotelon/X
 aritmetiki/ASOVY
@@ -1318,7 +1321,7 @@ asiria/AW
 Asirion/X
 asisti/FV
 aŝkenazo/F
-asketa/CFZ
+asketo/CFZ
 askia/AGLPY
 Askion/X
 Askio-tabelo/AO
@@ -1482,8 +1485,8 @@ aŭtodafeo/AO
 aŭtografo/AO
 aŭtoĥtono/F
 aŭtokorno/AO
-aŭtokrata/FCZ
 aŭtokratio/AO
+aŭtokrato/CFZ
 aŭtomata/E
 aŭtomatizi/AOT
 aŭtomato/GOQ
@@ -1538,10 +1541,10 @@ avizi/ABOT
 avizletero/AO
 avizotabulo/AO
 avo/eFu
-azena/FGSY
 azendorsa/A
 azenido/F
 azenkardo/AO
+azeno/FGSY
 azerbajĝana/FGQ
 azerbajĝanujano/FI
 Azerbajĝanujo/I
@@ -1714,7 +1717,7 @@ barata/AW
 Baraton/X
 barbada/AW
 Barbadon/X
-barbara/CEFQY
+barbaro/CEFQY
 barbhava/A
 barbiro/AO
 barblano/AO
@@ -1749,8 +1752,8 @@ barnaula/AW
 Barnaulʼ/X
 baroka/ACOY
 barometro/AO
-barona/CFH
 baroneto/F
+barono/CFH
 barsablaĵo/AO
 Bartolomeo/AO
 bartrabo/AO
@@ -2035,7 +2038,7 @@ bitumi/OCT
 bitumozo/AO
 bivakfajro/AJO
 bivaki/AOVB
-bizanciana/FGIQ
+bizanciana/FI
 bizanciismo/AOS
 Bizanco/I
 bizanto/AO
@@ -2048,7 +2051,8 @@ Bjelarusujo/I
 bjelostoka/AW
 Bjelostokon/X
 bla-bla
-blagi/AOVB
+blaga/As
+blagi/BOUV
 blanka/ACeGOQUVY
 blankfikso/AO
 blankfiŝo/AO
@@ -2074,7 +2078,7 @@ blindludo/AO
 blindulo/J
 blindumo/AO
 blizardo/AO
-blogo/AOSU
+blogo/AOSUY
 blokado/AO
 bloka/EeNn
 bloki/LT
@@ -2257,10 +2261,9 @@ Bostonon/X
 bota/AOS
 botaniki/ASOVY
 botaŭro/F
-botela/AHO
 botelkorko/AO
 botelkukurbo/AO
-botelo/e
+botelo/AeHO
 botelverda/A
 boto/e
 bototirilo/AO
@@ -2268,13 +2271,13 @@ botpurigi/ASV
 bottirilo/AO
 Boulogne-sur-Mer
 Boulton
-bova/FJKSY
 bovbatalo/AO
 bovido/FY
 bovinbleko/AO
-bovino/S
+bovino/AJKOS
 bovledo/AO
 bovlo/AO
+bovo/AJKOSY
 bovokulo/AO
 bovoviro/AO
 Brabanton/X
@@ -2493,6 +2496,7 @@ bulĉapelo/AO
 buldogo/AO
 Bulea/A
 buleo/AO
+Bulgakov
 bulgara/CFGQY
 bulgara-esperanta/A
 bulgara-makedona/A
@@ -2532,7 +2536,7 @@ Burkino/O
 burko/AO
 burleska/AUO
 burnuso/AO
-burokrata/ACFKYZ
+burokrato/ACFKYZ
 buroo/AO
 burunda/AW
 Burundon/X
@@ -2755,6 +2759,7 @@ Celsion/X
 celstango/AO
 celstato/AO
 celtabulo/AO
+celtrafa/AC
 celtruo/AO
 celulozo/AO
 ĉelveturilo/AO
@@ -2986,7 +2991,7 @@ ciona/ASZ
 Cionon/X
 ĉiopova/AU
 ĉioscia/AU
-ĉioscianta/AF
+ĉioscianto/F
 ĉiovendejo/AO
 ĉiovora/A
 ci/P
@@ -3323,7 +3328,7 @@ delegi/AOT
 delegito/cFK
 delfeno/AO
 deliberigi/AOTX!
-delica/AOY
+delico/AOY
 delikata/ACMUY
 delikatega/ACMUY
 delikatsenta/A
@@ -3341,9 +3346,9 @@ demenco/AOU
 Demetrio/AO
 demisii/AOVB
 demografe/FIS
-demokrata/ACFK
 demokratia/CEM
 demokratio/GOQ
+demokrato/ACFK
 Demokrito/AO
 demona/AGOQZ
 demonhavanto/F
@@ -3570,7 +3575,7 @@ dikti/TY
 diktola/A
 dikventra/AU
 dilemo/AO
-diletanta/FC
+diletanto/CF
 diligenti/ACMUVO
 dilui/ALOT
 diluva/A[
@@ -3852,7 +3857,7 @@ domkonstrua/A
 domkovri/ASV
 dommastro/F
 dommastrumado/AO
-domo/AeO
+domo/AeKO
 domobjekto/AO
 domparto/AO
 dompasero/AO
@@ -3963,6 +3968,7 @@ drola/A
 dromedaro/AO
 droni/GV
 droŝko/AO
+druido/AO
 druzo/F
 dua/AOCGQX
 duafoja/A
@@ -4089,7 +4095,7 @@ eduka/As
 edukarto/AO
 edukebla/AO
 eduki/FJLOQRST
-edukita/CEF
+edukito/CEF
 edukmaniero/AO
 eduksistemo/AO
 edza/CEGQrsx
@@ -4708,7 +4714,7 @@ entranĉi/AOT
 entrepreni/ABSJOT
 entropio/AO
 entrudiĝi/OUV
-entrudi/T!
+entrudi/TY!
 entuta/A
 entuziasmi/AGOQUVB
 enua/AMGO
@@ -4951,7 +4957,7 @@ etapa/An
 etapo/O
 etato/AO
 etbieno/AUO
-etburĝa/F
+etburĝo/CF
 etdetala/A
 etendi/AOQTYz
 etendu/lT
@@ -5101,6 +5107,7 @@ fajrohoko/AO
 fajrohundo/AO
 fajroĵeti/AL
 fajroloko/AO
+fajrolumo/AO
 fajroplato/AO
 fajroprenilo/AO
 fajropunkto/AO
@@ -5619,7 +5626,7 @@ flamĵetilo/AO
 flamo/e
 flamstilo/AO
 flamu/AGkV
-flandra/CFGQY
+flandro/CFGQY
 flandrujano/FI
 Flandrujo/I
 flanelo/AO
@@ -5631,6 +5638,7 @@ flankengliti/AV
 flankeniri/AV
 flankenĵetiĝo/AO
 flankensalti/AOV
+flankenŝovi/AOQT
 flankigi/dfAOTXz
 flanki/OT
 flankkanalo/AO
@@ -6056,12 +6064,12 @@ Fritaŭnon/X
 friti/ALTY
 fritkuko/AO
 frivola/ABCMOUY
-frizi/AJOSTY
+frizi/AJLOSTY
 frizosalono/AO
 frizpapereto/AO
 frizpinglo/AO
 froko/AOU
-fromaĝa/AJOS
+fromaĝo/AJOS
 frondo/AKO
 Frondon/AX
 frontflanko/AO
@@ -6118,7 +6126,7 @@ fruktotenejo/AO
 fruktuzi/AOT
 frumateno/AO
 frumatura/A
-frunaskita/CF
+frunaskito/CF
 frunokta/AM
 frunto/AO
 frustadia/A
@@ -6155,7 +6163,7 @@ fulmosuĉilo/AO
 fulmotondri/AOV
 fulmrapida/A
 fumaĵi/LT
-fumanta/EF
+fumanto/EF
 fumellasilo/AO
 fumi/AOULQTJHY
 fumizi/AOT
@@ -6166,7 +6174,7 @@ fumnigro/AO
 fumplena/A
 fumŝranko/AO
 fumtubo/AO
-fumula/EF
+fumulo/EF
 funafutia/AW
 Funafution/X
 fundamenta/CEqsw
@@ -6240,7 +6248,7 @@ gaborona/AW?
 Gaboronon/X?
 Gabrielo/AO
 gado/AO
-gaela/CFGQY
+gaelo/CFGQY
 Ĝafaro/AO
 gago/AO
 gainkorseto/AO
@@ -6375,7 +6383,7 @@ gasttradukilo/AO
 gasumi/AOT
 gaŭĉo/AO
 gaŭĝkrano/AO
-gaŭla/F
+gaŭlo/F
 gaŭlujano/FI
 Gaŭlujo/I
 gaŭsa/A
@@ -6756,9 +6764,9 @@ Gorecka/A
 gorĝo/AeO
 Ĝorĝtaŭnon/X
 gorilo/F
-gota/AF
 gotika/CE
 gotiko/OY
+goto/F
 Grabowski
 graca/AOU
 gracio/ACMOU
@@ -6766,7 +6774,6 @@ gracostato/AO
 grada/ACNnw
 gradiento/AO
 grado/GKOQ
-grafa/CF
 grafeiko/AO
 grafemo/AO
 grafeo/AO
@@ -6774,6 +6781,7 @@ grafikilo/AO
 grafiko/AOSY
 grafitio/AO
 grafito/AO
+grafo/CF
 grafologe/FIS
 grafujo/AOW
 grajno/ACeGOQY
@@ -6832,7 +6840,7 @@ grapolo/AO
 grasa/ACem
 grasaĉa/A
 grasmalpura/A
-graso/AeMO
+graso/AeGMOQ
 grasumi/AOT
 grati/ALY
 gratifiki/AOT
@@ -6859,17 +6867,17 @@ gregigi/AjOTX
 gregoria/A
 Gregorio/O
 grejso/AO
-greka/CEFY
 greka-latina/A
 greka-persa/A
 greka-romia/A
 greka-rusa/A
 grekdevena/E
 grekigi/TX
-grekkatolika/CFGQY
+grekkatoliko/CFGQY
 greklanda/AW
 Greklando/AO
 greklingva/CEWUY
+greko/CEFY
 grekujano/FI
 Grekujo/I
 grena/AOJ
@@ -7040,7 +7048,7 @@ haktransformilo/AO
 haku/AdfkloTz÷
 haladzi/AGOQV
 halanĝo/AO!
-ĥaldea/CFGQY
+ĥaldeo/CFGQY
 halebarda/ASO
 haleluji/AOV
 ĥalifo/ACHO
@@ -7272,7 +7280,7 @@ herdo/AO
 hereda/ACGOY
 heredi/FjT
 herezi/ACOVBY
-herezula/cF
+herezulo/cF
 Herkulo/AO
 hermafrodita/AOC
 Hermano/AO
@@ -7280,10 +7288,10 @@ hermeta/A
 hermetika/A
 Hermito/AO
 hernio/AO
-heroa/FCY
 Herodo/AO
 Herodoto/AO
 heroldi/AOT
+heroo/FCY
 Herostrato/AO
 herso/AO
 Ĥersono/AO
@@ -7337,8 +7345,8 @@ Himalajon/AX
 himnadi/V
 himno/AKO
 hinda-araba/A
-hinda/CFGQY
 hindeŭropa/E
+hindo/CFGQY
 hindujano/FI
 Hindujo/I
 hinduo/FZ
@@ -7376,11 +7384,11 @@ hirundovosta/AU
 hisi/AhLOT
 hiskiamo/AO
 hisopo/AO
-hispana/FQYG
 hispana-germana/A
 hispandevena/A
 hispanhundo/F
 hispanlingva/AW
+hispano/FQYG
 hispanujano/FI
 Hispanujo/I
 histeria/AOU
@@ -7566,19 +7574,18 @@ humurplena/A
 humursento/AO
 humurversa/AOY
 hundaĉo/AO
-hunda/FHJKS
 hundama/AO
 hundherbo/AO
 hundido/F
 hundkapa/AU
 hundlango/AO
-hundo/e
+hundo/eFHJKS
 hundraso/AO
 hundrozo/AO
-hungara/CFGQY
 hungardevena/A
 Hungarlandon/AX
 hungarlingva/AW
+hungaro/CFGQY
 hungarujano/FI
 Hungarujo/I
 huno/F
@@ -7602,7 +7609,7 @@ iamaniera/A
 iam-tiam
 iasenca/A
 iaspeca/A
-ibera/CFGQY
+ibero/CFGQY
 iberujano/FI
 Iberujo/I
 ibiso/AO
@@ -7857,8 +7864,8 @@ infuzorio/AO
 inĝ
 ingadnivelo/AO
 inĝenia/ACMO
-inĝeniera/cEFO
 inĝenieri/KV
+inĝeniero/cEFO
 in-genro/AO
 ingi/AGOQT
 ingredienco/AO
@@ -7909,7 +7916,7 @@ insolenta/A!
 inspekti/ST
 inspektoro/F
 inspiri/AOQT
-inspirita/FC
+inspirito/CF
 inŝriko/AO
 instalaĵo/AO
 instali/LMS
@@ -7981,8 +7988,6 @@ interkolono/AO
 interkompreni/ALQTY
 interkomuniki/AGQV
 interkona/AGOQV
-interkonateco/AO
-interkonatigi/AOTX
 interkonfuzi/AOT
 interkonsenti/AOT
 interkonsiliĝi/AOV
@@ -8051,12 +8056,12 @@ intrareto/AO
 intravejna/A
 intrigi/BUV
 intrigo/AcO
-intuicia/Aq
+intuicia/Eq
 intuicio/OZ
 intuicisenca/A
 inundi/AOT
 invadi/ABOT
-invalida/FC
+invalido/CF
 invarianto/AO
 inventari/AOT
 inventi/ABOSTY
@@ -8071,7 +8076,7 @@ inversmaniera/A
 inversvica/A
 investi/AOT
 inviti/AMLOT
-invitita/CEF
+invitito/CEF
 invitkarto/AO
 invitkroĉi/T
 invitletero/AO
@@ -8135,11 +8140,11 @@ iŝtara/A
 Iŝtarʼ/X
 is-tenso/AO
 istmo/AO
-itala/CFGQY
 itala-germana/A
 italdevena/A
 itallingva/A
 italmaniera/A
+italo/CFGQY
 italujano/FI
 Italujo/I
 iteraciĉapo/AO
@@ -8210,9 +8215,9 @@ jankio/F
 jansena/AWZ
 Jansenon/X
 januaro/AO
-japana/CFGQY
 japandevena/E
 japaneska/AY
+japano/CFGQY
 japanujano/FI
 Japanujo/I
 jara/ANnQU
@@ -8414,7 +8419,7 @@ jurmedicino/AO
 ĵurrompi/AOV
 jurto/AO
 ĵusa/AMXY
-ĵusbakita/F
+ĵusbakito/F
 ĵusnaskito/F
 juso/O
 justa/CEMOUY
@@ -8619,11 +8624,12 @@ Kampalon/X
 kampanjo/AO
 kamparano/F
 kampatingo/AO
-kampi/JKOSUV
+kampi/JV
 kampintenso/AO
 kamplaboro/AOS
 kamplimo/AO
 kamplisto/AO
+kampo/eKOSU
 kampomagneto/AO
 kampomuso/AO
 kamufli/AOT
@@ -8666,7 +8672,7 @@ kanjono/AO
 kankro/AO
 kanona/CE
 kanoni/GKOSV
-kanonika/KFC
+kanonika/CK
 kanoniko/cF
 kansasa/AW
 Kansason/X
@@ -8750,7 +8756,7 @@ kaptebla/EOY
 kaptermino/AO
 kapti/ABOLRQSTY
 kaptilisto/F
-kaptita/FCJY
+kaptita/CJY
 kaptito/jF
 kaptoŝnuro/AO
 kaptu/fklTv
@@ -8821,7 +8827,7 @@ kardiopatio/AO
 kardlano/AO
 kardomaŝino/AO
 karega/E
-karela/F
+karelo/F
 karelujano/FI
 Karelujo/I
 karesformo/AO
@@ -8989,7 +8995,7 @@ Katmanduon/X
 katodradia/A
 kato/Fx
 katokulo/AO
-katolika/FKCZ
+katoliko/CFKZ
 Katono/AO
 Katulo/AO
 katuno/AO
@@ -9018,7 +9024,7 @@ kavigi/lOTvX
 kavi/GQ
 kavo/e
 kaza/AiNn_
-kazaĥa/CFGQY
+kazaĥo/CFGQY
 kazaĥujano/FI
 Kazaĥujo/I
 Kazbeko/OX
@@ -9044,10 +9050,9 @@ ke
 kebekia/AW
 Kebekion/X
 kefiro/AO
-kegla/AKO
+keglo/AKO
 kejlo/AO
 kekso/AO
-kela/AKSO
 keletaĝo/AO
 kelka/AO
 kelkarcero/AO
@@ -9060,7 +9065,8 @@ kelkjara/AU
 kelkmil
 kelktempa/A
 kelnero/cF
-kelta/CFGQY
+kelo/AKSO
+kelto/CFGQY
 Keltujo/I
 kelvina/A
 Kelvinon/X
@@ -9112,7 +9118,7 @@ kilociklo/AO
 kilogramo/AO
 kilometro/AhO
 kimono/AO
-kimra/CFGQY
+kimro/CFGQY
 kimrujano/FI
 Kimrujo/I
 Kindlo/AO
@@ -9141,7 +9147,7 @@ kiraskesto/AO
 kirasplato/AO
 kirastrupo/AO
 kirasulo/AO
-kirgiza/CFGQY
+kirgizo/CFGQY
 kirgizujano/FI
 Kirgizujo/I
 kiribata/AW
@@ -9240,7 +9246,8 @@ Kleopatra/AO
 klera/CEhmOUY
 klerega/EMOU
 kleriga/JS
-klerika/CEFK
+klerika/CEK
+kleriko/FK
 klero/GQZ
 klienta-servila/A
 kliento/KF
@@ -9347,6 +9354,7 @@ kodogenerilo/AO
 kodono/AO
 kodoprezento/AOY
 kodpaĝo/AO
+kodpozicio/AO
 kodrompisto/F
 kodŝanĝo/AO
 kodsistemo/AO
@@ -9504,7 +9512,7 @@ komblano/AO
 komedii/ASOV
 komediverki/SV
 komenca/Ads
-komencantula/F
+komencantulo/F
 komencaspekta/A
 komencen
 komenci/ROQTY
@@ -9573,7 +9581,7 @@ komplemento/cO
 kompleta/CEGMOQ
 kompletorio/AO
 komplezi/ABOV
-komplica/FV
+komplica/CFV
 kompliki/ACOQTY
 kompliklimo/AO
 komplikmezuro/AO
@@ -9657,7 +9665,8 @@ komunvorto/AO
 komuti/AOLSTY
 konakria/AW
 Konakrion/X
-konata/CEFGKQUY
+konata/CGQrV
+konato/CEFKUY
 koncedi/ABOT
 koncentri/AJMOQT
 koncentrita/CE
@@ -9766,7 +9775,7 @@ konkordanco/AO
 konkordato/AO
 konkordi/AGOMV
 konkreta/AGMQY
-konkuba/CF
+konkubo/CF
 konkurboato/AO
 konkurenci/AOUV
 konkuri/ABOV
@@ -9853,7 +9862,7 @@ konstruprincipo/AO
 konstruŝtono/AO
 konstruteĥniko/AO
 konstruu/AGQRTvY_^
-konsula/FCJ
+konsulo/CFJ
 konsulti/AQTJ
 konsultlibro/AO
 konsumebla/EO
@@ -9985,7 +9994,7 @@ kopikadro/AO
 kopirajtindiko/AO
 kopirajto/AOY
 kopiu/AlOTy÷
-kopta/CFGQY
+kopto/CFGQY
 kopulo/AO
 kora/Al[`
 koracio/F
@@ -10004,7 +10013,6 @@ kordinstrumento/AO
 kordito/AO
 kordoloro/AO
 kordo/O
-korea/CFGQY
 koreco/AO
 koregono/AO
 korekscita/AO
@@ -10017,6 +10025,7 @@ korektita/CE
 korektofara/A
 korelacia/AOY
 korelativa/ACOY
+koreo/CFGQY
 korespondi/AFOSVY
 koreujano/FI
 Koreujo/I
@@ -10128,7 +10137,7 @@ kovrilplato/AO
 kovropovo/AO
 kovrotiri/T
 kovrotuko/AO
-kozaka/CFGQY
+kozako/CFGQY
 kp
 KPSU
 krabo/AO
@@ -10214,7 +10223,7 @@ krestomatia/AOY
 krestopunkto/AO
 krestovaloro/AO
 kreta/AOY
-kretena/CFY
+kreteno/CFY
 kretono/AO
 kretpeco/AO
 krevi/AGOVz
@@ -10272,7 +10281,7 @@ krizantemo/AO
 krizo/AOCQ
 krizokaza/A
 krizolito/AO
-kroata/CFGQY
+kroato/CFGQY
 kroatujano/FI
 Kroatujo/I
 kroĉeti/LTY
@@ -10526,7 +10535,7 @@ kurbiĝema/AO
 kurbirdo/AO
 kurbo/AGQs
 kurĉasi/AOT
-kurda/CFGQY
+kurdo/CFGQY
 kurdromedaro/AO
 Kurdujo/I
 kuregi/flVv
@@ -10748,15 +10757,15 @@ lago/AeO
 Lagranĝon/AX
 lagro/AO
 laguno/AO
-laika/CFK
+laiko/CFK
 lakei/ACJKOTV
 lakeo/e
 laki/AOTY
 lakledo/AO
 lakmuson/AX
 lakona/ACSZ
-laksa/AGMO
 laksetigi/ATO
+lakso/AGMO
 laktacido/AO
 laktalbumino/AO
 lakti/ACSOVJY
@@ -10841,7 +10850,7 @@ lapidara/AO
 lapiso/AO
 laplacaĵo/AO
 lapo/AO
-lapona/F
+lapono/F
 lardero/AO
 lardhaŭto/AO
 lardi/AOLT
@@ -10917,8 +10926,8 @@ latkurteno/AO
 latlatiso/AO
 lato/e
 latuna/AOY
-latva/CFGQY
 latvia/AW
+latvo/CFGQY
 latvujano/FI
 Latvujo/I
 laŭbo/AO
@@ -11278,6 +11287,7 @@ lingvero/AO
 lingvevolua/AGO
 lingvistiko/AOr
 lingvo/cKOrSuW
+lingvodependa/A
 lingvoelemento/AO
 lingvoevoluo/AGO
 lingvofamilio/AO
@@ -11407,7 +11417,7 @@ lito/AeOY
 litografi/ASTY
 litografio/AO!
 litoto/AO
-litova/CFGQY
+litovo/CFGQY
 litovujano/FI
 Litovujo/I
 litpelvo/AO
@@ -11489,8 +11499,8 @@ lokŝpara/A
 lokucio/AO
 lokumi/AT
 lolo/AO
-lombarda/CFGQY
 lombardi/JST
+lombardo/CFGQY
 Lombardujo/I
 lomea/AW
 Lomeon/X
@@ -11526,6 +11536,7 @@ loterio/AO
 loti/AEOVY
 lotumi/AOT
 lotuso/AO
+Löwenstein
 loza/E
 lozanĝo/AO
 LR
@@ -11816,6 +11827,7 @@ malklera/AGQ
 malkompakta/L
 malkompreni/AQT!
 malkomuna/CEY
+malkoni/T
 malkontinua/CE
 malkorki/T
 malkovri/AORT
@@ -12022,7 +12034,7 @@ markezo/AO
 markhava/A
 marki/ALOTz
 markita/CEY
-markiza/CFH
+markizo/CFH
 marko/AOY
 markolbaso/AO
 markolo/AO
@@ -12173,11 +12185,11 @@ maturaĝa/AUO
 matutino/AO
 Maŭ
 maŭisme/S
-maŭra/CFGQY
 maŭricia/AW
 Maŭricion/X
 maŭritania/AW
 Maŭritanion/X
+maŭro/CFGQY
 maŭrujano/FI
 Maŭrujo/I
 maŭzoleo/AO
@@ -12621,7 +12633,7 @@ militi/AkqrV
 militiri/AOV
 militistaro/AO
 militizi/AO
-militkaptita/CF
+militkaptito/CF
 militkazo/AO!
 militkrimo/AO
 militkrio/AO
@@ -12813,7 +12825,7 @@ mokvorto/AO
 mola/ACGMQY
 molaĉa/AO
 molanaso/AO
-moldava/CFGQY
+moldavo/CFGQY
 moldavujano/FI
 Moldavujo/I
 molekula/ENn
@@ -12882,7 +12894,7 @@ monedo/AO
 monero/AO
 monfalsi/ASV
 monfarejo/AO
-mongola/CFGQY
+mongolo/CFGQY
 mongolujano/FI
 Mongolujo/I
 monhelpo/AO
@@ -12896,7 +12908,7 @@ monkonko/AO
 monkrizo/AO
 mono/AGHO
 monofero/AO
-monofizita/CFYZ
+monofizito/CFYZ
 monogamio/AO
 monogramo/AO
 monojdo/AO
@@ -12951,7 +12963,7 @@ morala/CEmY
 moraladmono/AO
 moralinstruo/AO
 moralo/OSZ
-morava/CFGQY
+moravo/CFGQY
 moravujano/FI
 Moravujo/I
 morbilo/AO
@@ -12990,7 +13002,7 @@ morti/BDO
 mortigi/ALOS
 mortigu/fT
 mortinsidi/AOV
-mortinta/CFJUY
+mortinto/CFJUY
 mortjaro/AO
 mortmalsano/AO
 mortnaskito/F!
@@ -13096,6 +13108,7 @@ multreligia/A
 multrilata/A
 multsenca/E
 multuzi/AT
+multvalora/Em
 multvorta/AM
 mumio/AGOQ
 munĥena/AW
@@ -13186,7 +13199,7 @@ naĝokostumo/AO
 naĝomembrano/AO
 naĝveturilo/AO
 naiva/CEeOUY
-najbara/FCVY
+najbara/CFVY
 najbarlisto/AO
 najbarmatrico/AO
 najli/aMT
@@ -13198,8 +13211,8 @@ najtingalo/AO
 namibia/AW
 Namibion/X
 Namibon/AX
-nana/CF
 nankeno/AO
+nano/CF
 napalmo/AO
 napola/AW
 Napoleono/AO
@@ -13337,7 +13350,7 @@ neforgesumino/AO
 neformala/A
 neforta/ACO
 nefortika/A
-nefranca/AF
+nefranco/AF
 nefunkciado/O
 neĝa/AOV
 negacio/AO
@@ -13362,8 +13375,8 @@ neĝopluvo/AO
 neĝoŝtormo/AO
 neĝoŝuo/AO
 neĝplugilo/AO
-negra/CFS
 neĝreĝino/AO
+negro/CFS
 neĝulo/F
 neĝusta/AC
 neĝventego/AO
@@ -13374,7 +13387,7 @@ nei/AOV
 neideala/A
 neignorebla/AO
 neinda/A
-neinformita/F
+neinformito/F
 neinteligenta/A
 neinternacia/A
 neizomorfa/A
@@ -13691,7 +13704,7 @@ normallingva/A
 normalmaniera/A
 normalsenca/A
 normalvoĉa/E
-normanda/CFGQY
+normando/CFGQY
 normandujano/FI
 Normandujo/I
 normano/F
@@ -13705,7 +13718,7 @@ normomarki/T
 normotipo/AO
 normovokalo/AO
 normumi/AOT
-norvega/CFGQY
+norvego/CFGQY
 norvegujano/FI
 Norvegujo/I
 nostalgio/AO
@@ -13769,7 +13782,7 @@ novluno/AO
 Nov-Meksikion/X
 novmoda/AMUY
 novmonda/AM
-novnaskita/CF
+novnaskito/CF
 Nov-Orleanon/AX
 novosibirska/AW
 Novosibirskʼ/X
@@ -14060,6 +14073,7 @@ ondolinia/A
 ondolongo/AO
 ondometro/AO
 ondosigno/AO
+ondosimila/A
 ondresalto/AO
 ondrompo/AOL
 ondumi/AOT
@@ -14402,6 +14416,7 @@ Palatinaton/X
 Palatinon/X
 palatito/AO
 palavri/AOV
+palbruna/A
 paleobotaniko/AOS
 paleografe/FIS
 paleontologe/FIS
@@ -14411,10 +14426,10 @@ Palestinon/X
 paletro/AO
 palinuro/AO
 Palio/AO
-palisa/AKO
 palisandro/AO
-paliso/e
+paliso/AeKO
 palisumi/T
+palkolora/A
 palmo/AO
 palmobranĉo/AO
 palmodimanĉo/AO
@@ -14430,7 +14445,7 @@ palpitacio/AO
 palpserĉi/AT
 palruĝa/A
 palto/AO
-pamfleta/ASO
+pamfleto/ASO
 pamira/AW
 Pamiron/X
 panaceo/AO
@@ -14543,7 +14558,7 @@ pardonebla/EO
 pardoni/BGOQT
 pardonpeti/AOT
 parecbito/AO
-parenca/ACFKQV
+parenco/ACFKQV
 parencorilato/AO
 parentezo/AO
 parfumakvo/AO
@@ -14573,13 +14588,14 @@ paroksismo/AO
 parolarto/AO
 parolata/E
 parolelemento/AO
+parolema/Em
 paroletiketo/AO
 paroleti/OV
 parolfiguro/AO
 parolfilmo/AO
 parolfluo/AO
 parolfragmento/AO
-paroli/ABGjkRrOVy
+paroli/AGjkRrOVy
 parolilo/AO
 parolisto/F
 parolkapablo/AO
@@ -14608,7 +14624,7 @@ partego/AO
 partero/AO
 parteto/AO
 partia/CENn
-partiana/CFQ
+partiano/CFQ
 participo/CEO
 partiestro/F
 partigi/AOTXz
@@ -14688,10 +14704,10 @@ pasto/ACHOY
 pastopeco/AO
 pastoralo/AO
 pastoro/F
-pastra/cFC
 pastrido/F
 pastrigi/ATXx
-pastri/KCQV
+pastri/KQV
+pastro/CcF
 pasumi/V
 pasvorto/AO
 pata/AOV
@@ -14711,7 +14727,7 @@ patricio/F
 Patriko/AO
 patrina/CVZ
 patrinadon/X
-patriota/FZ
+patrioto/FZ
 patro/Fhu
 Patroklo/AO
 patrolanda/AOW
@@ -15091,7 +15107,7 @@ pinto/MO
 pintumo/AO
 pioĉi/AOT
 pioĉo/e
-pionira/KF
+pioniro/KF
 pipo/AO
 piprarbedo/AO
 pipri/AOTH
@@ -15602,8 +15618,8 @@ portreta/AbO
 portreti/ST
 portseĝo/AO
 portu/AdfjloRTtvz_
-portugala/CFGQY
 portugallingva/AUW
+portugalo/CFGQY
 portugalujano/FI
 Portugalujo/I
 portvino/AO
@@ -16001,7 +16017,7 @@ profani/AMOQTUY
 profesia/Ew
 profesias/V
 profesio/OSU
-profesora/CFV
+profesoro/CFV
 profeti/VYZ
 profeto/F
 profili/AhOTY
@@ -16204,9 +16220,9 @@ pruntepreni/AOT
 prunti/AadOTYy
 pruntkaso/AO
 pruntvorto/AO
-prusa/FGQ
 prusia/AW
 pruso/F
+pruso/FGQ
 prusujano/FI
 Prusujo/I
 pruvebla/EO
@@ -16317,7 +16333,8 @@ pundomo/AO
 pundosigno/AO
 puni/DQT
 punkta/ACNnY
-punkti/AOTSZ
+punkteto/AO
+punkti/ATSZ
 punkto/AcKO
 punktofrapi/LT
 punktokomo/AO
@@ -16469,7 +16486,7 @@ rakedo/AO
 raketa/AOq
 raketi/V
 rako/AO
-rakonti/AORST
+rakonti/AkORST
 rakontita/EY
 rakonto/AcO
 rakontoĉeno/AO
@@ -16549,7 +16566,7 @@ ravi/AOQT
 ravina/AGOQ
 ravioloj/O
 ravita/CEO
-razi/LST
+razi/fLST
 razpeniko/AO
 razrimeno/AO
 rea/AP
@@ -17016,6 +17033,7 @@ rivelita/E
 rivera/AHO
 riverbordo/AO
 riverenci/AOV
+riverfluo/AO
 rivernomo/AO
 rivero/e
 rivolui/AOV
@@ -17068,7 +17086,7 @@ romcifera/A
 Romeo/AO
 romia/AW
 romiano/F
-romkatolika/CFYZ
+romkatoliko/CFYZ
 Romo/I
 rompebla/EO
 rompi/AdflOQrTYz÷
@@ -17193,7 +17211,7 @@ rulumi/AOT
 rulumskalo/AO
 rulvolvaĵo/AO
 ruma/AOJ
-rumana/CFGQY
+rumano/CFGQY
 rumanujano/FI
 Rumanujo/I
 runo/AO
@@ -17258,16 +17276,16 @@ sacerdoto/AO
 Saĉjo/AO
 sadisme/S
 sadomasoĥisme/S
-sadukea/CFZ
+sadukeo/CFZ
 SAEST
-ŝafa/KFSJY
 ŝaffelo/AO
 ŝaffemuraĵo/AO
 ŝafhundo/AO
 ŝafido/F
 safiro/AO
 ŝaflano/AO
-ŝafpaŝtista/F
+ŝafo/KFJSY
+ŝafpaŝtisto/F
 safrani/AOT
 ŝafripaĵo/AO
 ŝafrostaĵo/AO
@@ -17578,7 +17596,7 @@ sapŝtono/AO
 sapumi/T
 sapveziko/AO
 Sara/A
-saracena/F
+saraceno/F
 ŝarado/AO
 sarajeva/AW
 Sarajevon/X
@@ -17612,7 +17630,7 @@ sarki/DLT
 sarkofago/AO
 sarkomo/AO
 Sarlandon/X
-sarmata/CFGQY
+sarmato/CFGQY
 Sarmatujo/I
 Sasano/AO
 SAT
@@ -17620,7 +17638,7 @@ sata/ACGMQVO^
 SAT-a/AOW
 satana/ASZ
 Satano/AO
-ŝatanta/AFM
+ŝatanto/AFM
 ŝatata/CE
 satdormi/V
 satega/AMOV^
@@ -17847,8 +17865,8 @@ semestra/AN
 semestro/O
 semgrajno/AO
 semi/ALOY
-ŝemida/F
-ŝemidlingva/AUW
+ŝemidlingva/EUW
+ŝemido/EF
 seminaria/AOW
 semiotiko/AOS
 Semiraman/X
@@ -18144,7 +18162,7 @@ senroka/AGQ
 senrompa/A
 senruba/ALG
 senrusta/AGQ
-sensacia/ABCO
+sensacia/ABCOY
 sensaĝa/ACU
 sensala/AGQ
 senŝanĝa/E
@@ -18230,8 +18248,8 @@ Septuaginto/O
 sepulti/AJOT
 serafo/AO
 serajlo/AO
-serba/CFGQY
 serba-kroata/A
+serbo/CFGQY
 serbujano/FI
 Serbujo/I
 ŝerca/E
@@ -18307,7 +18325,7 @@ severega/A
 Sevilon/X
 sevrugo/AO
 sezonciklo/AO
-sezono/AcOr[]
+sezono/AcMOr[]
 sferdisko/AO
 sferkojno/AO
 sfero/AChO
@@ -18506,6 +18524,7 @@ sinkopo/AO
 sinkretismo/AO
 sinkrona/ACL
 sinkronigi/AMOTX
+sinlaŭda/A
 sinmortigo/AO
 s-ino/AO
 sino/AO
@@ -18566,7 +18585,7 @@ siria/AW
 ŝiri/AdflOQTYz
 siriaka/A
 Siriakon/AX
-siriaramea/AO
+siriaramea/A
 siringarbedo/AO
 siringarbeto/AO
 siringo/AO
@@ -18654,7 +18673,7 @@ skipestro/F
 skipo/OW
 skismi/AOUV
 skispuro/AO
-skita/CFGQY
+skito/CFGQY
 skitrako/AO
 Skitujo/I
 skivakso/AO
@@ -18675,11 +18694,11 @@ skopja/AW
 Skopjon/X
 skorbuto/AO
 skorio/AO
-skorpia/AUO
-skota/FGY
+skorpio/AOU
 skotero/AO
 skotlanda/AW
 Skotlandon/X
+skoto/FGY
 skotujano/FI
 Skotujo/I
 skrapeti/AOT
@@ -18753,7 +18772,7 @@ sledi/AOV
 ŝlimfiŝo/AO
 ŝlimi/AOVJ
 ŝlimputo/AO
-slipa/AKOH
+slipo/AHKO
 slogano/AO
 ŝlosfermi/T
 ŝloshoko/AO
@@ -18765,10 +18784,10 @@ slogano/AO
 ŝlosilpozicio/AO
 ŝlosilujo/AO
 ŝlosilvorto/AO
-slovaka/FGQ
+slovako/FGQ
 slovakujano/FI
 Slovakujo/I
-slovena/CFGQYY
+sloveno/CFGQYY
 slovenujano/FI
 Slovenujo/I
 slupo/AO
@@ -18835,7 +18854,7 @@ sofolito/AO
 ŝofori/V
 ŝoforo/F
 Sofronio/AO
-sogda/F
+sogdo/F
 Sogdujo/I
 ŝoguno/AO
 soifi/AOV
@@ -19605,6 +19624,9 @@ Sudorienton/X
 ŝudorso/AO
 sudpolusa/AP
 sudslavo/F
+ŜŬERTĜ
+ŜŬERTĜ-aranĝo/AO
+ŜŬERTĜ-klavaro/AO
 ŝufadeno/AO
 sufera/AGs
 suferi/eGjOT÷
@@ -19667,7 +19689,7 @@ sultano/FH
 ŝultrosigni/AOV
 suma/G
 Sumatron/X
-sumera/F
+sumero/F
 Sumerujo/I
 sumi/ALOQRT
 suna/AOV
@@ -19695,8 +19717,8 @@ sunsubiro/AO
 ŝunti/AOT
 sunumi/AOT
 ŝuo/AhO
-suoma/CFGQY
 suomlingva/AUW
+suomo/CFGQY
 suomugra/A
 suomujano/FI
 Suomujo/I
@@ -19843,10 +19865,10 @@ svazilanda/AW
 Svazilandon/X
 svazio/F
 ŝvebi/AkOVv÷^
-sveda/CFGQY
 svedleda/A
 svedlingva/E
 svedmaniera/E
+svedo/CFGQY
 svedujano/FI
 Svedujo/I
 ŝvelforma/A
@@ -19864,10 +19886,10 @@ svingboato/AO
 svingi/AkLlOQT
 svingomuziki/AOV
 svingpordo/AO
-svisa/CFGQY
 svisgermano/F
 svislanda/AW
 Svislandon/X
+sviso/CFGQY
 Svisujo/I
 ŝvitbani/AJOT
 ŝvitegi/AGOV
@@ -19917,7 +19939,7 @@ tagdaŭro/AO
 tagdeko/AO
 taggazeto/AO
 tagiĝa/AOV
-taĝika/CFGQY
+taĝiko/CFGQY
 taĝikujano/FI
 Taĝikujo/I
 taglabori/AOV
@@ -19933,7 +19955,6 @@ tagordo/AO
 tagservo/AO
 tagvojo/AO
 Taĥon/X
-taja/CFGQY
 tajdo/AO
 tajfuno/AO
 tajgo/AOW
@@ -19943,6 +19964,7 @@ tajlori/T
 tajlorkostumo/AO
 tajloro/F
 Tajmzo/AO
+tajo/CFGQY
 tajpa/AORSvYy
 tajpea/AW
 tajpeca/AO
@@ -20038,11 +20060,11 @@ Taŝkenton/X
 taski/AKOT
 taskreto/AO
 taso/AeO_
-tatara/CFGQY
 tatardevena/A
+tataro/CFGQY
 tatarujano/FI
 Tatarujo/I
-Tatiana/A
+Tatiano/AO
 tatui/OTY
 taŭga/CEMsUY
 taŭgi/MV
@@ -20510,10 +20532,10 @@ titolpaĝo/AO
 titolvorto/AO
 titulara/A
 tiu/P
-tjurka/CFGQY
 tjurkadevena/A
 tjurka-mongola/A
 tjurklingva/A
+tjurko/CFGQY
 tobaga/AW
 Tobagon/X
 tobogano/AO
@@ -20558,6 +20580,7 @@ tondi/dfLlopSTY
 tondofasono/AO
 tondomaŝino/AO
 tondri/AkOV
+tondrobirdo/AO
 tondrodio/AO
 tondujo/AO
 tonforko/AO
@@ -20603,7 +20626,7 @@ torta/AHO
 torto/e
 torturbenko/AO
 torturi/AGJLOST
-toskana/F
+toskano/F
 Toskanujo/I
 tosti/AOV
 totala/AZ
@@ -21039,10 +21062,9 @@ Tudoro/AO
 tufo/AO
 tuja/AOXY
 tujsekva/A
-tuka/Ae[
 tukaĉo/AO
 tukano/AO
-tuko/eO[
+tuko/AeO[
 tukpinĉilo/AO
 tulion/AX
 tuliparbo/AO
@@ -21074,11 +21096,11 @@ turingujano/FI
 Turingujo/I
 Turingʼ/X
 turisme/S
-turka/CFGQY
 turkiso/AO
-turkmena/CFGQY
+turkmeno/CFGQY
 turkmenujano/FI
 Turkmenujo/I
+turko/CFGQY
 turkujano/FI
 Turkujo/I
 turmenti/lQT
@@ -21112,6 +21134,7 @@ tuŝludo/AO
 tuŝŝtono/AO
 tuŝtima/AO
 tuta/CEOY
+tutakademia/A
 tutamerika/A
 tutanima/E
 tutbufra/A
@@ -21166,7 +21189,7 @@ TV-raporto/O
 uagadugua/AW
 Uagaduguon/X
 Ubunton/X
-udmurta/F
+udmurto/F
 udmurtujano/FI
 Udmurtujo/I
 UEA
@@ -21176,7 +21199,7 @@ UEA-skismo/AO
 U-forma/AO
 uganda/AW
 Ugandon/X
-ujgura/F
+ujguro/F
 ujgurujano/FI
 Ujgurujo/I
 ujo/AeO
@@ -21358,8 +21381,8 @@ uzanta/K
 uzantnomo/AO
 uzata/CE
 uzatas/V
-uzbeka/CFGQY
 uzbeklingva/A
+uzbeko/CFGQY
 uzbekujano/FI
 Uzbekujo/I
 uzebla/EGROY
@@ -21385,7 +21408,7 @@ Vaduzon/X
 vaflo/AeO
 vaflofero/AO
 vaga/AU
-vagabonda/FC
+vagabondo/FC
 vagi/fkV
 vagino/AO
 vaglumo/AO
@@ -21533,7 +21556,7 @@ varti/AJOST
 vartolernejo/AO
 vartrajno/AO
 varvagono/AO
-vasala/FC
+vasalo/FC
 vaŝingtona/AW
 Vaŝingtono/IO
 vasko/AO
@@ -21827,8 +21850,8 @@ vidakra/AC
 vid-al-vida/AOU
 vidalvida/AOU
 vidama/AO
-vidanta/EF
-vidata/EO
+vidanto/EF
+vidato/EF
 vidbendo/AO
 viddistanco/AO
 videbla/EGO
@@ -21872,7 +21895,7 @@ Vilnon/X
 vilo/ACO
 vimbo/AO
 vimplo/AO
-vinagro/AOVH
+vinagro/AHOV
 vinagromuŝo/AO
 vinarbedo/AO
 vinberbranĉo/AO
@@ -21895,6 +21918,7 @@ vingustumi/ASV
 vinjeto/AO
 vinkelo/AO
 vinko/AO
+vinkomercisto/AO
 vinkti/AOT
 vinkulo/AO
 vinlisto/AO
@@ -21952,7 +21976,7 @@ virseksa/ACO
 virseksulo/ACO
 virta/AGMOQU
 virtuala/A
-virtuoza/CF
+virtuozo/CF
 viruso/AO
 virusologe/I
 virusporti/AFV
@@ -22039,7 +22063,7 @@ vizitnombri/ALOV
 vizito/AJO
 vjentiana/AW
 Vjentianon/X
-vjetnama/CFGQY
+vjetnamo/CFGQY
 vjetnamujano/FI
 Vjetnamujo/I
 Vladimiro/AO
@@ -22088,7 +22112,7 @@ vojsulko/AO
 vojturno/AO
 voju/kV
 Vojvodinon/X
-vokala/Ah[]
+vokala/Ahs[]
 vokalizi/AOT
 vokalkomenca/A
 vokallitero/AO
@@ -22097,7 +22121,7 @@ vokalsigno/AO
 vokalsistemo/AO
 vokativo/AO
 vokfrapo/AO
-voki/AajlORST
+voki/AajLlORST
 vokilo/AO?
 vokita/CEO
 vokkazo/AO

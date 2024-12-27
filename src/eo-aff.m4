@@ -2,7 +2,7 @@
 divert(-1)
 #§ 			ABOUT THIS FILE
 Name: eo-aff.m4
-# Time-stamp: <2024-03-27 13:09:43 sergio>
+# Time-stamp: <2024-12-26 19:26:58 sergio>
 define(Versio, `# Versio:	4.2')
 
 
@@ -145,7 +145,7 @@ allaffixes on
 changequote(/*, */})
 
 # TeX/LaTeX laux esperanto.sty
-defstringtype "tex" ".tex" ".bib"
+defstringtype "tex" "tex" ".tex" ".latex" ".bib"
 #
 #boundarychars	[.]
 boundarychars	[-]
@@ -179,7 +179,7 @@ stringchar   \\^u    \\^U
 stringchar  \\\"u   \\\"U
 wordchars    [v-z]   [V-Z]
 
-altstringtype "utf8" ".html" ".u8" ".utf"
+altstringtype "utf8" "sgml" ".html" ".u8" ".utf"
 #
 altstringchar  \xE2\x80\x99 ^'
 # altstringchar   \xCA\xBC    ^' modifier letter apostrophe U+02BC
@@ -212,7 +212,7 @@ altstringchar	\xC3\x98  {\\O}
 altstringchar	\xC3\xBC \\\"u
 altstringchar	\xC3\x9C \\\"U
 
-altstringtype "latin3" "sgml" ".l3"
+altstringtype "latin3" "plain" ".l3"
 #
 altstringchar	'       ^'
 altstringchar	\xE6	^c
@@ -242,7 +242,7 @@ altstringchar	\xF6 \\\"o
 altstringchar	\xFB  \\^u
 altstringchar	\xFC \\\"u
 
-altstringtype "epo" ".wiki" ".la3"
+altstringtype "epo" "sgml" ".wiki" ".la3"
 #
 altstringchar	\xB4    ^'
 altstringchar	\xE6	^c
@@ -272,7 +272,7 @@ altstringchar	\xF6 \\\"o
 #altstringchar	\xFB  \\^u
 altstringchar	\xFC \\\"u
 
-altstringtype "cxirkaux" ".t" ".cx"
+altstringtype "cxirkaux" "plain" ".t" ".cx"
 #
 altstringchar	'       ^'
 altstringchar	cx	^c
@@ -374,7 +374,7 @@ changequote({, })
 #   `	sur-
 #   \   tra-
 
-# Mankas flagoj por GE-, -ER, FIN-, NOV-, TUT-, ØIS-, ÆE-, PER-, -ITA¬ ...
+# Mankas flagoj por GE-, -ER, FIN-, NOV-, TUT-, ØIS-, ÆE-, PER-, -ITA¬ -ISMAN...
 
 #§		        LA PREFIKSOJ:
 prefixes
@@ -586,8 +586,10 @@ flag *F:
     A		>	-A,INE
     kazoj({A	>	-A,INA})
     ka3oj({A	>	})
-    kazoj({A	>	-A,INO})
-    kazoj({A	>	-A,O})
+#    kazoj({A	>	-A,O})
+#    kazoj({A	>	-A,INO})
+    subst(A,-A,)
+    subst(A,-A,IN)
     nome(E,-E,IN)	# agronome/FI -> agronomine
 ifdef({SXPARE},
 {   nome(I,-I,ANTIN)	# danci -> dancantino
@@ -639,7 +641,7 @@ flag H:
     nome(O,-O,UJ)
 
 flag *I:
-    A	>	-A,E
+    A	> -A,E
 #    nome(A,-A,I)
     kazoj({A >	-A,O})
     ka3oj({A >	})
@@ -650,15 +652,15 @@ flag *I:
     nomo(I)
 #    kazoj({O >	-O,A})  # ne estu tiaj -- krom "Landujo"j
 #    O	     >	-O,E    # por cxi tiuj estu minusklaj adjektivoj
-#   [^I] O   >	-O,IA ### eraro! kp meksikiano/FI
-    O        >  N       # Rusujo -> Rusujon, Babilono -> Babilonon
+#   [^I] O   >	-O,IA  ### eraro! kp meksikiano/FI
+    ka3oj({O >	})      # Rusujo -> Rusujon, Babilono -> Babilonon
+    O        >	-O,^'   # Meksiko -> Meksik^'
     [^J] O   >	-O,IO   # Meksiko -> Meksikio
+    [^J] O   >	-O,I^'
     [^J] O   >	-O,ION
-    ifdef({LOZE},{ka3oj({O >	})
-    nomo({U J O},-UJO,I)},
-{   U J O       > -UJO,IO       # Rusujo -> Rusio
-    U J O       > -UJO,ION})
     
+    nomo({U J O},-UJO,I)
+
     kazoj({I A N A      > -IANA,A})     # algxeriana -> algxera
     I A N A      > -IANA,E     		# algxeriana -> algxere
     kazoj({I A N A      > -IANA,IA})    # algxeriana -> algxeria

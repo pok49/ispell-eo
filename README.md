@@ -1,7 +1,7 @@
 -   **Name**:   `./README`
 -   **Content**: Information about Esperanto dictionary for the Ispell speller
 -   **Created**: 2024-01-19 by Sergio Pokrovskij `<sergio.pokrovskij(cxe)gmail.com>`
--   **Version**: 4.1
+-   **Version**: 4.3
 
 Copyright © 1997, 1998, 2003, 2006, 2008, 2024 by Sergio Pokrovskij
 

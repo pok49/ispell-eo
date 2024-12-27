@@ -3,14 +3,14 @@ LC_ALL=C
 export LC_ALL
 
 sed \
--e 's/æ/^c/g' -e 's/Æ/^C/g' \
--e 's/ø/^g/g' -e 's/Ø/^G/g' \
--e 's/¶/^h/g' -e 's/¦/^H/g' \
--e 's/¼/^j/g' -e 's/¬/^J/g' \
--e 's/þ/^s/g' -e 's/Þ/^S/g' \
--e 's/ý/^u/g' -e 's/Ý/^U/g' \
+-e 's/æ/^c/g; s/Æ/^C/g' \
+-e 's/ø/^g/g; s/Ø/^G/g' \
+-e 's/¶/^h/g; s/¦/^H/g' \
+-e 's/¼/^j/g; s/¬/^J/g' \
+-e 's/þ/^s/g; s/Þ/^S/g' \
+-e 's/ý/^u/g; s/Ý/^U/g' \
 -e "s/á/\\\'a/g" -e 's/ç/\\c{c}/g' \
--e "s/é/\\\'e/g" -e 's/ü/\\\"u/g' \
+-e "s/é/\\\'e/g" -e 's/ü/\\\"u/g; s/ö/\\\"o/g' \
 -e "s/´/^'/g"
 
 # Local variables:

@@ -1,16 +1,23 @@
 vim :	myspell
 	cd vimspell && $(MAKE) eo.utf-8.spl
 
+hun : 	apostrophe eo.aff eo.dic
+	cd ../hunspell && $(MAKE) hun
+
 myspell : eo.aff eo.dic
 
-eo.dic : ../src/vortoj.l3 ../tools/filtroo
-	../tools/filtroo "$(eo_list)" eo.dic $(apostro)
-	@echo "OpenOffice eo.dic file is ready."
+apostrophe :
+	[ -f apostrofo.txt ] && [ `cat apostrofo.txt` == $(apostro) ] || \
+	echo $(apostro) > apostrofo.txt
 
-eo.aff : ../src/eo-aff.m4 ../tools/cleanaff ../emacs/oo.el eo_repl.dat
+eo.dic : apostrofo.txt ../src/vortoj.l3 ../tools/filtroo
+	../tools/filtroo "$(eo_list)" eo.dic $(apostro)
+	@echo "OO eo.dic is ready."
+
+eo.aff : apostrofo.txt ../src/eo-aff.m4 ../tools/cleanaff ../emacs/oo.el eo_repl.dat
 	m4 $(sxparu) ../src/eo-aff.m4 | ../tools/cleanaff | iconv -f L3 -t UTF8 > eo.aff
 	emacs -batch eo.aff -l ../emacs/oo.el -f save-buffer
-	@echo "OpenOffice eo.aff file is ready."
+	@echo "OO eo.aff is ready."
 
 distclean : clean
 	-rm -f *.hash *.aff *.dic *.spl

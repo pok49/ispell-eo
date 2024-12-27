@@ -7,7 +7,7 @@
 - *Name*:   ~./README~
 - *Content*: Information about Esperanto dictionary for the Ispell speller
 - *Created*: 2024-01-19 by Sergio Pokrovskij ~<sergio.pokrovskij(cxe)gmail.com>~
-- *Version*: 4.1
+- *Version*: 4.3
 
 Copyright © 1997, 1998, 2003, 2006, 2008, 2024 by Sergio Pokrovskij
 
@@ -560,7 +560,7 @@ ispell.
 
 As mentioned earlier, the Esperantic Ispell dictionaries can accept the
 UTF-8 input; alas, for some bugs in =ispell.el= conversions from the
-integer Unicode numbers to multibyte UTF-8 and back “may result in the
+integer Unicode codepoints to multibyte UTF-8 and back “may result in the
 evil misalignment error”; the interaction with 1-byte codes (e.g.
 Latin‑3) is more stable.
 
@@ -609,9 +609,13 @@ In Esperanto apostrophes appear mainly as the last of the wordʼs
 characters, i.e. in a most error-prone position:
 : en nova form' eksonis nova kant'
 
-Ispell and Aspell are able to treat such postfix apostrophes; Hunspell
-and Vim Speller take account of non-letter characters (e.g. =-= or
-='=) only inside a word, when they occur between two letters.
+The spellcheck programs (Ispell, Aspell, Hunspell, Vim Speller) are
+able to treat such postfix apostrophes; alas, many text processing
+applications (e.g. {Open|Libre}Office, Thunderbird) have more special
+idea of the /word/ concept; they take account of non-letter characters
+(e.g. =-= or ='=) only inside a word, when they occur between two
+letters; thus the speller program, when called as a plugin to such an
+application, never receives the boundary apostrophes.
 
 Actually the fine typography requires a curly apostrophe, and Unicode
 offers two options:
@@ -619,10 +623,9 @@ offers two options:
 - the /right single quotation mark/ ‹’› U+2019.
 
 The letter apostrophe is classified by Unicode as a letter, and as
-such perfectly suits the Esperantic spelling dictionaries for Hunspell
-and Vim Speller; hence the Hunspell spelling dictionary for Esperanto,
-distributed with LibreOffice, as well as my conversion for Vim Speller
-both cannot but opt for U+02BC.
+such perfectly suits both the Esperantic spelling dictionaries and
+APIs; hence my conversion of the Esperanto spelling dictionary for
+Hunspell opts for U+02BC.
 
 Unfortunately the impact of the English (or rather Microsoft's)
 tradition imposes the use of U+2019 (e.g. great many fonts which
@@ -705,7 +708,8 @@ promote the typographically preferable form of the apostrophes.
 # surrogate apostrophes (either ‹'› or ‹´›) should be replaced with
 # U+2019 or U+02BC.
 
-** Switching the Ispell Dictionaries
+** The Emacs’s =ispell.el= interface
+*** Switching the Ispell Dictionaries
 =ispell.el= provides the =spell-change-dictionary= function, bound to
 =C-c i c=, ekz‑e
 
@@ -726,7 +730,7 @@ It can also be invoked from the menu:
 =C-c i f= sets the French dictionary\\
 =C-c i p= sets the Russian dictionary.
 
-** Inputting Apostrophes and Quotation Marks
+*** Inputting Apostrophes and Quotation Marks
 In order to input curly apostrophes =ispell.el= provides the command
 : C-c i '
 It inserts U+2019 or U+02BC, according to the current value of
@@ -741,12 +745,42 @@ marks are put around it. The commands (shortcuts) are:
 =C-c <= makes a pair of single guillemets: ‹│›\\
 =C-c 6= makes a 66—99 pair: “│”.
 
-** Further Reading on the Apostrophe problem
+** Inputting the Letter-Apostrophe in Linux
+Out of the box there is no convenient means to enter the letter
+apostrophe U+02BC. Composing the Unicode codepoint is clumsy. The
+[[https://en.wikipedia.org/wiki/Compose_key][compose key]] facility is not aware about it.
+
+In many Linux distributions the supersigned Esperantic letters can be
+inputted as combination of AltGr and the base Latin letter; this can
+be extended to the letter-apostrophe, ideally by modifying the
+standard =/usr/share/X11/xkb/symbols/epo= file; while this is not done
+one can define an appropriate key combination via =xmodmap=.
+
+ASCII apostrophe is often used to enter the acute diacritics (e.g.
+~AltGr+e~ → ~é~); so, I’ve chosen the comma (it may is used for
+inputting cedilla; but I seldom need it, less often than acute; and
+the diacritics in question are available via Compose). So,
+#+begin_src sh
+$ xmodmap -e 'keycode 59 = comma less comma less U02BC U2019'
+#+end_src
+This works for most of Latin-based layouts (mi tested the British =gb=
+and German =de=); paradoxically there is some bug in the most widely
+used US layout: the above =xmodmap= does not effect it. It works
+with US International (=us,intl=), but it is inconvenient for
+programming (~`echo FOO`~ becomes ~ècho FOO`~ etc).
+
+Thus I’ve chosen the South African layout ~za,basic~, which is
+identical to ~us~ at the levels 1 and 2, which accepts the =xmodmap=
+command, and whose level 3 offers extra bonuses; e.g.
+~AltGr+z~ = =«=, ~AltGr+x~ = =»=. The /Ubuntu/ philosophy! ☺
+
+** Further Reading on the Apostrophe Problem
 - [[../doc/apostrofoj.html][Pri apostrofoj kaj citiloj en Esperanto]] (in Esperanto)
 - [[https://tedclancy.wordpress.com/2015/06/03/which-unicode-character-should-represent-the-english-apostrophe-and-why-the-unicode-committee-is-very-wrong][Which Unicode character should represent the English apostrophe?
   (And why the Unicode committee is very wrong)]]
 - [[https://groups.google.com/g/gnu.emacs.help/c/FPjX1kCHIB4][Getting Emacs to play nice with Hunspell and apostrophes]] (a thread
   in the ~<help-gnu-emacs@gnu.org>~ forum)
+- [[https://askubuntu.com/questions/788484/insert-a-unicode-character-via-keyboard-shortcut-xmodmap-chooser-not-working][xmodmap chooser not working]].
 
 #  LocalWords:  multibyte Fruictier Esperanta eo xB Komputika BC WGL
 #  LocalWords:  Leksikono Elisp

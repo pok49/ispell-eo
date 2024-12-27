@@ -114,10 +114,6 @@ ekz-e mi rekomendas
 * «francaĵo anstataŭ «francismo»
 * «avio» anstataŭ «aviadilo», ktp.
 
-Tio koncernas la mallongan vortaron (eo), destinitan por pli strikta kontrolo;
-la «plena» versio (esperanto), destinita por kontroli tekstojn de diversaj
-aŭtoroj, estas pli permesema.
-
 ### Uskleco
 
 * Etnajn nomojn mi skribas etlitere:

@@ -1,5 +1,5 @@
 short_list	=	komp,etn,Eujo,mll
-pok_list	=	$(short_list),bot,fremd,his,pok,pers,var,zoo
+pok_list	=	$(short_list),bot,fremd,his,mit,pok,pers,var,zoo
 
 #eo_list	=	$(short_list),drv
 eo_list		=	$(pok_list),drv
@@ -21,11 +21,14 @@ install_dir=`ispell -vv | grep LIBDIR | sed 's/[^"]*\\"\([^"]*\)\\"/\1/'`
 # elisp_dir	= /usr/local/share/emacs/site-lisp
 # VORTOJ	= `pwd`/src/vortoj.l3
 
+# Hunspell:
+Hun_install_dir = /usr/share/hunspell
+
 # VIM Spell:
 vim_spl_install_dir = $(HOME)/.vim/spell
 #vim_spl_install_dir = /usr/share/vim/vim82/spell
 vim_list	= $(esperanto_list),drv
-apostrofo	= u
+# apostrofo	= aq
 
 ##########################
 # No more user settings // Fino de la uzulaj agordajxoj.
@@ -44,21 +47,25 @@ all :	ordigo eo esperanto
 	@echo
 	@echo "Now you can 'make install' (if you have the appropriate permissions)"
 
-ordigo:
-#	$(MAKE) -C src
-	cd src && $(MAKE)
-vim :	ordigo
-	tools/cxu_apostrofo vim $(apostrofo) || apostrofo=u
-	cd oo && $(MAKE) vim eo_list=$(eo_list) sxparu=$(sxparu) apostro=$(apostrofo)
-
 eo :	ordigo
 #	$(MAKE) -C work eo.hash
-	cd work && $(MAKE) eo.hash eo_list=$(eo_list) \
-	sxparu="-DSXPARE"
+	cd work && $(MAKE) eo.hash eo_list=$(eo_list) sxparu="-DSXPARE"
 
 esperanto :	ordigo
 #	$(MAKE) -C work esperanto.hash
 	cd work && $(MAKE) esperanto.hash esperanto_list=$(esperanto_list)
+
+hundict : apostrofo ?= "u"
+hundict :
+	cd oo && $(MAKE) hun eo_list=$(eo_list) sxparu=$(sxparu) apostro=$(apostrofo)
+
+vim :	apostrofo ?= "aq"
+vim :
+	cd oo && $(MAKE) vim eo_list=$(eo_list) sxparu=$(sxparu) apostro=$(apostrofo)
+
+ordigo:
+#	$(MAKE) -C src
+	cd src && $(MAKE)
 
 check_diff :
 	tools/slovnik src/vortoj.l3 > work/slovnik.tex
@@ -66,9 +73,12 @@ check_diff :
 install:
 	cp work/*.hash work/*.aff $(install_dir)
 
-install_vim:
+install_vimspl:
 	install -d $(vim_spl_install_dir)
 	install -m 664 oo/vimspell/eo.utf-8.spl $(vim_spl_install_dir)
+
+install_hunspl:
+	install -m 644 hunspell/eo.aff hunspell/eo.dic $(Hun_install_dir)
 
 tar :	clean
 	LC_CTYPE=C cd .. && tar cvf - ispell-eo | gzip -9v > espaff.tgz
