@@ -782,7 +782,7 @@ Ekz‑e ĉe la apostrofo Askia en la [[https://upload.wikimedia.org/wikipedia/co
 #+end_verse
 ‹hom'› estas akceptata kun la sekva apostrofo, ĉar ĝi estas bezonata;
 kaj ‹griza›' estas akceptata senapostrofe, ĉar la antaŭapostrofa parto jam
-sufiĉas (kiel en la angla =ladys'= ĉi-supre). Male, se en la teksto la
+sufiĉas (kiel en la angla =ladies'= ĉi-supre). Male, se en la teksto la
 apostrofoj estas literaj (U+02BC), tiam por la literumilo la vorto
 =grizaʼ= estas samstruktura (kaj egale erara) kiel
 =grizao=[fn:Exc].

@@ -2,7 +2,7 @@
 divert(-1)
 #§ 			ABOUT THIS FILE
 Name: eo-aff.m4
-# Time-stamp: <2024-12-26 19:26:58 sergio>
+# Time-stamp: <2026-06-20 10:21:40 sergio>
 define(Versio, `# Versio:	4.2')
 
 
@@ -342,7 +342,7 @@ changequote({, })
 #   M	Mal-
 #   m	mal- nemal-
 #   N	Nombro: unu-, du-, plur-, multe-
-#   n	{ali-,sam-,sen-,ambaux-,cxiu-,iu-}
+#   n	{ali-,sam-,sen-,ambaux-,cxiu-,iu-,unu-}
 #   O	-o; ankaý deklinacias -a/vortojn (por senadjektivaj paradigmoj)
 #   o	æirkaý-
 #   p	pri-
@@ -374,7 +374,7 @@ changequote({, })
 #   `	sur-
 #   \   tra-
 
-# Mankas flagoj por GE-, -ER, FIN-, NOV-, TUT-, ØIS-, ÆE-, PER-, -ITA¬ -ISMAN...
+# Mankas flagoj por GE-, -ER, EKSTER-, FIN-, KROM-, NOV-, TUT-, ØIS-, ÆE-, PER-, vic-, ek.mal-; -ID, -IT.A¬, -ISM.AN...
 
 #§		        LA PREFIKSOJ:
 prefixes
@@ -437,14 +437,14 @@ define(n2_9,{$1DU
     $1OK
     $1NAÝ})
 flag *N:
-    .		>	UNU		# kiel unuflanka, unufoja
-    .		>	NEUNU		# kiel neunufoja
+    [^DCM]	>	UNU		# kiel unuflanka, unufoja
+    [^DCM]	>	NEUNU		# kiel neunufoja
     n2_9({.	>	})
-    .		>	DEK
-    .		>	CENT
-    .		>	MIL
+    [^D]	>	DEK             # ne estu "dek.dekmil" ktp
+    [^C]	>	CENT
+    [^M]	>	MIL
     .		>	KELK
-    .		>	DEKKELK
+    [^D]	>	DEKKELK
     .		>	PLUR
     [AEIJOUFLS]	>	MULT
     [^AEIJOU]	>	MULTE
@@ -460,6 +460,7 @@ flag *n:
     .		>	SAM
     .		>	SEN
     .		>	TIU
+    .           >       UNU
 
 flag *o:				  
     .		>	ÆIRKAÝ

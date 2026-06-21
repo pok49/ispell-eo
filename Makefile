@@ -1,9 +1,9 @@
 short_list	=	komp,etn,Eujo,mll
-pok_list	=	$(short_list),bot,fremd,his,mit,pok,pers,var,zoo
+pok_list	=	$(short_list),bot,fak,fremd,his,mit,pok,pers,var,zoo
 
 #eo_list	=	$(short_list),drv
-eo_list		=	$(pok_list),drv
-esperanto_list	=	$(pok_list),arhx,mav,rar,var
+eo_list		=	$(pok_list),drv,arhx,mav,rar
+esperanto_list	=	$(pok_list),arhx,mav,rar
 #esperanto_list	=	$(pok_list),arhx,mav,rar,var,drv
 
 # Exotic forms // Ekzotajxoj

@@ -2,7 +2,7 @@
 # Funkcio:	Afiksaro por Esperanto-vortaro
 # Komencita:	1997-08-30 de Sergio Pokrovskij <sergio.pokrovskij(^ce)gmail.com>
 # Versio:	4.2
-# Generita:	Fri Dec 27 12:12:16 AM +07 2024
+# Generita:	Sun 21 Jun 2026 11:21:29 +07
 
 #
 # Copyright 1997 -- 2012 Sergio Pokrovskij
@@ -220,7 +220,7 @@ altstringchar	\xFC \\\"u
 #   M	Mal-
 #   m	mal- nemal-
 #   N	Nombro: unu-, du-, plur-, multe-
-#   n	{ali-,sam-,sen-,ambaux-,cxiu-,iu-}
+#   n	{ali-,sam-,sen-,ambaux-,cxiu-,iu-,unu-}
 #   O	-o; anka^u deklinacias -a/vortojn (por senadjektivaj paradigmoj)
 #   o	^cirka^u-
 #   p	pri-
@@ -252,7 +252,7 @@ altstringchar	\xFC \\\"u
 #   `	sur-
 #   \   tra-
 
-# Mankas flagoj por GE-, -ER, FIN-, NOV-, TUT-, ^GIS-, ^CE-, PER-, -ITA^J -ISMAN...
+# Mankas flagoj por GE-, -ER, EKSTER-, FIN-, KROM-, NOV-, TUT-, ^GIS-, ^CE-, PER-, vic-, ek.mal-; -ID, -IT.A^J, -ISM.AN...
 
 #§		        LA PREFIKSOJ:
 prefixes
@@ -308,8 +308,8 @@ flag *m:
 
 
 flag *N:
-    .		>	UNU		# kiel unuflanka, unufoja
-    .		>	NEUNU		# kiel neunufoja
+    [^DCM]	>	UNU		# kiel unuflanka, unufoja
+    [^DCM]	>	NEUNU		# kiel neunufoja
     .	>	DU
     .	>	TRI
     .	>	KVAR
@@ -318,11 +318,11 @@ flag *N:
     .	>	SEP
     .	>	OK
     .	>	NA^U
-    .		>	DEK
-    .		>	CENT
-    .		>	MIL
+    [^D]	>	DEK             # ne estu "dek.dekmil" ktp
+    [^C]	>	CENT
+    [^M]	>	MIL
     .		>	KELK
-    .		>	DEKKELK
+    [^D]	>	DEKKELK
     .		>	PLUR
     [AEIJOUFLS]	>	MULT
     [^AEIJOU]	>	MULTE
@@ -345,6 +345,7 @@ flag *n:
     .		>	SAM
     .		>	SEN
     .		>	TIU
+    .           >       UNU
 
 flag *o:				  
     .		>	^CIRKA^U
